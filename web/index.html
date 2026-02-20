@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fantasy F1 Optimizer</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { font-family: Arial, sans-serif; margin: 0; background: #0f172a; color: #e2e8f0; }
+      h2, h3 { margin: 0 0 8px; }
+      .topbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background: #020617;
+        border-bottom: 1px solid #1e293b;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        font-weight: 700;
+        font-size: 20px;
+        z-index: 100;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 16px 24px;
+      }
+      .card { background: #1e293b; padding: 16px; border-radius: 10px; margin-bottom: 16px; }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { border-bottom: 1px solid #334155; padding: 8px; text-align: left; }
+      th { color: #93c5fd; }
+      .muted { color: #94a3b8; }
+      .warning { color: #fca5a5; }
+      .bigScore { font-size: 28px; color: #86efac; }
+      .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+      .raceGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 10px;
+      }
+      .raceCard {
+        text-align: left;
+        background: #0f172a;
+        border: 1px solid #334155;
+        border-radius: 10px;
+        padding: 10px;
+        color: #e2e8f0;
+        cursor: pointer;
+      }
+      .raceCard.active {
+        border-color: #60a5fa;
+        box-shadow: inset 0 0 0 1px #60a5fa;
+      }
+      .raceTop {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6px;
+      }
+      .selectorGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 8px;
+      }
+      .chip {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid #334155;
+        border-radius: 8px;
+        padding: 8px;
+        background: #0f172a;
+      }
+      .chip small {
+        margin-left: auto;
+        color: #94a3b8;
+      }
+      .chipOn {
+        border-color: #60a5fa;
+      }
+      .chipDisabled {
+        opacity: 0.5;
+      }
+      .select {
+        width: 100%;
+        background: #0f172a;
+        color: #e2e8f0;
+        border: 1px solid #334155;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 900px) { .row { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel" src="./app.js"></script>
+  </body>
+</html>

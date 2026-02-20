@@ -1,0 +1,64 @@
+- Ogni team è formato da 5 piloti e un team.
+- Ogni volta che vengono scelti, piloti e team devono avere un tempo di ingaggio specifico (da 1 a 5 gare).
+- Una volta finito il tempo di ingaggio, per riacquistare lo stesso pilota/team, bisogna pagare il costo attuale, non quello iniziale (i piloti che fanno bene vedono il loro prezzo aumentare).
+- Il budget iniziale è di 100 milioni. 
+- I vari piloti costano inizialmente:
+    - Verstappen: 30 milioni
+    - Russell: 28.7
+    - Norris: 27.4
+    - Piastri: 26.1
+    - Antonelli: 24.8
+    - Leclerc: 23.5
+    - Alonso: 22.2
+    - Hamilton: 20.9
+    - Hadjar: 19.6
+    - Gasly: 18.3
+    - Stroll: 17
+    - Sainz: 15.7
+    - Lawson: 14.4
+    - Albon: 13.1
+    - Hulkenberg: 11.8
+    - Bortoleto: 10.5
+    - Bearman: 9.2
+    - Ocon: 7.8
+    - Bottas: 4.7
+    - Perez: 4.7
+    - Colapinto: 4.7
+    - Lindblad: 4.6
+- I team costano inizialmente:
+    - Mercedes: 28.5
+    - McLaren: 28.5
+    - RedBull: 25
+    - Ferrari: 22.5
+    - Aston Martin: 20
+    - Williams: 17.5
+    - Racing Bulls: 15
+    - Alpine: 12.5
+    - Audi: 10
+    - Cadillac: 7.5
+    - Haas: 5
+- Il calendario di questa stagione è: 
+    1. Australia - 07-08 marzo
+    2. Cina - 14-15 marzo
+    3. Giappone - 28-29 marzo
+    4. Bahrain - 11-12 aprile
+    5. Arabia Saudita - 18-19 aprile
+    6. Miami - 02-03 maggio
+    7. Canada - 23-24 maggio
+    8. Monaco - 06-07 giugno
+    9. Barcellona - 13-14 giugno
+    10. Austria - 27-28 giugno
+    11. Gran Bretagna - 04-05 luglio
+    12. Belgio - 18-19 luglio
+    13. Ungheria - 25-26 luglio
+    14. Olanda - 22-23 agosto
+    15. Italia - 05-06 settembre
+    16. Spagna - 12-13 settembre
+    17. Azerbaijan - 25-26 settembre
+    18. Singapore - 10-11 ottobre
+    19. USA - 24-25 ottobre
+    20. Messico - 31 ottobre
+    21. Brasile - 07-08 novembre
+    22. Las Vegas - 21-22 novembre
+    23. Qatar - 28-29 novembre
+    24. Abu Dhabi - 05-06 dicembre
