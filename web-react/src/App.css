@@ -14,6 +14,19 @@
   z-index: 100;
 }
 
+:root {
+  --f-panel: linear-gradient(160deg, rgba(44, 9, 12, 0.96) 0%, rgba(25, 5, 7, 0.98) 100%);
+  --f-panel-soft: linear-gradient(160deg, rgba(63, 13, 17, 0.94) 0%, rgba(30, 7, 10, 0.98) 100%);
+  --f-surface: #170608;
+  --f-surface-soft: #21080b;
+  --f-border: #6f1418;
+  --f-border-strong: #b51f26;
+  --f-text: #fff4ef;
+  --f-muted: #d2b3ab;
+  --f-gold: #ffd447;
+  --f-gold-soft: #f3c86c;
+}
+
 .welcomeScreen {
   min-height: 100vh;
   display: flex;
@@ -133,6 +146,470 @@
   animation: appReveal 0.34s ease both;
 }
 
+/* ── Accordion banners ──────────────────────────────── */
+.accordionSection {
+  margin-bottom: 12px;
+}
+
+.accordionBanner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: linear-gradient(90deg, rgba(63, 13, 17, 0.95), rgba(34, 7, 10, 0.98));
+  border: 1px solid var(--f-border);
+  border-radius: 10px;
+  color: var(--f-text);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.18s ease;
+}
+
+.accordionBanner:hover {
+  background: linear-gradient(90deg, rgba(83, 18, 22, 0.95), rgba(46, 9, 13, 0.98));
+}
+
+.accordionBanner[aria-expanded="true"] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-color: transparent;
+}
+
+.accordionTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.accordionChevron {
+  font-size: 11px;
+  color: var(--f-gold-soft);
+  flex-shrink: 0;
+}
+
+.accordionBody {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.liveDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  animation: livePulse 1.8s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+/* ── Race detail page ───────────────────────────────── */
+.backButton {
+  background: transparent;
+  border: none;
+  border-right: 1px solid var(--f-border);
+  color: var(--f-muted);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 14px 4px 0;
+  margin-right: 12px;
+  transition: color 0.15s;
+}
+
+.backButton:hover {
+  color: var(--f-text);
+}
+
+.raceDetailHero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.raceDetailTrackImage {
+  width: 100%;
+  border-radius: 10px;
+  height: min(46vh, 380px);
+  object-fit: contain;
+  object-position: center;
+  padding: 12px;
+  border: 1px solid var(--f-border);
+  background: var(--f-surface);
+}
+
+.raceDetailInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.raceDetailInfo h2 {
+  margin: 0;
+  font-size: clamp(20px, 3.5vw, 32px);
+}
+
+/* ── Race card states ───────────────────────────────── */
+.raceCardNext {
+  border-color: #dc0000 !important;
+  box-shadow: inset 0 0 0 1px #dc0000;
+}
+
+.raceCardPast {
+  opacity: 0.5;
+}
+
+.raceNextLabel {
+  margin-top: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #dc0000;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.selectionPanel {
+  margin-top: 16px;
+}
+
+.selectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.selectionHeader h3 {
+  margin: 0;
+}
+
+.selectedDriversRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 14px;
+}
+
+.selectedDriverBadge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--f-surface);
+  border: 1px solid var(--f-border);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.teamSelectionRow {
+  margin-bottom: 14px;
+}
+
+.teamSelectionLabel {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--f-gold-soft);
+}
+
+.formationMetrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px 14px;
+  margin-top: 14px;
+}
+
+.formationMetrics p {
+  margin: 0;
+}
+
+.predictionCard {
+  margin-top: 14px;
+  padding: 14px;
+  border: 1px solid var(--f-border);
+  border-radius: 10px;
+  background: linear-gradient(160deg, rgba(55, 11, 15, 0.95) 0%, rgba(26, 6, 8, 0.98) 100%);
+}
+
+.predictionCard p {
+  margin: 0 0 8px;
+}
+
+.predictionCard p:last-child {
+  margin-bottom: 0;
+}
+
+.standingsGrid {
+  align-items: start;
+}
+
+.standingsCard {
+  min-height: 100%;
+}
+
+.standingsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.standingsHeader h2 {
+  margin: 0;
+}
+
+.standingsTable {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.standingsRow {
+  display: grid;
+  grid-template-columns: 28px 40px 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: var(--f-surface);
+  border: 1px solid var(--f-border);
+}
+
+.standingsCard:last-child .standingsRow {
+  grid-template-columns: 28px 1fr auto;
+}
+
+.standingsPos {
+  font-weight: 800;
+  color: var(--f-gold-soft);
+  text-align: center;
+}
+
+.standingsThumb {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--f-border);
+  background: var(--f-surface-soft);
+}
+
+.standingsNameBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.standingsNameBlock strong {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.standingsPoints {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--f-gold);
+}
+
+@media (max-width: 700px) {
+  .raceDetailHero {
+    grid-template-columns: 1fr;
+  }
+
+  .selectionHeader,
+  .standingsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ── Last Race Screen ───────────────────────────────── */
+.lastRaceScreen {
+  min-height: 100vh;
+  background: linear-gradient(165deg, #2b0608 0%, #120406 45%, #050203 100%);
+  transition: opacity 0.24s ease, transform 0.24s ease;
+}
+
+.lastRaceScreen.lastRaceExit {
+  opacity: 0;
+  transform: scale(0.995);
+  pointer-events: none;
+}
+
+.lastRaceContent {
+  animation: appReveal 0.34s ease both;
+}
+
+.lastRaceHero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.lastRaceTrackImage {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid #7f1d1d;
+  object-fit: cover;
+  max-height: 300px;
+  background: #0f172a;
+}
+
+.lastRaceTrackPlaceholder {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  background: var(--f-surface-soft);
+  border-radius: 14px;
+  border: 1px solid var(--f-border);
+}
+
+.lastRaceInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lastRaceBadge {
+  display: inline-block;
+  background: linear-gradient(90deg, #dc0000, #910000);
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: fit-content;
+}
+
+.lastRaceName {
+  margin: 0;
+  font-size: clamp(22px, 4vw, 36px);
+  color: #fff8ed;
+  line-height: 1.15;
+}
+
+.lastRaceDetails {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.lastRaceResults h3 {
+  margin: 0 0 12px;
+}
+
+.lastRaceTable {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lastRaceRow {
+  display: grid;
+  grid-template-columns: 36px 44px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #0f172a;
+  border: 1px solid transparent;
+}
+
+.lastRaceRow.p1 {
+  border-color: #ffd447;
+  background: linear-gradient(90deg, rgba(255, 212, 71, 0.07), transparent);
+}
+
+.lastRaceRow.p2 {
+  border-color: #94a3b8;
+  background: linear-gradient(90deg, rgba(148, 163, 184, 0.07), transparent);
+}
+
+.lastRaceRow.p3 {
+  border-color: #cd7f32;
+  background: linear-gradient(90deg, rgba(205, 127, 50, 0.07), transparent);
+}
+
+.lrPos {
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  color: #e2e8f0;
+  min-width: 28px;
+}
+
+.lastRaceRow.p1 .lrPos { color: #ffd447; }
+.lastRaceRow.p2 .lrPos { color: #cbd5e1; }
+.lastRaceRow.p3 .lrPos { color: #cd7f32; }
+
+.lrDriverThumb {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--f-border);
+  background: var(--f-surface-soft);
+  flex-shrink: 0;
+}
+
+.lrDriverName {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.lrDriverSurname {
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lrConstructor {
+  font-size: 12px;
+}
+
+.lrPoints {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--f-gold);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.lastRaceFooter {
+  display: flex;
+  justify-content: center;
+  padding: 28px 0 40px;
+}
+
+@media (max-width: 700px) {
+  .lastRaceHero {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -140,23 +617,25 @@
 }
 
 .card {
-  background: #1e293b;
+  background: var(--f-panel);
+  border: 1px solid var(--f-border);
+  box-shadow: 0 14px 34px rgba(10, 2, 3, 0.28);
   padding: 16px;
   border-radius: 10px;
   margin-bottom: 16px;
 }
 
 .muted {
-  color: #94a3b8;
+  color: var(--f-muted);
 }
 
 .warning {
-  color: #fca5a5;
+  color: #ff9a7a;
 }
 
 .bigScore {
   font-size: 28px;
-  color: #86efac;
+  color: var(--f-gold);
 }
 
 .row {
@@ -173,17 +652,17 @@
 
 .raceCard {
   text-align: left;
-  background: #0f172a;
-  border: 1px solid #334155;
+  background: linear-gradient(160deg, rgba(36, 8, 10, 0.95) 0%, rgba(22, 5, 7, 0.98) 100%);
+  border: 1px solid var(--f-border);
   border-radius: 10px;
   padding: 10px;
-  color: #e2e8f0;
+  color: var(--f-text);
   cursor: pointer;
 }
 
 .raceCard.active {
-  border-color: #60a5fa;
-  box-shadow: inset 0 0 0 1px #60a5fa;
+  border-color: var(--f-gold);
+  box-shadow: inset 0 0 0 1px var(--f-gold);
 }
 
 .raceTop {
@@ -207,8 +686,8 @@
 }
 
 .f1DriverCard {
-  background: linear-gradient(160deg, #111827 0%, #1f2937 100%);
-  border: 1px solid #334155;
+  background: var(--f-panel-soft);
+  border: 1px solid var(--f-border);
   border-radius: 12px;
   padding: 10px;
 }
@@ -236,8 +715,8 @@
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 8px;
-  border: 1px solid #475569;
-  background: #0f172a;
+  border: 1px solid #8a2a20;
+  background: var(--f-surface);
 }
 
 .f1DriverName {
@@ -254,9 +733,9 @@
 }
 
 .raceRecommendationCard {
-  border: 1px solid #334155;
+  border: 1px solid var(--f-border);
   border-radius: 10px;
-  background: #0f172a;
+  background: var(--f-surface);
   padding: 10px;
 }
 
@@ -271,7 +750,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #1e293b;
+  border-top: 1px solid rgba(255, 212, 71, 0.12);
   padding: 8px 0;
 }
 
@@ -282,7 +761,7 @@
 
 .miniProb {
   font-weight: 700;
-  color: #86efac;
+  color: var(--f-gold);
   font-size: 18px;
   min-width: 58px;
   text-align: right;
@@ -295,10 +774,10 @@
 }
 
 .top3TeamCard {
-  border: 1px solid #334155;
+  border: 1px solid var(--f-border);
   border-radius: 10px;
   padding: 10px;
-  background: linear-gradient(160deg, #111827 0%, #1f2937 100%);
+  background: var(--f-panel-soft);
 }
 
 .top3TeamHeader {
@@ -316,7 +795,7 @@
 .top3Probability {
   font-size: 22px;
   font-weight: 800;
-  color: #86efac;
+  color: var(--f-gold);
 }
 
 .top3Meta {
@@ -352,11 +831,11 @@
 }
 
 .top3DriverChip {
-  border: 1px solid #475569;
+  border: 1px solid var(--f-border);
   border-radius: 999px;
   padding: 4px 8px;
   font-size: 12px;
-  background: #0f172a;
+  background: var(--f-surface);
 }
 
 .selectorGrid {
@@ -369,19 +848,20 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid #334155;
+  border: 1px solid var(--f-border);
   border-radius: 8px;
   padding: 8px;
-  background: #0f172a;
+  background: var(--f-surface);
 }
 
 .chip small {
   margin-left: auto;
-  color: #94a3b8;
+  color: var(--f-muted);
 }
 
 .chipOn {
-  border-color: #60a5fa;
+  border-color: var(--f-gold);
+  box-shadow: inset 0 0 0 1px rgba(255, 212, 71, 0.25);
 }
 
 .chipDisabled {
@@ -390,9 +870,9 @@
 
 .select {
   width: 100%;
-  background: #0f172a;
-  color: #e2e8f0;
-  border: 1px solid #334155;
+  background: var(--f-surface);
+  color: var(--f-text);
+  border: 1px solid var(--f-border);
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 10px;
