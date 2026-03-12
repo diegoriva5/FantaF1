@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import "./App.css";
 
 const DRIVER_META = {
@@ -81,9 +81,23 @@ function driverImageUrl(driverName) {
 function App() {
   const [data, setData] = useState(null);
   const [error, setError] = useState("");
+  const [showWelcome, setShowWelcome] = useState(true);
+  const [isLeavingWelcome, setIsLeavingWelcome] = useState(false);
   const [selectedRaceIndex, setSelectedRaceIndex] = useState(0);
   const [selectedDrivers, setSelectedDrivers] = useState([]);
   const [selectedTeam, setSelectedTeam] = useState("");
+  const welcomeTimerRef = useRef(null);
+
+  const driverNames = useMemo(() => (data ? Object.keys(data.driver_values) : []), [data]);
+  const teamNames = useMemo(() => (data ? Object.keys(data.constructor_values) : []), [data]);
+
+  useEffect(() => {
+    return () => {
+      if (welcomeTimerRef.current) {
+        window.clearTimeout(welcomeTimerRef.current);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     fetch("/recommendations.json")
@@ -97,8 +111,34 @@ function App() {
       .catch((fetchError) => setError(fetchError.message));
   }, []);
 
-  const driverNames = useMemo(() => (data ? Object.keys(data.driver_values) : []), [data]);
-  const teamNames = useMemo(() => (data ? Object.keys(data.constructor_values) : []), [data]);
+  function handleStartClick() {
+    if (isLeavingWelcome) {
+      return;
+    }
+    setIsLeavingWelcome(true);
+    welcomeTimerRef.current = window.setTimeout(() => {
+      setShowWelcome(false);
+      setIsLeavingWelcome(false);
+    }, 260);
+  }
+
+  if (showWelcome) {
+    return (
+      <main className={`welcomeScreen ${isLeavingWelcome ? "welcomeExit" : ""}`}>
+        <div className="welcomeContent">
+          <div className="welcomeBrand">
+            <h1>Benvenuto al FantaF1</h1>
+            <span className="welcomeAccent" aria-hidden="true" />
+          </div>
+        </div>
+        <div className="welcomeFooter">
+          <button className="startButton" onClick={handleStartClick}>
+            Iniziamo!
+          </button>
+        </div>
+      </main>
+    );
+  }
 
   function toggleDriver(driverName) {
     setSelectedDrivers((current) => {
@@ -114,7 +154,7 @@ function App() {
 
   if (error) {
     return (
-      <main className="container">
+      <main className="container appStage">
         <section className="card">Errore: {error}</section>
       </main>
     );
@@ -122,7 +162,7 @@ function App() {
 
   if (!data) {
     return (
-      <main className="container">
+      <main className="container appStage">
         <section className="card">Caricamento dati...</section>
       </main>
     );
@@ -197,7 +237,7 @@ function App() {
   return (
     <>
       <header className="topbar">FantaF1</header>
-      <main className="container">
+      <main className="container appStage">
         <section className="card">
           <h2>Prossime gare</h2>
           <div className="raceGrid">
