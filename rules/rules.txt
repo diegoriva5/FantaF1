@@ -62,3 +62,52 @@
     22. Las Vegas - 21-22 novembre
     23. Qatar - 28-29 novembre
     24. Abu Dhabi - 05-06 dicembre
+
+- Aggiustamento salari
+    1. Dopo ogni gara, a ogni pilota viene matchato un valore in base alla posizione finale della singola gara.
+    2. Poi, questo viene considerato insieme alla "default salary table" (di seguito) per determinare la "base salary variation". 
+    La "salary variation" è la differenza tra il salario di pilota/costruttore prima della gara e il salario assegnato tramite la "default salary table".
+    Ad esempio, se un pilota aveva 8M di salario prima della gara e arriva quattordicesimo (quindi gli viene assegnato 13.2M con la "default salary table"),
+    la "base salary variation" sarà +5.2M.
+    3. Infine, dividiamo la "base salary variation" per 4 e arrotondiamo al più vicino 0.1M per determinare la variazione finale del salario del pilota.
+    Il massimo aumento/ribasso di valore per un pilota è di 2M, mentre per i costruttori è di 3M. La variazione minima (se necessaria) è di 0.1M.
+    Se la base variation è 0, non ci sarà aggiustamento per quella gara.
+
+DEFAULT_DRIVER_SALARY_TABLE = {
+    1: 34.0,
+    2: 32.4,
+    3: 30.8,
+    4: 29.2,
+    5: 27.6,
+    6: 26.0,
+    7: 24.4,
+    8: 22.8,
+    9: 21.2,
+    10: 19.6,
+    11: 18.0,
+    12: 16.4,
+    13: 14.8,
+    14: 13.2,
+    15: 11.6,
+    16: 10.0,
+    17: 8.4,
+    18: 6.8,
+    19: 5.2,
+    20: 3.6,
+    21: 2.0,
+    22: 0.4,
+}
+
+DEFAULT_CONSTRUCTOR_SALARY_TABLE = {
+    1: 30.0,
+    2: 27.4,
+    3: 24.8,
+    4: 22.2,
+    5: 19.6,
+    6: 17.0,
+    7: 14.4,
+    8: 11.8,
+    9: 9.2,
+    10: 6.6,
+    11: 4.0,
+}
