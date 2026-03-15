@@ -9,6 +9,7 @@ Programma per stimare il team Fantasy F1 migliore rispettando le regole:
 - aggiornamento prezzi dopo ogni gara (driver e costruttori) con ranking fantasy evento da feed live gara + qualifica
 - sito React con prossime gare 2026, bandiere e probabilità di successo per pista
 
+
 ## Avvio ottimizzatore
 
 ```bash
@@ -157,8 +158,24 @@ In dev il watcher usa una refresh locale (senza sync remoto continuo) per evitar
 
 5. Apri l'URL mostrato da Vite (tipicamente `http://localhost:5173/`).
 
-Nel sito puoi:
-- vedere la barra fissa `FantaF1`
-- selezionare una gara tra le prossime (con bandiera nazione)
-- scegliere 5 piloti e 1 team
-- ottenere la probabilità di successo stimata sulla pista selezionata
+
+## Versione
+
+
+## Novita' v1.1
+
+1. Linguaggi
+- Localizzazione completa UI React con infrastruttura i18n centralizzata.
+- Selettore lingua in topbar con bandiera e persistenza preferenza (salvata in local storage).
+- Lingue supportate: Italiano (`it`), Inglese (`en`), Tedesco (`de`), Francese (`fr`), Spagnolo (`es`).
+- Formattazione date allineata alla lingua selezionata.
+- Navigazione contestuale migliorata: da gara -> profilo pilota/scuderia -> indietro torna alla stessa pista/dettaglio gara di origine.
+2. Pagina Costruttori
+- Colori delle pagine dei team specifici in base ai colori sociali
+- Formattazione con logo su prima linea, sulla seconda pilota - auto - pilota
+3. Pagina Piloti
+- Aggiunta la scuderia del pilota e la possibilita' di cliccarci sopra per accedere alla pagina della scuderia del pilota
+4. Circuiti
+- Possibilita' di cliccare sulla pista per poter zoommare l'immagine
+5. Gare
+- Aggiunto il podio in visualizzazione rapida per le gare gia' svolte.
