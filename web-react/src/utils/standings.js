@@ -81,7 +81,7 @@ export function computeFormationSummary({ data, race, selectedDrivers, selectedT
       totalCost,
       budgetLeft,
       probability: null,
-      source: null,
+      sourceKey: null,
       circuitName: race?.name || "",
       hasTrackData: false,
     };
@@ -116,7 +116,7 @@ export function computeFormationSummary({ data, race, selectedDrivers, selectedT
     totalCost,
     budgetLeft,
     probability,
-    source: track ? "storico pista" : "fallback globale",
+    sourceKey: track ? "trackHistoricalData" : "globalFallback",
     circuitName: track ? track.circuit_name : race.name,
     hasTrackData: Boolean(track),
   };

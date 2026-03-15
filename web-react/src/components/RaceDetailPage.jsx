@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import { countryFlag, formatDate, driverImageUrl } from "../utils/format";
 import { CIRCUIT_REF_TO_TRACK_IMAGE, LIVE_TRACK_META } from "../data/constants";
 import { buildRaceResults } from "../utils/raceData";
 import TeamRecommendations from "./TeamRecommendations";
 import DriverSelectionPanel from "./DriverSelectionPanel";
+import TrackImageLightbox from "./TrackImageLightbox";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useI18n } from "../i18n";
 
 export default function RaceDetailPage({
   data,
@@ -21,6 +25,8 @@ export default function RaceDetailPage({
   onOpenDriver,
   onOpenConstructor,
 }) {
+  const { t, dateLocale } = useI18n();
+
   const teams =
     raceForPage && data
       ? data.track_team_recommendations?.[raceForPage.name]?.teams || []
@@ -38,41 +44,46 @@ export default function RaceDetailPage({
     ? CIRCUIT_REF_TO_TRACK_IMAGE[raceForPage.circuit_ref]
     : null;
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [raceForPage?.round]);
+
   return (
     <>
       <header className="topbar">
         <button className="backButton" onClick={onNavigateBack}>
-          ← Indietro
+          {t("raceDetail.back")}
         </button>
-        <span>FantaF1</span>
+        <span className="topbarTitle">{t("common.appName")}</span>
+        <LanguageSwitcher />
       </header>
       <main className="container appStage">
-        {!data && <section className="card">Caricamento...</section>}
-        {data && !raceForPage && <section className="card">Gara non trovata.</section>}
+        {!data && <section className="card">{t("common.loading")}</section>}
+        {data && !raceForPage && <section className="card">{t("raceDetail.raceNotFound")}</section>}
         {raceForPage && (
           <>
             <section className="raceDetailHero card">
               {trackImage ? (
-                <img
+                <TrackImageLightbox
                   src={`/tracks_pictures/${trackImage}`}
                   alt={raceForPage.name}
-                  className="raceDetailTrackImage"
+                  imageClassName="raceDetailTrackImage"
                 />
               ) : (
                 <div className="lastRaceTrackPlaceholder">🏁</div>
               )}
               <div className="raceDetailInfo">
-                <div className="lastRaceBadge">Round {raceForPage.round}</div>
+                <div className="lastRaceBadge">{t("raceDetail.roundBadge", { round: raceForPage.round })}</div>
                 <h2>{raceForPage.name}</h2>
                 <p className="muted">
-                  {countryFlag(raceForPage.country_code)} {formatDate(raceForPage.date)}
+                  {countryFlag(raceForPage.country_code)} {formatDate(raceForPage.date, dateLocale)}
                 </p>
               </div>
             </section>
 
             {raceResults.length > 0 && (
               <section className="card lastRaceResults">
-                <h3>Classifica gara</h3>
+                <h3>{t("raceDetail.raceStandings")}</h3>
                 <div className="lastRaceTable">
                   {raceResults.map((result) => (
                     <div
@@ -93,7 +104,9 @@ export default function RaceDetailPage({
                           type="button"
                           className="driverInlineButton"
                           onClick={() => onOpenDriver(result.driver_surname)}
-                          aria-label={`Apri profilo pilota ${result.driver_surname}`}
+                          aria-label={t("raceDetail.openDriverAria", {
+                            driverName: result.driver_surname,
+                          })}
                         >
                           <img
                             src={driverImageUrl(result.driver_surname)}
@@ -154,7 +167,7 @@ export default function RaceDetailPage({
                 onClick={() => setDetailTeamsOpen((open) => !open)}
                 aria-expanded={detailTeamsOpen}
               >
-                <span className="accordionTitle">3 team consigliati</span>
+                <span className="accordionTitle">{t("raceDetail.recommendedTeams")}</span>
                 <span className="accordionChevron">{detailTeamsOpen ? "▲" : "▼"}</span>
               </button>
 

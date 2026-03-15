@@ -6,6 +6,8 @@ import {
   driverImageUrl,
   formatFantasyPoints,
 } from "../utils/format";
+import { useI18n } from "../i18n";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const CHART_WIDTH = 920;
 const CHART_HEIGHT = 280;
@@ -52,19 +54,19 @@ function buildSeasonRounds(data) {
   return Array.from({ length: 24 }, (_, index) => index + 1);
 }
 
-function buildRoundEventMap(data) {
+function buildRoundEventMap(data, roundLabel) {
   const eventByRound = {};
 
   (data?.upcoming_races_2026 || []).forEach((race) => {
     const round = Number(race.round);
     if (!Number.isInteger(round) || round <= 0) return;
-    eventByRound[round] = race.name || `Round ${round}`;
+    eventByRound[round] = race.name || `${roundLabel} ${round}`;
   });
 
   return eventByRound;
 }
 
-function buildValueSeries(data, driverName, seasonRounds, eventByRound) {
+function buildValueSeries(data, driverName, seasonRounds, eventByRound, roundLabel) {
   const salaryAdjustment = data?.config?.salary_adjustment || {};
   const initialPrice = salaryAdjustment?.driver_initial_prices?.[driverName];
   const history = salaryAdjustment?.driver_event_history?.[driverName] || [];
@@ -83,7 +85,7 @@ function buildValueSeries(data, driverName, seasonRounds, eventByRound) {
 
   const series = seasonRounds.map((round) => ({
     label: String(round),
-    event: eventByRound[round] || `Round ${round}`,
+    event: eventByRound[round] || `${roundLabel} ${round}`,
     round,
     value: valuesByRound.has(round) ? valuesByRound.get(round) : null,
   }));
@@ -93,7 +95,7 @@ function buildValueSeries(data, driverName, seasonRounds, eventByRound) {
   return { series, initialValue };
 }
 
-function buildFantasySeries(data, driverName, seasonRounds, eventByRound) {
+function buildFantasySeries(data, driverName, seasonRounds, eventByRound, roundLabel) {
   const salaryAdjustment = data?.config?.salary_adjustment || {};
   const history = salaryAdjustment?.driver_event_history?.[driverName] || [];
   const fantasyByRound = new Map();
@@ -108,13 +110,13 @@ function buildFantasySeries(data, driverName, seasonRounds, eventByRound) {
 
   return seasonRounds.map((round) => ({
     label: String(round),
-    event: eventByRound[round] || `Round ${round}`,
+    event: eventByRound[round] || `${roundLabel} ${round}`,
     round,
     value: fantasyByRound.has(round) ? fantasyByRound.get(round) : null,
   }));
 }
 
-function buildConqueredPointsSeries(data, driverName, seasonRounds, eventByRound) {
+function buildConqueredPointsSeries(data, driverName, seasonRounds, eventByRound, roundLabel) {
   const salaryAdjustment = data?.config?.salary_adjustment || {};
   const history = salaryAdjustment?.driver_event_history?.[driverName] || [];
   const racePointsByRound = new Map();
@@ -141,13 +143,15 @@ function buildConqueredPointsSeries(data, driverName, seasonRounds, eventByRound
 
   return seasonRounds.map((round) => ({
     label: String(round),
-    event: eventByRound[round] || `Round ${round}`,
+    event: eventByRound[round] || `${roundLabel} ${round}`,
     round,
     value: racePointsByRound.has(round) ? racePointsByRound.get(round) : null,
   }));
 }
 
 function LineValueChart({ series, initialValue }) {
+  const { t } = useI18n();
+
   const knownValues = series
     .filter((point) => Number.isFinite(point.value))
     .map((point) => point.value);
@@ -165,7 +169,7 @@ function LineValueChart({ series, initialValue }) {
   const initialPoint = Number.isFinite(initialValue)
     ? {
         label: "0",
-        event: "Valore iniziale",
+        event: t("driverPage.chartValueInitial", { value: toFixedSafe(initialValue, 1) }),
         round: 0,
         value: initialValue,
         x: LEFT_PAD,
@@ -193,7 +197,12 @@ function LineValueChart({ series, initialValue }) {
   }
 
   return (
-    <svg viewBox={`0 0 ${CHART_WIDTH} ${CHART_HEIGHT}`} className="driverChartSvg" role="img" aria-label="Andamento valore pilota">
+    <svg
+      viewBox={`0 0 ${CHART_WIDTH} ${CHART_HEIGHT}`}
+      className="driverChartSvg"
+      role="img"
+      aria-label={t("driverPage.valueChartAria")}
+    >
       <rect x={LEFT_PAD} y={TOP_PAD} width={plotWidth} height={CHART_HEIGHT - TOP_PAD - BOTTOM_PAD} className="driverChartArea" />
 
       {valueTicks.map((value) => {
@@ -225,7 +234,7 @@ function LineValueChart({ series, initialValue }) {
             textAnchor="end"
             className="driverInitialLabel"
           >
-            {`Start ${toFixedSafe(initialValue, 1)}M`}
+            {t("driverPage.valueChartStartLabel", { value: toFixedSafe(initialValue, 1) })}
           </text>
         </>
       )}
@@ -264,7 +273,7 @@ function LineValueChart({ series, initialValue }) {
           textAnchor="middle"
           className="driverNoDataLabel"
         >
-          In attesa dei dati gara
+          {t("driverPage.valueChartNoData")}
         </text>
       )}
     </svg>
@@ -273,11 +282,15 @@ function LineValueChart({ series, initialValue }) {
 
 function FantasyBarChart({
   series,
-  ariaLabel = "Fantasy points per gara",
+  ariaLabel,
   axisMin = FANTASY_AXIS_MIN,
   axisMax = FANTASY_AXIS_MAX,
   axisStep = FANTASY_AXIS_STEP,
 }) {
+  const { t } = useI18n();
+  const resolvedAriaLabel = ariaLabel || t("driverPage.chartFantasyAria");
+  const pointsSuffix = t("common.pointsSuffix");
+
   const normalizedSeries = series.map((point) => ({
     ...point,
     value: Number.isFinite(point.value)
@@ -303,7 +316,12 @@ function FantasyBarChart({
   }
 
   return (
-    <svg viewBox={`0 0 ${CHART_WIDTH} ${CHART_HEIGHT}`} className="driverChartSvg" role="img" aria-label={ariaLabel}>
+    <svg
+      viewBox={`0 0 ${CHART_WIDTH} ${CHART_HEIGHT}`}
+      className="driverChartSvg"
+      role="img"
+      aria-label={resolvedAriaLabel}
+    >
       <rect x={LEFT_PAD} y={TOP_PAD} width={plotWidth} height={CHART_HEIGHT - TOP_PAD - BOTTOM_PAD} className="driverChartArea" />
 
       {fantasyTicks.map((value) => {
@@ -334,7 +352,11 @@ function FantasyBarChart({
         return (
           <g key={`fantasy-bar-${point.label}-${point.round}`}>
             <rect x={x} y={top} width={barWidth} height={Math.max(2, height)} className={barClass} rx="4" ry="4" />
-            <title>{hasValue ? `${point.event}: ${formatFantasyPoints(rawValue)} pt` : `${point.event}: in attesa dati`}</title>
+            <title>
+              {hasValue
+                ? `${point.event}: ${formatFantasyPoints(rawValue)} ${pointsSuffix}`
+                : `${point.event}: ${t("driverPage.chartPendingData")}`}
+            </title>
             {hasValue && (
               <text
                 x={x + barWidth / 2}
@@ -361,19 +383,23 @@ export default function DriverPage({
   data,
   error,
   driverName,
-  year,
   onNavigateBack,
-  backLabel = "Home",
+  backLabel,
+  onOpenConstructor,
 }) {
+  const { t } = useI18n();
+  const resolvedBackLabel = backLabel || t("common.home");
+
   if (error) {
     return (
       <>
         <header className="topbar">
-          <button className="backButton" onClick={onNavigateBack}>{`← ${backLabel}`}</button>
-          <span>Pilota</span>
+          <button className="backButton" onClick={onNavigateBack}>{`← ${resolvedBackLabel}`}</button>
+          <span className="topbarTitle">{t("driverPage.title")}</span>
+          <LanguageSwitcher />
         </header>
         <main className="container appStage">
-          <section className="card">Errore: {error}</section>
+          <section className="card">{t("common.errorPrefix", { message: error })}</section>
         </main>
       </>
     );
@@ -383,11 +409,12 @@ export default function DriverPage({
     return (
       <>
         <header className="topbar">
-          <button className="backButton" onClick={onNavigateBack}>{`← ${backLabel}`}</button>
-          <span>Pilota</span>
+          <button className="backButton" onClick={onNavigateBack}>{`← ${resolvedBackLabel}`}</button>
+          <span className="topbarTitle">{t("driverPage.title")}</span>
+          <LanguageSwitcher />
         </header>
         <main className="container appStage">
-          <section className="card">Caricamento dati...</section>
+          <section className="card">{t("common.loadingData")}</section>
         </main>
       </>
     );
@@ -397,11 +424,12 @@ export default function DriverPage({
     return (
       <>
         <header className="topbar">
-          <button className="backButton" onClick={onNavigateBack}>{`← ${backLabel}`}</button>
-          <span>Pilota</span>
+          <button className="backButton" onClick={onNavigateBack}>{`← ${resolvedBackLabel}`}</button>
+          <span className="topbarTitle">{t("driverPage.title")}</span>
+          <LanguageSwitcher />
         </header>
         <main className="container appStage">
-          <section className="card">Pilota non trovato.</section>
+          <section className="card">{t("driverPage.notFound")}</section>
         </main>
       </>
     );
@@ -409,23 +437,33 @@ export default function DriverPage({
 
   const meta = DRIVER_META[driverName] || {};
   const age = driverAge(driverName);
+  const roundLabel = t("common.round");
   const seasonRounds = buildSeasonRounds(data);
-  const eventByRound = buildRoundEventMap(data);
+  const eventByRound = buildRoundEventMap(data, roundLabel);
   const { series: valueSeries, initialValue } = buildValueSeries(
     data,
     driverName,
     seasonRounds,
     eventByRound,
+    roundLabel,
   );
-  const fantasySeries = buildFantasySeries(data, driverName, seasonRounds, eventByRound);
-  const conqueredPointsSeries = buildConqueredPointsSeries(data, driverName, seasonRounds, eventByRound);
+  const fantasySeries = buildFantasySeries(data, driverName, seasonRounds, eventByRound, roundLabel);
+  const conqueredPointsSeries = buildConqueredPointsSeries(
+    data,
+    driverName,
+    seasonRounds,
+    eventByRound,
+    roundLabel,
+  );
   const teamName = data?.driver_values?.[driverName]?.team_proxy || "-";
+  const canOpenConstructor = typeof onOpenConstructor === "function" && teamName !== "-";
 
   return (
     <>
       <header className="topbar">
-        <button className="backButton" onClick={onNavigateBack}>{`← ${backLabel}`}</button>
-        <span>{driverDisplayName(driverName)}</span>
+        <button className="backButton" onClick={onNavigateBack}>{`← ${resolvedBackLabel}`}</button>
+        <span className="topbarTitle">{driverDisplayName(driverName)}</span>
+        <LanguageSwitcher />
       </header>
       <main className="container appStage">
         <section className="card driverHeroCard">
@@ -446,33 +484,46 @@ export default function DriverPage({
 
           <div className="driverMetaRow">
             <div className="driverMetaItem">
-              <span className="muted">Nazionalita'</span>
+              <span className="muted">{t("driverPage.nationality")}</span>
               <strong>{`${countryFlag(meta.countryCode)} ${meta.countryCode || "--"}`}</strong>
             </div>
             <div className="driverMetaItem">
-              <span className="muted">Eta'</span>
+              <span className="muted">{t("driverPage.age")}</span>
               <strong>{age ?? "-"}</strong>
             </div>
             <div className="driverMetaItem">
-              <span className="muted">Numero</span>
+              <span className="muted">{t("driverPage.number")}</span>
               <strong>#{meta.number || "--"}</strong>
             </div>
           </div>
 
           <div className="driverMetaItem">
-            <span className="muted">Scuderia</span>
-            <strong>{teamName}</strong>
+            <span className="muted">{t("driverPage.team")}</span>
+            {canOpenConstructor ? (
+              <strong>
+                <button
+                  type="button"
+                  className="driverInlineButton"
+                  onClick={() => onOpenConstructor(teamName)}
+                  aria-label={t("driverPage.openConstructorAria", { teamName })}
+                >
+                  {teamName}
+                </button>
+              </strong>
+            ) : (
+              <strong>{teamName}</strong>
+            )}
           </div>
         </section>
 
         <section className="card driverChartCard">
           <div className="driverChartHeader">
-            <h3>Punti conquistati</h3>
-            <span className="muted">Punti gara ottenuti in ogni GP</span>
+            <h3>{t("driverPage.chartConqueredTitle")}</h3>
+            <span className="muted">{t("driverPage.chartConqueredSubtitle")}</span>
           </div>
           <FantasyBarChart
             series={conqueredPointsSeries}
-            ariaLabel="Punti conquistati per gara"
+            ariaLabel={t("driverPage.chartConqueredAria")}
             axisMin={CONQUERED_AXIS_MIN}
             axisMax={CONQUERED_AXIS_MAX}
             axisStep={CONQUERED_AXIS_STEP}
@@ -481,11 +532,11 @@ export default function DriverPage({
 
         <section className="card driverChartCard">
           <div className="driverChartHeader">
-            <h3>Andamento valore (M)</h3>
+            <h3>{t("driverPage.chartValueTitle")}</h3>
             <span className="muted">
               {Number.isFinite(initialValue)
-                ? `Valore iniziale: ${toFixedSafe(initialValue, 1)}M`
-                : "Prezzo dopo ogni gara"}
+                ? t("driverPage.chartValueInitial", { value: toFixedSafe(initialValue, 1) })
+                : t("driverPage.chartValueAfterRace")}
             </span>
           </div>
           <LineValueChart series={valueSeries} initialValue={initialValue} />
@@ -493,10 +544,10 @@ export default function DriverPage({
 
         <section className="card driverChartCard">
           <div className="driverChartHeader">
-            <h3>Fantasy points per gara</h3>
-            <span className="muted">Punti ottenuti in ogni GP</span>
+            <h3>{t("driverPage.chartFantasyTitle")}</h3>
+            <span className="muted">{t("driverPage.chartFantasySubtitle")}</span>
           </div>
-          <FantasyBarChart series={fantasySeries} ariaLabel="Fantasy points per gara" />
+          <FantasyBarChart series={fantasySeries} ariaLabel={t("driverPage.chartFantasyAria")} />
         </section>
       </main>
     </>

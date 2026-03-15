@@ -1,9 +1,12 @@
 import { countryFlag, driverImageUrl } from "../utils/format";
 import { DRIVER_META } from "../data/constants";
+import { useI18n } from "../i18n";
 
 export default function TeamRecommendations({ teams, onDriverClick, onConstructorClick }) {
+  const { t } = useI18n();
+
   if (teams.length === 0) {
-    return <p className="muted">Nessuna raccomandazione disponibile.</p>;
+    return <p className="muted">{t("teamRecommendations.unavailable")}</p>;
   }
 
   return (
@@ -27,7 +30,10 @@ export default function TeamRecommendations({ teams, onDriverClick, onConstructo
             <div className="top3Probability">{team.probability}%</div>
           </div>
           <div className="top3Meta muted">
-            Costo: {team.total_price}M · Budget residuo: {team.budget_left}M
+            {t("teamRecommendations.meta", {
+              cost: team.total_price,
+              budget: team.budget_left,
+            })}
           </div>
           <div className="top3DriverGrid">
             {team.drivers.map((driverName) => {

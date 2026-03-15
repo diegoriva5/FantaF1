@@ -19,9 +19,9 @@ export function countryFlag(countryCode) {
     .join("");
 }
 
-export function formatDate(dateString) {
+export function formatDate(dateString, locale = "it-IT") {
   const date = new Date(dateString);
-  return new Intl.DateTimeFormat("it-IT", {
+  return new Intl.DateTimeFormat(locale, {
     day: "2-digit",
     month: "short",
     year: "numeric",

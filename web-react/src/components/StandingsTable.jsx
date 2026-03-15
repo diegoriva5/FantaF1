@@ -1,14 +1,17 @@
 import { driverImageUrl, formatPoints, formatSignedDelta } from "../utils/format";
+import { useI18n } from "../i18n";
 
 export default function StandingsTable({ title, rows, type, onDriverClick, onConstructorClick }) {
+  const { t } = useI18n();
+
   return (
     <section className="card standingsCard">
       <div className="standingsHeader">
         <h2>{title}</h2>
-        <span className="muted">2026 live</span>
+        <span className="muted">{t("standings.liveSeason")}</span>
       </div>
 
-      {rows.length === 0 && <p className="muted">Classifica non disponibile.</p>}
+      {rows.length === 0 && <p className="muted">{t("standings.unavailable")}</p>}
 
       {rows.length > 0 && (
         <div className="standingsTable">
@@ -22,7 +25,7 @@ export default function StandingsTable({ title, rows, type, onDriverClick, onCon
                     type="button"
                     className="driverInlineButton"
                     onClick={() => onDriverClick(row.name)}
-                    aria-label={`Apri profilo pilota ${row.name}`}
+                    aria-label={t("standings.openDriverAria", { driverName: row.name })}
                   >
                     <img
                       src={driverImageUrl(row.name)}

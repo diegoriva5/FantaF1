@@ -1,3 +1,5 @@
+import { useI18n } from "../i18n";
+
 export default function DriverSelectionPanel({
   raceName,
   driverNames,
@@ -10,13 +12,22 @@ export default function DriverSelectionPanel({
   onSelectTeam,
   summary,
 }) {
+  const { t } = useI18n();
+  const sourceLabel = summary.sourceKey === "trackHistoricalData"
+    ? t("driverSelection.sourceTrackHistoricalData")
+    : summary.sourceKey === "globalFallback"
+      ? t("driverSelection.sourceGlobalFallback")
+      : summary.hasTrackData
+        ? t("driverSelection.sourceTrackHistoricalData")
+        : t("driverSelection.sourceGlobalFallback");
+
   return (
     <section className="card selectionPanel">
       <div className="selectionHeader">
-        <h3>La mia formazione</h3>
+        <h3>{t("driverSelection.title")}</h3>
         <span className="muted">{raceName}</span>
       </div>
-      <p className="muted">Selezionati: {selectedDrivers.length}/5</p>
+      <p className="muted">{t("driverSelection.selectedCount", { count: selectedDrivers.length })}</p>
 
       {selectedDrivers.length > 0 && (
         <div className="selectedDriversRow">
@@ -30,7 +41,7 @@ export default function DriverSelectionPanel({
 
       <div className="teamSelectionRow">
         <label className="teamSelectionLabel" htmlFor={`team-${raceName}`}>
-          Team
+          {t("driverSelection.teamLabel")}
         </label>
         <select
           id={`team-${raceName}`}
@@ -38,7 +49,7 @@ export default function DriverSelectionPanel({
           onChange={(event) => onSelectTeam(event.target.value)}
           className="select"
         >
-          <option value="">-- scegli team --</option>
+          <option value="">{t("driverSelection.teamPlaceholder")}</option>
           {teamNames.map((team) => (
             <option key={`${raceName}-${team}`} value={team}>
               {team} ({constructorValues?.[team]?.price}M)
@@ -73,34 +84,34 @@ export default function DriverSelectionPanel({
 
       <div className="formationMetrics">
         <p>
-          <strong>Totale:</strong> {summary.totalCost.toFixed(1)}M
+          <strong>{t("driverSelection.total")}</strong> {summary.totalCost.toFixed(1)}M
         </p>
         <p>
-          <strong>Residuo:</strong> {summary.budgetLeft.toFixed(1)}M
+          <strong>{t("driverSelection.remaining")}</strong> {summary.budgetLeft.toFixed(1)}M
         </p>
         {summary.budgetLeft < 0 && (
           <p className="warning">
-            Sei oltre il budget di {Math.abs(summary.budgetLeft).toFixed(1)}M
+            {t("driverSelection.overBudget", { amount: Math.abs(summary.budgetLeft).toFixed(1) })}
           </p>
         )}
       </div>
 
       <div className="predictionCard">
         {!summary.probability && (
-          <p className="muted">Seleziona 5 piloti e 1 team per ottenere la stima.</p>
+          <p className="muted">{t("driverSelection.selectPrompt")}</p>
         )}
         {summary.probability && (
           <>
             <p>
-              <strong>Pista:</strong> {summary.circuitName}
+              <strong>{t("driverSelection.track")}</strong> {summary.circuitName}
             </p>
             <p>
-              <strong>Probabilita stimata:</strong>{" "}
+              <strong>{t("driverSelection.estimatedProbability")}</strong>{" "}
               <span className="bigScore">{summary.probability}%</span>
             </p>
-            <p className="muted">Fonte modello: {summary.source}</p>
+            <p className="muted">{t("driverSelection.source")} {sourceLabel}</p>
             {!summary.hasTrackData && (
-              <p className="warning">Storico pista non disponibile: uso fallback globale.</p>
+              <p className="warning">{t("driverSelection.missingTrackData")}</p>
             )}
           </>
         )}

@@ -20,12 +20,30 @@ import RaceDetailPage from "./components/RaceDetailPage";
 import MainScreen from "./components/MainScreen";
 import DriverPage from "./components/DriverPage";
 import ConstructorPage from "./components/ConstructorPage";
+import {
+  getDefaultLanguage,
+  I18nProvider,
+  isSupportedLanguage,
+  translate,
+} from "./i18n";
 
 const EMPTY_ADJUSTMENT = {};
 const START_PATH = "/start";
 const HOME_PATH = "/home";
 const DRIVER_ROUTE_PATTERN = /^\/(\d{4})\/([a-z0-9]+(?:-[a-z0-9]+)*)$/;
 const CONSTRUCTOR_ROUTE_PATTERN = /^\/(\d{4})\/scuderia\/([a-z0-9]+(?:-[a-z0-9]+)*)$/;
+const LANGUAGE_STORAGE_KEY = "fantaf1-language";
+
+function resolveInitialLanguage() {
+  const fallback = getDefaultLanguage();
+
+  try {
+    const stored = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    return isSupportedLanguage(stored) ? stored : fallback;
+  } catch {
+    return fallback;
+  }
+}
 
 function normalizePath(pathname) {
   if (!pathname || pathname === "/") return START_PATH;
@@ -92,10 +110,25 @@ function App() {
   const [detailTeamsOpen, setDetailTeamsOpen] = useState(false);
   const [selectedDriversByRace, setSelectedDriversByRace] = useState({});
   const [selectedTeamByRace, setSelectedTeamByRace] = useState({});
+  const [language, setLanguage] = useState(resolveInitialLanguage);
   const welcomeTimerRef = useRef(null);
   const introSoundTimerRef = useRef(null);
   const welcomeSoundRef = useRef(null);
   const radioSoundRef = useRef(null);
+  const t = useMemo(
+    () => (key, params) => translate(language, key, params),
+    [language],
+  );
+  const localizedError = useMemo(() => {
+    if (!error) return "";
+    if (error === "Missing recommendations.json. Run: npm run refresh:data") {
+      return t("app.missingRecommendations");
+    }
+    if (error === "Live CSV not available") {
+      return t("app.liveCsvUnavailable");
+    }
+    return error;
+  }, [error, t]);
 
   const displayLastRace = useMemo(() => {
     if (liveLastRace) return liveLastRace;
@@ -158,6 +191,14 @@ function App() {
   }, []);
 
   useEffect(() => {
+    try {
+      window.localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
+    } catch {
+      // Ignore storage errors (private mode/quota) and keep runtime state only.
+    }
+  }, [language]);
+
+  useEffect(() => {
     if (screen !== "welcome") {
       if (introSoundTimerRef.current) {
         window.clearTimeout(introSoundTimerRef.current);
@@ -181,7 +222,7 @@ function App() {
   useEffect(() => {
     fetch("/recommendations.json")
       .then((res) => {
-        if (!res.ok) throw new Error("Manca recommendations.json. Esegui: npm run refresh:data");
+        if (!res.ok) throw new Error("Missing recommendations.json. Run: npm run refresh:data");
         return res.json();
       })
       .then(setData)
@@ -191,7 +232,7 @@ function App() {
   useEffect(() => {
     fetch(RACE_RESULTS_URL)
       .then((res) => {
-        if (!res.ok) throw new Error("live CSV non disponibile");
+        if (!res.ok) throw new Error("Live CSV not available");
         return res.text();
       })
       .then((text) => {
@@ -253,7 +294,9 @@ function App() {
   function openConstructorPage(constructorName) {
     if (!constructorName) return;
     const seasonYear = data?.config?.current_season_year || new Date().getFullYear();
-    navigate(`/${seasonYear}/scuderia/${constructorSlug(constructorName)}`);
+    navigate(`/${seasonYear}/scuderia/${constructorSlug(constructorName)}`, {
+      state: { fromPath: currentPath },
+    });
   }
 
   function handleStartClick() {
@@ -274,42 +317,25 @@ function App() {
   // ── Welcome ──────────────────────────────────────────────────────────────
   if (screen === "welcome") {
     return (
-      <WelcomeScreen isLeavingWelcome={isLeavingWelcome} onStartClick={handleStartClick} />
+      <I18nProvider language={language} setLanguage={setLanguage}>
+        <WelcomeScreen isLeavingWelcome={isLeavingWelcome} onStartClick={handleStartClick} />
+      </I18nProvider>
     );
   }
 
   // ── Constructor page routing ─────────────────────────────────────────────
   const constructorRouteMatch = currentPath.match(CONSTRUCTOR_ROUTE_PATTERN);
   if (constructorRouteMatch) {
-    const constructorYear = parseInt(constructorRouteMatch[1], 10);
     const constructorRouteSlug = constructorRouteMatch[2];
     const availableConstructorNames = data ? Object.keys(data.constructor_values || {}) : [];
     const constructorName = constructorKeyFromSlug(constructorRouteSlug, availableConstructorNames);
-
-    return (
-      <ConstructorPage
-        data={data}
-        error={error}
-        constructorName={constructorName}
-        year={constructorYear}
-        onNavigateBack={() => navigate(HOME_PATH)}
-        onOpenDriver={openDriverPage}
-      />
-    );
-  }
-
-  // ── Driver page routing ───────────────────────────────────────────────────
-  const driverRouteMatch = currentPath.match(DRIVER_ROUTE_PATTERN);
-  if (driverRouteMatch) {
-    const driverYear = parseInt(driverRouteMatch[1], 10);
-    const driverRouteSlug = driverRouteMatch[2];
-    const driverName = driverKeyFromSlug(driverRouteSlug);
     const fromPathRaw = window.history.state?.fromPath;
     const fromPath = typeof fromPathRaw === "string" ? normalizePath(fromPathRaw) : "";
-    const backToConstructor = Boolean(fromPath && CONSTRUCTOR_ROUTE_PATTERN.test(fromPath));
+    const hasBackTarget = Boolean(fromPath && fromPath !== currentPath);
+    const backToDriver = Boolean(fromPath && DRIVER_ROUTE_PATTERN.test(fromPath));
 
-    function handleDriverBack() {
-      if (backToConstructor) {
+    function handleConstructorBack() {
+      if (hasBackTarget) {
         window.history.back();
         return;
       }
@@ -317,14 +343,48 @@ function App() {
     }
 
     return (
-      <DriverPage
-        data={data}
-        error={error}
-        driverName={driverName}
-        year={driverYear}
-        onNavigateBack={handleDriverBack}
-        backLabel={backToConstructor ? "Scuderia" : "Home"}
-      />
+      <I18nProvider language={language} setLanguage={setLanguage}>
+        <ConstructorPage
+          data={data}
+          error={localizedError}
+          constructorName={constructorName}
+          onNavigateBack={handleConstructorBack}
+          backLabel={backToDriver ? t("common.driver") : hasBackTarget ? t("common.back") : t("common.home")}
+          onOpenDriver={openDriverPage}
+        />
+      </I18nProvider>
+    );
+  }
+
+  // ── Driver page routing ───────────────────────────────────────────────────
+  const driverRouteMatch = currentPath.match(DRIVER_ROUTE_PATTERN);
+  if (driverRouteMatch) {
+    const driverRouteSlug = driverRouteMatch[2];
+    const driverName = driverKeyFromSlug(driverRouteSlug);
+    const fromPathRaw = window.history.state?.fromPath;
+    const fromPath = typeof fromPathRaw === "string" ? normalizePath(fromPathRaw) : "";
+    const hasBackTarget = Boolean(fromPath && fromPath !== currentPath);
+    const backToConstructor = Boolean(fromPath && CONSTRUCTOR_ROUTE_PATTERN.test(fromPath));
+
+    function handleDriverBack() {
+      if (hasBackTarget) {
+        window.history.back();
+        return;
+      }
+      navigate(HOME_PATH);
+    }
+
+    return (
+      <I18nProvider language={language} setLanguage={setLanguage}>
+        <DriverPage
+          data={data}
+          error={localizedError}
+          driverName={driverName}
+          onNavigateBack={handleDriverBack}
+          backLabel={backToConstructor ? t("common.constructor") : hasBackTarget ? t("common.back") : t("common.home")}
+          onOpenConstructor={openConstructorPage}
+        />
+      </I18nProvider>
     );
   }
 
@@ -343,49 +403,53 @@ function App() {
       : null;
 
     return (
-      <RaceDetailPage
-        data={data}
-        raceForPage={raceForPage}
-        liveRaceRows={liveRaceRows}
-        detailTeamsOpen={detailTeamsOpen}
-        setDetailTeamsOpen={setDetailTeamsOpen}
-        selectedDrivers={selectedDrivers}
-        selectedTeam={selectedTeam}
-        onToggleDriver={(driverName) => toggleDriverForRace(raceForPage.name, driverName)}
-        onSelectTeam={(teamName) => selectTeamForRace(raceForPage.name, teamName)}
-        summary={summary}
-        driverNames={driverNames}
-        teamNames={teamNames}
-        onNavigateBack={() => navigate(HOME_PATH)}
-        onOpenDriver={openDriverPage}
-        onOpenConstructor={openConstructorPage}
-      />
+      <I18nProvider language={language} setLanguage={setLanguage}>
+        <RaceDetailPage
+          data={data}
+          raceForPage={raceForPage}
+          liveRaceRows={liveRaceRows}
+          detailTeamsOpen={detailTeamsOpen}
+          setDetailTeamsOpen={setDetailTeamsOpen}
+          selectedDrivers={selectedDrivers}
+          selectedTeam={selectedTeam}
+          onToggleDriver={(driverName) => toggleDriverForRace(raceForPage.name, driverName)}
+          onSelectTeam={(teamName) => selectTeamForRace(raceForPage.name, teamName)}
+          summary={summary}
+          driverNames={driverNames}
+          teamNames={teamNames}
+          onNavigateBack={() => navigate(HOME_PATH)}
+          onOpenDriver={openDriverPage}
+          onOpenConstructor={openConstructorPage}
+        />
+      </I18nProvider>
     );
   }
 
   // ── Main screen ──────────────────────────────────────────────────────────
   return (
-    <MainScreen
-      data={data}
-      error={error}
-      displayLastRace={displayLastRace}
-      liveDataLoading={liveDataLoading}
-      liveLastRace={liveLastRace}
-      driverStandings={driverStandings}
-      constructorStandings={constructorStandings}
-      lastRaceFantasyStandings={lastRaceFantasyStandings}
-      selectedDriversByRace={selectedDriversByRace}
-      selectedTeamByRace={selectedTeamByRace}
-      onToggleDriver={toggleDriverForRace}
-      onSelectTeam={selectTeamForRace}
-      onNavigate={navigate}
-      onOpenDriver={openDriverPage}
-      onOpenConstructor={openConstructorPage}
-      lastRaceOpen={lastRaceOpen}
-      setLastRaceOpen={setLastRaceOpen}
-      nextRaceOpen={nextRaceOpen}
-      setNextRaceOpen={setNextRaceOpen}
-    />
+    <I18nProvider language={language} setLanguage={setLanguage}>
+      <MainScreen
+        data={data}
+        error={localizedError}
+        displayLastRace={displayLastRace}
+        liveDataLoading={liveDataLoading}
+        liveLastRace={liveLastRace}
+        driverStandings={driverStandings}
+        constructorStandings={constructorStandings}
+        lastRaceFantasyStandings={lastRaceFantasyStandings}
+        selectedDriversByRace={selectedDriversByRace}
+        selectedTeamByRace={selectedTeamByRace}
+        onToggleDriver={toggleDriverForRace}
+        onSelectTeam={selectTeamForRace}
+        onNavigate={navigate}
+        onOpenDriver={openDriverPage}
+        onOpenConstructor={openConstructorPage}
+        lastRaceOpen={lastRaceOpen}
+        setLastRaceOpen={setLastRaceOpen}
+        nextRaceOpen={nextRaceOpen}
+        setNextRaceOpen={setNextRaceOpen}
+      />
+    </I18nProvider>
   );
 }
 

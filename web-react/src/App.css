@@ -14,6 +14,115 @@
   z-index: 100;
 }
 
+.topbarTitle {
+  flex: 1 1 auto;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.languageSwitcher {
+  position: relative;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.languageSwitcherButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--f-border);
+  border-radius: 999px;
+  background: rgba(10, 2, 3, 0.62);
+  color: var(--f-text);
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.languageSwitcherButton:focus-visible {
+  outline: 2px solid rgba(255, 212, 71, 0.65);
+  outline-offset: 2px;
+}
+
+.languageSwitcherLabel {
+  color: var(--f-muted);
+  letter-spacing: 0.2px;
+}
+
+.languageSwitcherCurrent {
+  color: var(--f-text);
+}
+
+.languageSwitcherChevron {
+  font-size: 10px;
+  color: var(--f-gold-soft);
+}
+
+.languageSwitcherMenu {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 4px;
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  min-width: 132px;
+  border: 1px solid var(--f-border);
+  border-radius: 10px;
+  background: linear-gradient(165deg, #1f0508 0%, #100305 100%);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+  z-index: 130;
+}
+
+.languageSwitcherOption {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: var(--f-text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.languageSwitcherOption:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.languageSwitcherOption.active {
+  background: rgba(255, 212, 71, 0.16);
+  color: var(--f-gold);
+}
+
+.constructorTopbar .languageSwitcherButton {
+  border-color: var(--constructor-accent);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.constructorTopbar .languageSwitcherLabel {
+  color: var(--constructor-muted);
+}
+
+.constructorTopbar .languageSwitcherCurrent {
+  color: var(--constructor-text);
+}
+
+.constructorTopbar .languageSwitcherMenu {
+  border-color: var(--constructor-accent);
+  background: linear-gradient(
+    165deg,
+    var(--constructor-secondary) 0%,
+    var(--constructor-tertiary) 100%
+  );
+}
+
 :root {
   --f-panel: linear-gradient(160deg, rgba(44, 9, 12, 0.96) 0%, rgba(25, 5, 7, 0.98) 100%);
   --f-panel-soft: linear-gradient(160deg, rgba(63, 13, 17, 0.94) 0%, rgba(30, 7, 10, 0.98) 100%);
@@ -255,6 +364,137 @@
   background: var(--f-surface);
 }
 
+.trackImageTrigger {
+  width: 100%;
+  display: block;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: zoom-in;
+  line-height: 0;
+}
+
+.trackImageTrigger:focus-visible {
+  outline: 2px solid rgba(255, 212, 71, 0.6);
+  outline-offset: 3px;
+  border-radius: 14px;
+}
+
+.trackLightboxOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  background: rgba(4, 5, 8, 0.88);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 100px 20px 20px;
+  overflow: auto;
+}
+
+.trackLightboxFrame {
+  width: min(1100px, 96vw);
+  height: min(820px, calc(100vh - 120px));
+  max-height: calc(100vh - 120px);
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  border-radius: 12px;
+  border: 1px solid var(--f-border);
+  background: linear-gradient(165deg, #1f0508 0%, #0f0305 100%);
+  overflow: hidden;
+}
+
+.trackLightboxToolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--f-border);
+}
+
+.trackLightboxTitle {
+  font-size: 14px;
+  color: var(--f-text);
+}
+
+.trackLightboxControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.trackLightboxButton {
+  border: 1px solid var(--f-border);
+  background: var(--f-surface);
+  color: var(--f-text);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.trackLightboxButton:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.trackLightboxZoomLabel {
+  min-width: 56px;
+  text-align: center;
+  color: var(--f-gold-soft);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.trackLightboxViewport {
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  overflow: auto;
+  display: block;
+  background: rgba(15, 23, 42, 0.82);
+  padding: 16px;
+}
+
+.trackLightboxViewport.draggable {
+  cursor: grab;
+}
+
+.trackLightboxViewport.dragging {
+  cursor: grabbing;
+}
+
+.trackLightboxStage {
+  width: max-content;
+  height: max-content;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trackLightboxImage {
+  max-width: none;
+  max-height: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.trackLightboxHint {
+  margin: 0;
+  padding: 8px 12px 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(7, 10, 15, 0.72);
+  color: var(--f-muted);
+  font-size: 12px;
+}
+
 .raceDetailInfo {
   display: flex;
   flex-direction: column;
@@ -283,6 +523,51 @@
   color: #dc0000;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+
+.racePodium {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 212, 71, 0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.racePodiumRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.racePodiumMedal {
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.racePodiumDriver {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.racePodiumRow.podium1 .racePodiumDriver {
+  color: #ffd447;
+  font-weight: 700;
+}
+
+.racePodiumRow.podium2 .racePodiumDriver {
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+.racePodiumRow.podium3 .racePodiumDriver {
+  color: #cd7f32;
+  font-weight: 600;
 }
 
 .selectionPanel {
@@ -463,6 +748,20 @@
 }
 
 @media (max-width: 700px) {
+  .topbar {
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .languageSwitcherLabel {
+    display: none;
+  }
+
+  .languageSwitcherButton {
+    padding: 6px 8px;
+    gap: 6px;
+  }
+
   .raceDetailHero {
     grid-template-columns: 1fr;
   }
@@ -700,6 +999,172 @@
   gap: 12px;
 }
 
+.constructorTopbar {
+  background: linear-gradient(
+    90deg,
+    var(--constructor-secondary) 0%,
+    var(--constructor-primary) 52%,
+    var(--constructor-secondary) 100%
+  );
+  border-bottom-color: var(--constructor-accent);
+  color: var(--constructor-text);
+}
+
+.constructorTopbar .backButton {
+  border-right-color: var(--constructor-accent);
+  color: var(--constructor-muted);
+}
+
+.constructorTopbar .backButton:hover {
+  color: var(--constructor-text);
+}
+
+.constructorPageTheme .constructorThemeCard {
+  background: linear-gradient(
+    160deg,
+    var(--constructor-secondary) 0%,
+    var(--constructor-tertiary) 100%
+  );
+  border-color: var(--constructor-accent);
+  box-shadow: 0 14px 34px rgba(7, 7, 7, 0.28);
+}
+
+.constructorPageTheme .muted {
+  color: var(--constructor-muted);
+}
+
+.constructorLogoWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.constructorLogoImage {
+  width: clamp(220px, 42vw, 440px);
+  max-width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 10px 18px var(--constructor-secondary));
+}
+
+.constructorCarImageWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.constructorCarImage {
+  width: min(720px, 100%);
+  max-height: 240px;
+  padding: 10px;
+  border: 1px solid var(--constructor-accent);
+  border-radius: 12px;
+  background: linear-gradient(
+    160deg,
+    var(--constructor-secondary) 0%,
+    var(--constructor-tertiary) 100%
+  );
+}
+
+.constructorShowcaseRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.constructorShowcaseSide {
+  flex: 0 0 176px;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.constructorShowcaseCar {
+  flex: 1;
+  min-width: 0;
+}
+
+.constructorShowcaseDriver {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 176px;
+  border: none;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+button.constructorShowcaseDriver {
+  cursor: pointer;
+  transition: transform 0.14s ease;
+}
+
+button.constructorShowcaseDriver:hover {
+  transform: translateY(-2px);
+}
+
+button.constructorShowcaseDriver:focus-visible {
+  outline: 2px solid rgba(255, 212, 71, 0.5);
+  outline-offset: 3px;
+  border-radius: 14px;
+}
+
+.constructorShowcaseDriverImage {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--constructor-accent);
+  background: var(--f-surface);
+  display: block;
+}
+
+.constructorShowcaseDriverName {
+  width: 100%;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--constructor-text);
+}
+
+.constructorShowcaseDriverEmpty {
+  border: 1px dashed var(--constructor-accent);
+  border-radius: 12px;
+  min-height: 136px;
+  justify-content: center;
+  padding: 12px;
+}
+
+.constructorPageTheme .driverChartArea {
+  fill: var(--constructor-chart-area);
+  stroke: var(--constructor-chart-stroke);
+}
+
+.constructorPageTheme .driverGridLine {
+  stroke: var(--constructor-grid);
+}
+
+.constructorPageTheme .driverAxisLabel {
+  fill: var(--constructor-muted);
+}
+
+.constructorPageTheme .driverBarPositive {
+  fill: var(--constructor-primary);
+}
+
+.constructorPageTheme .driverBarValueLabel {
+  fill: var(--constructor-text);
+}
+
+.constructorPageTheme .driverBaseline {
+  stroke: var(--constructor-accent);
+}
+
 .constructorDriversList {
   border: 1px solid var(--f-border);
   border-radius: 10px;
@@ -903,6 +1368,24 @@ button.constructorDriverCard:focus-visible {
     height: 132px;
   }
 
+  .constructorShowcaseSide {
+    flex-basis: 98px;
+  }
+
+  .constructorShowcaseDriverImage {
+    width: 86px;
+    height: 86px;
+  }
+
+  .constructorShowcaseDriverName {
+    font-size: 11px;
+  }
+
+  .constructorLogoImage {
+    width: clamp(170px, 56vw, 300px);
+    max-height: 100px;
+  }
+
   .constructorDriversGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
@@ -911,6 +1394,10 @@ button.constructorDriverCard:focus-visible {
   .constructorDriverImage {
     width: 118px;
     height: 118px;
+  }
+
+  .constructorCarImage {
+    max-height: 180px;
   }
 
   .driverMetaRow {
