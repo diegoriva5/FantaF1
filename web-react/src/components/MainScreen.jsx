@@ -66,6 +66,7 @@ export default function MainScreen({
   setLastRaceOpen,
   nextRaceOpen,
   setNextRaceOpen,
+  raceBasePath = "/home",
 }) {
   const { t, dateLocale } = useI18n();
   const pointsSuffix = t("common.pointsSuffix");
@@ -74,6 +75,7 @@ export default function MainScreen({
     return (
       <>
         <header className="topbar">
+          <button type="button" className="backButton" onClick={() => onNavigate("/home")}> Home</button>
           <span className="topbarTitle">{t("common.appName")}</span>
           <LanguageSwitcher />
         </header>
@@ -125,6 +127,7 @@ export default function MainScreen({
   return (
     <>
       <header className="topbar">
+        <button type="button" className="backButton" onClick={() => onNavigate("/home")}>← Home</button>
         <span className="topbarTitle">{t("common.appName")}</span>
         <LanguageSwitcher />
       </header>
@@ -419,7 +422,7 @@ export default function MainScreen({
                 <button
                   key={`${race.round}-${race.name}`}
                   className={`raceCard ${isNext ? "raceCardNext" : ""} ${isPast ? "raceCardPast" : ""}`}
-                  onClick={() => onNavigate(`/home/${slug}`)}
+                  onClick={() => onNavigate(`${raceBasePath}/${slug}`)}
                   aria-label={t("main.openRaceAria", { raceName: race.name })}
                 >
                   <div className="raceTop">

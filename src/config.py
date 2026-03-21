@@ -137,6 +137,11 @@ CURRENT_SEASON_QUALIFYING_RESULTS_URL = (
     "master/Formula1_2026Season_QualifyingResults.csv"
 )
 
+CURRENT_SEASON_SPRINT_RESULTS_URL = (
+    "https://raw.githubusercontent.com/toUpperCase78/formula1-datasets/"
+    "master/Formula1_2026Season_SprintResults.csv"
+)
+
 CURRENT_SEASON_RESULTS_LOCAL_FILENAME = "current_season_2026_race_results.csv"
 CURRENT_SEASON_QUALIFYING_LOCAL_FILENAME = "current_season_2026_qualifying_results.csv"
 CURRENT_SEASON_SPRINT_LOCAL_FILENAME = "current_season_2026_sprint_results.csv"

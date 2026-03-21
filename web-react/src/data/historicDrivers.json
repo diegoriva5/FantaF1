@@ -1,0 +1,75 @@
+[
+  {
+    "era": "Pioneers Era (1950–1960)",
+    "description": "The birth of Formula 1, where brave pioneers raced on the edge, defining the sport's spirit and laying its foundations.",
+    "drivers": [
+      {"name": "Juan Manuel Fangio", "nationality": "Argentina 🇦🇷", "titles": 5, "image": "placeholder", "bio": "The Maestro. Dominated the early years with unmatched skill and intelligence.", "highlights": "5x World Champion, legendary consistency.", "debutYear": 1950},
+      {"name": "Alberto Ascari", "nationality": "Italy 🇮🇹", "titles": 2, "image": "placeholder", "bio": "Italy's first F1 superstar, known for precision and speed.", "highlights": "2x World Champion, Ferrari icon.", "debutYear": 1950},
+      {"name": "Giuseppe Farina", "nationality": "Italy 🇮🇹", "titles": 1, "image": "placeholder", "bio": "The first ever F1 World Champion.", "highlights": "1950 World Champion.", "debutYear": 1950}
+    ]
+  },
+  {
+    "era": "Technical Revolution Era (1960–1975)",
+    "description": "A time of rapid innovation: rear engines, aerodynamics, and the rise of British teams. Safety slowly improves.",
+    "drivers": [
+      {"name": "Jim Clark", "nationality": "UK 🇬🇧", "titles": 2, "image": "placeholder", "bio": "Effortless speed and versatility, a natural talent.", "highlights": "2x World Champion, Indy 500 winner.", "debutYear": 1960},
+      {"name": "Graham Hill", "nationality": "UK 🇬🇧", "titles": 2, "image": "placeholder", "bio": "The only driver to win the Triple Crown of Motorsport.", "highlights": "2x World Champion, Monaco master.", "debutYear": 1958},
+      {"name": "Jack Brabham", "nationality": "Australia 🇦🇺", "titles": 3, "image": "placeholder", "bio": "Driver and constructor, a true innovator.", "highlights": "3x World Champion, only driver to win in his own car.", "debutYear": 1955}
+    ]
+  },
+  {
+    "era": "Risk & Legends Era (1976–1985)",
+    "description": "Dramatic rivalries, increased speed, and ever-present danger. Legends are born in the face of risk.",
+    "drivers": [
+      {"name": "Niki Lauda", "nationality": "Austria 🇦🇹", "titles": 3, "image": "placeholder", "bio": "The comeback king, famed for his resilience.", "highlights": "3x World Champion, miraculous 1976 return.", "debutYear": 1971},
+      {"name": "James Hunt", "nationality": "UK 🇬🇧", "titles": 1, "image": "placeholder", "bio": "Charismatic, daring, and a fan favorite.", "highlights": "1976 World Champion.", "debutYear": 1973},
+      {"name": "Emerson Fittipaldi", "nationality": "Brazil 🇧🇷", "titles": 2, "image": "placeholder", "bio": "Brazil's first champion, smooth and strategic.", "highlights": "2x World Champion, youngest champion at the time.", "debutYear": 1970}
+    ]
+  },
+  {
+    "era": "Titans Era (1986–1994)",
+    "description": "The golden age of rivalries: Senna vs Prost, turbo monsters, and the ultimate test of skill and courage.",
+    "drivers": [
+      {"name": "Ayrton Senna", "nationality": "Brazil 🇧🇷", "titles": 3, "image": "placeholder", "bio": "A genius in the wet, spiritual and intense.", "highlights": "3x World Champion, Monaco master.", "debutYear": 1984},
+      {"name": "Alain Prost", "nationality": "France 🇫🇷", "titles": 4, "image": "placeholder", "bio": "The Professor, master of racecraft and strategy.", "highlights": "4x World Champion, fierce rivalries.", "debutYear": 1980},
+      {"name": "Nelson Piquet", "nationality": "Brazil 🇧🇷", "titles": 3, "image": "placeholder", "bio": "Technical, witty, and a triple champion.", "highlights": "3x World Champion, turbo era star.", "debutYear": 1978}
+    ]
+  },
+  {
+    "era": "Technological Domination Era (1995–2008)",
+    "description": "Electronics, aerodynamics, and the rise of superteams. Schumacher's reign and fierce competition.",
+    "drivers": [
+      {"name": "Michael Schumacher", "nationality": "Germany 🇩🇪", "titles": 7, "image": "placeholder", "bio": "The benchmark of excellence, relentless and precise.", "highlights": "7x World Champion, Ferrari legend.", "debutYear": 1991},
+      {"name": "Mika Häkkinen", "nationality": "Finland 🇫🇮", "titles": 2, "image": "placeholder", "bio": "The Flying Finn, Schumacher's greatest rival.", "highlights": "2x World Champion, McLaren hero.", "debutYear": 1991},
+      {"name": "Fernando Alonso", "nationality": "Spain 🇪🇸", "titles": 2, "image": "placeholder", "bio": "Fiercely competitive, broke Schumacher's streak.", "highlights": "2x World Champion, youngest champion at the time.", "debutYear": 2001}
+    ]
+  },
+  {
+    "era": "Transition & Entertainment Era (2009–2013)",
+    "description": "Short but dynamic: new rules, KERS, and the rise of new stars. F1 becomes a global entertainment powerhouse.",
+    "drivers": [
+      {"name": "Jenson Button", "nationality": "UK 🇬🇧", "titles": 1, "image": "placeholder", "bio": "Smooth style, 2009 fairytale champion.", "highlights": "2009 World Champion, Brawn GP miracle.", "debutYear": 2000},
+      {"name": "Sebastian Vettel", "nationality": "Germany 🇩🇪", "titles": 4, "image": "placeholder", "bio": "Youngest quadruple champion, Red Bull era.", "highlights": "4x World Champion, dominant streak.", "debutYear": 2007},
+      {"name": "Lewis Hamilton", "nationality": "UK 🇬🇧", "titles": 7, "image": "placeholder", "bio": "Rising star, future record-breaker.", "highlights": "2008 World Champion, McLaren prodigy.", "debutYear": 2007}
+    ]
+  },
+  {
+    "era": "Hybrid Era (2014–2021)",
+    "description": "Turbo hybrids, Mercedes dominance, and the rise of a new generation of stars.",
+    "drivers": [
+      {"name": "Lewis Hamilton", "nationality": "UK 🇬🇧", "titles": 7, "image": "placeholder", "bio": "Unmatched in the hybrid era, record-breaker.", "highlights": "6x World Champion in hybrid era, Mercedes legend.", "debutYear": 2007},
+      {"name": "Nico Rosberg", "nationality": "Germany 🇩🇪", "titles": 1, "image": "placeholder", "bio": "The only man to beat Hamilton in the hybrid era.", "highlights": "2016 World Champion.", "debutYear": 2006},
+      {"name": "Sebastian Vettel", "nationality": "Germany 🇩🇪", "titles": 4, "image": "placeholder", "bio": "Red Bull star, Ferrari challenger.", "highlights": "Multiple wins, Ferrari resurgence.", "debutYear": 2007}
+    ]
+  },
+  {
+    "era": "New Generation Era (2022–Present)",
+    "description": "Ground effect returns, new stars emerge, and the sport enters a new age of competition and technology.",
+    "drivers": [
+      {"name": "Max Verstappen", "nationality": "Netherlands 🇳🇱", "titles": 3, "image": "placeholder", "bio": "Dominant force, rewriting records.", "highlights": "Multiple World Championships, Red Bull era.", "debutYear": 2015},
+      {"name": "Charles Leclerc", "nationality": "Monaco 🇲🇨", "titles": 0, "image": "placeholder", "bio": "Ferrari's hope, fast and fearless.", "highlights": "Multiple wins, pole positions.", "debutYear": 2018},
+      {"name": "Lando Norris", "nationality": "UK 🇬🇧", "titles": 0, "image": "placeholder", "bio": "Fan favorite, McLaren's rising star.", "highlights": "Podiums, consistent performances.", "debutYear": 2019},
+      {"name": "George Russell", "nationality": "UK 🇬🇧", "titles": 0, "image": "placeholder", "bio": "Mercedes' new talent, calm under pressure.", "highlights": "First win, strong showings.", "debutYear": 2019}
+    ]
+  }
+]

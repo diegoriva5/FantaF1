@@ -110,24 +110,25 @@ def build_driver_starting_positions(track_rows, known_driver_names):
 
 def build_driver_sprint_positions(sprint_rows, known_driver_names):
     sprint_positions = {}
-    for row in sorted(
-        sprint_rows,
-        key=lambda r: (
-            parse_int(r.get("Position")) is None,
-            parse_int(r.get("Position")) or 999,
-            live_driver_name_from_row(r) or "",
-        ),
-    ):
+    # Ordina i piloti: prima i classificati, poi gli NC in ordine di giri completati e ordine nel CSV
+    ordered = []
+    for row in sprint_rows:
         driver_name = live_driver_name_from_row(row)
-        sprint_position = parse_int(row.get("Position"))
-        if (
-            not driver_name
-            or driver_name not in known_driver_names
-            or sprint_position is None
-            or driver_name in sprint_positions
-        ):
+        if not driver_name or driver_name not in known_driver_names:
             continue
-        sprint_positions[driver_name] = sprint_position
+        position = row.get("Position")
+        laps = parse_int(row.get("Laps")) or 0
+        ordered.append((driver_name, position, laps, row))
+    # Classificati: position numerica
+    classified = [x for x in ordered if isinstance(parse_int(x[1]), int)]
+    classified.sort(key=lambda x: parse_int(x[1]))
+    # NC: position non numerica
+    nc = [x for x in ordered if not isinstance(parse_int(x[1]), int)]
+    nc.sort(key=lambda x: (-x[2], x[0]))  # più giri, poi ordine alfabetico
+    full_order = classified + nc
+    sprint_positions = {}
+    for idx, (driver_name, position, laps, row) in enumerate(full_order, start=1):
+        sprint_positions[driver_name] = idx
     return sprint_positions
 
 
@@ -199,7 +200,18 @@ def improvement_points(positions_improved):
         return 0.0
     table = DRIVER_EVENT_FANTASY_SCORING["improvement_points_by_positions_gained"]
     capped = min(positions_improved, max(table))
-    return float(table.get(capped, 0.0))
+    # Use decimal value directly, interpolate if needed
+    if capped in table:
+        return float(table[capped])
+    # Linear interpolation between nearest lower and upper integer keys
+    lower = int(capped)
+    upper = lower + 1
+    if upper > max(table):
+        return float(table[max(table)])
+    lower_points = table.get(lower, 0.0)
+    upper_points = table.get(upper, 0.0)
+    # Interpolate
+    return float(lower_points + (upper_points - lower_points) * (capped - lower))
 
 
 # ── Rolling average ───────────────────────────────────────────────────────────
@@ -230,6 +242,13 @@ def build_driver_rolling_average_ranks(known_driver_names, season_start_ranks, p
     for name in known_driver_names:
         seeded = [season_start_ranks.get(name, fallback_rank)] * ROLLING_AVERAGE_WINDOW
         history = prior_finish_history.get(name, seeded)
+        # Aggiorna la rolling: togli la posizione più vecchia, aggiungi quella dell'ultimo GP
+        if len(history) >= ROLLING_AVERAGE_WINDOW:
+            history = history[1:]  # rimuove la più vecchia
+        # Aggiungi la posizione dell'ultimo GP se disponibile
+        last_position = prior_finish_history.get(name, [None])[-1]
+        if last_position is not None:
+            history.append(last_position)
         avg = sum(history) / len(history)
         rolling[name] = int(Decimal(str(avg)).quantize(Decimal("1"), rounding=ROUND_HALF_UP))
     return rolling
@@ -276,11 +295,28 @@ def compute_driver_event_fantasy_scores(
     )
     completion_stages = build_driver_completion_stages(track_rows, known_driver_names)
     teammate_results = build_driver_teammate_results(driver_finish_positions)
-    rolling_average_positions = build_driver_rolling_average_ranks(
+    # Rolling average prima del GP (senza la posizione dell'ultimo GP)
+    rolling_average_positions_before = {}
+    fallback_rank = len(known_driver_names)
+    for name in known_driver_names:
+        seeded = [season_start_ranks.get(name, fallback_rank)] * ROLLING_AVERAGE_WINDOW
+        history = prior_finish_history.get(name, seeded)
+        # Non aggiungere la posizione dell'ultimo GP
+        if len(history) > ROLLING_AVERAGE_WINDOW:
+            history = history[-ROLLING_AVERAGE_WINDOW:]
+        avg = sum(history) / len(history)
+        rolling_average_positions_before[name] = float(Decimal(str(avg)).quantize(Decimal("1"), rounding=ROUND_HALF_UP))
+
+    # Ranking rolling average prima del GP
+    rolling_rank_before = {name: rank for rank, name in enumerate(sorted(rolling_average_positions_before, key=lambda n: rolling_average_positions_before[n]), start=1)}
+
+    # Rolling average dopo il GP (con la posizione dell'ultimo GP)
+    rolling_average_positions_after = build_driver_rolling_average_ranks(
         known_driver_names=known_driver_names,
         season_start_ranks=season_start_ranks,
         prior_finish_history=prior_finish_history,
     )
+    rolling_rank_after = {name: rank for rank, name in enumerate(sorted(rolling_average_positions_after, key=lambda n: rolling_average_positions_after[n]), start=1)}
 
     field_size = len(known_driver_names)
     event_scores = {}
@@ -294,7 +330,6 @@ def compute_driver_event_fantasy_scores(
         qualifying_position = driver_qualifying_positions.get(driver_name)
         starting_position = driver_starting_positions.get(driver_name)
         sprint_position = driver_sprint_positions.get(driver_name)
-        rolling_average_position = rolling_average_positions.get(driver_name, field_size)
         is_dns = bool(driver_dns_status.get(driver_name))
 
         overtake_start_position = (
@@ -305,7 +340,12 @@ def compute_driver_event_fantasy_scores(
             if (not is_dns and overtake_start_position is not None)
             else 0
         )
-        improvement = max(0, rolling_average_position - finish_position) if not is_dns else 0
+
+        # Calcolo improvement: posizioni guadagnate rispetto alla rolling average
+        improvement = 0.0
+        if not is_dns:
+            rolling_avg = rolling_average_positions_before.get(driver_name, 0.0)
+            improvement = max(0.0, rolling_avg - finish_position)
 
         race_finish_points = table_position_points(
             position=finish_position,

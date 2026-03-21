@@ -16,10 +16,14 @@ import {
   computeFormationSummary,
 } from "./utils/standings";
 import WelcomeScreen from "./components/WelcomeScreen";
+import HomeHubPage from "./components/HomeHubPage";
 import RaceDetailPage from "./components/RaceDetailPage";
 import MainScreen from "./components/MainScreen";
 import DriverPage from "./components/DriverPage";
 import ConstructorPage from "./components/ConstructorPage";
+import CircuitsPage from "./components/CircuitsPage";
+import CircuitDetailPage from "./components/CircuitDetailPage";
+import { HistoricDrivers, GenerationTimeline } from "./pages";
 import {
   getDefaultLanguage,
   I18nProvider,
@@ -32,6 +36,9 @@ const START_PATH = "/start";
 const HOME_PATH = "/home";
 const DRIVER_ROUTE_PATTERN = /^\/(\d{4})\/([a-z0-9]+(?:-[a-z0-9]+)*)$/;
 const CONSTRUCTOR_ROUTE_PATTERN = /^\/(\d{4})\/scuderia\/([a-z0-9]+(?:-[a-z0-9]+)*)$/;
+const CIRCUITS_PATH = "/circuiti";
+const FANTAF1_PATH = "/FantaF1";
+const CIRCUIT_ROUTE_PATTERN = new RegExp(`^${CIRCUITS_PATH}\/([a-z0-9_-]+)$`);
 const LANGUAGE_STORAGE_KEY = "fantaf1-language";
 
 function resolveInitialLanguage() {
@@ -47,6 +54,11 @@ function resolveInitialLanguage() {
 
 function normalizePath(pathname) {
   if (!pathname || pathname === "/") return START_PATH;
+
+  // Se il path è già assoluto (es: /FantaF1, /circuiti, /start, /home, ecc.), restituiscilo così com'è
+  if (pathname.startsWith("/FantaF1") || pathname.startsWith("/circuiti") || pathname.startsWith("/historic-drivers") || pathname === START_PATH || pathname === HOME_PATH) {
+    return pathname;
+  }
 
   const trimmed = pathname.length > 1 && pathname.endsWith("/")
     ? pathname.slice(0, -1)
@@ -129,6 +141,8 @@ function App() {
     }
     return error;
   }, [error, t]);
+
+  
 
   const displayLastRace = useMemo(() => {
     if (liveLastRace) return liveLastRace;
@@ -323,6 +337,49 @@ function App() {
     );
   }
 
+  // Route per /home che mostra HomeHubPage
+  if (currentPath === "/home") {
+    return (
+      <I18nProvider language={language} setLanguage={setLanguage}>
+        <HomeHubPage
+          onOpenFanta={() => navigate(FANTAF1_PATH, { state: { fromPath: currentPath } })}
+          onOpenCircuits={() => navigate(CIRCUITS_PATH, { state: { fromPath: currentPath } })}
+          onOpenHistoricDrivers={() => navigate("/historic-drivers", { state: { fromPath: currentPath } })}
+        />
+      </I18nProvider>
+    );
+  }
+
+    // Route per /FantaF1 che mostra la schermata principale del gioco
+  if (currentPath === FANTAF1_PATH) {
+    return (
+      <I18nProvider language={language} setLanguage={setLanguage}>
+        <MainScreen
+          data={data}
+          error={localizedError}
+          displayLastRace={displayLastRace}
+          liveDataLoading={liveDataLoading}
+          liveLastRace={liveLastRace}
+          driverStandings={driverStandings}
+          constructorStandings={constructorStandings}
+          lastRaceFantasyStandings={lastRaceFantasyStandings}
+          selectedDriversByRace={selectedDriversByRace}
+          selectedTeamByRace={selectedTeamByRace}
+          onToggleDriver={toggleDriverForRace}
+          onSelectTeam={selectTeamForRace}
+          onNavigate={navigate}
+          onOpenDriver={openDriverPage}
+          onOpenConstructor={openConstructorPage}
+          lastRaceOpen={lastRaceOpen}
+          setLastRaceOpen={setLastRaceOpen}
+          nextRaceOpen={nextRaceOpen}
+          setNextRaceOpen={setNextRaceOpen}
+        />
+      </I18nProvider>
+    );
+  }
+
+
   // ── Constructor page routing ─────────────────────────────────────────────
   const constructorRouteMatch = currentPath.match(CONSTRUCTOR_ROUTE_PATTERN);
   if (constructorRouteMatch) {
@@ -386,6 +443,54 @@ function App() {
         />
       </I18nProvider>
     );
+  }
+
+  // ── Circuits routes ───────────────────────────────────────────────────────
+  const circuitRouteMatch = currentPath.match(CIRCUIT_ROUTE_PATTERN);
+  if (circuitRouteMatch) {
+    const circuitRef = circuitRouteMatch[1];
+    function handleCircuitBack() {
+      navigate(CIRCUITS_PATH);
+    }
+    return (
+      <I18nProvider language={language} setLanguage={setLanguage}>
+        <CircuitDetailPage
+          data={data}
+          error={localizedError}
+          circuitRef={circuitRef}
+          onNavigateBack={handleCircuitBack}
+          onNavigateHome={() => navigate(HOME_PATH)}
+          onOpenDriver={openDriverPage}
+          onOpenConstructor={openConstructorPage}
+        />
+      </I18nProvider>
+    );
+  }
+
+  if (currentPath === CIRCUITS_PATH) {
+    return (
+      <I18nProvider language={language} setLanguage={setLanguage}>
+        <CircuitsPage
+          data={data}
+          error={localizedError}
+          onNavigateHome={() => navigate(HOME_PATH)}
+          onOpenCircuit={(circuitRef) => {
+            if (!circuitRef) return;
+            navigate(`${CIRCUITS_PATH}/${circuitRef}`);
+          }}
+        />
+      </I18nProvider>
+    );
+  }
+
+  // ── Historic Drivers page ───────────────────────────────────────────────
+  if (currentPath === "/historic-drivers") {
+    return <HistoricDrivers navigate={navigate} />;
+  }
+  // ── Historic Drivers Era Timeline ───────────────────────────────────────
+  if (currentPath.startsWith("/historic-drivers/")) {
+    const eraSlug = currentPath.replace("/historic-drivers/", "");
+    return <GenerationTimeline eraSlug={eraSlug} navigate={navigate} />;
   }
 
   // ── SPA routing — race detail page ───────────────────────────────────────

@@ -1,0 +1,37 @@
+.historic-drivers-page {
+  min-height: 100vh;
+}
+.historic-drivers-page {
+  padding: 2.5rem 0.5rem 2.5rem 0.5rem;
+  max-width: 950px;
+  margin: 0 auto;
+}
+header h1 {
+  font-size: 2.1rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  color: #fff4ef;
+  letter-spacing: 0.2px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.22);
+}
+.intro {
+  font-size: 1.18rem;
+  color: #ffd447;
+  margin-bottom: 2.2rem;
+  font-weight: 500;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.generations-list {
+  margin-top: 1.2rem;
+}
+@media (max-width: 700px) {
+  .historic-drivers-page {
+    padding: 1.2rem 0.1rem 1.2rem 0.1rem;
+  }
+  header h1 {
+    font-size: 1.3rem;
+  }
+  .intro {
+    font-size: 1rem;
+  }
+}

@@ -19,7 +19,7 @@
       "2026": 3.0
     },
     "current_season_year": 2026,
-    "current_season_rows_used": 22,
+    "current_season_rows_used": 44,
     "current_season_source": "data/current_season_2026_race_results.csv",
     "current_season_local_file": "data/current_season_2026_race_results.csv",
     "current_season_qualifying_local_file": "data/current_season_2026_qualifying_results.csv",
@@ -27,13 +27,14 @@
     "prior_season_results_file": "data/Formula1_2025Season_RaceResults.csv",
     "prior_season_qualifying_file": "data/Formula1_2025Season_QualifyingResults.csv",
     "prior_season_sprint_file": "data/Formula1_2025Season_SprintResults.csv",
-    "current_season_sync_enabled": false,
+    "current_season_sync_enabled": true,
     "salary_adjustment": {
-      "events_processed": 1,
+      "events_processed": 2,
       "event_order": [
-        "Australia"
+        "Australia",
+        "China"
       ],
-      "last_event": "Australia",
+      "last_event": "China",
       "prior_seed_event_order": [],
       "prior_season_rows_used": 479,
       "prior_qualifying_rows_used": 479,
@@ -41,92 +42,92 @@
       "ranking_source": "event_fantasy_score",
       "improvement_seed_source": "season_start_price_rank_backfill",
       "improvement_window_source": "race_finish_position",
-      "qualifying_rows_used": 19,
-      "sprint_rows_used": 0,
+      "qualifying_rows_used": 41,
+      "sprint_rows_used": 22,
       "last_driver_price_change": {
-        "Verstappen": -1.8,
-        "Russell": 0.9,
-        "Norris": -0.7,
+        "Verstappen": -2.0,
+        "Russell": 0.6,
+        "Norris": -2.0,
         "Piastri": -2.0,
-        "Antonelli": 1.1,
-        "Leclerc": 1.0,
+        "Antonelli": 1.8,
+        "Leclerc": 0.5,
         "Alonso": -2.0,
-        "Hamilton": 1.2,
-        "Hadjar": -2.0,
-        "Gasly": 0.0,
+        "Hamilton": 2.0,
+        "Hadjar": 0.9,
+        "Gasly": 1.4,
         "Stroll": -2.0,
-        "Sainz": -1.8,
-        "Lawson": 0.1,
-        "Albon": 0.8,
-        "Hulkenberg": -2.0,
-        "Bortoleto": 2.0,
+        "Sainz": 2.0,
+        "Lawson": 2.0,
+        "Albon": -2.0,
+        "Hulkenberg": 2.0,
+        "Bortoleto": -2.0,
         "Bearman": 2.0,
-        "Ocon": 2.0,
-        "Bottas": -0.2,
-        "Perez": 1.7,
+        "Ocon": 0.8,
+        "Bottas": 2.0,
+        "Perez": 0.9,
         "Colapinto": 2.0,
-        "Lindblad": 2.0
+        "Lindblad": 1.2
       },
       "last_constructor_price_change": {
         "Mercedes": 0.3,
         "McLaren": -3.0,
-        "RedBull": -1.3,
-        "Ferrari": 1.2,
-        "Aston Martin": -3.0,
-        "Williams": -0.7,
-        "Racing Bulls": 1.8,
-        "Alpine": 1.1,
-        "Audi": -0.2,
-        "Cadillac": -0.2,
+        "RedBull": -1.6,
+        "Ferrari": 0.9,
+        "Aston Martin": -1.9,
+        "Williams": -1.2,
+        "Racing Bulls": 0.7,
+        "Alpine": 2.8,
+        "Audi": -0.8,
+        "Cadillac": 1.7,
         "Haas": 3.0
       },
       "last_driver_fantasy_scores": {
-        "Verstappen": 151.0,
-        "Russell": 164.0,
-        "Norris": 155.0,
-        "Piastri": 42.0,
-        "Antonelli": 161.0,
-        "Leclerc": 159.0,
-        "Alonso": 70.0,
-        "Hamilton": 156.0,
-        "Hadjar": 89.0,
-        "Gasly": 126.0,
-        "Stroll": 78.0,
-        "Sainz": 88.0,
-        "Lawson": 112.0,
-        "Albon": 114.0,
-        "Hulkenberg": 30.0,
-        "Bortoleto": 151.0,
-        "Bearman": 172.0,
-        "Ocon": 130.0,
-        "Bottas": 63.0,
-        "Perez": 100.0,
-        "Colapinto": 111.0,
-        "Lindblad": 163.0
+        "Verstappen": 114.0,
+        "Russell": 179.0,
+        "Norris": 59.0,
+        "Piastri": 59.0,
+        "Antonelli": 182.0,
+        "Leclerc": 168.0,
+        "Alonso": 86.0,
+        "Hamilton": 176.0,
+        "Hadjar": 144.0,
+        "Gasly": 155.0,
+        "Stroll": 73.0,
+        "Sainz": 153.0,
+        "Lawson": 160.0,
+        "Albon": 23.0,
+        "Hulkenberg": 122.0,
+        "Bortoleto": 30.0,
+        "Bearman": 170.0,
+        "Ocon": 112.0,
+        "Bottas": 114.0,
+        "Perez": 103.0,
+        "Colapinto": 128.0,
+        "Lindblad": 111.0
       },
       "last_driver_fantasy_ranks": {
-        "Bearman": 1,
+        "Antonelli": 1,
         "Russell": 2,
-        "Lindblad": 3,
-        "Antonelli": 4,
+        "Hamilton": 3,
+        "Bearman": 4,
         "Leclerc": 5,
-        "Hamilton": 6,
-        "Norris": 7,
-        "Verstappen": 8,
-        "Bortoleto": 9,
-        "Ocon": 10,
-        "Gasly": 11,
-        "Albon": 12,
-        "Lawson": 13,
-        "Colapinto": 14,
-        "Perez": 15,
-        "Hadjar": 16,
-        "Sainz": 17,
+        "Lawson": 6,
+        "Gasly": 7,
+        "Sainz": 8,
+        "Hadjar": 9,
+        "Colapinto": 10,
+        "Hulkenberg": 11,
+        "Bottas": 12,
+        "Verstappen": 13,
+        "Ocon": 14,
+        "Lindblad": 15,
+        "Perez": 16,
+        "Alonso": 17,
         "Stroll": 18,
-        "Alonso": 19,
-        "Bottas": 20,
-        "Piastri": 21,
-        "Hulkenberg": 22
+        "Piastri": 19,
+        "Norris": 20,
+        "Bortoleto": 21,
+        "Albon": 22
       },
       "last_event_improvement_reference_window": {
         "Verstappen": [
@@ -137,7 +138,7 @@
           1,
           1,
           1,
-          1
+          6
         ],
         "Russell": [
           2,
@@ -147,7 +148,7 @@
           2,
           2,
           2,
-          2
+          1
         ],
         "Norris": [
           3,
@@ -157,7 +158,7 @@
           3,
           3,
           3,
-          3
+          5
         ],
         "Piastri": [
           4,
@@ -167,7 +168,7 @@
           4,
           4,
           4,
-          4
+          21
         ],
         "Antonelli": [
           5,
@@ -177,7 +178,7 @@
           5,
           5,
           5,
-          5
+          2
         ],
         "Leclerc": [
           6,
@@ -187,7 +188,7 @@
           6,
           6,
           6,
-          6
+          3
         ],
         "Alonso": [
           7,
@@ -197,7 +198,7 @@
           7,
           7,
           7,
-          7
+          18
         ],
         "Hamilton": [
           8,
@@ -207,7 +208,7 @@
           8,
           8,
           8,
-          8
+          4
         ],
         "Hadjar": [
           9,
@@ -217,7 +218,7 @@
           9,
           9,
           9,
-          9
+          20
         ],
         "Gasly": [
           10,
@@ -237,7 +238,7 @@
           11,
           11,
           11,
-          11
+          17
         ],
         "Sainz": [
           12,
@@ -247,7 +248,7 @@
           12,
           12,
           12,
-          12
+          15
         ],
         "Lawson": [
           13,
@@ -267,7 +268,7 @@
           14,
           14,
           14,
-          14
+          12
         ],
         "Hulkenberg": [
           15,
@@ -277,7 +278,7 @@
           15,
           15,
           15,
-          15
+          22
         ],
         "Bortoleto": [
           16,
@@ -287,7 +288,7 @@
           16,
           16,
           16,
-          16
+          9
         ],
         "Bearman": [
           17,
@@ -297,7 +298,7 @@
           17,
           17,
           17,
-          17
+          7
         ],
         "Ocon": [
           18,
@@ -307,7 +308,7 @@
           18,
           18,
           18,
-          18
+          11
         ],
         "Bottas": [
           19,
@@ -327,7 +328,7 @@
           21,
           21,
           21,
-          21
+          16
         ],
         "Colapinto": [
           20,
@@ -337,7 +338,7 @@
           20,
           20,
           20,
-          20
+          14
         ],
         "Lindblad": [
           22,
@@ -347,59 +348,870 @@
           22,
           22,
           22,
-          22
+          8
         ]
       },
       "last_event_incoming_rolling_average_positions": {
-        "Verstappen": 1,
+        "Verstappen": 2,
         "Russell": 2,
-        "Norris": 3,
-        "Piastri": 4,
-        "Antonelli": 5,
-        "Leclerc": 6,
-        "Alonso": 7,
-        "Hamilton": 8,
-        "Hadjar": 9,
+        "Norris": 4,
+        "Piastri": 8,
+        "Antonelli": 4,
+        "Leclerc": 5,
+        "Alonso": 10,
+        "Hamilton": 7,
+        "Hadjar": 12,
         "Gasly": 10,
-        "Stroll": 11,
-        "Sainz": 12,
+        "Stroll": 13,
+        "Sainz": 13,
         "Lawson": 13,
         "Albon": 14,
-        "Hulkenberg": 15,
-        "Bortoleto": 16,
-        "Bearman": 17,
-        "Ocon": 18,
+        "Hulkenberg": 17,
+        "Bortoleto": 14,
+        "Bearman": 15,
+        "Ocon": 16,
         "Bottas": 19,
-        "Perez": 21,
-        "Colapinto": 20,
-        "Lindblad": 22
+        "Perez": 20,
+        "Colapinto": 19,
+        "Lindblad": 19
       },
       "last_event_finish_positions": {
-        "Verstappen": 6,
-        "Russell": 1,
-        "Norris": 5,
-        "Piastri": 21,
-        "Antonelli": 2,
-        "Leclerc": 3,
-        "Alonso": 18,
-        "Hamilton": 4,
-        "Hadjar": 20,
-        "Gasly": 10,
-        "Stroll": 17,
-        "Sainz": 15,
-        "Lawson": 13,
-        "Albon": 12,
-        "Hulkenberg": 22,
-        "Bortoleto": 9,
-        "Bearman": 7,
-        "Ocon": 11,
-        "Bottas": 19,
-        "Perez": 16,
-        "Colapinto": 14,
-        "Lindblad": 8
+        "Verstappen": 16,
+        "Russell": 2,
+        "Norris": 20,
+        "Piastri": 19,
+        "Antonelli": 1,
+        "Leclerc": 4,
+        "Alonso": 17,
+        "Hamilton": 3,
+        "Hadjar": 8,
+        "Gasly": 6,
+        "Stroll": 18,
+        "Sainz": 9,
+        "Lawson": 7,
+        "Albon": 22,
+        "Hulkenberg": 11,
+        "Bortoleto": 21,
+        "Bearman": 5,
+        "Ocon": 14,
+        "Bottas": 13,
+        "Perez": 15,
+        "Colapinto": 10,
+        "Lindblad": 12
+      },
+      "driver_initial_prices": {
+        "Verstappen": 30.0,
+        "Russell": 28.7,
+        "Norris": 27.4,
+        "Piastri": 26.1,
+        "Antonelli": 24.8,
+        "Leclerc": 23.5,
+        "Alonso": 22.2,
+        "Hamilton": 20.9,
+        "Hadjar": 19.6,
+        "Gasly": 18.3,
+        "Stroll": 17.0,
+        "Sainz": 15.7,
+        "Lawson": 14.4,
+        "Albon": 13.1,
+        "Hulkenberg": 11.8,
+        "Bortoleto": 10.5,
+        "Bearman": 9.2,
+        "Ocon": 7.8,
+        "Bottas": 4.7,
+        "Perez": 4.7,
+        "Colapinto": 4.7,
+        "Lindblad": 4.6
+      },
+      "driver_event_history": {
+        "Verstappen": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 30.0,
+            "price_after": 29.4,
+            "price_change": -0.6,
+            "race_points": 8.0,
+            "fantasy_points": 151.0,
+            "fantasy_rank": 5,
+            "finish_position": 6
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 29.4,
+            "price_after": 27.4,
+            "price_change": -2.0,
+            "race_points": 0.0,
+            "fantasy_points": 114.0,
+            "fantasy_rank": 13,
+            "finish_position": 16
+          }
+        ],
+        "Russell": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 28.7,
+            "price_after": 30.0,
+            "price_change": 1.3,
+            "race_points": 25.0,
+            "fantasy_points": 164.0,
+            "fantasy_rank": 1,
+            "finish_position": 1
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 30.0,
+            "price_after": 30.6,
+            "price_change": 0.6,
+            "race_points": 18.0,
+            "fantasy_points": 179.0,
+            "fantasy_rank": 2,
+            "finish_position": 2
+          }
+        ],
+        "Norris": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 27.4,
+            "price_after": 27.8,
+            "price_change": 0.4,
+            "race_points": 10.0,
+            "fantasy_points": 155.0,
+            "fantasy_rank": 4,
+            "finish_position": 5
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 27.8,
+            "price_after": 25.8,
+            "price_change": -2.0,
+            "race_points": 0.0,
+            "fantasy_points": 59.0,
+            "fantasy_rank": 20,
+            "finish_position": 20
+          }
+        ],
+        "Piastri": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 26.1,
+            "price_after": 24.1,
+            "price_change": -2.0,
+            "race_points": 0.0,
+            "fantasy_points": 42.0,
+            "fantasy_rank": 21,
+            "finish_position": 21
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 24.1,
+            "price_after": 22.1,
+            "price_change": -2.0,
+            "race_points": 0.0,
+            "fantasy_points": 59.0,
+            "fantasy_rank": 19,
+            "finish_position": 19
+          }
+        ],
+        "Antonelli": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 24.8,
+            "price_after": 26.7,
+            "price_change": 1.9,
+            "race_points": 18.0,
+            "fantasy_points": 157.0,
+            "fantasy_rank": 2,
+            "finish_position": 2
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 26.7,
+            "price_after": 28.5,
+            "price_change": 1.8,
+            "race_points": 25.0,
+            "fantasy_points": 182.0,
+            "fantasy_rank": 1,
+            "finish_position": 1
+          }
+        ],
+        "Leclerc": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 23.5,
+            "price_after": 25.3,
+            "price_change": 1.8,
+            "race_points": 15.0,
+            "fantasy_points": 155.0,
+            "fantasy_rank": 3,
+            "finish_position": 3
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 25.3,
+            "price_after": 25.8,
+            "price_change": 0.5,
+            "race_points": 12.0,
+            "fantasy_points": 168.0,
+            "fantasy_rank": 5,
+            "finish_position": 4
+          }
+        ],
+        "Alonso": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 22.2,
+            "price_after": 20.2,
+            "price_change": -2.0,
+            "race_points": 0.0,
+            "fantasy_points": 70.0,
+            "fantasy_rank": 19,
+            "finish_position": 18
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 20.2,
+            "price_after": 18.2,
+            "price_change": -2.0,
+            "race_points": 0.0,
+            "fantasy_points": 86.0,
+            "fantasy_rank": 17,
+            "finish_position": 17
+          }
+        ],
+        "Hamilton": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 20.9,
+            "price_after": 22.1,
+            "price_change": 1.2,
+            "race_points": 12.0,
+            "fantasy_points": 150.0,
+            "fantasy_rank": 6,
+            "finish_position": 4
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 22.1,
+            "price_after": 24.1,
+            "price_change": 2.0,
+            "race_points": 15.0,
+            "fantasy_points": 176.0,
+            "fantasy_rank": 3,
+            "finish_position": 3
+          }
+        ],
+        "Hadjar": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 19.6,
+            "price_after": 17.6,
+            "price_change": -2.0,
+            "race_points": 0.0,
+            "fantasy_points": 89.0,
+            "fantasy_rank": 16,
+            "finish_position": 20
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 17.6,
+            "price_after": 18.5,
+            "price_change": 0.9,
+            "race_points": 4.0,
+            "fantasy_points": 144.0,
+            "fantasy_rank": 9,
+            "finish_position": 8
+          }
+        ],
+        "Gasly": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 18.3,
+            "price_after": 18.6,
+            "price_change": 0.3,
+            "race_points": 1.0,
+            "fantasy_points": 126.0,
+            "fantasy_rank": 10,
+            "finish_position": 10
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 18.6,
+            "price_after": 20.0,
+            "price_change": 1.4,
+            "race_points": 8.0,
+            "fantasy_points": 155.0,
+            "fantasy_rank": 7,
+            "finish_position": 6
+          }
+        ],
+        "Stroll": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 17.0,
+            "price_after": 15.0,
+            "price_change": -2.0,
+            "race_points": 0.0,
+            "fantasy_points": 78.0,
+            "fantasy_rank": 18,
+            "finish_position": 17
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 15.0,
+            "price_after": 13.0,
+            "price_change": -2.0,
+            "race_points": 0.0,
+            "fantasy_points": 73.0,
+            "fantasy_rank": 18,
+            "finish_position": 18
+          }
+        ],
+        "Sainz": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 15.7,
+            "price_after": 13.9,
+            "price_change": -1.8,
+            "race_points": 0.0,
+            "fantasy_points": 88.0,
+            "fantasy_rank": 17,
+            "finish_position": 15
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 13.9,
+            "price_after": 15.9,
+            "price_change": 2.0,
+            "race_points": 2.0,
+            "fantasy_points": 153.0,
+            "fantasy_rank": 8,
+            "finish_position": 9
+          }
+        ],
+        "Lawson": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 14.4,
+            "price_after": 14.5,
+            "price_change": 0.1,
+            "race_points": 0.0,
+            "fantasy_points": 112.0,
+            "fantasy_rank": 13,
+            "finish_position": 13
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 14.5,
+            "price_after": 16.5,
+            "price_change": 2.0,
+            "race_points": 6.0,
+            "fantasy_points": 160.0,
+            "fantasy_rank": 6,
+            "finish_position": 7
+          }
+        ],
+        "Albon": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 13.1,
+            "price_after": 13.9,
+            "price_change": 0.8,
+            "race_points": 0.0,
+            "fantasy_points": 112.0,
+            "fantasy_rank": 12,
+            "finish_position": 12
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 13.9,
+            "price_after": 11.9,
+            "price_change": -2.0,
+            "race_points": 0.0,
+            "fantasy_points": 23.0,
+            "fantasy_rank": 22,
+            "finish_position": 22
+          }
+        ],
+        "Hulkenberg": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 11.8,
+            "price_after": 9.8,
+            "price_change": -2.0,
+            "race_points": 0.0,
+            "fantasy_points": 30.0,
+            "fantasy_rank": 22,
+            "finish_position": 22
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 9.8,
+            "price_after": 11.8,
+            "price_change": 2.0,
+            "race_points": 0.0,
+            "fantasy_points": 122.0,
+            "fantasy_rank": 11,
+            "finish_position": 11
+          }
+        ],
+        "Bortoleto": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 10.5,
+            "price_after": 12.5,
+            "price_change": 2.0,
+            "race_points": 2.0,
+            "fantasy_points": 135.0,
+            "fantasy_rank": 8,
+            "finish_position": 9
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 12.5,
+            "price_after": 10.5,
+            "price_change": -2.0,
+            "race_points": 0.0,
+            "fantasy_points": 30.0,
+            "fantasy_rank": 21,
+            "finish_position": 21
+          }
+        ],
+        "Bearman": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 9.2,
+            "price_after": 11.2,
+            "price_change": 2.0,
+            "race_points": 6.0,
+            "fantasy_points": 142.0,
+            "fantasy_rank": 7,
+            "finish_position": 7
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 11.2,
+            "price_after": 13.2,
+            "price_change": 2.0,
+            "race_points": 10.0,
+            "fantasy_points": 170.0,
+            "fantasy_rank": 4,
+            "finish_position": 5
+          }
+        ],
+        "Ocon": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 7.8,
+            "price_after": 9.8,
+            "price_change": 2.0,
+            "race_points": 0.0,
+            "fantasy_points": 114.0,
+            "fantasy_rank": 11,
+            "finish_position": 11
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 9.8,
+            "price_after": 10.6,
+            "price_change": 0.8,
+            "race_points": 0.0,
+            "fantasy_points": 112.0,
+            "fantasy_rank": 14,
+            "finish_position": 14
+          }
+        ],
+        "Bottas": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 4.7,
+            "price_after": 4.5,
+            "price_change": -0.2,
+            "race_points": 0.0,
+            "fantasy_points": 63.0,
+            "fantasy_rank": 20,
+            "finish_position": 19
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 4.5,
+            "price_after": 6.5,
+            "price_change": 2.0,
+            "race_points": 0.0,
+            "fantasy_points": 114.0,
+            "fantasy_rank": 12,
+            "finish_position": 13
+          }
+        ],
+        "Perez": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 4.7,
+            "price_after": 6.4,
+            "price_change": 1.7,
+            "race_points": 0.0,
+            "fantasy_points": 91.0,
+            "fantasy_rank": 15,
+            "finish_position": 16
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 6.4,
+            "price_after": 7.3,
+            "price_change": 0.9,
+            "race_points": 0.0,
+            "fantasy_points": 103.0,
+            "fantasy_rank": 16,
+            "finish_position": 15
+          }
+        ],
+        "Colapinto": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 4.7,
+            "price_after": 6.7,
+            "price_change": 2.0,
+            "race_points": 0.0,
+            "fantasy_points": 99.0,
+            "fantasy_rank": 14,
+            "finish_position": 14
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 6.7,
+            "price_after": 8.7,
+            "price_change": 2.0,
+            "race_points": 1.0,
+            "fantasy_points": 128.0,
+            "fantasy_rank": 10,
+            "finish_position": 10
+          }
+        ],
+        "Lindblad": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 4.6,
+            "price_after": 6.6,
+            "price_change": 2.0,
+            "race_points": 4.0,
+            "fantasy_points": 133.0,
+            "fantasy_rank": 9,
+            "finish_position": 8
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 6.6,
+            "price_after": 7.8,
+            "price_change": 1.2,
+            "race_points": 0.0,
+            "fantasy_points": 111.0,
+            "fantasy_rank": 15,
+            "finish_position": 12
+          }
+        ]
+      },
+      "constructor_initial_prices": {
+        "Mercedes": 28.5,
+        "McLaren": 28.5,
+        "RedBull": 25.0,
+        "Ferrari": 22.5,
+        "Aston Martin": 20.0,
+        "Williams": 17.5,
+        "Racing Bulls": 15.0,
+        "Alpine": 12.5,
+        "Audi": 10.0,
+        "Cadillac": 7.5,
+        "Haas": 5.0
+      },
+      "constructor_event_history": {
+        "Mercedes": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 28.5,
+            "price_after": 28.8,
+            "price_change": 0.3,
+            "race_points": 43.0,
+            "fantasy_points": 321.0,
+            "fantasy_rank": 1
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 28.8,
+            "price_after": 29.1,
+            "price_change": 0.3,
+            "race_points": 43.0,
+            "fantasy_points": 361.0,
+            "fantasy_rank": 1
+          }
+        ],
+        "McLaren": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 28.5,
+            "price_after": 25.5,
+            "price_change": -3.0,
+            "race_points": 10.0,
+            "fantasy_points": 197.0,
+            "fantasy_rank": 8
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 25.5,
+            "price_after": 22.5,
+            "price_change": -3.0,
+            "race_points": 0.0,
+            "fantasy_points": 118.0,
+            "fantasy_rank": 11
+          }
+        ],
+        "RedBull": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 25.0,
+            "price_after": 23.7,
+            "price_change": -1.3,
+            "race_points": 8.0,
+            "fantasy_points": 240.0,
+            "fantasy_rank": 5
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 23.7,
+            "price_after": 22.1,
+            "price_change": -1.6,
+            "race_points": 4.0,
+            "fantasy_points": 258.0,
+            "fantasy_rank": 6
+          }
+        ],
+        "Ferrari": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 22.5,
+            "price_after": 23.7,
+            "price_change": 1.2,
+            "race_points": 27.0,
+            "fantasy_points": 305.0,
+            "fantasy_rank": 2
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 23.7,
+            "price_after": 24.6,
+            "price_change": 0.9,
+            "race_points": 27.0,
+            "fantasy_points": 344.0,
+            "fantasy_rank": 2
+          }
+        ],
+        "Aston Martin": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 20.0,
+            "price_after": 17.0,
+            "price_change": -3.0,
+            "race_points": 0.0,
+            "fantasy_points": 148.0,
+            "fantasy_rank": 11
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 17.0,
+            "price_after": 15.1,
+            "price_change": -1.9,
+            "race_points": 0.0,
+            "fantasy_points": 159.0,
+            "fantasy_rank": 9
+          }
+        ],
+        "Williams": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 17.5,
+            "price_after": 16.8,
+            "price_change": -0.7,
+            "race_points": 0.0,
+            "fantasy_points": 200.0,
+            "fantasy_rank": 7
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 16.8,
+            "price_after": 15.6,
+            "price_change": -1.2,
+            "race_points": 2.0,
+            "fantasy_points": 176.0,
+            "fantasy_rank": 8
+          }
+        ],
+        "Racing Bulls": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 15.0,
+            "price_after": 16.8,
+            "price_change": 1.8,
+            "race_points": 4.0,
+            "fantasy_points": 245.0,
+            "fantasy_rank": 4
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 16.8,
+            "price_after": 17.5,
+            "price_change": 0.7,
+            "race_points": 6.0,
+            "fantasy_points": 271.0,
+            "fantasy_rank": 5
+          }
+        ],
+        "Alpine": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 12.5,
+            "price_after": 13.6,
+            "price_change": 1.1,
+            "race_points": 1.0,
+            "fantasy_points": 225.0,
+            "fantasy_rank": 6
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 13.6,
+            "price_after": 16.4,
+            "price_change": 2.8,
+            "race_points": 9.0,
+            "fantasy_points": 283.0,
+            "fantasy_rank": 3
+          }
+        ],
+        "Audi": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 10.0,
+            "price_after": 9.8,
+            "price_change": -0.2,
+            "race_points": 2.0,
+            "fantasy_points": 165.0,
+            "fantasy_rank": 9
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 9.8,
+            "price_after": 9.0,
+            "price_change": -0.8,
+            "race_points": 0.0,
+            "fantasy_points": 152.0,
+            "fantasy_rank": 10
+          }
+        ],
+        "Cadillac": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 7.5,
+            "price_after": 7.3,
+            "price_change": -0.2,
+            "race_points": 0.0,
+            "fantasy_points": 154.0,
+            "fantasy_rank": 10
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 7.3,
+            "price_after": 9.0,
+            "price_change": 1.7,
+            "race_points": 0.0,
+            "fantasy_points": 217.0,
+            "fantasy_rank": 7
+          }
+        ],
+        "Haas": [
+          {
+            "round": 1,
+            "event": "Australia",
+            "price_before": 5.0,
+            "price_after": 8.0,
+            "price_change": 3.0,
+            "race_points": 6.0,
+            "fantasy_points": 256.0,
+            "fantasy_rank": 3
+          },
+          {
+            "round": 2,
+            "event": "China",
+            "price_before": 8.0,
+            "price_after": 11.0,
+            "price_change": 3.0,
+            "race_points": 10.0,
+            "fantasy_points": 282.0,
+            "fantasy_rank": 4
+          }
+        ]
       },
       "qualifying_source": "data/current_season_2026_qualifying_results.csv",
-      "sprint_source": null,
+      "sprint_source": "data/current_season_2026_sprint_results.csv",
       "scoring_components": [
         "qualifying_position",
         "race_finish_position",
@@ -422,260 +1234,386 @@
       "drivers": [
         "Verstappen",
         "Hamilton",
-        "Sainz",
+        "Ocon",
         "Bottas",
         "Perez"
       ],
       "constructor": "RedBull",
-      "total_price": 98.8,
-      "budget_left": 1.2,
-      "predicted_score": 206.2454,
-      "value_per_million": 2.0875
+      "total_price": 98.0,
+      "budget_left": 2.0,
+      "predicted_score": 197.636,
+      "value_per_million": 2.0167
+    },
+    {
+      "drivers": [
+        "Verstappen",
+        "Hamilton",
+        "Bottas",
+        "Perez",
+        "Lindblad"
+      ],
+      "constructor": "RedBull",
+      "total_price": 95.2,
+      "budget_left": 4.8,
+      "predicted_score": 196.4622,
+      "value_per_million": 2.0637
+    },
+    {
+      "drivers": [
+        "Verstappen",
+        "Hamilton",
+        "Hulkenberg",
+        "Bottas",
+        "Perez"
+      ],
+      "constructor": "RedBull",
+      "total_price": 99.2,
+      "budget_left": 0.8,
+      "predicted_score": 194.2685,
+      "value_per_million": 1.9584
+    },
+    {
+      "drivers": [
+        "Verstappen",
+        "Hamilton",
+        "Albon",
+        "Bottas",
+        "Perez"
+      ],
+      "constructor": "RedBull",
+      "total_price": 99.3,
+      "budget_left": 0.7,
+      "predicted_score": 194.2481,
+      "value_per_million": 1.9562
+    },
+    {
+      "drivers": [
+        "Verstappen",
+        "Hamilton",
+        "Bortoleto",
+        "Bottas",
+        "Perez"
+      ],
+      "constructor": "RedBull",
+      "total_price": 97.9,
+      "budget_left": 2.1,
+      "predicted_score": 193.6288,
+      "value_per_million": 1.9778
+    },
+    {
+      "drivers": [
+        "Verstappen",
+        "Antonelli",
+        "Bottas",
+        "Perez",
+        "Lindblad"
+      ],
+      "constructor": "RedBull",
+      "total_price": 99.6,
+      "budget_left": 0.4,
+      "predicted_score": 193.3996,
+      "value_per_million": 1.9418
+    },
+    {
+      "drivers": [
+        "Verstappen",
+        "Hamilton",
+        "Bottas",
+        "Perez",
+        "Colapinto"
+      ],
+      "constructor": "RedBull",
+      "total_price": 96.1,
+      "budget_left": 3.9,
+      "predicted_score": 192.4221,
+      "value_per_million": 2.0023
+    },
+    {
+      "drivers": [
+        "Verstappen",
+        "Hamilton",
+        "Ocon",
+        "Perez",
+        "Lindblad"
+      ],
+      "constructor": "RedBull",
+      "total_price": 99.3,
+      "budget_left": 0.7,
+      "predicted_score": 190.4344,
+      "value_per_million": 1.9178
+    },
+    {
+      "drivers": [
+        "Verstappen",
+        "Hamilton",
+        "Bottas",
+        "Perez",
+        "Lindblad"
+      ],
+      "constructor": "Ferrari",
+      "total_price": 97.7,
+      "budget_left": 2.3,
+      "predicted_score": 190.3769,
+      "value_per_million": 1.9486
+    },
+    {
+      "drivers": [
+        "Antonelli",
+        "Hamilton",
+        "Ocon",
+        "Bottas",
+        "Perez"
+      ],
+      "constructor": "RedBull",
+      "total_price": 99.1,
+      "budget_left": 0.9,
+      "predicted_score": 188.87,
+      "value_per_million": 1.9059
     }
   ],
   "driver_values": {
     "Verstappen": {
-      "price": 28.2,
-      "score": 48.284539082623304,
-      "value_per_million": 1.7122176979653654,
-      "entries": 249.2345679012346,
+      "price": 27.4,
+      "score": 47.781619842396324,
+      "value_per_million": 1.7438547387735885,
+      "entries": 252.2345679012346,
       "source": "storico",
       "team_proxy": "RedBull"
     },
     "Russell": {
-      "price": 29.6,
-      "score": 23.664383358098075,
-      "value_per_million": 0.7994724107465565,
-      "entries": 207.7160493827158,
+      "price": 30.6,
+      "score": 23.978108155612848,
+      "value_per_million": 0.7835983057389819,
+      "entries": 210.7160493827158,
       "source": "storico",
       "team_proxy": "Mercedes"
     },
     "Norris": {
-      "price": 26.7,
-      "score": 29.008303120356615,
-      "value_per_million": 1.0864533003878882,
-      "entries": 207.7160493827158,
+      "price": 25.8,
+      "score": 28.686424888680573,
+      "value_per_million": 1.1118769336697896,
+      "entries": 210.7160493827158,
       "source": "storico",
       "team_proxy": "McLaren"
     },
     "Piastri": {
-      "price": 24.1,
-      "score": 27.348595825426944,
-      "value_per_million": 1.1347965072791262,
-      "entries": 97.5925925925925,
+      "price": 22.1,
+      "score": 26.544900589101623,
+      "value_per_million": 1.201126723488761,
+      "entries": 100.5925925925925,
       "source": "storico",
       "team_proxy": "McLaren"
     },
     "Antonelli": {
-      "price": 25.9,
-      "score": 32.1386586183596,
-      "value_per_million": 1.2408748501297144,
-      "entries": 3.0,
+      "price": 28.5,
+      "score": 39.01557741106295,
+      "value_per_million": 1.3689676284583492,
+      "entries": 6.0,
       "source": "storico_blend",
       "team_proxy": "Mercedes"
     },
     "Leclerc": {
-      "price": 24.5,
-      "score": 30.236228996122364,
-      "value_per_million": 1.2341317957600966,
-      "entries": 229.23456790123436,
+      "price": 25.8,
+      "score": 30.235760990909576,
+      "value_per_million": 1.1719287205778905,
+      "entries": 232.23456790123436,
       "source": "storico",
       "team_proxy": "Ferrari"
     },
     "Alonso": {
-      "price": 20.2,
-      "score": 20.32394744790094,
-      "value_per_million": 1.006136012272324,
-      "entries": 204.38271604938242,
+      "price": 18.2,
+      "score": 20.035727467555667,
+      "value_per_million": 1.1008641465689928,
+      "entries": 207.38271604938242,
       "source": "storico",
       "team_proxy": "Aston Martin"
     },
     "Hamilton": {
-      "price": 22.1,
-      "score": 42.055541589924836,
-      "value_per_million": 1.9029656828020287,
-      "entries": 248.01234567901236,
+      "price": 24.1,
+      "score": 42.07818340546922,
+      "value_per_million": 1.7459827139198845,
+      "entries": 251.01234567901236,
       "source": "storico",
       "team_proxy": "Ferrari"
     },
     "Hadjar": {
-      "price": 17.6,
-      "score": 25.493076391294014,
-      "value_per_million": 1.4484702495053416,
-      "entries": 3.0,
+      "price": 18.5,
+      "score": 25.4504974835019,
+      "value_per_million": 1.3757025666757783,
+      "entries": 6.0,
       "source": "storico_blend",
       "team_proxy": "RedBull"
     },
     "Gasly": {
-      "price": 18.3,
-      "score": 17.94509829758077,
-      "value_per_million": 0.9806064643486759,
-      "entries": 234.2345679012344,
+      "price": 20.0,
+      "score": 18.0671914029975,
+      "value_per_million": 0.9033595701498751,
+      "entries": 237.2345679012344,
       "source": "storico",
       "team_proxy": "Alpine"
     },
     "Stroll": {
-      "price": 15.0,
-      "score": 15.662571556573239,
-      "value_per_million": 1.0441714371048827,
-      "entries": 248.01234567901236,
+      "price": 13.0,
+      "score": 15.480159354711775,
+      "value_per_million": 1.1907814888239827,
+      "entries": 251.01234567901236,
       "source": "storico",
       "team_proxy": "Aston Martin"
     },
     "Sainz": {
-      "price": 13.9,
-      "score": 26.167503373481914,
-      "value_per_million": 1.8825541995310728,
-      "entries": 247.02469135802474,
+      "price": 15.9,
+      "score": 26.137896257159767,
+      "value_per_million": 1.6438928463622495,
+      "entries": 250.02469135802474,
       "source": "storico",
       "team_proxy": "Williams"
     },
     "Lawson": {
-      "price": 14.5,
-      "score": 15.398799231508164,
-      "value_per_million": 1.0619861538971147,
-      "entries": 25.703703703703706,
+      "price": 16.5,
+      "score": 16.538150537634408,
+      "value_per_million": 1.0023121537960247,
+      "entries": 28.703703703703706,
       "source": "storico",
       "team_proxy": "Racing Bulls"
     },
     "Albon": {
-      "price": 13.9,
-      "score": 15.117877252252253,
-      "value_per_million": 1.0876170685073563,
-      "entries": 175.40740740740722,
+      "price": 11.9,
+      "score": 14.92419901736904,
+      "value_per_million": 1.2541343712074822,
+      "entries": 178.40740740740722,
       "source": "storico",
       "team_proxy": "Williams"
     },
     "Hulkenberg": {
-      "price": 9.8,
-      "score": 14.897513872663545,
-      "value_per_million": 1.5201544768024025,
-      "entries": 169.08641975308626,
+      "price": 11.8,
+      "score": 14.944626587273113,
+      "value_per_million": 1.2664937785824673,
+      "entries": 172.08641975308626,
       "source": "storico",
       "team_proxy": "Audi"
     },
     "Bortoleto": {
-      "price": 12.5,
-      "score": 15.669852266898753,
-      "value_per_million": 1.2535881813519003,
-      "entries": 3.0,
+      "price": 10.5,
+      "score": 14.304931943066777,
+      "value_per_million": 1.3623744707682643,
+      "entries": 6.0,
       "source": "storico_blend",
       "team_proxy": "Audi"
     },
     "Bearman": {
-      "price": 11.2,
-      "score": 18.61560373349098,
-      "value_per_million": 1.6621074762045518,
-      "entries": 9.62962962962963,
+      "price": 13.2,
+      "score": 20.78039270125403,
+      "value_per_million": 1.5742721743374266,
+      "entries": 12.62962962962963,
       "source": "storico_blend",
       "team_proxy": "Haas"
     },
     "Ocon": {
-      "price": 9.8,
-      "score": 18.385981256890844,
-      "value_per_million": 1.876120536417433,
-      "entries": 223.95061728395032,
+      "price": 10.6,
+      "score": 18.31214165261382,
+      "value_per_million": 1.727560533265455,
+      "entries": 226.95061728395032,
       "source": "storico",
       "team_proxy": "Haas"
     },
     "Bottas": {
-      "price": 4.5,
+      "price": 6.5,
       "score": 24.339962396590618,
-      "value_per_million": 5.408880532575693,
+      "value_per_million": 3.7446095994754796,
       "entries": 246.23456790123458,
       "source": "storico",
       "team_proxy": "Cadillac"
     },
     "Perez": {
-      "price": 6.4,
+      "price": 7.3,
       "score": 27.28512179065173,
-      "value_per_million": 4.263300279789332,
+      "value_per_million": 3.7376879165276344,
       "entries": 243.79012345679013,
       "source": "storico",
       "team_proxy": "Cadillac"
     },
     "Colapinto": {
-      "price": 6.7,
-      "score": 11.820037756202803,
-      "value_per_million": 1.7641847397317616,
-      "entries": 22.88888888888889,
+      "price": 8.7,
+      "score": 13.098187887458272,
+      "value_per_million": 1.5055388376388819,
+      "entries": 25.88888888888889,
       "source": "storico",
       "team_proxy": "Alpine"
     },
     "Lindblad": {
-      "price": 6.6,
-      "score": 17.286310416805335,
-      "value_per_million": 2.6191379419402026,
-      "entries": 3.0,
+      "price": 7.8,
+      "score": 17.138336478028688,
+      "value_per_million": 2.197222625388293,
+      "entries": 6.0,
       "source": "storico_blend",
       "team_proxy": "Racing Bulls"
     }
   },
   "constructor_values": {
     "Mercedes": {
-      "price": 28.8,
-      "score": 37.819717777887846,
-      "value_per_million": 1.3131846450655502,
+      "price": 29.1,
+      "score": 38.08322585776516,
+      "value_per_million": 1.30870191951083,
       "source": "storico"
     },
     "McLaren": {
-      "price": 25.5,
-      "score": 23.995078759659204,
-      "value_per_million": 0.9409834807709492,
+      "price": 22.5,
+      "score": 23.785808330478197,
+      "value_per_million": 1.0571470369101421,
       "source": "storico"
     },
     "RedBull": {
-      "price": 23.7,
-      "score": 38.11269380324945,
-      "value_per_million": 1.6081305402214958,
+      "price": 22.1,
+      "score": 37.83898793500074,
+      "value_per_million": 1.7121713997737888,
       "source": "storico"
     },
     "Ferrari": {
-      "price": 23.7,
-      "score": 31.689623167228053,
-      "value_per_million": 1.337114901570804,
+      "price": 24.6,
+      "score": 31.753675174979193,
+      "value_per_million": 1.2907998038609427,
       "source": "storico"
     },
     "Aston Martin": {
-      "price": 17.0,
-      "score": 18.2559594665863,
-      "value_per_million": 1.0738799686227236,
+      "price": 15.1,
+      "score": 17.93493267238828,
+      "value_per_million": 1.1877438855886278,
       "source": "storico"
     },
     "Williams": {
-      "price": 16.8,
-      "score": 12.01593775654901,
-      "value_per_million": 0.7152343902707743,
+      "price": 15.6,
+      "score": 12.035458299535446,
+      "value_per_million": 0.7715037371497081,
       "source": "storico"
     },
     "Racing Bulls": {
-      "price": 16.8,
-      "score": 14.785701696408898,
-      "value_per_million": 0.8801012914529106,
+      "price": 17.5,
+      "score": 15.048128398159763,
+      "value_per_million": 0.859893051323415,
       "source": "storico"
     },
     "Alpine": {
-      "price": 13.6,
-      "score": 18.178819784524972,
-      "value_per_million": 1.3366779253327186,
+      "price": 16.4,
+      "score": 18.305500887836637,
+      "value_per_million": 1.1161890785266242,
       "source": "storico"
     },
     "Audi": {
-      "price": 9.8,
-      "score": 11.998528853454813,
-      "value_per_million": 1.2243396789239605,
+      "price": 9.0,
+      "score": 11.909069981583785,
+      "value_per_million": 1.3232299979537538,
       "source": "storico"
     },
     "Cadillac": {
-      "price": 7.3,
+      "price": 9.0,
       "score": 12.271259360247429,
-      "value_per_million": 1.6809944329106068,
+      "value_per_million": 1.3634732622497143,
       "source": "proxy_nuovo_team"
     },
     "Haas": {
-      "price": 8.0,
-      "score": 13.113218248464442,
-      "value_per_million": 1.6391522810580552,
+      "price": 11.0,
+      "score": 13.205237139640749,
+      "value_per_million": 1.2004761036037044,
       "source": "storico"
     }
   },
@@ -858,133 +1796,133 @@
           "score": 28.217737430167602,
           "entries": 8.839506172839506,
           "source": "track_historical",
-          "normalized": 0.7406093464160302
+          "normalized": 0.678049223475213
         },
         "Russell": {
           "score": 16.45914855072464,
           "entries": 6.814814814814815,
           "source": "track_historical",
-          "normalized": 0.23848348387427115
+          "normalized": 0.1849025330140007
         },
         "Norris": {
           "score": 30.953170289855073,
           "entries": 6.814814814814815,
           "source": "track_historical",
-          "normalized": 0.857420266346816
+          "normalized": 0.7927712939178723
         },
         "Piastri": {
           "score": 27.803614457831323,
           "entries": 4.098765432098766,
           "source": "track_historical",
-          "normalized": 0.7229250939249641
+          "normalized": 0.6606812063308571
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.7982509398209828
+          "normalized": 1.0
         },
         "Leclerc": {
           "score": 34.29204724409449,
           "entries": 7.839506172839506,
           "source": "track_historical",
-          "normalized": 1.0
+          "normalized": 0.9328013720779298
         },
         "Alonso": {
           "score": 24.472807017543865,
           "entries": 7.7407407407407405,
           "source": "track_historical",
-          "normalized": 0.5806899519311164
+          "normalized": 0.520989557734061
         },
         "Hamilton": {
           "score": 31.739106145251395,
           "entries": 8.839506172839506,
           "source": "track_historical",
-          "normalized": 0.8909820077546905
+          "normalized": 0.8257328737449455
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.5371681481098125
+          "normalized": 0.4766031542178876
         },
         "Gasly": {
           "score": 13.90976377952756,
           "entries": 7.839506172839506,
           "source": "track_historical",
-          "normalized": 0.12961735713808412
+          "normalized": 0.07798318448349814
         },
         "Stroll": {
           "score": 20.497625698324022,
           "entries": 8.839506172839506,
           "source": "track_historical",
-          "normalized": 0.4109381756645999
+          "normalized": 0.3542733359445831
         },
         "Sainz": {
           "score": 27.068575418994413,
           "entries": 8.839506172839506,
           "source": "track_historical",
-          "normalized": 0.6915367942606141
+          "normalized": 0.6298542020807193
         },
         "Lawson": {
-          "score": 14.166895292987512,
+          "score": 15.215098494623655,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.14059761882649705
+          "normalized": 0.13272797582654433
         },
         "Albon": {
           "score": 12.248097826086955,
           "entries": 6.814814814814815,
           "source": "track_historical",
-          "normalized": 0.0586593996244641
+          "normalized": 0.008294119410059775
         },
         "Hulkenberg": {
           "score": 23.80136752136752,
           "entries": 7.222222222222222,
           "source": "track_historical",
-          "normalized": 0.5520175372716013
+          "normalized": 0.4928298721817251
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.15124638980902227
+          "normalized": 0.04656117293408133
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.26697515371670605
+          "normalized": 0.2964112109670253
         },
         "Ocon": {
           "score": 16.79641148325359,
           "entries": 7.7407407407407405,
           "source": "track_historical",
-          "normalized": 0.2528855896571791
+          "normalized": 0.19904709582652197
         },
         "Bottas": {
           "score": 27.921019553072625,
           "entries": 8.839506172839506,
           "source": "track_historical",
-          "normalized": 0.727938632141093
+          "normalized": 0.6656050908849598
         },
         "Perez": {
           "score": 28.09699720670391,
           "entries": 8.839506172839506,
           "source": "track_historical",
-          "normalized": 0.7354533885479749
+          "normalized": 0.6729854660620456
         },
         "Colapinto": {
-          "score": 10.87443473570658,
+          "score": 12.05033285646161,
           "entries": 0.0,
           "source": "season_fallback",
           "normalized": 0.0
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.21475164669126762
+          "normalized": 0.1558856298737489
         }
       },
       "constructors": {
@@ -1085,10 +2023,10 @@
           "normalized": 0.3603868507500402
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.47370773019691936
+          "normalized": 0.630674179679588
         },
         "Leclerc": {
           "score": 25.28290598290598,
@@ -1109,10 +2047,10 @@
           "normalized": 0.8526452413222759
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.3220215639978345
+          "normalized": 0.32104969561019703
         },
         "Gasly": {
           "score": 16.492450142450142,
@@ -1133,10 +2071,10 @@
           "normalized": 0.3379717902184649
         },
         "Lawson": {
-          "score": 14.166895292987512,
+          "score": 15.215098494623655,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.09161854578177647
+          "normalized": 0.11762436824776702
         },
         "Albon": {
           "score": 16.671828358208955,
@@ -1151,16 +2089,16 @@
           "normalized": 0.17190909926259443
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.09780536198090098
+          "normalized": 0.06665090116540279
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.16504247248160242
+          "normalized": 0.2144540255901772
         },
         "Ocon": {
           "score": 16.0899416909621,
@@ -1181,16 +2119,16 @@
           "normalized": 0.49480542601823974
         },
         "Colapinto": {
-          "score": 10.87443473570658,
+          "score": 12.05033285646161,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.009932910214860782
+          "normalized": 0.039106831567814616
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.13470120213497924
+          "normalized": 0.13132368024096172
         }
       },
       "constructors": {
@@ -1291,10 +2229,10 @@
           "normalized": 0.5300219217485165
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.4514113458561231
+          "normalized": 0.5708113440958555
         },
         "Leclerc": {
           "score": 28.881653543307085,
@@ -1315,10 +2253,10 @@
           "normalized": 0.6466733521316834
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.33602791177289093
+          "normalized": 0.3352886386087491
         },
         "Gasly": {
           "score": 16.317248603351956,
@@ -1357,16 +2295,16 @@
           "normalized": 0.0449000284025892
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.1654729032702791
+          "normalized": 0.14177457424015716
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.2166182970909813
+          "normalized": 0.254204286795346
         },
         "Ocon": {
           "score": 22.335885167464113,
@@ -1387,16 +2325,16 @@
           "normalized": 0.4423764841747618
         },
         "Colapinto": {
-          "score": 10.87443473570658,
+          "score": 12.05033285646161,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.09863078114312585
+          "normalized": 0.1208225690676746
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.19353853935983598
+          "normalized": 0.19096935269905926
         }
       },
       "constructors": {
@@ -1476,43 +2414,43 @@
           "score": 37.789581304771175,
           "entries": 12.679012345679013,
           "source": "track_historical",
-          "normalized": 0.7241007019557468
+          "normalized": 0.7150874074813095
         },
         "Russell": {
           "score": 22.5265932792584,
           "entries": 10.654320987654321,
           "source": "track_historical",
-          "normalized": 0.3134791095799987
+          "normalized": 0.2910513071460253
         },
         "Norris": {
           "score": 22.549884125144843,
           "entries": 10.654320987654321,
           "source": "track_historical",
-          "normalized": 0.3141057053821891
+          "normalized": 0.2916983730709077
         },
         "Piastri": {
           "score": 13.663253012048193,
           "entries": 4.098765432098766,
           "source": "track_historical",
-          "normalized": 0.07502783855715632
+          "normalized": 0.0448101231412803
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.5029030543825125
+          "normalized": 0.6624335985065681
         },
         "Leclerc": {
           "score": 27.28842494714588,
           "entries": 11.679012345679013,
           "source": "track_historical",
-          "normalized": 0.4415871116844904
+          "normalized": 0.423344441853915
         },
         "Alonso": {
           "score": 23.488445945945948,
           "entries": 9.135802469135802,
           "source": "track_historical",
-          "normalized": 0.3393559217065568
+          "normalized": 0.31777348324925786
         },
         "Hamilton": {
           "score": 48.04488146551724,
@@ -1521,88 +2459,88 @@
           "normalized": 1.0
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.33841927259366006
+          "normalized": 0.3157179425081361
         },
         "Gasly": {
           "score": 16.748520084566596,
           "entries": 11.679012345679013,
           "source": "track_historical",
-          "normalized": 0.1580310667654421
+          "normalized": 0.1305249658533848
         },
         "Stroll": {
           "score": 18.92702044790652,
           "entries": 12.679012345679013,
           "source": "track_historical",
-          "normalized": 0.21663946550692856
+          "normalized": 0.19104802969288662
         },
         "Sainz": {
           "score": 27.79498539435248,
           "entries": 12.679012345679013,
           "source": "track_historical",
-          "normalized": 0.45521515470718393
+          "normalized": 0.43741769646556355
         },
         "Lawson": {
-          "score": 14.166895292987512,
+          "score": 15.215098494623655,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.08857737388021174
+          "normalized": 0.08792347064927054
         },
         "Albon": {
           "score": 22.183466666666668,
           "entries": 9.25925925925926,
           "source": "track_historical",
-          "normalized": 0.3042479422742653
+          "normalized": 0.28151856883282955
         },
         "Hulkenberg": {
           "score": 13.851536312849161,
           "entries": 8.839506172839506,
           "source": "track_historical",
-          "normalized": 0.08009324178379995
+          "normalized": 0.050041006929988224
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.09528616579686491
+          "normalized": 0.030843685337410116
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.16819600648197447
+          "normalized": 0.19635274511857606
         },
         "Ocon": {
           "score": 18.992430703624734,
           "entries": 11.580246913580247,
           "source": "track_historical",
-          "normalized": 0.21839920372567193
+          "normalized": 0.19286525641876245
         },
         "Bottas": {
           "score": 29.952629016553068,
           "entries": 12.679012345679013,
           "source": "track_historical",
-          "normalized": 0.5132624425938307
+          "normalized": 0.4973613186411105
         },
         "Perez": {
           "score": 32.64342745861733,
           "entries": 12.679012345679013,
           "source": "track_historical",
-          "normalized": 0.5856532443946131
+          "normalized": 0.5721170398835017
         },
         "Colapinto": {
-          "score": 10.87443473570658,
+          "score": 12.05033285646161,
           "entries": 0.0,
           "source": "season_fallback",
           "normalized": 0.0
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.13529487241058902
+          "normalized": 0.10326387875273045
         }
       },
       "constructors": {
@@ -1703,10 +2641,10 @@
           "normalized": 0.28854538681597075
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.4259885672918803
+          "normalized": 0.5408504372992198
         },
         "Leclerc": {
           "score": 36.43932291666667,
@@ -1727,10 +2665,10 @@
           "normalized": 0.5226739412392304
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.3149906007755087
+          "normalized": 0.314279425739232
         },
         "Gasly": {
           "score": 17.519965277777775,
@@ -1751,10 +2689,10 @@
           "normalized": 0.47477938355953475
         },
         "Lawson": {
-          "score": 14.166895292987512,
+          "score": 15.215098494623655,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.14639074001001695
+          "normalized": 0.16542077738021543
         },
         "Albon": {
           "score": 9.298488120950324,
@@ -1769,10 +2707,10 @@
           "normalized": 0.20102320367225535
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.1509180086101875
+          "normalized": 0.12812040033063207
         },
         "Bearman": {
           "score": 26.299999999999997,
@@ -1799,16 +2737,16 @@
           "normalized": 0.6354833981835631
         },
         "Colapinto": {
-          "score": 10.87443473570658,
+          "score": 12.05033285646161,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.08661640680137833
+          "normalized": 0.10796473425027896
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.17791693232641284
+          "normalized": 0.17544539473340373
         }
       },
       "constructors": {
@@ -1894,127 +2832,127 @@
           "score": 27.821814254859614,
           "entries": 5.716049382716049,
           "source": "track_historical",
-          "normalized": 0.32210839362548244
+          "normalized": 0.30661145745306423
         },
         "Norris": {
           "score": 32.76533477321815,
           "entries": 5.716049382716049,
           "source": "track_historical",
-          "normalized": 0.41606684019378465
+          "normalized": 0.40271784041066017
         },
         "Piastri": {
           "score": 12.09397590361446,
           "entries": 4.098765432098766,
           "source": "track_historical",
-          "normalized": 0.023179067071165946
+          "normalized": 0.0008484591876440571
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.35528881935181295
+          "normalized": 0.4635482808822839
         },
         "Leclerc": {
           "score": 38.61263498920086,
           "entries": 5.716049382716049,
           "source": "track_historical",
-          "normalized": 0.5272028702500855
+          "normalized": 0.5163944948795414
         },
         "Alonso": {
           "score": 27.64719222462203,
           "entries": 5.716049382716049,
           "source": "track_historical",
-          "normalized": 0.318789460359848
+          "normalized": 0.3032166517374771
         },
         "Hamilton": {
           "score": 27.6,
           "entries": 5.716049382716049,
           "source": "track_historical",
-          "normalized": 0.31789250684279036
+          "normalized": 0.3022991934210197
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.23908501401593765
+          "normalized": 0.22092857280077585
         },
         "Gasly": {
           "score": 13.858747300215983,
           "entries": 5.716049382716049,
           "source": "track_historical",
-          "normalized": 0.05672098893779353
+          "normalized": 0.03515716591689493
         },
         "Stroll": {
           "score": 15.443952483801297,
           "entries": 5.716049382716049,
           "source": "track_historical",
-          "normalized": 0.08685000650504583
+          "normalized": 0.06597494767267949
         },
         "Sainz": {
           "score": 33.15820734341253,
           "entries": 5.716049382716049,
           "source": "track_historical",
-          "normalized": 0.42353392691015923
+          "normalized": 0.410355628408994
         },
         "Lawson": {
-          "score": 14.166895292987512,
+          "score": 15.215098494623655,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.06257776784797128
+          "normalized": 0.06152582501937996
         },
         "Albon": {
           "score": 15.265442764578836,
           "entries": 5.716049382716049,
           "source": "track_historical",
-          "normalized": 0.08345718233182778
+          "normalized": 0.06250456186694943
         },
         "Hulkenberg": {
           "score": 13.26265060240964,
           "entries": 4.098765432098766,
           "source": "track_historical",
-          "normalized": 0.045391346525592936
+          "normalized": 0.023568522296142428
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.06731736673999102
+          "normalized": 0.021583351669456127
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.11882640211053085
+          "normalized": 0.13740090727800053
         },
         "Ocon": {
           "score": 23.739200863930886,
           "entries": 5.716049382716049,
           "source": "track_historical",
-          "normalized": 0.2445126780365477
+          "normalized": 0.2272418655682332
         },
         "Bottas": {
           "score": 16.44254859611231,
           "entries": 5.716049382716049,
           "source": "track_historical",
-          "normalized": 0.1058297071280025
+          "normalized": 0.08538853360467343
         },
         "Perez": {
           "score": 35.322030237581,
           "entries": 5.716049382716049,
           "source": "track_historical",
-          "normalized": 0.46466037455611836
+          "normalized": 0.4524222469143864
         },
         "Colapinto": {
-          "score": 10.87443473570658,
+          "score": 12.05033285646161,
           "entries": 0.0,
           "source": "season_fallback",
           "normalized": 0.0
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.09558254829478692
+          "normalized": 0.0722605157422283
         }
       },
       "constructors": {
@@ -2100,127 +3038,127 @@
           "score": 23.575452898550726,
           "entries": 6.814814814814815,
           "source": "track_historical",
-          "normalized": 0.27633726230469685
+          "normalized": 0.273243242950386
         },
         "Norris": {
           "score": 21.485326086956523,
           "entries": 6.814814814814815,
           "source": "track_historical",
-          "normalized": 0.2308621741204084
+          "normalized": 0.22757372606934126
         },
         "Piastri": {
           "score": 22.033433734939756,
           "entries": 4.098765432098766,
           "source": "track_historical",
-          "normalized": 0.24278740444052915
+          "normalized": 0.23954994270047833
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.40670823642616777
+          "normalized": 0.5424121844007089
         },
         "Leclerc": {
           "score": 22.61070866141732,
           "entries": 7.839506172839506,
           "source": "track_historical",
-          "normalized": 0.2553472300178696
+          "normalized": 0.2521634678002604
         },
         "Alonso": {
           "score": 25.691866028708134,
           "entries": 7.7407407407407405,
           "source": "track_historical",
-          "normalized": 0.3223842644264896
+          "normalized": 0.31948711898643684
         },
         "Hamilton": {
           "score": 46.07451117318436,
           "entries": 8.839506172839506,
           "source": "track_historical",
-          "normalized": 0.7658514168655031
+          "normalized": 0.7648503148185608
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.2736867559855889
+          "normalized": 0.26972547857820667
         },
         "Gasly": {
           "score": 17.932125984251968,
           "entries": 7.839506172839506,
           "source": "track_historical",
-          "normalized": 0.1535548609418033
+          "normalized": 0.14993588554595927
         },
         "Stroll": {
           "score": 21.49350558659218,
           "entries": 8.839506172839506,
           "source": "track_historical",
-          "normalized": 0.23104013627331293
+          "normalized": 0.22775244909926315
         },
         "Sainz": {
           "score": 19.80272346368715,
           "entries": 8.839506172839506,
           "source": "track_historical",
-          "normalized": 0.19425362852985245
+          "normalized": 0.19080866067654828
         },
         "Lawson": {
-          "score": 14.166895292987512,
+          "score": 15.215098494623655,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.07163437804591494
+          "normalized": 0.09056851505172633
         },
         "Albon": {
           "score": 11.070108695652173,
           "entries": 6.814814814814815,
           "source": "track_historical",
-          "normalized": 0.00425729699008446
+          "normalized": 0.0
         },
         "Hulkenberg": {
           "score": 18.72102564102564,
           "entries": 7.222222222222222,
           "source": "track_historical",
-          "normalized": 0.17071902593951196
+          "normalized": 0.1671734359149704
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.07705991862514715
+          "normalized": 0.045676113002776846
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.13602363432491182
+          "normalized": 0.17584652646604965
         },
         "Ocon": {
           "score": 25.093221690590113,
           "entries": 7.7407407407407405,
           "source": "track_historical",
-          "normalized": 0.3093595025240393
+          "normalized": 0.30640666972672426
         },
         "Bottas": {
           "score": 27.272067039106147,
           "entries": 8.839506172839506,
           "source": "track_historical",
-          "normalized": 0.35676484836911737
+          "normalized": 0.3540146970833716
         },
         "Perez": {
           "score": 12.810824022346369,
           "entries": 8.839506172839506,
           "source": "track_historical",
-          "normalized": 0.04213020620595348
+          "normalized": 0.038034834803596734
         },
         "Colapinto": {
-          "score": 10.87443473570658,
+          "score": 12.05033285646161,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.0
+          "normalized": 0.02141801330472854
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.10941579788807794
+          "normalized": 0.10263351782657716
         }
       },
       "constructors": {
@@ -2321,10 +3259,10 @@
           "normalized": 0.7244072858934953
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.5699867851188036
+          "normalized": 0.7443805445582489
         },
         "Leclerc": {
           "score": 28.944050802139035,
@@ -2345,10 +3283,10 @@
           "normalized": 0.6913613670817738
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.4014595561115899
+          "normalized": 0.4003797853557433
         },
         "Gasly": {
           "score": 23.879545454545454,
@@ -2369,10 +3307,10 @@
           "normalized": 0.7335741997225345
         },
         "Lawson": {
-          "score": 14.166895292987512,
+          "score": 15.215098494623655,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.1454758814771585
+          "normalized": 0.17436901859089335
         },
         "Albon": {
           "score": 15.548731884057972,
@@ -2387,16 +3325,16 @@
           "normalized": 0.0
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.15234959327660463
+          "normalized": 0.11773618663569367
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.2270517510479532
+          "normalized": 0.2819492564368205
         },
         "Ocon": {
           "score": 20.08493243243243,
@@ -2417,16 +3355,16 @@
           "normalized": 0.373379418837602
         },
         "Colapinto": {
-          "score": 10.87443473570658,
+          "score": 12.05033285646161,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.054721041027717125
+          "normalized": 0.0871340174255434
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.19334181991709445
+          "normalized": 0.1895893062899592
         }
       },
       "constructors": {
@@ -2506,43 +3444,43 @@
           "score": 55.82979525862069,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.9675022245744465
+          "normalized": 0.9666584509273336
         },
         "Russell": {
           "score": 28.16073298429319,
           "entries": 9.4320987654321,
           "source": "track_historical",
-          "normalized": 0.37202531167868785
+          "normalized": 0.35572054970280226
         },
         "Norris": {
           "score": 24.12748691099476,
           "entries": 9.4320987654321,
           "source": "track_historical",
-          "normalized": 0.2852242160410851
+          "normalized": 0.26666574666275544
         },
         "Piastri": {
           "score": 20.262951807228916,
           "entries": 4.098765432098766,
           "source": "track_historical",
-          "normalized": 0.20205401639528928
+          "normalized": 0.18133611235513178
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.4023023239786797
+          "normalized": 0.5264797979591876
         },
         "Leclerc": {
           "score": 18.050000000000004,
           "entries": 10.45679012345679,
           "source": "track_historical",
-          "normalized": 0.1544281988850791
+          "normalized": 0.1324737360586324
         },
         "Alonso": {
           "score": 18.987027027027025,
           "entries": 9.135802469135802,
           "source": "track_historical",
-          "normalized": 0.17459433085665865
+          "normalized": 0.15316346235317718
         },
         "Hamilton": {
           "score": 57.33981681034483,
@@ -2551,88 +3489,88 @@
           "normalized": 1.0
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.27072187901258854
+          "normalized": 0.250921932339345
         },
         "Gasly": {
           "score": 19.974852420306966,
           "entries": 10.45679012345679,
           "source": "track_historical",
-          "normalized": 0.19585371470705243
+          "normalized": 0.17497482576561552
         },
         "Stroll": {
           "score": 16.07262931034483,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.11187241646454751
+          "normalized": 0.08881303346222692
         },
         "Sainz": {
           "score": 27.54396551724138,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.35875161329262734
+          "normalized": 0.3421022124375809
         },
         "Lawson": {
-          "score": 14.166895292987512,
+          "score": 15.215098494623655,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.07085835540945706
+          "normalized": 0.069878597896691
         },
         "Albon": {
           "score": 13.869431643625191,
           "entries": 8.037037037037038,
           "source": "track_historical",
-          "normalized": 0.06445652169840528
+          "normalized": 0.04016603035300444
         },
         "Hulkenberg": {
           "score": 13.413333333333334,
           "entries": 7.222222222222222,
           "source": "track_historical",
-          "normalized": 0.05464064824751624
+          "normalized": 0.0300952971391686
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.07622512054567773
+          "normalized": 0.024513516919077934
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.13455007620646567
+          "normalized": 0.15605451446275762
         },
         "Ocon": {
           "score": 21.278009535160905,
           "entries": 10.358024691358025,
           "source": "track_historical",
-          "normalized": 0.22389947816942216
+          "normalized": 0.2037487706438769
         },
         "Bottas": {
           "score": 26.68960129310345,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.3403645004358871
+          "normalized": 0.3232376957871395
         },
         "Perez": {
           "score": 28.863092672413792,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.3871410743553487
+          "normalized": 0.371228778695559
         },
         "Colapinto": {
-          "score": 10.87443473570658,
+          "score": 12.05033285646161,
           "entries": 0.0,
           "source": "season_fallback",
           "normalized": 0.0
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.10823048521749366
+          "normalized": 0.08207063492067203
         }
       },
       "constructors": {
@@ -2718,127 +3656,127 @@
           "score": 25.989395491803275,
           "entries": 12.049382716049383,
           "source": "track_historical",
-          "normalized": 0.38881854116994347
+          "normalized": 0.3697542996933766
         },
         "Norris": {
           "score": 28.558043032786884,
           "entries": 12.049382716049383,
           "source": "track_historical",
-          "normalized": 0.4548946498533327
+          "normalized": 0.43789148348559426
         },
         "Piastri": {
           "score": 30.169578313253012,
           "entries": 4.098765432098766,
           "source": "track_historical",
-          "normalized": 0.49634992101849246
+          "normalized": 0.48063984574268925
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.48086370303678005
+          "normalized": 0.6324974029295859
         },
         "Leclerc": {
           "score": 33.67294617563739,
           "entries": 13.074074074074076,
           "source": "track_historical",
-          "normalized": 0.5864708550662052
+          "normalized": 0.5735718716911089
         },
         "Alonso": {
           "score": 19.718405627198123,
           "entries": 10.530864197530864,
           "source": "track_historical",
-          "normalized": 0.22750306240736812
+          "normalized": 0.2034069974083327
         },
         "Hamilton": {
           "score": 34.333903508771925,
           "entries": 14.074074074074076,
           "source": "track_historical",
-          "normalized": 0.6034733779435
+          "normalized": 0.5911047447568142
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.32358830032999625
+          "normalized": 0.30145025727086283
         },
         "Gasly": {
           "score": 18.194428706326722,
           "entries": 13.074074074074076,
           "source": "track_historical",
-          "normalized": 0.18830014996111036
+          "normalized": 0.16298125043615394
         },
         "Stroll": {
           "score": 16.49969298245614,
           "entries": 14.074074074074076,
           "source": "track_historical",
-          "normalized": 0.14470462348525368
+          "normalized": 0.11802587308127234
         },
         "Sainz": {
           "score": 24.006052631578946,
           "entries": 14.074074074074076,
           "source": "track_historical",
-          "normalized": 0.3377988600740997
+          "normalized": 0.31714319021498594
         },
         "Lawson": {
-          "score": 14.166895292987512,
+          "score": 15.215098494623655,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.084695536521667
+          "normalized": 0.08395010000639015
         },
         "Albon": {
           "score": 15.391200000000001,
           "entries": 9.25925925925926,
           "source": "track_historical",
-          "normalized": 0.11618965534933787
+          "normalized": 0.08862145348967868
         },
         "Hulkenberg": {
           "score": 12.442393162393163,
           "entries": 7.222222222222222,
           "source": "track_historical",
-          "normalized": 0.040334296457467896
+          "normalized": 0.010399980805720728
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.09111032063528929
+          "normalized": 0.02944982095816177
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.1608249419209193
+          "normalized": 0.18747932113585708
         },
         "Ocon": {
           "score": 15.775356803044719,
           "entries": 12.97530864197531,
           "source": "track_historical",
-          "normalized": 0.1260717377543556
+          "normalized": 0.09881178216515954
         },
         "Bottas": {
           "score": 33.22535087719298,
           "entries": 14.074074074074076,
           "source": "track_historical",
-          "normalized": 0.5749568753884555
+          "normalized": 0.561698742883814
         },
         "Perez": {
           "score": 25.473552631578944,
           "entries": 14.074074074074076,
           "source": "track_historical",
-          "normalized": 0.3755489553852463
+          "normalized": 0.35607080313956396
         },
         "Colapinto": {
-          "score": 10.87443473570658,
+          "score": 12.05033285646161,
           "entries": 0.0,
           "source": "season_fallback",
           "normalized": 0.0
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.12936567551598235
+          "normalized": 0.09859725604918886
         }
       },
       "constructors": {
@@ -2918,43 +3856,43 @@
           "score": 39.17916260954236,
           "entries": 12.679012345679013,
           "source": "track_historical",
-          "normalized": 0.5652254693660036
+          "normalized": 0.5604588331915752
         },
         "Russell": {
           "score": 11.417497103128623,
           "entries": 10.654320987654321,
           "source": "track_historical",
-          "normalized": 0.010844572782657895
+          "normalized": 0.0
         },
         "Norris": {
           "score": 32.83980301274623,
           "entries": 10.654320987654321,
           "source": "track_historical",
-          "normalized": 0.43863292554963407
+          "normalized": 0.4324783962116202
         },
         "Piastri": {
           "score": 30.2,
           "entries": 4.098765432098766,
           "source": "track_historical",
-          "normalized": 0.38591791964800426
+          "normalized": 0.37918545108779295
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.3732886569227418
+          "normalized": 0.4941439080870332
         },
         "Leclerc": {
           "score": 27.86088794926004,
           "entries": 11.679012345679013,
           "source": "track_historical",
-          "normalized": 0.33920750036143305
+          "normalized": 0.3319629236656107
         },
         "Alonso": {
           "score": 23.55256756756757,
           "entries": 9.135802469135802,
           "source": "track_historical",
-          "normalized": 0.25317337840217335
+          "normalized": 0.24498556945820585
         },
         "Hamilton": {
           "score": 60.95131450827653,
@@ -2963,88 +3901,88 @@
           "normalized": 1.0
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.25119767049013064
+          "normalized": 0.24219737565484536
         },
         "Gasly": {
           "score": 12.053171247357295,
           "entries": 11.679012345679013,
           "source": "track_historical",
-          "normalized": 0.023538537484845024
+          "normalized": 0.012833134563996025
         },
         "Stroll": {
           "score": 19.162025316455697,
           "entries": 12.679012345679013,
           "source": "track_historical",
-          "normalized": 0.16549734365216417
+          "normalized": 0.1563483014035217
         },
         "Sainz": {
           "score": 26.156621226874393,
           "entries": 12.679012345679013,
           "source": "track_historical",
-          "normalized": 0.30517449490810256
+          "normalized": 0.29755679848357447
         },
         "Lawson": {
-          "score": 14.166895292987512,
+          "score": 15.215098494623655,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.0657481171397665
+          "normalized": 0.07666684278406449
         },
         "Albon": {
           "score": 19.554933333333334,
           "entries": 9.25925925925926,
           "source": "track_historical",
-          "normalized": 0.1733434398678644
+          "normalized": 0.1642804180353564
         },
         "Hulkenberg": {
           "score": 20.64284802043423,
           "entries": 9.666666666666666,
           "source": "track_historical",
-          "normalized": 0.19506832951837355
+          "normalized": 0.18624348779439806
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.07072783619758079
+          "normalized": 0.03518889469463064
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.12484645064746355
+          "normalized": 0.15545872669254032
         },
         "Ocon": {
           "score": 15.583155650319831,
           "entries": 11.580246913580247,
           "source": "track_historical",
-          "normalized": 0.09402983844038332
+          "normalized": 0.0840972645641134
         },
         "Bottas": {
           "score": 24.818889970788703,
           "entries": 12.679012345679013,
           "source": "track_historical",
-          "normalized": 0.2784609444201098
+          "normalized": 0.2705503748690952
         },
         "Perez": {
           "score": 22.304644149577804,
           "entries": 10.234567901234568,
           "source": "track_historical",
-          "normalized": 0.22825322715358598
+          "normalized": 0.219792206956327
         },
         "Colapinto": {
-          "score": 10.87443473570658,
+          "score": 12.05033285646161,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.0
+          "normalized": 0.012775832481411342
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.10042500392584348
+          "normalized": 0.0878141981483081
         }
       },
       "constructors": {
@@ -3124,43 +4062,43 @@
           "score": 45.69577047413793,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.9574152254414434
+          "normalized": 0.9559923977595831
         },
         "Russell": {
           "score": 18.507657068062827,
           "entries": 9.4320987654321,
           "source": "track_historical",
-          "normalized": 0.2098760178263839
+          "normalized": 0.18347667004088733
         },
         "Norris": {
           "score": 21.301963350785343,
           "entries": 9.4320987654321,
           "source": "track_historical",
-          "normalized": 0.28670567765682375
+          "normalized": 0.2628733357537781
         },
         "Piastri": {
           "score": 24.82379518072289,
           "entries": 4.098765432098766,
           "source": "track_historical",
-          "normalized": 0.38353870671564544
+          "normalized": 0.36294171631302435
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.5139690375454625
+          "normalized": 0.6774969440140999
         },
         "Leclerc": {
           "score": 34.126741440377806,
           "entries": 10.45679012345679,
           "source": "track_historical",
-          "normalized": 0.6393239085632292
+          "normalized": 0.627273124394447
         },
         "Alonso": {
           "score": 19.497567567567565,
           "entries": 9.135802469135802,
           "source": "track_historical",
-          "normalized": 0.23709368090425859
+          "normalized": 0.21160372021460058
         },
         "Hamilton": {
           "score": 47.244585129310344,
@@ -3169,88 +4107,88 @@
           "normalized": 1.0
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.3458659204911112
+          "normalized": 0.32289718049009963
         },
         "Gasly": {
           "score": 20.160920897284534,
           "entries": 10.45679012345679,
           "source": "track_historical",
-          "normalized": 0.2553326302222584
+          "normalized": 0.23045206296597437
         },
         "Stroll": {
           "score": 16.97289870689655,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.1676777221207883
+          "normalized": 0.1398684595504973
         },
         "Sainz": {
           "score": 17.780738146551727,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.1898893278170146
+          "normalized": 0.1628221916938109
         },
         "Lawson": {
-          "score": 14.166895292987512,
+          "score": 15.215098494623655,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.09052644879521755
+          "normalized": 0.08992279800766112
         },
         "Albon": {
           "score": 19.494086021505378,
           "entries": 8.037037037037038,
           "source": "track_historical",
-          "normalized": 0.2369979555353913
+          "normalized": 0.2115047965029901
         },
         "Hulkenberg": {
           "score": 14.03794871794872,
           "entries": 7.222222222222222,
           "source": "track_historical",
-          "normalized": 0.08698105308903235
+          "normalized": 0.05647558146932113
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.09738286236130488
+          "normalized": 0.031545052372552125
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.17189702630992185
+          "normalized": 0.20081768960167828
         },
         "Ocon": {
           "score": 25.510786650774733,
           "entries": 10.358024691358025,
           "source": "track_historical",
-          "normalized": 0.40242758846667226
+          "normalized": 0.38246170681391184
         },
         "Bottas": {
           "score": 20.716971982758622,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.27062129632499404
+          "normalized": 0.24625154866503735
         },
         "Perez": {
           "score": 29.142564655172414,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.5022835957994433
+          "normalized": 0.4856540683461807
         },
         "Colapinto": {
-          "score": 10.87443473570658,
+          "score": 12.05033285646161,
           "entries": 0.0,
           "source": "season_fallback",
           "normalized": 0.0
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.13827192885731784
+          "normalized": 0.10561203785517796
         }
       },
       "constructors": {
@@ -3330,19 +4268,19 @@
           "score": 43.15301724137932,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.7599194990412154
+          "normalized": 0.7544100302198222
         },
         "Russell": {
           "score": 25.572774869109946,
           "entries": 9.4320987654321,
           "source": "track_historical",
-          "normalized": 0.34603611447157895
+          "normalized": 0.33102867478677717
         },
         "Norris": {
           "score": 29.19502617801047,
           "entries": 9.4320987654321,
           "source": "track_historical",
-          "normalized": 0.43131307480827646
+          "normalized": 0.418262606857047
         },
         "Piastri": {
           "score": 53.35075301204819,
@@ -3351,112 +4289,112 @@
           "normalized": 1.0
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.4400836030931599
+          "normalized": 0.5796005900488788
         },
         "Leclerc": {
           "score": 20.41074380165289,
           "entries": 10.45679012345679,
           "source": "track_historical",
-          "normalized": 0.22450884287816986
+          "normalized": 0.20671254399356237
         },
         "Alonso": {
           "score": 23.14905405405405,
           "entries": 9.135802469135802,
           "source": "track_historical",
-          "normalized": 0.2889755943180266
+          "normalized": 0.2726587056964599
         },
         "Hamilton": {
           "score": 49.90290948275862,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.9188290400580708
+          "normalized": 0.9169662945572215
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.29614608927370845
+          "normalized": 0.27905036666175603
         },
         "Gasly": {
           "score": 11.82733175914994,
           "entries": 10.45679012345679,
           "source": "track_historical",
-          "normalized": 0.022433606821665245
+          "normalized": 0.0
         },
         "Stroll": {
           "score": 16.7375,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.138031390247846
+          "normalized": 0.11825057022504717
         },
         "Sainz": {
           "score": 28.775592672413794,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.42143854889320226
+          "normalized": 0.4081614761471732
         },
         "Lawson": {
-          "score": 14.166895292987512,
+          "score": 15.215098494623655,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.0775128516520878
+          "normalized": 0.08158688839343305
         },
         "Albon": {
           "score": 16.662903225806453,
           "entries": 8.037037037037038,
           "source": "track_historical",
-          "normalized": 0.13627519344876757
+          "normalized": 0.1164540714794545
         },
         "Hulkenberg": {
           "score": 12.991452991452991,
           "entries": 7.222222222222222,
           "source": "track_historical",
-          "normalized": 0.04983996593051111
+          "normalized": 0.02803529182272759
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.08338362394777037
+          "normalized": 0.032107316503416486
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.1471860310121865
+          "normalized": 0.17557872896841076
         },
         "Ocon": {
           "score": 21.34046483909416,
           "entries": 10.358024691358025,
           "source": "track_historical",
-          "normalized": 0.2463968283526337
+          "normalized": 0.2291028242110523
         },
         "Bottas": {
           "score": 19.775754310344826,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.20955958368915628
+          "normalized": 0.19142022288541802
         },
         "Perez": {
           "score": 24.068803879310344,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.31062883222985793
+          "normalized": 0.29480885126501893
         },
         "Colapinto": {
-          "score": 10.87443473570658,
+          "score": 12.05033285646161,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.0
+          "normalized": 0.0053704894872097
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.11839469737082553
+          "normalized": 0.09488471040573167
         }
       },
       "constructors": {
@@ -3542,127 +4480,127 @@
           "score": 23.923611111111114,
           "entries": 7.111111111111111,
           "source": "track_historical",
-          "normalized": 0.2389713944838425
+          "normalized": 0.22222243134503175
         },
         "Norris": {
           "score": 40.664149305555554,
           "entries": 7.111111111111111,
           "source": "track_historical",
-          "normalized": 0.5455432149304333
+          "normalized": 0.535541383348623
         },
         "Piastri": {
           "score": 27.204518072289158,
           "entries": 4.098765432098766,
           "source": "track_historical",
-          "normalized": 0.2990551031508699
+          "normalized": 0.2836284816617854
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.34232992949075464
+          "normalized": 0.44626860208995983
         },
         "Leclerc": {
           "score": 29.53576388888889,
           "entries": 7.111111111111111,
           "source": "track_historical",
-          "normalized": 0.3417475342783626
+          "normalized": 0.32726050159064196
         },
         "Alonso": {
           "score": 31.05121527777778,
           "entries": 7.111111111111111,
           "source": "track_historical",
-          "normalized": 0.36950020780018294
+          "normalized": 0.35562396490728904
         },
         "Hamilton": {
           "score": 31.02248263888889,
           "entries": 7.111111111111111,
           "source": "track_historical",
-          "normalized": 0.36897402296024007
+          "normalized": 0.3550861996215856
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.23036456970329477
+          "normalized": 0.21269302338448223
         },
         "Gasly": {
           "score": 28.148003472222225,
           "entries": 7.111111111111111,
           "source": "track_historical",
-          "normalized": 0.31633328341381095
+          "normalized": 0.3012869256917282
         },
         "Stroll": {
           "score": 15.685677083333331,
           "entries": 7.111111111111111,
           "source": "track_historical",
-          "normalized": 0.08810895492064631
+          "normalized": 0.06803976252769174
         },
         "Sainz": {
           "score": 27.50295138888889,
           "entries": 7.111111111111111,
           "source": "track_historical",
-          "normalized": 0.30452035427297874
+          "normalized": 0.28921401379425976
         },
         "Lawson": {
           "score": 13.2,
           "entries": 1.8888888888888888,
           "source": "track_historical",
-          "normalized": 0.0425884023775528
+          "normalized": 0.021517378974467587
         },
         "Albon": {
           "score": 17.057883369330455,
           "entries": 5.716049382716049,
           "source": "track_historical",
-          "normalized": 0.11323836081190979
+          "normalized": 0.09372222449322397
         },
         "Hulkenberg": {
           "score": 13.81566265060241,
           "entries": 4.098765432098766,
           "source": "track_historical",
-          "normalized": 0.053863118720829745
+          "normalized": 0.033040232913447674
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.06486201691245763
+          "normalized": 0.020778789556961347
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.11449229933649617
+          "normalized": 0.13227901676204654
         },
         "Ocon": {
           "score": 19.962586805555556,
           "entries": 7.111111111111111,
           "source": "track_historical",
-          "normalized": 0.16643260163963428
+          "normalized": 0.14808718133919366
         },
         "Bottas": {
           "score": 15.560329861111112,
           "entries": 7.111111111111111,
           "source": "track_historical",
-          "normalized": 0.08581345368536693
+          "normalized": 0.06569374116045397
         },
         "Perez": {
           "score": 28.076215277777777,
           "entries": 7.111111111111111,
           "source": "track_historical",
-          "normalized": 0.3150186161551017
+          "normalized": 0.29994332481173813
         },
         "Colapinto": {
-          "score": 10.87443473570658,
+          "score": 12.05033285646161,
           "entries": 0.0,
           "source": "season_fallback",
           "normalized": 0.0
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.09209624743609059
+          "normalized": 0.0695668621296708
         }
       },
       "constructors": {
@@ -3742,31 +4680,31 @@
           "score": 35.34046336206897,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.7776091073952162
+          "normalized": 0.7810506888944531
         },
         "Russell": {
           "score": 26.140510471204188,
           "entries": 9.4320987654321,
           "source": "track_historical",
-          "normalized": 0.4485467945824602
+          "normalized": 0.45708073734976884
         },
         "Norris": {
           "score": 33.25320680628272,
           "entries": 9.4320987654321,
           "source": "track_historical",
-          "normalized": 0.7029524784071901
+          "normalized": 0.7075493989138439
         },
         "Piastri": {
           "score": 30.90692771084337,
           "entries": 4.098765432098766,
           "source": "track_historical",
-          "normalized": 0.6190311763300748
+          "normalized": 0.6249268100944417
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.5711251173653655
+          "normalized": 0.8005547607776852
         },
         "Leclerc": {
           "score": 41.558087367178274,
@@ -3778,97 +4716,97 @@
           "score": 13.650135135135136,
           "entries": 9.135802469135802,
           "source": "track_historical",
-          "normalized": 0.001793224782393117
+          "normalized": 0.017240844645617596
         },
         "Hamilton": {
           "score": 34.63302801724138,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.7523056831825109
+          "normalized": 0.7561388445509494
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.35244293182795766
+          "normalized": 0.36108468176240643
         },
         "Gasly": {
           "score": 20.237721369539557,
           "entries": 10.45679012345679,
           "source": "track_historical",
-          "normalized": 0.237416861975043
+          "normalized": 0.24921811871140037
         },
         "Stroll": {
           "score": 17.841756465517243,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.15171840654940164
+          "normalized": 0.1648458786502983
         },
         "Sainz": {
           "score": 28.96212284482759,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.5494697345735509
+          "normalized": 0.5564418574342359
         },
         "Lawson": {
           "score": 14.0,
           "entries": 1.8888888888888888,
           "source": "track_historical",
-          "normalized": 0.014307130339308728
+          "normalized": 0.029561092875367314
         },
         "Albon": {
           "score": 22.981153846153845,
           "entries": 6.419753086419753,
           "source": "track_historical",
-          "normalized": 0.3355434770250758
+          "normalized": 0.34582618801981824
         },
         "Hulkenberg": {
           "score": 14.68051282051282,
           "entries": 7.222222222222222,
           "source": "track_historical",
-          "normalized": 0.038647594390927534
+          "normalized": 0.05352487922322888
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.02919599165803868
+          "normalized": 0.0
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.12613006707145163
+          "normalized": 0.2097865450301513
         },
         "Ocon": {
           "score": 16.485160905840285,
           "entries": 10.358024691358025,
           "source": "track_historical",
-          "normalized": 0.10319593282433741
+          "normalized": 0.11707430819251023
         },
         "Bottas": {
           "score": 28.682704741379315,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.5394755565105586
+          "normalized": 0.5466023429814247
         },
         "Perez": {
           "score": 29.216379310344827,
           "entries": 11.45679012345679,
           "source": "track_historical",
-          "normalized": 0.5585639355529685
+          "normalized": 0.5653953222824455
         },
         "Colapinto": {
           "score": 13.6,
           "entries": 2.2098765432098766,
           "source": "track_historical",
-          "normalized": 0.0
+          "normalized": 0.015475370681447168
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.08238780976716668
+          "normalized": 0.091794263027674
         }
       },
       "constructors": {
@@ -3969,10 +4907,10 @@
           "normalized": 1.0
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.5406516637084651
+          "normalized": 0.7124465594498215
         },
         "Leclerc": {
           "score": 31.183155080213904,
@@ -3993,10 +4931,10 @@
           "normalized": 0.6022940266489065
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.37463587375167473
+          "normalized": 0.3735721940361765
         },
         "Gasly": {
           "score": 19.273061497326204,
@@ -4017,10 +4955,10 @@
           "normalized": 0.2640965429102352
         },
         "Lawson": {
-          "score": 14.166895292987512,
+          "score": 15.215098494623655,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.12246693813915092
+          "normalized": 0.15092950178850179
         },
         "Albon": {
           "score": 17.782789855072465,
@@ -4035,10 +4973,10 @@
           "normalized": 0.0
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.12923821599758833
+          "normalized": 0.09514062784855117
         },
         "Bearman": {
           "score": 22.85,
@@ -4071,10 +5009,10 @@
           "normalized": 0.4166254865600485
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.16961956521871274
+          "normalized": 0.16592297258022695
         }
       },
       "constructors": {
@@ -4175,10 +5113,10 @@
           "normalized": 0.6966734908915273
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.5430247502663746
+          "normalized": 0.6985968026282244
         },
         "Leclerc": {
           "score": 34.3540157480315,
@@ -4199,10 +5137,10 @@
           "normalized": 0.8360631083929745
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.3926860742737203
+          "normalized": 0.39172283939015967
         },
         "Gasly": {
           "score": 19.86322834645669,
@@ -4241,16 +5179,16 @@
           "normalized": 0.2570939009128034
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.17046167641343174
+          "normalized": 0.13958397340576428
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.23710149218265797
+          "normalized": 0.286074102271136
         },
         "Ocon": {
           "score": 7.483971291866029,
@@ -4277,10 +5215,10 @@
           "normalized": 0.16022594691312814
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.20702975574059057
+          "normalized": 0.20368223775390512
         }
       },
       "constructors": {
@@ -4381,10 +5319,10 @@
           "normalized": 0.15733822287723517
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.42981148326658636
+          "normalized": 0.5599290552347225
         },
         "Leclerc": {
           "score": 34.02279411764706,
@@ -4405,10 +5343,10 @@
           "normalized": 0.44503240852357057
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.30407100998691694
+          "normalized": 0.3032653782402045
         },
         "Gasly": {
           "score": 14.13903743315508,
@@ -4447,16 +5385,16 @@
           "normalized": 0.21017401034976022
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.11820665554356978
+          "normalized": 0.09238111887220199
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.17394295838623883
+          "normalized": 0.21490273889253259
         },
         "Ocon": {
           "score": 8.668648648648649,
@@ -4483,10 +5421,10 @@
           "normalized": 0.2916566239922597
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.1487915171646081
+          "normalized": 0.14599171536258476
         }
       },
       "constructors": {
@@ -4587,10 +5525,10 @@
           "normalized": 0.3241047512739564
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.4144557029541957
+          "normalized": 0.5396053502376462
         },
         "Leclerc": {
           "score": 35.37967914438503,
@@ -4611,10 +5549,10 @@
           "normalized": 0.6564229078306412
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.2935160355274291
+          "normalized": 0.29274116302238345
         },
         "Gasly": {
           "score": 19.968395657418576,
@@ -4653,16 +5591,16 @@
           "normalized": 0.18973438206967722
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.11474803325601139
+          "normalized": 0.08990852267769399
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.16835630872668939
+          "normalized": 0.20775223354786204
         },
         "Ocon": {
           "score": 19.092364864864862,
@@ -4689,10 +5627,10 @@
           "normalized": 0.0986015258821227
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.14416515644843791
+          "normalized": 0.14147225184926054
         }
       },
       "constructors": {
@@ -4793,10 +5731,10 @@
           "normalized": 0.3280363586600654
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.5160607329440472
+          "normalized": 0.6328029314126551
         },
         "Leclerc": {
           "score": 20.903609625668448,
@@ -4817,10 +5755,10 @@
           "normalized": 0.7103808169234159
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.4032456914003379
+          "normalized": 0.40252287418322635
         },
         "Gasly": {
           "score": 27.508021712907116,
@@ -4859,10 +5797,10 @@
           "normalized": 0.13365166289236619
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.23648717426493904
+          "normalized": 0.21331636126832515
         },
         "Bearman": {
           "score": 13.6,
@@ -4895,10 +5833,10 @@
           "normalized": 0.0
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.26392807968217613
+          "normalized": 0.2614160821656177
         }
       },
       "constructors": {
@@ -4999,10 +5937,10 @@
           "normalized": 0.4065856269061847
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.5101835566271818
+          "normalized": 0.651135437801597
         },
         "Leclerc": {
           "score": 37.34307228915662,
@@ -5023,10 +5961,10 @@
           "normalized": 0.6704133296202226
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.37397323560404677
+          "normalized": 0.37310052249915754
         },
         "Gasly": {
           "score": 6.667469879518071,
@@ -5065,16 +6003,16 @@
           "normalized": 0.26263324419630735
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.172632786302752
+          "normalized": 0.1446568725110348
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.2330100022048822
+          "normalized": 0.27738032073700986
         },
         "Ocon": {
           "score": 20.17168674698795,
@@ -5101,10 +6039,10 @@
           "normalized": 0.1366245810168332
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.20576431278097607
+          "normalized": 0.20273138398479973
         }
       },
       "constructors": {
@@ -5205,10 +6143,10 @@
           "normalized": 0.661305792564554
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.4327953412023618
+          "normalized": 0.5279787345020478
         },
         "Leclerc": {
           "score": 34.667415730337076,
@@ -5229,10 +6167,10 @@
           "normalized": 0.35806219319242155
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.3408138759718369
+          "normalized": 0.3402245415549541
         },
         "Gasly": {
           "score": 19.855955056179774,
@@ -5271,16 +6209,16 @@
           "normalized": 0.0873853236793985
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.2048506875893663
+          "normalized": 0.18595883326881205
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.24562281662850435
+          "normalized": 0.2755856482309424
         },
         "Ocon": {
           "score": 16.542022471910112,
@@ -5307,10 +6245,10 @@
           "normalized": 0.0
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.2272240755081377
+          "normalized": 0.22517596907599172
         }
       },
       "constructors": {
@@ -5411,10 +6349,10 @@
           "normalized": 0.4393169684700512
         },
         "Antonelli": {
-          "score": 29.567565928890833,
+          "score": 35.89433121817792,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.5213943113665195
+          "normalized": 0.6360630128944637
         },
         "Leclerc": {
           "score": 36.39805194805195,
@@ -5435,10 +6373,10 @@
           "normalized": 0.6988940807687236
         },
         "Hadjar": {
-          "score": 23.453630279990495,
+          "score": 23.41445768482175,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.4105830152256745
+          "normalized": 0.40987303620510196
         },
         "Gasly": {
           "score": 17.542672413793102,
@@ -5477,16 +6415,16 @@
           "normalized": 0.2907150634499797
         },
         "Bortoleto": {
-          "score": 14.416264085546853,
+          "score": 13.160537387621435,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.24678635147016414
+          "normalized": 0.22402708297495086
         },
         "Bearman": {
-          "score": 17.1263554348117,
+          "score": 19.117961285153708,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.2959050783128556
+          "normalized": 0.33200170057903566
         },
         "Ocon": {
           "score": 19.255,
@@ -5513,10 +6451,10 @@
           "normalized": 0.0
         },
         "Lindblad": {
-          "score": 15.90340558346091,
+          "score": 15.767269559786394,
           "entries": 0.0,
           "source": "season_fallback",
-          "normalized": 0.2737398698570209
+          "normalized": 0.2712724887622351
         }
       },
       "constructors": {
@@ -5596,45 +6534,45 @@
       "teams": [
         {
           "drivers": [
-            "Leclerc",
-            "Hamilton",
-            "Sainz",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "Ferrari",
-          "total_price": 95.1,
-          "budget_left": 4.9,
-          "probability": 87,
-          "strength": 0.8512
-        },
-        {
-          "drivers": [
-            "Norris",
-            "Leclerc",
-            "Sainz",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "Ferrari",
-          "total_price": 99.7,
-          "budget_left": 0.3,
-          "probability": 87,
-          "strength": 0.8459
-        },
-        {
-          "drivers": [
             "Antonelli",
+            "Sainz",
+            "Hulkenberg",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "Ferrari",
+          "total_price": 94.6,
+          "budget_left": 5.4,
+          "probability": 81,
+          "strength": 0.76
+        },
+        {
+          "drivers": [
+            "Piastri",
             "Leclerc",
+            "Hulkenberg",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "Ferrari",
+          "total_price": 98.1,
+          "budget_left": 1.9,
+          "probability": 80,
+          "strength": 0.7543
+        },
+        {
+          "drivers": [
+            "Leclerc",
+            "Alonso",
             "Sainz",
             "Bottas",
             "Perez"
           ],
           "constructor": "Ferrari",
-          "total_price": 98.9,
-          "budget_left": 1.1,
-          "probability": 86,
-          "strength": 0.8367
+          "total_price": 98.3,
+          "budget_left": 1.7,
+          "probability": 80,
+          "strength": 0.7539
         }
       ]
     },
@@ -5646,27 +6584,13 @@
           "drivers": [
             "Verstappen",
             "Hamilton",
-            "Sainz",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "RedBull",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 74,
-          "strength": 0.6895
-        },
-        {
-          "drivers": [
-            "Verstappen",
-            "Hamilton",
             "Hulkenberg",
             "Bottas",
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 94.7,
-          "budget_left": 5.3,
+          "total_price": 99.2,
+          "budget_left": 0.8,
           "probability": 71,
           "strength": 0.6636
         },
@@ -5674,15 +6598,29 @@
           "drivers": [
             "Verstappen",
             "Hamilton",
-            "Bearman",
+            "Albon",
             "Bottas",
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 96.1,
-          "budget_left": 3.9,
+          "total_price": 99.3,
+          "budget_left": 0.7,
           "probability": 71,
-          "strength": 0.6625
+          "strength": 0.6607
+        },
+        {
+          "drivers": [
+            "Verstappen",
+            "Hamilton",
+            "Ocon",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "RedBull",
+          "total_price": 98.0,
+          "budget_left": 2.0,
+          "probability": 71,
+          "strength": 0.6585
         }
       ]
     },
@@ -5694,43 +6632,43 @@
           "drivers": [
             "Verstappen",
             "Hamilton",
-            "Sainz",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "RedBull",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 70,
-          "strength": 0.6505
-        },
-        {
-          "drivers": [
-            "Verstappen",
-            "Hamilton",
             "Ocon",
             "Bottas",
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 94.7,
-          "budget_left": 5.3,
+          "total_price": 98.0,
+          "budget_left": 2.0,
           "probability": 69,
           "strength": 0.6476
         },
         {
           "drivers": [
             "Verstappen",
-            "Hamilton",
-            "Bearman",
+            "Piastri",
+            "Ocon",
             "Bottas",
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 96.1,
-          "budget_left": 3.9,
+          "total_price": 96.0,
+          "budget_left": 4.0,
           "probability": 67,
-          "strength": 0.6322
+          "strength": 0.6294
+        },
+        {
+          "drivers": [
+            "Verstappen",
+            "Hamilton",
+            "Bottas",
+            "Perez",
+            "Lindblad"
+          ],
+          "constructor": "RedBull",
+          "total_price": 95.2,
+          "budget_left": 4.8,
+          "probability": 67,
+          "strength": 0.6282
         }
       ]
     },
@@ -5742,43 +6680,43 @@
           "drivers": [
             "Verstappen",
             "Hamilton",
-            "Ocon",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "Mercedes",
-          "total_price": 99.8,
-          "budget_left": 0.2,
-          "probability": 74,
-          "strength": 0.6945
-        },
-        {
-          "drivers": [
-            "Verstappen",
-            "Hamilton",
-            "Sainz",
+            "Albon",
             "Bottas",
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 74,
-          "strength": 0.6891
+          "total_price": 99.3,
+          "budget_left": 0.7,
+          "probability": 70,
+          "strength": 0.656
+        },
+        {
+          "drivers": [
+            "Hamilton",
+            "Sainz",
+            "Albon",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "Mercedes",
+          "total_price": 94.8,
+          "budget_left": 5.2,
+          "probability": 70,
+          "strength": 0.655
         },
         {
           "drivers": [
             "Verstappen",
             "Hamilton",
+            "Ocon",
             "Bottas",
-            "Perez",
-            "Lindblad"
+            "Perez"
           ],
-          "constructor": "Mercedes",
-          "total_price": 96.6,
-          "budget_left": 3.4,
-          "probability": 73,
-          "strength": 0.6815
+          "constructor": "RedBull",
+          "total_price": 98.0,
+          "budget_left": 2.0,
+          "probability": 69,
+          "strength": 0.6422
         }
       ]
     },
@@ -5789,44 +6727,44 @@
         {
           "drivers": [
             "Verstappen",
-            "Hamilton",
-            "Sainz",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "RedBull",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 70,
-          "strength": 0.6581
-        },
-        {
-          "drivers": [
-            "Verstappen",
             "Sainz",
             "Bearman",
             "Ocon",
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 93.2,
-          "budget_left": 6.8,
+          "total_price": 96.5,
+          "budget_left": 3.5,
           "probability": 70,
           "strength": 0.6541
         },
         {
           "drivers": [
             "Verstappen",
-            "Hadjar",
             "Sainz",
-            "Ocon",
+            "Hulkenberg",
+            "Bearman",
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 99.6,
-          "budget_left": 0.4,
-          "probability": 69,
-          "strength": 0.646
+          "total_price": 97.7,
+          "budget_left": 2.3,
+          "probability": 68,
+          "strength": 0.6378
+        },
+        {
+          "drivers": [
+            "Verstappen",
+            "Leclerc",
+            "Ocon",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "RedBull",
+          "total_price": 99.7,
+          "budget_left": 0.3,
+          "probability": 68,
+          "strength": 0.6361
         }
       ]
     },
@@ -5837,44 +6775,44 @@
         {
           "drivers": [
             "Verstappen",
-            "Hadjar",
-            "Sainz",
-            "Ocon",
-            "Perez"
-          ],
-          "constructor": "RedBull",
-          "total_price": 99.6,
-          "budget_left": 0.4,
-          "probability": 62,
-          "strength": 0.59
-        },
-        {
-          "drivers": [
-            "Verstappen",
             "Leclerc",
             "Ocon",
             "Bottas",
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 97.1,
-          "budget_left": 2.9,
-          "probability": 62,
-          "strength": 0.5854
+          "total_price": 99.7,
+          "budget_left": 0.3,
+          "probability": 60,
+          "strength": 0.5759
         },
         {
           "drivers": [
             "Verstappen",
-            "Leclerc",
-            "Ocon",
+            "Alonso",
+            "Sainz",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "RedBull",
+          "total_price": 97.4,
+          "budget_left": 2.6,
+          "probability": 60,
+          "strength": 0.5712
+        },
+        {
+          "drivers": [
+            "Verstappen",
+            "Alonso",
+            "Sainz",
             "Perez",
             "Lindblad"
           ],
           "constructor": "RedBull",
-          "total_price": 99.2,
-          "budget_left": 0.8,
-          "probability": 61,
-          "strength": 0.5838
+          "total_price": 98.7,
+          "budget_left": 1.3,
+          "probability": 59,
+          "strength": 0.5692
         }
       ]
     },
@@ -5886,15 +6824,15 @@
           "drivers": [
             "Verstappen",
             "Hamilton",
-            "Hulkenberg",
             "Ocon",
-            "Bottas"
+            "Bottas",
+            "Lindblad"
           ],
           "constructor": "RedBull",
-          "total_price": 98.1,
-          "budget_left": 1.9,
-          "probability": 66,
-          "strength": 0.6176
+          "total_price": 98.5,
+          "budget_left": 1.5,
+          "probability": 64,
+          "strength": 0.606
         },
         {
           "drivers": [
@@ -5902,27 +6840,27 @@
             "Hamilton",
             "Ocon",
             "Bottas",
-            "Lindblad"
+            "Perez"
           ],
-          "constructor": "Mercedes",
-          "total_price": 100.0,
-          "budget_left": 0.0,
-          "probability": 65,
-          "strength": 0.6165
+          "constructor": "RedBull",
+          "total_price": 98.0,
+          "budget_left": 2.0,
+          "probability": 63,
+          "strength": 0.5959
         },
         {
           "drivers": [
             "Verstappen",
             "Hamilton",
-            "Bearman",
             "Ocon",
-            "Bottas"
+            "Bottas",
+            "Colapinto"
           ],
           "constructor": "RedBull",
-          "total_price": 99.5,
-          "budget_left": 0.5,
-          "probability": 65,
-          "strength": 0.6122
+          "total_price": 99.4,
+          "budget_left": 0.6,
+          "probability": 63,
+          "strength": 0.5933
         }
       ]
     },
@@ -5932,45 +6870,45 @@
       "teams": [
         {
           "drivers": [
-            "Verstappen",
+            "Piastri",
             "Hamilton",
             "Sainz",
             "Bottas",
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 75,
-          "strength": 0.7037
+          "total_price": 98.0,
+          "budget_left": 2.0,
+          "probability": 71,
+          "strength": 0.6607
         },
         {
           "drivers": [
             "Verstappen",
-            "Hamilton",
+            "Gasly",
             "Sainz",
             "Bottas",
             "Perez"
           ],
-          "constructor": "Ferrari",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 75,
-          "strength": 0.7015
+          "constructor": "RedBull",
+          "total_price": 99.2,
+          "budget_left": 0.8,
+          "probability": 71,
+          "strength": 0.6603
         },
         {
           "drivers": [
             "Verstappen",
-            "Hamilton",
+            "Hadjar",
             "Sainz",
             "Bottas",
-            "Lindblad"
+            "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 99.0,
-          "budget_left": 1.0,
-          "probability": 72,
-          "strength": 0.6756
+          "total_price": 97.7,
+          "budget_left": 2.3,
+          "probability": 70,
+          "strength": 0.6583
         }
       ]
     },
@@ -5986,25 +6924,11 @@
             "Bottas",
             "Perez"
           ],
-          "constructor": "Mercedes",
-          "total_price": 99.8,
-          "budget_left": 0.2,
-          "probability": 72,
-          "strength": 0.6753
-        },
-        {
-          "drivers": [
-            "Verstappen",
-            "Hamilton",
-            "Sainz",
-            "Bottas",
-            "Perez"
-          ],
           "constructor": "RedBull",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 72,
-          "strength": 0.6723
+          "total_price": 98.0,
+          "budget_left": 2.0,
+          "probability": 69,
+          "strength": 0.6428
         },
         {
           "drivers": [
@@ -6014,11 +6938,25 @@
             "Perez",
             "Lindblad"
           ],
-          "constructor": "Mercedes",
-          "total_price": 96.6,
-          "budget_left": 3.4,
-          "probability": 70,
-          "strength": 0.6573
+          "constructor": "RedBull",
+          "total_price": 95.2,
+          "budget_left": 4.8,
+          "probability": 66,
+          "strength": 0.6238
+        },
+        {
+          "drivers": [
+            "Verstappen",
+            "Hamilton",
+            "Albon",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "RedBull",
+          "total_price": 99.3,
+          "budget_left": 0.7,
+          "probability": 66,
+          "strength": 0.6173
         }
       ]
     },
@@ -6029,16 +6967,16 @@
         {
           "drivers": [
             "Verstappen",
-            "Hamilton",
-            "Sainz",
+            "Antonelli",
             "Bottas",
-            "Perez"
+            "Perez",
+            "Lindblad"
           ],
           "constructor": "RedBull",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 69,
-          "strength": 0.6465
+          "total_price": 99.6,
+          "budget_left": 0.4,
+          "probability": 65,
+          "strength": 0.6087
         },
         {
           "drivers": [
@@ -6048,11 +6986,11 @@
             "Perez",
             "Lindblad"
           ],
-          "constructor": "Mercedes",
-          "total_price": 96.6,
-          "budget_left": 3.4,
-          "probability": 68,
-          "strength": 0.6386
+          "constructor": "RedBull",
+          "total_price": 95.2,
+          "budget_left": 4.8,
+          "probability": 64,
+          "strength": 0.6022
         },
         {
           "drivers": [
@@ -6062,11 +7000,11 @@
             "Bottas",
             "Perez"
           ],
-          "constructor": "Mercedes",
-          "total_price": 99.8,
-          "budget_left": 0.2,
-          "probability": 68,
-          "strength": 0.6381
+          "constructor": "RedBull",
+          "total_price": 98.0,
+          "budget_left": 2.0,
+          "probability": 64,
+          "strength": 0.6022
         }
       ]
     },
@@ -6076,45 +7014,45 @@
       "teams": [
         {
           "drivers": [
-            "Verstappen",
             "Hamilton",
+            "Sainz",
             "Hulkenberg",
             "Bottas",
             "Perez"
           ],
           "constructor": "Mercedes",
-          "total_price": 99.8,
-          "budget_left": 0.2,
-          "probability": 60,
-          "strength": 0.5737
+          "total_price": 94.7,
+          "budget_left": 5.3,
+          "probability": 54,
+          "strength": 0.528
         },
         {
           "drivers": [
             "Piastri",
-            "Hamilton",
-            "Sainz",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "Mercedes",
-          "total_price": 99.8,
-          "budget_left": 0.2,
-          "probability": 59,
-          "strength": 0.5629
-        },
-        {
-          "drivers": [
-            "Verstappen",
             "Hamilton",
             "Bottas",
             "Perez",
             "Lindblad"
           ],
           "constructor": "Mercedes",
-          "total_price": 96.6,
-          "budget_left": 3.4,
-          "probability": 58,
-          "strength": 0.5589
+          "total_price": 96.9,
+          "budget_left": 3.1,
+          "probability": 53,
+          "strength": 0.5253
+        },
+        {
+          "drivers": [
+            "Piastri",
+            "Hamilton",
+            "Ocon",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "Mercedes",
+          "total_price": 99.7,
+          "budget_left": 0.3,
+          "probability": 53,
+          "strength": 0.5248
         }
       ]
     },
@@ -6131,24 +7069,10 @@
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 94.7,
-          "budget_left": 5.3,
-          "probability": 76,
-          "strength": 0.7087
-        },
-        {
-          "drivers": [
-            "Verstappen",
-            "Hamilton",
-            "Ocon",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "Mercedes",
-          "total_price": 99.8,
-          "budget_left": 0.2,
-          "probability": 74,
-          "strength": 0.6949
+          "total_price": 98.0,
+          "budget_left": 2.0,
+          "probability": 75,
+          "strength": 0.699
         },
         {
           "drivers": [
@@ -6159,10 +7083,24 @@
             "Lindblad"
           ],
           "constructor": "RedBull",
-          "total_price": 96.8,
-          "budget_left": 3.2,
-          "probability": 74,
-          "strength": 0.6881
+          "total_price": 99.3,
+          "budget_left": 0.7,
+          "probability": 73,
+          "strength": 0.677
+        },
+        {
+          "drivers": [
+            "Verstappen",
+            "Hamilton",
+            "Albon",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "RedBull",
+          "total_price": 99.3,
+          "budget_left": 0.7,
+          "probability": 72,
+          "strength": 0.6723
         }
       ]
     },
@@ -6174,29 +7112,15 @@
           "drivers": [
             "Piastri",
             "Hamilton",
-            "Sainz",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "Mercedes",
-          "total_price": 99.8,
-          "budget_left": 0.2,
-          "probability": 71,
-          "strength": 0.6662
-        },
-        {
-          "drivers": [
-            "Piastri",
-            "Hamilton",
             "Ocon",
             "Bottas",
             "Perez"
           ],
           "constructor": "Mercedes",
-          "total_price": 95.7,
-          "budget_left": 4.3,
-          "probability": 68,
-          "strength": 0.6389
+          "total_price": 99.7,
+          "budget_left": 0.3,
+          "probability": 67,
+          "strength": 0.6306
         },
         {
           "drivers": [
@@ -6204,13 +7128,27 @@
             "Hamilton",
             "Sainz",
             "Bottas",
+            "Perez"
+          ],
+          "constructor": "RedBull",
+          "total_price": 98.0,
+          "budget_left": 2.0,
+          "probability": 66,
+          "strength": 0.6169
+        },
+        {
+          "drivers": [
+            "Piastri",
+            "Hamilton",
+            "Bottas",
+            "Perez",
             "Lindblad"
           ],
           "constructor": "Mercedes",
-          "total_price": 100.0,
-          "budget_left": 0.0,
-          "probability": 68,
-          "strength": 0.6362
+          "total_price": 96.9,
+          "budget_left": 3.1,
+          "probability": 65,
+          "strength": 0.6097
         }
       ]
     },
@@ -6227,10 +7165,10 @@
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 99.3,
-          "budget_left": 0.7,
-          "probability": 57,
-          "strength": 0.5496
+          "total_price": 99.7,
+          "budget_left": 0.3,
+          "probability": 55,
+          "strength": 0.5397
         },
         {
           "drivers": [
@@ -6241,10 +7179,10 @@
             "Lindblad"
           ],
           "constructor": "RedBull",
-          "total_price": 99.0,
-          "budget_left": 1.0,
-          "probability": 56,
-          "strength": 0.5447
+          "total_price": 98.7,
+          "budget_left": 1.3,
+          "probability": 55,
+          "strength": 0.5342
         },
         {
           "drivers": [
@@ -6255,10 +7193,10 @@
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 96.9,
-          "budget_left": 3.1,
-          "probability": 56,
-          "strength": 0.5437
+          "total_price": 97.4,
+          "budget_left": 2.6,
+          "probability": 55,
+          "strength": 0.5336
         }
       ]
     },
@@ -6268,31 +7206,17 @@
       "teams": [
         {
           "drivers": [
+            "Piastri",
             "Leclerc",
-            "Hamilton",
-            "Sainz",
+            "Albon",
             "Bottas",
             "Perez"
           ],
           "constructor": "Ferrari",
-          "total_price": 95.1,
-          "budget_left": 4.9,
-          "probability": 80,
-          "strength": 0.7504
-        },
-        {
-          "drivers": [
-            "Norris",
-            "Leclerc",
-            "Sainz",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "Ferrari",
-          "total_price": 99.7,
-          "budget_left": 0.3,
-          "probability": 79,
-          "strength": 0.7427
+          "total_price": 98.2,
+          "budget_left": 1.8,
+          "probability": 75,
+          "strength": 0.7009
         },
         {
           "drivers": [
@@ -6302,11 +7226,25 @@
             "Bottas",
             "Perez"
           ],
+          "constructor": "RedBull",
+          "total_price": 99.7,
+          "budget_left": 0.3,
+          "probability": 75,
+          "strength": 0.6963
+        },
+        {
+          "drivers": [
+            "Leclerc",
+            "Hadjar",
+            "Sainz",
+            "Bottas",
+            "Perez"
+          ],
           "constructor": "Ferrari",
-          "total_price": 97.1,
-          "budget_left": 2.9,
-          "probability": 78,
-          "strength": 0.7296
+          "total_price": 98.6,
+          "budget_left": 1.4,
+          "probability": 74,
+          "strength": 0.6926
         }
       ]
     },
@@ -6318,43 +7256,43 @@
           "drivers": [
             "Verstappen",
             "Hamilton",
-            "Sainz",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "RedBull",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 74,
-          "strength": 0.6865
-        },
-        {
-          "drivers": [
-            "Verstappen",
-            "Hamilton",
-            "Bearman",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "RedBull",
-          "total_price": 96.1,
-          "budget_left": 3.9,
-          "probability": 70,
-          "strength": 0.6541
-        },
-        {
-          "drivers": [
-            "Verstappen",
-            "Hamilton",
             "Ocon",
             "Bottas",
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 94.7,
-          "budget_left": 5.3,
-          "probability": 70,
-          "strength": 0.6532
+          "total_price": 98.0,
+          "budget_left": 2.0,
+          "probability": 69,
+          "strength": 0.6421
+        },
+        {
+          "drivers": [
+            "Verstappen",
+            "Hamilton",
+            "Bottas",
+            "Perez",
+            "Lindblad"
+          ],
+          "constructor": "RedBull",
+          "total_price": 95.2,
+          "budget_left": 4.8,
+          "probability": 68,
+          "strength": 0.6368
+        },
+        {
+          "drivers": [
+            "Verstappen",
+            "Hamilton",
+            "Hulkenberg",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "RedBull",
+          "total_price": 99.2,
+          "budget_left": 0.8,
+          "probability": 67,
+          "strength": 0.627
         }
       ]
     },
@@ -6365,44 +7303,44 @@
         {
           "drivers": [
             "Piastri",
-            "Hamilton",
-            "Bearman",
-            "Perez",
-            "Colapinto"
-          ],
-          "constructor": "RedBull",
-          "total_price": 94.2,
-          "budget_left": 5.8,
-          "probability": 77,
-          "strength": 0.7245
-        },
-        {
-          "drivers": [
-            "Piastri",
-            "Leclerc",
-            "Bearman",
-            "Perez",
-            "Colapinto"
-          ],
-          "constructor": "RedBull",
-          "total_price": 96.6,
-          "budget_left": 3.4,
-          "probability": 77,
-          "strength": 0.7218
-        },
-        {
-          "drivers": [
-            "Piastri",
-            "Hamilton",
+            "Antonelli",
             "Bottas",
             "Perez",
             "Colapinto"
           ],
           "constructor": "RedBull",
-          "total_price": 87.5,
-          "budget_left": 12.5,
+          "total_price": 95.2,
+          "budget_left": 4.8,
+          "probability": 79,
+          "strength": 0.7358
+        },
+        {
+          "drivers": [
+            "Piastri",
+            "Antonelli",
+            "Bearman",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "RedBull",
+          "total_price": 99.7,
+          "budget_left": 0.3,
+          "probability": 78,
+          "strength": 0.7266
+        },
+        {
+          "drivers": [
+            "Piastri",
+            "Hamilton",
+            "Bearman",
+            "Perez",
+            "Colapinto"
+          ],
+          "constructor": "RedBull",
+          "total_price": 97.5,
+          "budget_left": 2.5,
           "probability": 77,
-          "strength": 0.7186
+          "strength": 0.7245
         }
       ]
     },
@@ -6413,44 +7351,44 @@
         {
           "drivers": [
             "Norris",
-            "Hamilton",
+            "Piastri",
+            "Sainz",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "RedBull",
+          "total_price": 99.7,
+          "budget_left": 0.3,
+          "probability": 75,
+          "strength": 0.7036
+        },
+        {
+          "drivers": [
+            "Norris",
+            "Sainz",
+            "Lawson",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "Ferrari",
+          "total_price": 96.6,
+          "budget_left": 3.4,
+          "probability": 73,
+          "strength": 0.6814
+        },
+        {
+          "drivers": [
+            "Norris",
+            "Hadjar",
             "Sainz",
             "Bottas",
             "Perez"
           ],
           "constructor": "Ferrari",
-          "total_price": 97.3,
-          "budget_left": 2.7,
-          "probability": 80,
-          "strength": 0.7496
-        },
-        {
-          "drivers": [
-            "Norris",
-            "Hamilton",
-            "Sainz",
-            "Perez",
-            "Lindblad"
-          ],
-          "constructor": "Ferrari",
-          "total_price": 99.4,
-          "budget_left": 0.6,
-          "probability": 79,
-          "strength": 0.7417
-        },
-        {
-          "drivers": [
-            "Norris",
-            "Hamilton",
-            "Sainz",
-            "Perez",
-            "Colapinto"
-          ],
-          "constructor": "Ferrari",
-          "total_price": 99.5,
-          "budget_left": 0.5,
-          "probability": 78,
-          "strength": 0.7344
+          "total_price": 98.6,
+          "budget_left": 1.4,
+          "probability": 73,
+          "strength": 0.6803
         }
       ]
     },
@@ -6461,28 +7399,14 @@
         {
           "drivers": [
             "Verstappen",
-            "Hamilton",
-            "Sainz",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "RedBull",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 66,
-          "strength": 0.6235
-        },
-        {
-          "drivers": [
-            "Verstappen",
             "Leclerc",
             "Bottas",
             "Perez",
             "Colapinto"
           ],
           "constructor": "RedBull",
-          "total_price": 94.0,
-          "budget_left": 6.0,
+          "total_price": 97.8,
+          "budget_left": 2.2,
           "probability": 65,
           "strength": 0.6141
         },
@@ -6495,10 +7419,24 @@
             "Colapinto"
           ],
           "constructor": "RedBull",
-          "total_price": 96.2,
-          "budget_left": 3.8,
+          "total_price": 97.8,
+          "budget_left": 2.2,
           "probability": 64,
           "strength": 0.6071
+        },
+        {
+          "drivers": [
+            "Verstappen",
+            "Sainz",
+            "Lawson",
+            "Perez",
+            "Colapinto"
+          ],
+          "constructor": "RedBull",
+          "total_price": 97.9,
+          "budget_left": 2.1,
+          "probability": 64,
+          "strength": 0.6032
         }
       ]
     },
@@ -6510,43 +7448,43 @@
           "drivers": [
             "Verstappen",
             "Hamilton",
-            "Sainz",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "Ferrari",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 67,
-          "strength": 0.6303
-        },
-        {
-          "drivers": [
-            "Verstappen",
-            "Hamilton",
-            "Sainz",
+            "Ocon",
             "Bottas",
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 66,
-          "strength": 0.6227
+          "total_price": 98.0,
+          "budget_left": 2.0,
+          "probability": 61,
+          "strength": 0.584
         },
         {
           "drivers": [
             "Verstappen",
             "Hamilton",
-            "Sainz",
             "Bottas",
+            "Perez",
             "Lindblad"
           ],
           "constructor": "Ferrari",
-          "total_price": 99.0,
-          "budget_left": 1.0,
-          "probability": 65,
-          "strength": 0.6145
+          "total_price": 97.7,
+          "budget_left": 2.3,
+          "probability": 61,
+          "strength": 0.5814
+        },
+        {
+          "drivers": [
+            "Verstappen",
+            "Hamilton",
+            "Hulkenberg",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "RedBull",
+          "total_price": 99.2,
+          "budget_left": 0.8,
+          "probability": 61,
+          "strength": 0.5813
         }
       ]
     },
@@ -6563,8 +7501,8 @@
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 94.7,
-          "budget_left": 5.3,
+          "total_price": 98.0,
+          "budget_left": 2.0,
           "probability": 72,
           "strength": 0.6744
         },
@@ -6572,29 +7510,29 @@
           "drivers": [
             "Verstappen",
             "Hamilton",
-            "Sainz",
-            "Bottas",
-            "Perez"
+            "Ocon",
+            "Perez",
+            "Lindblad"
           ],
           "constructor": "RedBull",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 72,
-          "strength": 0.6691
+          "total_price": 99.3,
+          "budget_left": 0.7,
+          "probability": 71,
+          "strength": 0.6612
         },
         {
           "drivers": [
             "Verstappen",
             "Hamilton",
-            "Lawson",
+            "Ocon",
             "Bottas",
-            "Perez"
+            "Lindblad"
           ],
           "constructor": "RedBull",
-          "total_price": 99.4,
-          "budget_left": 0.6,
-          "probability": 72,
-          "strength": 0.6691
+          "total_price": 98.5,
+          "budget_left": 1.5,
+          "probability": 70,
+          "strength": 0.6505
         }
       ]
     },
@@ -6604,31 +7542,31 @@
       "teams": [
         {
           "drivers": [
-            "Verstappen",
-            "Hamilton",
-            "Sainz",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "RedBull",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 71,
-          "strength": 0.6654
-        },
-        {
-          "drivers": [
             "Russell",
+            "Stroll",
             "Sainz",
-            "Hulkenberg",
             "Ocon",
             "Perez"
           ],
+          "constructor": "RedBull",
+          "total_price": 99.5,
+          "budget_left": 0.5,
+          "probability": 69,
+          "strength": 0.6438
+        },
+        {
+          "drivers": [
+            "Verstappen",
+            "Sainz",
+            "Ocon",
+            "Perez",
+            "Lindblad"
+          ],
           "constructor": "Mercedes",
-          "total_price": 98.3,
-          "budget_left": 1.7,
-          "probability": 70,
-          "strength": 0.6573
+          "total_price": 98.1,
+          "budget_left": 1.9,
+          "probability": 69,
+          "strength": 0.6419
         },
         {
           "drivers": [
@@ -6638,11 +7576,11 @@
             "Ocon",
             "Perez"
           ],
-          "constructor": "Mercedes",
+          "constructor": "RedBull",
           "total_price": 99.7,
           "budget_left": 0.3,
-          "probability": 70,
-          "strength": 0.6527
+          "probability": 68,
+          "strength": 0.6407
         }
       ]
     },
@@ -6654,15 +7592,15 @@
           "drivers": [
             "Verstappen",
             "Piastri",
-            "Ocon",
+            "Bearman",
             "Perez",
             "Lindblad"
           ],
           "constructor": "RedBull",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 62,
-          "strength": 0.5876
+          "total_price": 99.9,
+          "budget_left": 0.1,
+          "probability": 63,
+          "strength": 0.5934
         },
         {
           "drivers": [
@@ -6673,10 +7611,10 @@
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 98.1,
-          "budget_left": 1.9,
+          "total_price": 98.6,
+          "budget_left": 1.4,
           "probability": 62,
-          "strength": 0.5853
+          "strength": 0.59
         },
         {
           "drivers": [
@@ -6687,10 +7625,10 @@
             "Lindblad"
           ],
           "constructor": "RedBull",
-          "total_price": 98.3,
-          "budget_left": 1.7,
-          "probability": 61,
-          "strength": 0.5847
+          "total_price": 99.1,
+          "budget_left": 0.9,
+          "probability": 62,
+          "strength": 0.589
         }
       ]
     },
@@ -6702,43 +7640,43 @@
           "drivers": [
             "Verstappen",
             "Hamilton",
-            "Sainz",
-            "Bottas",
-            "Perez"
-          ],
-          "constructor": "RedBull",
-          "total_price": 98.8,
-          "budget_left": 1.2,
-          "probability": 73,
-          "strength": 0.6812
-        },
-        {
-          "drivers": [
-            "Verstappen",
-            "Hamilton",
-            "Sainz",
-            "Bottas",
-            "Lindblad"
-          ],
-          "constructor": "RedBull",
-          "total_price": 99.0,
-          "budget_left": 1.0,
-          "probability": 72,
-          "strength": 0.67
-        },
-        {
-          "drivers": [
-            "Verstappen",
-            "Hamilton",
             "Ocon",
             "Bottas",
             "Perez"
           ],
           "constructor": "RedBull",
-          "total_price": 94.7,
-          "budget_left": 5.3,
+          "total_price": 98.0,
+          "budget_left": 2.0,
           "probability": 70,
           "strength": 0.6566
+        },
+        {
+          "drivers": [
+            "Verstappen",
+            "Norris",
+            "Ocon",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "RedBull",
+          "total_price": 99.7,
+          "budget_left": 0.3,
+          "probability": 70,
+          "strength": 0.6543
+        },
+        {
+          "drivers": [
+            "Verstappen",
+            "Hamilton",
+            "Albon",
+            "Bottas",
+            "Perez"
+          ],
+          "constructor": "RedBull",
+          "total_price": 99.3,
+          "budget_left": 0.7,
+          "probability": 70,
+          "strength": 0.6527
         }
       ]
     }

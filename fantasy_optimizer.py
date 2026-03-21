@@ -28,6 +28,7 @@ from src.config import (
     CURRENT_SEASON_RESULTS_LOCAL_FILENAME,
     CURRENT_SEASON_RESULTS_URL,
     CURRENT_SEASON_SPRINT_LOCAL_FILENAME,
+    CURRENT_SEASON_SPRINT_RESULTS_URL,
     DRIVER_PRICES,
     PRIOR_SEASON_QUALIFYING_LOCAL_FILENAME,
     PRIOR_SEASON_RESULTS_LOCAL_FILENAME,
@@ -80,8 +81,8 @@ def main():
     )
     parser.add_argument(
         "--current-season-sprint-url",
-        default=None,
-        help="CSV live sprint stagione corrente (opzionale)",
+        default=CURRENT_SEASON_SPRINT_RESULTS_URL,
+        help="CSV live sprint stagione corrente",
     )
     parser.add_argument(
         "--current-season-file",

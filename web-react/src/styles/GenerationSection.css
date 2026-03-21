@@ -1,0 +1,28 @@
+.generation-section {
+  margin-bottom: 2.8rem;
+}
+.generation-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+  color: #fff4ef;
+  letter-spacing: 0.1px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.22);
+}
+.generation-description {
+  font-size: 1.07rem;
+  color: #ffd447;
+  margin-bottom: 1.1rem;
+  font-weight: 500;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.drivers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem 1.2rem;
+}
+@media (max-width: 700px) {
+  .drivers-grid {
+    grid-template-columns: 1fr;
+  }
+}

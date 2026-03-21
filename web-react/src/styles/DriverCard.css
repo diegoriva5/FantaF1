@@ -1,0 +1,54 @@
+.driver-card {
+  background: rgba(44, 9, 12, 0.96);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  border: 1.5px solid #ffe9a7;
+  transition: box-shadow 0.2s, transform 0.18s, border-color 0.2s;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 18px;
+  margin: 0.7rem;
+}
+.driver-card:hover, .driver-card:focus {
+  transform: scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  border-color: #ffd447;
+  outline: none;
+}
+.driver-image img {
+  width: 110px;
+  height: 110px;
+  border-radius: 16px;
+  object-fit: cover;
+  margin-bottom: 16px;
+  background: #e0e0e0;
+}
+.driver-info h3 {
+  margin: 12px 0 8px 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff4ef;
+  letter-spacing: 0.1px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.22);
+}
+.driver-nationality {
+  font-size: 1rem;
+  color: #ffd447;
+  margin-bottom: 2px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.driver-titles {
+  font-size: 1rem;
+  color: #fff4ef;
+  font-weight: 600;
+  margin-top: 0.2rem;
+  background: #7f1d1d;
+  border-radius: 8px;
+  padding: 2px 10px;
+  display: inline-block;
+  margin-bottom: 0.2rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.22);
+}

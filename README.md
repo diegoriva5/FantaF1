@@ -158,6 +158,20 @@ In dev il watcher usa una refresh locale (senza sync remoto continuo) per evitar
 
 5. Apri l'URL mostrato da Vite (tipicamente `http://localhost:5173/`).
 
+### Routing web app
+
+- `/start`: schermata iniziale con bottone "Iniziamo"
+- `/home`: hub con 2 sezioni (FantaF1 e Circuiti)
+- `/FantaF1`: dashboard FantaF1 principale (gare, classifiche, consigli)
+- `/FantaF1/:raceSlug`: dettaglio gara
+- `/circuiti`: elenco circuiti con storia + statistiche
+- `/circuiti/:circuitRef`: dettaglio circuito
+- `/:year/:driverSlug`: pagina pilota
+- `/:year/scuderia/:constructorSlug`: pagina scuderia
+
+Note compatibilita:
+- i vecchi URL gara `/home/:raceSlug` vengono normalizzati automaticamente a `/FantaF1/:raceSlug`.
+
 
 ## Versione
 
@@ -179,3 +193,7 @@ In dev il watcher usa una refresh locale (senza sync remoto continuo) per evitar
 - Possibilita' di cliccare sulla pista per poter zoommare l'immagine
 5. Gare
 - Aggiunto il podio in visualizzazione rapida per le gare gia' svolte.
+
+## Novita' v1.2
+1. Indicizzazione
+- La parte relativa al FantaF1 viene indicizzata come http://127.0.0.1:5173/FantaF1

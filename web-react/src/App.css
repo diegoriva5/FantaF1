@@ -1,3 +1,119 @@
+/* ── Circuit Meta Row (like driverMetaRow) ─────────────── */
+.circuitMetaRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+  padding: 18px 0 6px 0;
+  background: linear-gradient(165deg, #2b0608 0%, #120406 45%, #050203 100%);
+  border-radius: 14px;
+}
+.circuitMetaItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  padding: 14px 8px 12px 8px;
+  border-radius: 12px;
+  background: rgba(44, 9, 12, 0.96);
+  border: 1.5px solid #ffe9a7;
+  box-shadow: 0 1px 6px rgba(220,0,0,0.04);
+  transition: transform 0.13s, box-shadow 0.13s;
+}
+.circuitMetaItem:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 18px rgba(220,0,0,0.10);
+  border-color: #ffd447;
+}
+.circuitMetaItem .muted {
+  font-size: 0.98rem;
+  color: #ffd447;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.circuitMetaItem strong {
+  font-size: 1.22rem;
+  color: #fff4ef;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+@media (max-width: 700px) {
+  .circuitMetaRow {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 12px 0 2px 0;
+  }
+  .circuitMetaItem {
+    padding: 10px 4px 8px 4px;
+    border-radius: 10px;
+  }
+  .circuitMetaItem strong {
+    font-size: 1.08rem;
+  }
+}
+
+/* Portal circuit grid styles */
+.portalCircuitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 36px;
+  margin-top: 36px;
+  justify-items: center;
+}
+
+.portalCircuitCard {
+  padding: 24px 18px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  background: linear-gradient(120deg, #fff 0%, #f7f7fa 100%);
+  padding: 24px 18px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  background: linear-gradient(120deg, #fff 0%, #f7f7fa 100%);
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+}
+.portalCircuitCard:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+.portalCircuitImage {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.portalCircuitTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 12px 0 8px 0;
+  color: #1a1a2a;
+}
+
+.portalCircuitStory {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.portalCircuitAction {
+  margin-top: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background: #2a0608;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.portalCircuitAction:hover {
+  background: #7f1d1d;
+}
 .topbar {
   position: fixed;
   top: 0;
@@ -1700,6 +1816,384 @@ button.constructorDriverCard:focus-visible {
   margin-bottom: 10px;
 }
 
+/* ── Home hub + circuits ───────────────────────────── */
+.homeHubHero {
+  margin-bottom: 50px;
+}
+
+.homeHubEyebrow {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--f-gold-soft);
+}
+
+.homeHubHero h1 {
+  margin: 0;
+  font-size: clamp(26px, 5vw, 40px);
+}
+
+.homeHubSubtitle {
+  margin: 10px 0 0;
+  max-width: 780px;
+}
+
+.homeHubGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.homeHubCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 0;
+}
+
+.homeHubCardTop {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.homeHubCard h2 {
+  margin: 0;
+}
+
+.homeHubCard p {
+  margin: 0;
+}
+
+.homeHubBadge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--f-border);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: var(--f-gold-soft);
+  background: rgba(5, 1, 2, 0.35);
+}
+
+.homeHubActionButton {
+  border: 1px solid var(--f-border);
+  border-radius: 10px;
+  background: linear-gradient(135deg, #b90b12 0%, #76080c 100%);
+  color: var(--f-text);
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+  width: fit-content;
+}
+
+.homeHubActionButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(127, 29, 29, 0.35);
+}
+
+.homeHubCardFanta {
+  background: linear-gradient(165deg, rgba(68, 14, 19, 0.95) 0%, rgba(30, 7, 10, 0.98) 100%);
+}
+
+.homeHubCardCircuits {
+  background:
+    radial-gradient(circle at 85% 0%, rgba(255, 212, 71, 0.14) 0%, rgba(255, 212, 71, 0) 44%),
+    linear-gradient(165deg, rgba(40, 13, 29, 0.94) 0%, rgba(20, 6, 15, 0.98) 100%);
+}
+
+.circuitsIntroCard h2 {
+  margin: 0 0 8px;
+}
+
+.circuitsIntroCard p {
+  margin: 0;
+}
+
+.circuitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 14px;
+}
+
+.circuitSummaryCard {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.circuitSummaryVisual {
+  min-height: 140px;
+}
+
+.circuitSummaryImage {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid var(--f-border);
+  background: var(--f-surface);
+  padding: 10px;
+}
+
+.circuitSummaryBody {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.circuitSummaryBody h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.circuitSummaryMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--f-muted);
+  flex-wrap: wrap;
+}
+
+.circuitRoundBadge {
+  border: 1px solid var(--f-border);
+  border-radius: 999px;
+  padding: 2px 8px;
+  color: var(--f-gold-soft);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.circuitDateLine {
+  margin: 0;
+}
+
+.circuitStatsRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.circuitStatChip {
+  border: 1px solid var(--f-border);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 12px;
+  background: rgba(5, 1, 2, 0.32);
+  color: var(--f-gold-soft);
+}
+
+.circuitTopLine {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.circuitOpenButton {
+  margin-top: 4px;
+}
+
+.circuitDetailHero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.circuitDetailImage {
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid var(--f-border);
+  background: var(--f-surface);
+  padding: 12px;
+}
+
+.circuitDetailInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.circuitDetailInfo h2 {
+  margin: 0;
+  font-size: clamp(24px, 4vw, 34px);
+}
+
+.circuitDetailQuickStats {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.circuitHomeButton {
+  margin-top: 2px;
+}
+
+.circuitStoryCard h3,
+.circuitStoryCard h4 {
+  margin: 0;
+}
+
+.circuitStoryCard p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.circuitStoryHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.circuitStoryBadge {
+  border: 1px solid rgba(255, 212, 71, 0.4);
+  color: var(--f-gold-soft);
+  background: rgba(255, 212, 71, 0.08);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.circuitTriviaList {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--f-muted);
+  line-height: 1.45;
+}
+
+.circuitDetailGrid {
+  align-items: start;
+}
+
+.circuitRankingList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.circuitRankingRow {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid var(--f-border);
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: var(--f-surface);
+}
+
+.circuitRankingPos {
+  font-weight: 800;
+  color: var(--f-gold-soft);
+}
+
+.circuitRankingName {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.circuitRankingName strong {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.circuitRankingValue {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--f-gold);
+}
+
+.circuitSummaryAction {
+  margin-top: 8px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #b90b12 0%, #76080c 100%);
+  color: var(--f-text);
+  border: 1px solid var(--f-border);
+  cursor: pointer;
+  font-weight: 700;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(127, 29, 29, 0.13);
+}
+.circuitSummaryAction:hover {
+  background: #7f1d1d;
+  box-shadow: 0 4px 18px rgba(127, 29, 29, 0.22);
+}
+
+/* ── Circuit Detail Custom Styles ─────────────── */
+.circuitTechnicalDataList {
+  background: rgba(255, 244, 231, 0.92);
+  border: 2px solid #ffd447;
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 18px 0 0 0;
+  font-size: 1.08rem;
+  color: #7f1d1d;
+  font-weight: 500;
+  box-shadow: 0 2px 12px rgba(220,0,0,0.07);
+  list-style: none;
+  line-height: 1.7;
+  letter-spacing: 0.1px;
+}
+.circuitTechnicalDataListTitle {
+  font-weight: 700;
+  font-size: 1.13rem;
+  margin-bottom: 8px;
+  color: #b90b12;
+}
+.circuitTechnicalDataListItem {
+  margin-bottom: 2px;
+}
+
+.circuitStoryCard {
+  background: linear-gradient(165deg, #2b0608 0%, #120406 45%, #050203 100%);
+  border: 2px solid #ffd447;
+  box-shadow: 0 4px 24px rgba(220,0,0,0.10);
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 28px;
+}
+.circuitStoryHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.circuitStoryHeadline {
+  margin: 18px 0 24px 0;
+  text-align: center;
+}
+.circuitStoryHeadline span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7f1d1d;
+  letter-spacing: 0.5px;
+}
+.circuitStoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+.circuitStorySection {
+  background: rgba(44, 9, 12, 0.96);
+  border-radius: 10px;
+  padding: 14px;
+  border: 1px solid #ffe9a7;
+}
+
 @media (max-width: 900px) {
   .welcomeScreen {
     padding: 10vh 16px 28px;
@@ -1740,6 +2234,31 @@ button.constructorDriverCard:focus-visible {
 
   .top3TeamHeader {
     align-items: flex-start;
+  }
+
+
+  .homeHubGrid.portalLayout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+    justify-items: center;
+  }
+
+  .homeHubCardVisual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .homeHubVisualImg {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+    background: #fff;
   }
 }
 
