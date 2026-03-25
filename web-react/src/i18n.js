@@ -16,13 +16,40 @@ const DATE_LOCALE_BY_LANGUAGE = {
   en: "en-GB",
   de: "de-DE",
   fr: "fr-FR",
-  es: "es-ES",
+  es: "es-ES"
 };
 
 const TRANSLATIONS = {
   it: {
+    historicDrivers: {
+      title: "Piloti storici di Formula 1",
+      intro: "La storia della Formula 1 non è fatta di decenni, ma di rivoluzioni.",
+      discover: "Scopri i piloti →",
+      eras: {
+        "pioneers-mechanical-1950-1967": {
+          title: "Era dei pionieri e della meccanica (1950–1967)",
+          description: "La Formula 1 nasce ufficialmente nel 1950 come evoluzione delle competizioni automobilistiche prebelliche. In questa prima fase, le monoposto sono ancora fortemente legate alla meccanica pura: motori potenti, telai rudimentali e quasi totale assenza di sicurezza. I piloti competono su circuiti lunghi e pericolosi, spesso ricavati da strade pubbliche o piste poco protette.\n\nNel corso degli anni ’50 si assiste a una delle prime grandi rivoluzioni tecniche: il passaggio dal motore anteriore a quello posteriore, che migliora drasticamente bilanciamento e prestazioni. Questa scelta segna il primo vero salto evolutivo della categoria.\n\nNon esiste ancora una vera aerodinamica: le vetture sono progettate più per la potenza che per il flusso dell’aria. Il pilota è il fattore dominante, e il margine tra abilità e sopravvivenza è sottilissimo.\n\nÈ un’epoca romantica e brutale, in cui nascono le prime leggende della Formula 1 e si gettano le basi tecniche dello sport.",
+        },
+        "aero-revolution-1968-1982": {
+          title: "Rivoluzione aerodinamica (1968–1982)",
+          description: "A partire dalla fine degli anni ’60, la Formula 1 entra in una nuova dimensione: quella dell’aerodinamica. L’introduzione delle prime ali rivoluziona completamente il modo di concepire una monoposto. Non si tratta più solo di potenza, ma di come l’aria può essere sfruttata per aumentare il grip e migliorare le prestazioni in curva.\n\nNegli anni ’70 questa evoluzione accelera drasticamente fino all’introduzione dell’effetto suolo, una delle innovazioni più importanti nella storia della Formula 1. Le vetture iniziano a generare carico aerodinamico attraverso il fondo, “incollandosi” all’asfalto e aumentando in modo esponenziale la velocità in curva.\n\nQuesta crescita porta però anche a monoposto sempre più estreme e difficili da guidare. Le soluzioni tecniche diventano aggressive, con minigonne e assetti rigidissimi. La sicurezza resta ancora limitata, e il rischio rimane altissimo.\n\nÈ l’era in cui la Formula 1 diventa una disciplina ingegneristica avanzata, segnando il passaggio definitivo da sport meccanico a sport tecnologico.",
+        },
+        "turbo-electronics-1983-1993": {
+          title: "Era turbo ed elettronica (1983–1993)",
+          description: "Gli anni ’80 e l’inizio dei ’90 rappresentano una delle fasi più estreme e affascinanti della Formula 1. I motori turbo dominano la scena, raggiungendo potenze incredibili, superiori anche ai 1000 cavalli nelle configurazioni da qualifica. Le velocità aumentano drasticamente e le monoposto diventano difficili da controllare.\n\nParallelamente, l’elettronica inizia a entrare in modo sempre più deciso nel mondo della Formula 1. Vengono introdotti sistemi come il controllo di trazione, le sospensioni attive e i cambi semi-automatici. Queste tecnologie trasformano radicalmente l’esperienza di guida, riducendo in parte il margine di errore umano ma aumentando la complessità tecnica.\n\nIl risultato è una Formula 1 estremamente avanzata ma anche difficile da regolamentare, con un crescente divario tra i team più innovativi e quelli meno competitivi.\n\nQuesta era rappresenta il punto massimo della sperimentazione tecnologica prima di un ritorno a regolamenti più restrittivi.",
+        },
+        "safety-domination-1994-2013": {
+          title: "Sicurezza e dominio tecnico (1994–2013)",
+          description: "Dopo gli eventi tragici del 1994, la Formula 1 cambia profondamente. La sicurezza diventa una priorità assoluta: vengono introdotte nuove regole per ridurre le velocità e migliorare la protezione dei piloti. I circuiti vengono modificati e le monoposto rese più sicure attraverso continui aggiornamenti strutturali.\n\nAllo stesso tempo, la Formula 1 entra in una fase di forte professionalizzazione. I grandi team sviluppano infrastrutture avanzate e la gestione delle gare diventa sempre più strategica. L’aerodinamica continua a evolversi, ma sotto regolamenti più controllati.\n\nQuesto periodo è anche caratterizzato da lunghi cicli di dominio tecnico da parte di singoli team o piloti, resi possibili da superiorità ingegneristica e organizzativa.\n\nVerso la fine di questa era vengono introdotti sistemi come il KERS e il DRS, segnando il passaggio verso una Formula 1 più orientata allo spettacolo e all’efficienza.",
+        },
+        "hybrid-newgen-2014-present": {
+          title: "Ibrido e nuova generazione (2014–oggi)",
+          description: "Dal 2014 la Formula 1 entra nell’era ibrida, con l’introduzione delle power unit V6 turbo-ibride. Questi motori rappresentano una delle tecnologie più avanzate nel motorsport, combinando prestazioni elevate con un’efficienza energetica senza precedenti.\n\nIl recupero dell’energia (ERS) diventa un elemento centrale della performance, trasformando la gestione della gara in un equilibrio tra potenza, consumo e strategia. I team con le migliori competenze ingegneristiche dominano questa fase, portando la Formula 1 a livelli tecnologici altissimi.\n\nNel 2022 viene introdotto un nuovo regolamento tecnico che reintroduce una forma semplificata di effetto suolo, con l’obiettivo di migliorare i sorpassi e rendere le gare più combattute. Questo segna l’inizio di una sottogenerazione più orientata alla competizione in pista.\n\nOggi la Formula 1 è una sintesi perfetta tra tecnologia, spettacolo e sostenibilità, proiettata verso il futuro ma profondamente radicata nella sua storia.",
+        },
+      },
+    },
     language: {
-      label: "Language",
+      label: "Lingua",
       switchAriaLabel: "Seleziona lingua",
       italian: "Italiano",
       english: "Inglese",
@@ -67,6 +94,10 @@ const TRANSLATIONS = {
       circuitsTitle: "Circuiti",
       circuitsDescription: "La storia dei circuiti che hanno costruito la leggenda della Formula 1.",
       circuitsAction: "Esplora circuiti",
+      historicBadge: "Storici",
+      historicTitle: "Piloti Storici",
+      historicDescription: "Esplora i più grandi piloti della F1 per generazione.",
+      historicAction: "Scopri i Piloti Storici",
     },
     circuits: {
       title: "Circuiti",
@@ -202,10 +233,37 @@ const TRANSLATIONS = {
       closeAria: "Chiudi anteprima",
       resetButton: "Reset",
       closeButton: "Chiudi",
-      hint: "Usa i pulsanti + / - o la rotella del mouse per zoommare. Con zoom attivo puoi trascinare con il tasto sinistro.",
-    },
+      hint: "Usa i pulsanti + / - o la rotella del mouse per zoommare. Con zoom attivo puoi trascinare con il tasto sinistro."
+    }
   },
   en: {
+    historicDrivers: {
+      title: "Historic Formula 1 Drivers",
+      intro: "Formula 1 history is shaped not by decades, but by revolutions.",
+      discover: "Discover the drivers →",
+      eras: {
+        "pioneers-mechanical-1950-1967": {
+          title: "Pioneers & Mechanical Era (1950–1967)",
+          description: "Formula 1 officially began in 1950 as an evolution of pre-war motor racing. In this first phase, the cars were still deeply rooted in pure mechanics: powerful engines, rudimentary chassis, and almost no safety. Drivers competed on long and dangerous circuits, often on public roads or poorly protected tracks.\n\nThe 1950s saw one of the first great technical revolutions: the switch from front to rear engines, which drastically improved balance and performance. This marked the first real evolutionary leap for the category.\n\nThere was still no real aerodynamics: cars were designed more for power than for airflow. The driver was the dominant factor, and the margin between skill and survival was razor-thin.\n\nIt was a romantic and brutal era, where the first legends of Formula 1 were born and the sport’s technical foundations were laid.",
+        },
+        "aero-revolution-1968-1982": {
+          title: "Aerodynamic Revolution (1968–1982)",
+          description: "From the late 1960s, Formula 1 entered a new dimension: aerodynamics. The introduction of the first wings completely revolutionized the way a single-seater was conceived. It was no longer just about power, but about how air could be exploited to increase grip and improve cornering performance.\n\nIn the 1970s, this evolution accelerated dramatically with the introduction of ground effect, one of the most important innovations in F1 history. Cars began to generate downforce through the floor, ‘sticking’ to the asphalt and exponentially increasing cornering speeds.\n\nThis growth also led to ever more extreme and difficult-to-drive cars. Technical solutions became aggressive, with skirts and ultra-stiff setups. Safety was still limited, and risk remained very high.\n\nThis was the era when Formula 1 became an advanced engineering discipline, marking the definitive shift from mechanical to technological sport.",
+        },
+        "turbo-electronics-1983-1993": {
+          title: "Turbo & Electronics Era (1983–1993)",
+          description: "The 1980s and early ’90s were among the most extreme and fascinating phases of Formula 1. Turbo engines dominated, reaching incredible power levels—over 1,000 horsepower in qualifying trim. Speeds increased dramatically and the cars became hard to control.\n\nAt the same time, electronics began to enter F1 more decisively. Systems like traction control, active suspension, and semi-automatic gearboxes were introduced. These technologies radically transformed the driving experience, reducing the margin for human error but increasing technical complexity.\n\nThe result was an extremely advanced Formula 1, but also difficult to regulate, with a growing gap between the most innovative teams and the less competitive ones.\n\nThis era represents the peak of technological experimentation before a return to more restrictive regulations.",
+        },
+        "safety-domination-1994-2013": {
+          title: "Safety & Technical Domination (1994–2013)",
+          description: "After the tragic events of 1994, Formula 1 changed profoundly. Safety became an absolute priority: new rules were introduced to reduce speeds and improve driver protection. Circuits were modified and cars made safer through continuous structural updates.\n\nAt the same time, F1 entered a phase of strong professionalization. Major teams developed advanced infrastructures and race management became increasingly strategic. Aerodynamics continued to evolve, but under more controlled regulations.\n\nThis period was also characterized by long cycles of technical domination by single teams or drivers, made possible by engineering and organizational superiority.\n\nTowards the end of this era, systems like KERS and DRS were introduced, marking the transition to a Formula 1 more focused on entertainment and efficiency.",
+        },
+        "hybrid-newgen-2014-present": {
+          title: "Hybrid & New Generation (2014–present)",
+          description: "Since 2014, Formula 1 has entered the hybrid era, with the introduction of V6 turbo-hybrid power units. These engines represent some of the most advanced technology in motorsport, combining high performance with unprecedented energy efficiency.\n\nEnergy recovery (ERS) has become a central element of performance, turning race management into a balance between power, consumption, and strategy. Teams with the best engineering skills have dominated this phase, taking F1 to the highest technological levels.\n\nIn 2022, a new technical regulation reintroduced a simplified form of ground effect, aiming to improve overtaking and make races more competitive. This marked the start of a sub-generation more focused on on-track competition.\n\nToday, Formula 1 is a perfect synthesis of technology, entertainment, and sustainability—projected towards the future but deeply rooted in its history.",
+        },
+      },
+    },
     language: {
       label: "Language",
       switchAriaLabel: "Select language",
@@ -252,6 +310,10 @@ const TRANSLATIONS = {
       circuitsTitle: "Circuits",
       circuitsDescription: "The history of the circuits that shaped the legend of Formula 1.",
       circuitsAction: "Explore circuits",
+      historicBadge: "Historic",
+      historicTitle: "Historic Drivers",
+      historicDescription: "Explore F1's greatest drivers by generation.",
+      historicAction: "View Historic Drivers",
     },
     circuits: {
       title: "Circuits",
@@ -391,6 +453,33 @@ const TRANSLATIONS = {
     },
   },
   de: {
+    historicDrivers: {
+      title: "Historische Formel-1-Fahrer",
+      intro: "Die Geschichte der Formel 1 ist nicht durch Jahrzehnte, sondern durch Revolutionen geprägt.",
+      discover: "Entdecke die Fahrer →",
+      eras: {
+        "pioneers-mechanical-1950-1967": {
+          title: "Pionier- und Mechanik-Ära (1950–1967)",
+          description: "Die Formel 1 entstand 1950 offiziell als Weiterentwicklung des Vorkriegs-Motorsports. In dieser ersten Phase waren die Wagen noch stark von reiner Mechanik geprägt: leistungsstarke Motoren, rudimentäre Fahrwerke und nahezu keine Sicherheit. Die Fahrer traten auf langen, gefährlichen Strecken an, oft auf öffentlichen Straßen oder kaum geschützten Kursen.\n\nIn den 1950er Jahren fand eine der ersten großen technischen Revolutionen statt: der Wechsel vom Front- zum Heckmotor, der das Fahrverhalten und die Performance drastisch verbesserte. Dies war der erste echte Evolutionssprung der Kategorie.\n\nAerodynamik existierte praktisch nicht: Die Fahrzeuge wurden mehr auf Leistung als auf Luftstrom ausgelegt. Der Fahrer war der entscheidende Faktor, und die Grenze zwischen Können und Überleben war hauchdünn.\n\nEs war eine romantische und brutale Epoche, in der die ersten Legenden der Formel 1 geboren wurden und die technischen Grundlagen des Sports gelegt wurden.",
+        },
+        "aero-revolution-1968-1982": {
+          title: "Aerodynamische Revolution (1968–1982)",
+          description: "Ab Ende der 1960er Jahre betrat die Formel 1 eine neue Dimension: die Aerodynamik. Die Einführung der ersten Flügel revolutionierte das Konzept des Rennwagens grundlegend. Es ging nicht mehr nur um Leistung, sondern darum, wie die Luft genutzt werden konnte, um den Grip zu erhöhen und die Kurvengeschwindigkeit zu verbessern.\n\nIn den 1970er Jahren beschleunigte sich diese Entwicklung rasant bis zur Einführung des Ground Effects, einer der wichtigsten Innovationen der F1-Geschichte. Die Fahrzeuge erzeugten nun Abtrieb über den Unterboden, klebten förmlich am Asphalt und steigerten die Kurvengeschwindigkeiten exponentiell.\n\nDas führte aber auch zu immer extremeren und schwerer zu fahrenden Autos. Die technischen Lösungen wurden aggressiv, mit Schürzen und extrem harten Setups. Die Sicherheit blieb begrenzt, das Risiko sehr hoch.\n\nIn dieser Ära wurde die Formel 1 zu einer hochentwickelten Ingenieursdisziplin und vollzog den endgültigen Wandel vom mechanischen zum technologischen Sport.",
+        },
+        "turbo-electronics-1983-1993": {
+          title: "Turbo- und Elektronik-Ära (1983–1993)",
+          description: "Die 1980er und frühen 1990er Jahre waren eine der extremsten und faszinierendsten Phasen der Formel 1. Turbomotoren dominierten das Geschehen und erreichten unglaubliche Leistungen – über 1.000 PS im Qualifying. Die Geschwindigkeiten stiegen drastisch, die Autos wurden schwer beherrschbar.\n\nGleichzeitig hielt die Elektronik immer stärker Einzug in die Formel 1. Systeme wie Traktionskontrolle, aktive Aufhängung und halbautomatische Getriebe wurden eingeführt. Diese Technologien veränderten das Fahrerlebnis radikal, verringerten den Spielraum für menschliche Fehler, erhöhten aber die technische Komplexität.\n\nDas Ergebnis war eine extrem fortschrittliche, aber auch schwer zu regulierende Formel 1, mit einer wachsenden Kluft zwischen den innovativsten Teams und den weniger wettbewerbsfähigen.\n\nDiese Ära markiert den Höhepunkt technologischer Experimente, bevor restriktivere Regeln eingeführt wurden.",
+        },
+        "safety-domination-1994-2013": {
+          title: "Sicherheit und technische Dominanz (1994–2013)",
+          description: "Nach den tragischen Ereignissen von 1994 veränderte sich die Formel 1 grundlegend. Sicherheit wurde zur obersten Priorität: Neue Regeln wurden eingeführt, um die Geschwindigkeiten zu reduzieren und den Fahrerschutz zu verbessern. Strecken wurden angepasst und die Autos durch kontinuierliche strukturelle Verbesserungen sicherer gemacht.\n\nGleichzeitig begann eine Phase starker Professionalisierung. Große Teams bauten fortschrittliche Infrastrukturen auf, das Rennmanagement wurde immer strategischer. Die Aerodynamik entwickelte sich weiter, aber unter strengeren Vorschriften.\n\nDiese Zeit war auch geprägt von langen Phasen technischer Dominanz einzelner Teams oder Fahrer, ermöglicht durch technische und organisatorische Überlegenheit.\n\nGegen Ende dieser Ära wurden Systeme wie KERS und DRS eingeführt, was den Übergang zu einer stärker auf Unterhaltung und Effizienz ausgerichteten Formel 1 markierte.",
+        },
+        "hybrid-newgen-2014-present": {
+          title: "Hybrid- und neue Generation (2014–heute)",
+          description: "Seit 2014 befindet sich die Formel 1 in der Hybrid-Ära mit der Einführung von V6-Turbo-Hybridmotoren. Diese Aggregate gehören zu den fortschrittlichsten Technologien im Motorsport und verbinden hohe Leistung mit bisher unerreichter Energieeffizienz.\n\nDie Energierückgewinnung (ERS) wurde zum zentralen Element der Performance und machte das Rennmanagement zu einem Balanceakt zwischen Leistung, Verbrauch und Strategie. Teams mit den besten Ingenieursfähigkeiten dominierten diese Phase und führten die Formel 1 auf ein technologisch sehr hohes Niveau.\n\n2022 wurde ein neues technisches Reglement eingeführt, das eine vereinfachte Form des Ground Effects zurückbrachte, um Überholmanöver zu erleichtern und die Rennen spannender zu machen. Dies markierte den Beginn einer Subgeneration, die stärker auf den Wettbewerb auf der Strecke ausgerichtet ist.\n\nHeute ist die Formel 1 eine perfekte Synthese aus Technologie, Unterhaltung und Nachhaltigkeit – zukunftsorientiert und dennoch tief in ihrer Geschichte verwurzelt.",
+        },
+      },
+    },
     language: {
       label: "Sprache",
       switchAriaLabel: "Sprache auswählen",
@@ -437,6 +526,10 @@ const TRANSLATIONS = {
       circuitsTitle: "Strecken",
       circuitsDescription: "Die Geschichte der Strecken, die die Legende der Formel 1 geprägt haben.",
       circuitsAction: "Strecken ansehen",
+      historicBadge: "Historisch",
+      historicTitle: "Historische Fahrer",
+      historicDescription: "Entdecke die größten F1-Fahrer nach Generation.",
+      historicAction: "Historische Fahrer ansehen",
     },
     circuits: {
       title: "Strecken",
@@ -576,6 +669,34 @@ const TRANSLATIONS = {
     },
   },
   fr: {
+    historicDrivers: {
+      title: "Pilotes historiques de la Formule 1",
+      intro: "L'histoire de la F1 n'est pas faite de décennies, mais de révolutions.",
+      discover: "Découvrir les pilotes →",
+      eras: {
+        "pioneers-mechanical-1950-1967": {
+          title: "Ère des pionniers et de la mécanique (1950–1967)",
+          description: "La Formule 1 naît officiellement en 1950 comme évolution des compétitions automobiles d’avant-guerre. Dans cette première phase, les monoplaces sont encore fortement liées à la mécanique pure : moteurs puissants, châssis rudimentaires et quasi-absence de sécurité. Les pilotes courent sur des circuits longs et dangereux, souvent tracés sur des routes publiques ou des pistes peu protégées.\n\nAu cours des années 1950, on assiste à l’une des premières grandes révolutions techniques : le passage du moteur avant au moteur arrière, qui améliore radicalement l’équilibre et les performances. Ce choix marque le premier véritable saut évolutif de la catégorie.\n\nIl n’existe pas encore de véritable aérodynamique : les voitures sont conçues davantage pour la puissance que pour le flux d’air. Le pilote est le facteur dominant, et la marge entre habileté et survie est infime.\n\nC’est une époque romantique et brutale, où naissent les premières légendes de la Formule 1 et où se posent les bases techniques du sport.",
+        },
+        "aero-revolution-1968-1982": {
+          title: "Révolution aérodynamique (1968–1982)",
+          description: "À partir de la fin des années 1960, la Formule 1 entre dans une nouvelle dimension : l’aérodynamique. L’introduction des premiers ailerons révolutionne complètement la conception des monoplaces. Il ne s’agit plus seulement de puissance, mais de la manière dont l’air peut être exploité pour augmenter l’adhérence et améliorer les performances en courbe.\n\nDans les années 1970, cette évolution s’accélère jusqu’à l’introduction de l’effet de sol, l’une des innovations les plus importantes de l’histoire de la F1. Les voitures commencent à générer de l’appui via le fond plat, “collant” littéralement à l’asphalte et augmentant exponentiellement la vitesse en courbe.\n\nCette croissance conduit aussi à des monoplaces toujours plus extrêmes et difficiles à piloter. Les solutions techniques deviennent agressives, avec des jupes et des réglages très rigides. La sécurité reste limitée, et le risque demeure très élevé.\n\nC’est l’ère où la F1 devient une discipline d’ingénierie avancée, marquant le passage définitif du sport mécanique au sport technologique.",
+        },
+        "turbo-electronics-1983-1993": {
+          title: "Ère turbo et électronique (1983–1993)",
+          description: "Les années 1980 et le début des années 1990 représentent l’une des phases les plus extrêmes et fascinantes de la F1. Les moteurs turbo dominent la scène, atteignant des puissances incroyables, dépassant même les 1 000 chevaux en configuration qualification. Les vitesses augmentent drastiquement et les monoplaces deviennent difficiles à contrôler.\n\nParallèlement, l’électronique fait une entrée de plus en plus marquée dans le monde de la F1. Des systèmes comme le contrôle de traction, les suspensions actives et les boîtes semi-automatiques sont introduits. Ces technologies transforment radicalement l’expérience de pilotage, réduisant en partie la marge d’erreur humaine mais augmentant la complexité technique.\n\nLe résultat est une F1 extrêmement avancée mais aussi difficile à réglementer, avec un écart croissant entre les équipes les plus innovantes et les moins compétitives.\n\nCette ère représente le sommet de l’expérimentation technologique avant un retour à des règlements plus restrictifs.",
+        },
+        "safety-domination-1994-2013": {
+          title: "Sécurité et domination technique (1994–2013)",
+          description: "Après les événements tragiques de 1994, la F1 change profondément. La sécurité devient une priorité absolue : de nouvelles règles sont introduites pour réduire les vitesses et améliorer la protection des pilotes. Les circuits sont modifiés et les monoplaces rendues plus sûres grâce à des mises à jour structurelles continues.\n\nParallèlement, la F1 entre dans une phase de forte professionnalisation. Les grandes équipes développent des infrastructures avancées et la gestion des courses devient de plus en plus stratégique. L’aérodynamique continue d’évoluer, mais sous des règlements plus contrôlés.\n\nCette période est aussi caractérisée par de longs cycles de domination technique de la part d’équipes ou de pilotes uniques, rendus possibles par une supériorité technique et organisationnelle.\n\nVers la fin de cette ère, des systèmes comme le KERS et le DRS sont introduits, marquant le passage vers une F1 plus axée sur le spectacle et l’efficacité.",
+        },
+        "hybrid-newgen-2014-present": {
+          title: "Hybride et nouvelle génération (2014–aujourd’hui)",
+          description: "Depuis 2014, la F1 est entrée dans l’ère hybride, avec l’introduction des groupes motopropulseurs V6 turbo-hybrides. Ces moteurs représentent l’une des technologies les plus avancées du sport automobile, alliant hautes performances et efficacité énergétique inédite.\n\nLa récupération d’énergie (ERS) devient un élément central de la performance, transformant la gestion de la course en un équilibre entre puissance, consommation et stratégie. Les équipes les plus compétentes sur le plan technique dominent cette phase, portant la F1 à des sommets technologiques.\n\nEn 2022, un nouveau règlement technique réintroduit une forme simplifiée d’effet de sol, visant à améliorer les dépassements et à rendre les courses plus disputées. Cela marque le début d’une sous-génération plus axée sur la compétition en piste.\n\nAujourd’hui, la F1 est une synthèse parfaite de technologie, de spectacle et de durabilité, tournée vers l’avenir mais profondément ancrée dans son histoire.",
+        },
+      },
+    },
+    
     language: {
       label: "Langue",
       switchAriaLabel: "Sélectionner la langue",
@@ -622,6 +743,10 @@ const TRANSLATIONS = {
       circuitsTitle: "Circuits",
       circuitsDescription: "L'histoire des circuits qui ont construit la légende de la Formule 1.",
       circuitsAction: "Explorer les circuits",
+      historicBadge: "Historiques",
+      historicTitle: "Pilotes Historiques",
+      historicDescription: "Découvrez les plus grands pilotes de F1 par génération.",
+      historicAction: "Voir les pilotes historiques",
     },
     circuits: {
       title: "Circuits",
@@ -761,6 +886,34 @@ const TRANSLATIONS = {
     },
   },
   es: {
+    historicDrivers: {
+      title: "Pilotos históricos de la Fórmula 1",
+      intro: "La historia de la Fórmula 1 no está hecha de décadas, sino de revoluciones.",
+      discover: "Descubre los pilotos →",
+      eras: {
+        "pioneers-mechanical-1950-1967": {
+          title: "Era de pioneros y mecánica (1950–1967)",
+          description: "La Fórmula 1 nació oficialmente en 1950 como evolución de las competiciones automovilísticas anteriores a la guerra. En esta primera fase, los monoplazas seguían ligados a la mecánica pura: motores potentes, chasis rudimentarios y casi total ausencia de seguridad. Los pilotos competían en circuitos largos y peligrosos, a menudo en carreteras públicas o pistas poco protegidas.\n\nDurante los años 50 se produjo una de las primeras grandes revoluciones técnicas: el paso del motor delantero al trasero, que mejoró drásticamente el equilibrio y las prestaciones. Esta elección marcó el primer gran salto evolutivo de la categoría.\n\nTodavía no existía una verdadera aerodinámica: los coches estaban diseñados más para la potencia que para el flujo de aire. El piloto era el factor dominante y el margen entre habilidad y supervivencia era mínimo.\n\nFue una época romántica y brutal, en la que nacieron las primeras leyendas de la Fórmula 1 y se sentaron las bases técnicas del deporte.",
+        },
+        "aero-revolution-1968-1982": {
+          title: "Revolución aerodinámica (1968–1982)",
+          description: "A partir de finales de los años 60, la Fórmula 1 entra en una nueva dimensión: la aerodinámica. La introducción de los primeros alerones revolucionó por completo la concepción de un monoplaza. Ya no se trataba solo de potencia, sino de cómo aprovechar el aire para aumentar el agarre y mejorar el rendimiento en curva.\n\nEn los años 70, esta evolución se aceleró drásticamente hasta la introducción del efecto suelo, una de las innovaciones más importantes de la historia de la F1. Los coches empezaron a generar carga aerodinámica a través del fondo, “pegándose” al asfalto y aumentando exponencialmente la velocidad en curva.\n\nEste crecimiento también llevó a monoplazas cada vez más extremos y difíciles de conducir. Las soluciones técnicas se volvieron agresivas, con faldones y configuraciones muy rígidas. La seguridad seguía siendo limitada y el riesgo seguía siendo muy alto.\n\nEs la era en la que la F1 se convierte en una disciplina de ingeniería avanzada, marcando el paso definitivo de deporte mecánico a deporte tecnológico.",
+        },
+        "turbo-electronics-1983-1993": {
+          title: "Era turbo y electrónica (1983–1993)",
+          description: "Los años 80 y principios de los 90 representan una de las fases más extremas y fascinantes de la Fórmula 1. Los motores turbo dominan la escena, alcanzando potencias increíbles, superiores incluso a los 1.000 caballos en configuración de clasificación. Las velocidades aumentan drásticamente y los monoplazas se vuelven difíciles de controlar.\n\nParalelamente, la electrónica empieza a entrar cada vez más en el mundo de la F1. Se introducen sistemas como el control de tracción, las suspensiones activas y los cambios semiautomáticos. Estas tecnologías transforman radicalmente la experiencia de conducción, reduciendo en parte el margen de error humano pero aumentando la complejidad técnica.\n\nEl resultado es una F1 extremadamente avanzada pero también difícil de regular, con una brecha creciente entre los equipos más innovadores y los menos competitivos.\n\nEsta era representa el punto máximo de la experimentación tecnológica antes de un regreso a normativas más restrictivas.",
+        },
+        "safety-domination-1994-2013": {
+          title: "Seguridad y dominio técnico (1994–2013)",
+          description: "Tras los trágicos acontecimientos de 1994, la Fórmula 1 cambió profundamente. La seguridad se convirtió en una prioridad absoluta: se introdujeron nuevas normas para reducir la velocidad y mejorar la protección de los pilotos. Se modificaron los circuitos y los monoplazas se hicieron más seguros mediante continuas actualizaciones estructurales.\n\nAl mismo tiempo, la F1 entró en una fase de fuerte profesionalización. Los grandes equipos desarrollaron infraestructuras avanzadas y la gestión de las carreras se volvió cada vez más estratégica. La aerodinámica siguió evolucionando, pero bajo normativas más controladas.\n\nEste periodo también se caracteriza por largos ciclos de dominio técnico de determinados equipos o pilotos, posibles gracias a la superioridad técnica y organizativa.\n\nHacia el final de esta era se introdujeron sistemas como el KERS y el DRS, marcando el paso hacia una F1 más orientada al espectáculo y la eficiencia.",
+        },
+        "hybrid-newgen-2014-present": {
+          title: "Híbrido y nueva generación (2014–hoy)",
+          description: "Desde 2014, la Fórmula 1 ha entrado en la era híbrida, con la introducción de las unidades de potencia V6 turbo-híbridas. Estos motores representan una de las tecnologías más avanzadas del automovilismo, combinando altas prestaciones con una eficiencia energética sin precedentes.\n\nLa recuperación de energía (ERS) se convierte en un elemento central del rendimiento, transformando la gestión de la carrera en un equilibrio entre potencia, consumo y estrategia. Los equipos con mejores competencias de ingeniería dominan esta fase, llevando la F1 a los niveles tecnológicos más altos.\n\nEn 2022 se introdujo una nueva normativa técnica que reintrodujo una forma simplificada de efecto suelo, con el objetivo de mejorar los adelantamientos y hacer las carreras más disputadas. Esto marca el inicio de una subgeneración más orientada a la competición en pista.\n\nHoy la Fórmula 1 es una síntesis perfecta de tecnología, espectáculo y sostenibilidad, proyectada hacia el futuro pero profundamente arraigada en su historia.",
+        },
+      },
+    },
+    
     language: {
       label: "Idioma",
       switchAriaLabel: "Seleccionar idioma",
@@ -807,6 +960,10 @@ const TRANSLATIONS = {
       circuitsTitle: "Circuitos",
       circuitsDescription: "La historia de los circuitos que forjaron la leyenda de la Fórmula 1.",
       circuitsAction: "Explorar circuitos",
+      historicBadge: "Históricos",
+      historicTitle: "Pilotos Históricos",
+      historicDescription: "Descubre los mejores pilotos de F1 por generación.",
+      historicAction: "Ver Pilotos Históricos",
     },
     circuits: {
       title: "Circuitos",
@@ -1009,6 +1166,7 @@ export function I18nProvider({ language, setLanguage, children }) {
 
   return createElement(I18nContext.Provider, { value }, children);
 }
+
 
 export function useI18n() {
   return useContext(I18nContext);

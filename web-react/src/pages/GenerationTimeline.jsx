@@ -1,12 +1,14 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import historicDrivers from "../data/historicDrivers.json";
+import { driverImageUrl } from "../utils/format";
+import { HISTORIC_ERAS } from "../data/historicEras";
+import { useI18n } from "../i18n";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 import "../styles/GenerationTimeline.css";
 
+
 function getEraData(eraSlug) {
-  return historicDrivers.find(
-    (gen) =>
-      gen.era.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") === eraSlug
+  return HISTORIC_ERAS.find(
+    (era) => era.key === eraSlug
   );
 }
 
@@ -15,39 +17,49 @@ function sortDriversByDebut(drivers) {
   return [...drivers].sort((a, b) => (a.debutYear || 9999) - (b.debutYear || 9999));
 }
 
-const GenerationTimeline = () => {
-  const { eraSlug } = useParams();
-  const navigate = useNavigate();
+const GenerationTimeline = ({ eraSlug, navigate }) => {
   const eraData = getEraData(eraSlug);
+  const { t } = useI18n ? useI18n() : { t: (x) => x };
 
   if (!eraData) {
     return <div className="timeline-not-found">Era non trovata.</div>;
   }
 
-  const sortedDrivers = sortDriversByDebut(eraData.drivers);
-
   return (
     <main className="generation-timeline-page">
-      <button className="timeline-back" onClick={() => navigate(-1)}>&larr; Torna alle ere</button>
-      <h1 className="timeline-title">{eraData.era}</h1>
-      <p className="timeline-description">{eraData.description}</p>
+      <header className="topbar">
+        <button
+          type="button"
+          className="backButton"
+          onClick={() => navigate("/historic-drivers")}
+        >
+          ← {t ? t("common.back") : "Torna alle ere"}
+        </button>
+        <span className="topbarTitle">{t ? t(eraData.titleKey) : eraData.titleKey}</span>
+        <LanguageSwitcher />
+      </header>
+      <section style={{ paddingTop: "1.5rem" }}>
+        <h1>{t(eraData.titleKey)}</h1>
+        <p className="timeline-description">{t(eraData.descriptionKey)}</p>
+      </section>
       <div className="timeline-container">
-        {sortedDrivers.map((driver, idx) => (
+        {eraData.drivers.map((driver, idx) => (
           <div className="timeline-driver" key={driver.name + idx}>
             <div className="timeline-dot" />
             <div className="timeline-driver-content">
-              <div className="timeline-driver-header">
-                <img src={"/src/assets/driver-placeholder.png"} alt={driver.name} className="timeline-driver-img" />
-                <div>
+              <div className="timeline-driver-header timeline-driver-header-large">
+                <img
+                  src={driverImageUrl(driver)}
+                  alt={driver.name}
+                  className="timeline-driver-img timeline-driver-img-large"
+                />
+                <div className="timeline-driver-info-large">
                   <h3>{driver.name}</h3>
-                  <span className="timeline-driver-year">Debut: {driver.debutYear || "?"}</span>
+                  <div className="timeline-driver-details-large">
+                    <span className="timeline-driver-nat-large">{driver.nationality}</span>
+                    <span className="timeline-driver-titles-large">🏆 {driver.titles}</span>
+                  </div>
                 </div>
-              </div>
-              <div className="timeline-driver-details">
-                <span className="timeline-driver-nat">{driver.nationality}</span>
-                <span className="timeline-driver-titles">🏆 {driver.titles} titoli</span>
-                <p className="timeline-driver-bio">{driver.bio}</p>
-                <div className="timeline-driver-highlights">{driver.highlights}</div>
               </div>
             </div>
           </div>

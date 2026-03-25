@@ -1,28 +1,42 @@
+
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import historicDrivers from "../data/historicDrivers.json";
+import { HISTORIC_ERAS } from "../data/historicEras";
 import GenerationBanner from "../components/GenerationBanner";
+import LanguageSwitcher from "../components/LanguageSwitcher";
+import { useI18n } from "../i18n";
 import "../styles/HistoricDrivers.css";
 
 function slugifyEra(era) {
   return era.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 }
 
-const HistoricDrivers = () => {
-  const navigate = useNavigate();
+
+const HistoricDrivers = ({ navigate }) => {
+  const { t } = useI18n ? useI18n() : { t: (x) => x };
   return (
     <main className="historic-drivers-page">
-      <header>
-        <h1>Formula 1 Historic Drivers</h1>
-        <p className="intro">The history of Formula 1 is not defined by decades, but by revolutions.</p>
+      <header className="topbar">
+        <button
+          type="button"
+          className="backButton"
+          onClick={() => navigate("/home")}
+        >
+          ← {t ? t("common.home") : "Home"}
+        </button>
+        <span className="topbarTitle">{t ? t("historicDrivers.title") : "Formula 1 Historic Drivers"}</span>
+        <LanguageSwitcher />
       </header>
+      <section style={{ paddingTop: "1.5rem" }}>
+        <h1>{t("historicDrivers.title")}</h1>
+        <p className="intro">{t("historicDrivers.intro")}</p>
+      </section>
       <div className="generations-list">
-        {historicDrivers.map((gen, idx) => (
+        {HISTORIC_ERAS.map((era) => (
           <GenerationBanner
-            key={gen.era + idx}
-            era={gen.era}
-            description={gen.description}
-            onClick={() => navigate(`/historic-drivers/${slugifyEra(gen.era)}`)}
+            key={era.key}
+            eraKey={era.titleKey}
+            descriptionKey={era.descriptionKey}
+            onClick={() => navigate(`/historic-drivers/${era.key}`)}
           />
         ))}
       </div>

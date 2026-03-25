@@ -29,11 +29,17 @@ export function formatDate(dateString, locale = "it-IT") {
 }
 
 export function driverImageUrl(driverName) {
-  const localImage = DRIVER_IMAGE_MAP[driverName];
+  // Supporta oggetti driver con campo 'image' (usato dagli storici)
+  if (typeof driverName === "object" && driverName !== null && driverName.image && driverName.image !== "placeholder") {
+    return `/drivers_pictures/${driverName.image}`;
+  }
+  // Compatibilità: se passato solo il nome
+  const name = typeof driverName === "string" ? driverName : driverName?.name;
+  const localImage = DRIVER_IMAGE_MAP[name];
   if (localImage) {
     return `/drivers_pictures/${localImage}`;
   }
-  const encoded = encodeURIComponent(driverName);
+  const encoded = encodeURIComponent(name || "");
   return `https://ui-avatars.com/api/?name=${encoded}&background=111827&color=ffffff&size=256&bold=true`;
 }
 

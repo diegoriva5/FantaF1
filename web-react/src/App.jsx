@@ -485,12 +485,20 @@ function App() {
 
   // ── Historic Drivers page ───────────────────────────────────────────────
   if (currentPath === "/historic-drivers") {
-    return <HistoricDrivers navigate={navigate} />;
+    return (
+      <I18nProvider language={language} setLanguage={setLanguage}>
+        <HistoricDrivers navigate={navigate} />
+      </I18nProvider>
+    );
   }
   // ── Historic Drivers Era Timeline ───────────────────────────────────────
   if (currentPath.startsWith("/historic-drivers/")) {
     const eraSlug = currentPath.replace("/historic-drivers/", "");
-    return <GenerationTimeline eraSlug={eraSlug} navigate={navigate} />;
+    return (
+      <I18nProvider language={language} setLanguage={setLanguage}>
+        <GenerationTimeline eraSlug={eraSlug} navigate={navigate} />
+      </I18nProvider>
+    );
   }
 
   // ── SPA routing — race detail page ───────────────────────────────────────

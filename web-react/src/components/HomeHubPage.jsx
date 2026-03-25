@@ -42,11 +42,11 @@ export default function HomeHubPage({ onOpenFanta, onOpenCircuits, onOpenHistori
 
           <article className="card homeHubCard homeHubCardHistoricDrivers">
             <div className="homeHubCardTop">
-              <span className="homeHubBadge">Historic</span>
+              <span className="homeHubBadge">{t("homeHub.historicBadge")}</span>
             </div>
-            <h2>Historic Drivers</h2>
-            <p className="muted">Explore F1's greatest drivers by generation.</p>
-            <button type="button" className="homeHubActionButton" onClick={onOpenHistoricDrivers}>View Historic Drivers</button>
+            <h2>{t("homeHub.historicTitle")}</h2>
+            <p className="muted">{t("homeHub.historicDescription")}</p>
+            <button type="button" className="homeHubActionButton" onClick={onOpenHistoricDrivers}>{t("homeHub.historicAction")}</button>
           </article>
         </section>
       </main>
