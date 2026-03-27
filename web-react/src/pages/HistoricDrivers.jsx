@@ -35,7 +35,7 @@ const HistoricDrivers = ({ navigate }) => {
           <GenerationBanner
             key={era.key}
             eraKey={era.titleKey}
-            descriptionKey={era.descriptionKey}
+            descriptionKey={era.shortDescriptionKey}
             onClick={() => navigate(`/historic-drivers/${era.key}`)}
           />
         ))}

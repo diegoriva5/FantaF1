@@ -195,5 +195,14 @@ Note compatibilita:
 - Aggiunto il podio in visualizzazione rapida per le gare gia' svolte.
 
 ## Novita' v1.2
+
 1. Indicizzazione
 - La parte relativa al FantaF1 viene indicizzata come http://127.0.0.1:5173/FantaF1
+
+2. Circuiti
+- Nuova sezione dedicata ai circuiti nella web app, accessibile dal menu principale.
+- Elenco completo dei circuiti con storia, statistiche, immagini e dettagli tecnici.
+- Pagina dettaglio circuito con informazioni storiche, record, bandiera, layout e curiosità.
+- Possibilità di zoommare l'immagine della pista cliccando sulla mappa.
+- Collegamenti rapidi tra circuiti, gare e piloti associati.
+- Dati e immagini aggiornati per la stagione 2026.
