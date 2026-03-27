@@ -44,7 +44,21 @@ const GenerationTimeline = ({ eraSlug, navigate }) => {
       </section>
       <div className="timeline-container">
         {eraData.drivers.map((driver, idx) => (
-          <div className="timeline-driver" key={driver.name + idx}>
+          <div
+            className="timeline-driver"
+            key={driver.name + idx}
+            style={{ cursor: 'pointer' }}
+            onClick={() => {
+              const driverSlug = driver.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+              navigate(`/historic-drivers/${eraData.key}/${driverSlug}`);
+            }}
+            tabIndex={0}
+            role="button"
+            onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') {
+              const driverSlug = driver.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+              navigate(`/historic-drivers/${eraData.key}/${driverSlug}`);
+            }}}
+          >
             <div className="timeline-dot" />
             <div className="timeline-driver-content">
               <div className="timeline-driver-header timeline-driver-header-large">

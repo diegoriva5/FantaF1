@@ -24,6 +24,7 @@ import ConstructorPage from "./components/ConstructorPage";
 import CircuitsPage from "./components/CircuitsPage";
 import CircuitDetailPage from "./components/CircuitDetailPage";
 import { HistoricDrivers, GenerationTimeline } from "./pages";
+import DriverHistoricPage from "./components/DriverHistoricPage";
 import {
   getDefaultLanguage,
   I18nProvider,
@@ -491,14 +492,26 @@ function App() {
       </I18nProvider>
     );
   }
-  // ── Historic Drivers Era Timeline ───────────────────────────────────────
+  // ── Historic Drivers Era Timeline & Driver Detail ───────────────────────
   if (currentPath.startsWith("/historic-drivers/")) {
-    const eraSlug = currentPath.replace("/historic-drivers/", "");
-    return (
-      <I18nProvider language={language} setLanguage={setLanguage}>
-        <GenerationTimeline eraSlug={eraSlug} navigate={navigate} />
-      </I18nProvider>
-    );
+    const pathParts = currentPath.replace("/historic-drivers/", "").split("/");
+    const eraSlug = pathParts[0];
+    const driverSlug = pathParts[1];
+    if (eraSlug && driverSlug) {
+      // Pagina dettaglio pilota storico
+      return (
+        <I18nProvider language={language} setLanguage={setLanguage}>
+          <DriverHistoricPage eraSlug={eraSlug} driverSlug={driverSlug} navigate={navigate} />
+        </I18nProvider>
+      );
+    } else if (eraSlug) {
+      // Timeline dell'era
+      return (
+        <I18nProvider language={language} setLanguage={setLanguage}>
+          <GenerationTimeline eraSlug={eraSlug} navigate={navigate} />
+        </I18nProvider>
+      );
+    }
   }
 
   // ── SPA routing — race detail page ───────────────────────────────────────
