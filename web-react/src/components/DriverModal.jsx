@@ -13,6 +13,7 @@ const DriverModal = ({ driver, onClose }) => {
         <h2>{driver.name}</h2>
         <p className="modal-nationality">{driver.nationality}</p>
         <p className="modal-titles">🏆 {driver.titles} World Titles</p>
+        <p className="modal-debut"><strong>Debut:</strong> {driver.debutYear}</p>
         <p className="modal-bio">{driver.bio}</p>
         <div className="modal-highlights">
           <strong>Career Highlights:</strong>

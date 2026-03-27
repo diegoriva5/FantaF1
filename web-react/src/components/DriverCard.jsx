@@ -11,6 +11,7 @@ const DriverCard = ({ driver, onClick }) => (
       <h3>{driver.name}</h3>
       <p className="driver-nationality">{driver.nationality}</p>
       <p className="driver-titles">🏆 {driver.titles} World Titles</p>
+      <p className="driver-debut">Debut: {driver.debutYear}</p>
     </div>
   </div>
 );

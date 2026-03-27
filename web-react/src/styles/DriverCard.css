@@ -40,7 +40,19 @@
   margin-bottom: 2px;
   text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
-.driver-titles {
+  .driver-titles {
+    .driver-debut {
+      font-size: 0.98rem;
+      color: #ffe9a7;
+      font-weight: 500;
+      margin-top: 0.15rem;
+      background: #3b1c0a;
+      border-radius: 8px;
+      padding: 2px 10px;
+      display: inline-block;
+      margin-bottom: 0.2rem;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    }
   font-size: 1rem;
   color: #fff4ef;
   font-weight: 600;

@@ -57,7 +57,20 @@ const GenerationTimeline = ({ eraSlug, navigate }) => {
                   <h3>{driver.name}</h3>
                   <div className="timeline-driver-details-large">
                     <span className="timeline-driver-nat-large">{driver.nationality}</span>
-                    <span className="timeline-driver-titles-large">🏆 {driver.titles}</span>
+                    <div className="timeline-driver-meta-row">
+                      <span className="timeline-driver-debut-large">Debut <strong>{driver.debutYear}</strong></span>
+                    </div>
+                    <div className="timeline-driver-titles-block">
+                      <span className="timeline-driver-titles-large">
+                        <span className="timeline-driver-titles-row">
+                          <span className="timeline-driver-titles-number">{driver.titles}</span>
+                          <span className="timeline-driver-trophy" role="img" aria-label="trophy">🏆</span>
+                        </span>
+                        {driver.titles > 0 && driver.titlesYears && (
+                          <span className="timeline-driver-titles-years-block">{driver.titlesYears.join(' - ')}</span>
+                        )}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>

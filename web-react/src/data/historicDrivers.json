@@ -68,7 +68,7 @@
     "drivers": [
       {"name": "Max Verstappen", "nationality": "Netherlands 🇳🇱", "titles": 3, "image": "placeholder", "bio": "Dominant force, rewriting records.", "highlights": "Multiple World Championships, Red Bull era.", "debutYear": 2015},
       {"name": "Charles Leclerc", "nationality": "Monaco 🇲🇨", "titles": 0, "image": "placeholder", "bio": "Ferrari's hope, fast and fearless.", "highlights": "Multiple wins, pole positions.", "debutYear": 2018},
-      {"name": "Lando Norris", "nationality": "UK 🇬🇧", "titles": 0, "image": "placeholder", "bio": "Fan favorite, McLaren's rising star.", "highlights": "Podiums, consistent performances.", "debutYear": 2019},
+      {"name": "Lando Norris", "nationality": "UK 🇬🇧", "titles": 1, "image": "placeholder", "bio": "Fan favorite, McLaren's rising star.", "highlights": "2025 World Champion, Podiums, consistent performances.", "debutYear": 2019},
       {"name": "George Russell", "nationality": "UK 🇬🇧", "titles": 0, "image": "placeholder", "bio": "Mercedes' new talent, calm under pressure.", "highlights": "First win, strong showings.", "debutYear": 2019}
     ]
   }
