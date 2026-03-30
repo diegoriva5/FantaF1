@@ -1,0 +1,121 @@
+{
+  "id": "juan-manuel-fangio",
+  "name": {
+    "first": "Juan Manuel",
+    "last": "Fangio"
+  },
+  "nationality": "Argentina",
+  "titles": 5,
+  "titles_years": [1951, 1954, 1955, 1956, 1957],
+  "years": "1950–1958",
+  "image": "/drivers_pictures/juan_manuel_fangio.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Juan Manuel Fangio è considerato uno dei più grandi piloti della storia della Formula 1. In un’epoca dominata dal rischio e dall’imprevedibilità, riuscì a distinguersi per una qualità rara: il controllo assoluto. Più che cercare il limite, Fangio lo dominava con naturalezza, trasformando ogni gara in una dimostrazione di intelligenza, precisione e sangue freddo.",
+        "en": "Juan Manuel Fangio is considered one of the greatest drivers in the history of Formula 1. In an era dominated by risk and unpredictability, he stood out for a rare quality: absolute control. Rather than seeking the limit, Fangio mastered it with ease, turning every",
+        "es": "Juan Manuel Fangio es considerado uno de los más grandes pilotos en la historia de la Fórmula 1. En una era dominada por el riesgo y la imprevisibilidad, se destacó por una cualidad rara: el control absoluto. En lugar de buscar el límite, Fangio lo dominaba con facilidad, convirtiendo cada carrera en una demostración de inteligencia, precisión y sangre fría.",
+        "fr": "Juan Manuel Fangio est considéré comme l'un des plus grands pilotes de l'histoire de la Formule 1. Dans une époque dominée par le risque et l'imprévisibilité, il s'est distingué par une qualité rare : le contrôle absolu. Plutôt que de chercher la limite, Fangio la maîtrisait avec aisance, transformant chaque course en une démonstration d'intelligence, de précision et de sang-froid.",
+        "de": "Juan Manuel Fangio gilt als einer der größten Fahrer in der Geschichte der Formel 1. In einer Ära, die von Risiko und Unvorhersehbarkeit geprägt war, zeichnete er sich durch eine seltene Qualität aus: absolute Kontrolle. Anstatt das Limit zu suchen, beherrschte Fangio es mit Leichtigkeit und verwandelte jedes Rennen in eine Demonstration von Intelligenz, Präzision und kühlem Kopf."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Nato in Argentina, Fangio arrivò in Formula 1 relativamente tardi rispetto agli standard moderni. Prima di sbarcare in Europa, aveva già maturato una grande esperienza nelle competizioni sudamericane, spesso su lunghe distanze e su terreni difficili. Queste gare formarono il suo stile di guida e la sua capacità di adattamento.",
+        "en": "Born in Argentina, Fangio arrived in Formula 1 relatively late by modern standards. Before making his way to Europe, he had already gained extensive experience in South American competitions, often over long distances and on challenging terrains",
+        "es": "Nacido en Argentina, Fangio llegó a la Fórmula 1 relativamente tarde según los estándares modernos. Antes de llegar a Europa, ya había ganado una gran experiencia en competiciones sudamericanas, a menudo sobre largas distancias y en terrenos difíciles.",
+        "fr": "Né en Argentine, Fangio est arrivé en Formule 1 relativement tard selon les normes modernes. Avant de se rendre en Europe, il avait déjà acquis une grande expérience dans les compétitions sud-américaines, souvent sur de longues distances et sur des terrains difficiles.",
+        "de": "In Argentinien geboren, kam Fangio relativ spät in die Formel 1. Bevor er nach Europa kam, hatte er bereits umfangreiche Erfahrungen in südamerikanischen Wettbewerben gesammelt, oft über lange Distanzen und auf herausfordernden Terrains."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Lo stile di guida di Fangio era basato su precisione e controllo. Era noto per le traiettorie pulite, la grande sensibilità meccanica e la capacità di gestire il ritmo gara. Non forzava mai oltre il necessario, ma sceglieva con attenzione il momento giusto per attaccare.",
+        "en": "Fangio's driving style was based on precision and control. He was known for his clean lines, great mechanical sensitivity, and ability to manage race pace. He never pushed beyond what was necessary, but carefully chose the right moment to attack.",
+        "es": "El estilo de conducción de Fangio se basaba en la precisión y el control. Era conocido por sus trayectorias limpias, gran sensibilidad mecánica y capacidad para gestionar el ritmo de la carrera. No forzaba nunca más allá de lo necesario, pero elegía con atención el momento adecuado para atacar.",
+        "fr": "Le style de conduite de Fangio était basé sur la précision et le contrôle. Il était connu pour ses trajectoires propres, sa grande sensibilité mécanique et sa capacité à gérer le rythme de course. Il ne forçait jamais au-delà du nécessaire, mais choisissait avec soin le moment approprié pour attaquer.",
+        "de": "Der Fahrstil von Fangio basierte auf Präzision und Kontrolle. Er war bekannt für seine sauberen Linien, seine große mechanische Sensibilität und seine Fähigkeit, den Rhythmus des Rennens zu steuern. Er drückte nie über das Notwendige hinaus, sondern wählte sorgfältig den richtigen Moment für einen Angriff."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "La carriera di Fangio è unica per la sua capacità di vincere con squadre diverse. Con Alfa Romeo conquistò il suo primo titolo nel 1951. Con Mercedes dominò nel 1954 e 1955. Con Ferrari vinse nel 1956, mentre con Maserati ottenne uno dei suoi successi più leggendari nel 1957. La sua adattabilità lo rese superiore indipendentemente dalla monoposto.",
+        "en": "Fangio's career is unique for his ability to win with different teams. With Alfa Romeo, he won his first title in 1951. With Mercedes, he dominated in 1954 and 1955. With Ferrari, he won in 1956, while with Maserati, he achieved one of his most legendary victories in 1957. His adaptability made him superior regardless of the car.",
+        "es": "La carrera de Fangio es única por su capacidad para ganar con diferentes equipos. Con Alfa Romeo, ganó su primer título en 1951. Con Mercedes, dominó en 1954 y 1955. Con Ferrari, ganó en 1956, mientras que con Maserati, logró una de sus victorias más legendarias en 1957. Su adapt abilidad lo hizo superior independientemente del coche.",
+        "fr": "La carrière de Fangio est unique pour sa capacité à gagner avec différentes équipes. Avec Alfa Romeo, il a remporté son premier titre en 1951. Avec Mercedes, il a dominé en 1954 et 1955. Avec Ferrari, il a gagné en 1956, tandis qu'avec Maserati, il a obtenu l'une de ses victories les plus légendaires en 1957. Son adaptabilité le rendait supérieur indépendamment de la voiture.",
+        "de": "Fangios Karriere ist einzigartig für seine Fähigkeit, mit verschiedenen Teams zu gewinnen. Mit Alfa Romeo gewann er seinen ersten Titel 1951. Mit Mercedes dominierte er 1954 und 1955. Mit Ferrari gewann er 1956, während er mit Maserati einen seiner legendärsten Siege 1957 errang. Seine Anpassungsfähigkeit machte ihn unabhängig vom Auto überlegen."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "Il Gran Premio di Germania del 1957 al Nürburgring è considerato una delle più grandi gare della storia: dopo un pit stop lento, Fangio rimontò con giri straordinari fino alla vittoria. Anche il suo dominio con Mercedes tra il 1954 e il 1955 rappresenta uno dei picchi della sua carriera.",
+        "en": "The 1957 German Grand Prix at the Nürburgring is considered one of the greatest races in history: after a slow pit stop, Fangio made an extraordinary comeback to win. His dominance with Mercedes between 1954 and 1955 also represents one of the peaks of his career.",
+        "es": "El Gran Premio de Alemania de 1957 en el Nürburgring es considerado una de las carreras más grandes de la historia: después de una parada en boxes lenta, Fangio hizo una remontada extraordinaria para ganar. Su dominio con Mercedes entre 1954 y 1955 también representa uno de los picos de su carrera.",
+        "fr": "Le Grand Prix d'Allemagne de 1957 au Nürburgring est considéré comme l'une des plus grandes courses de l'histoire : après un arrêt au stand lent, Fangio a fait un retour extraordinaire pour gagner. Sa domination avec Mercedes entre 1954 et 1955 représente également l'un des sommets de sa carrière.",
+        "de": "Der Große Preis von Deutschland 1957 am Nürburgring gilt als eines der größten Rennen der Geschichte: Nach einem langsamen Boxenstopp machte Fangio eine außergewöhnliche Aufholjagd und gewann. Seine Dominanz mit Mercedes zwischen 1954 und 1955 stellt ebenfalls einen Höhepunkt seiner Karriere dar." 
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Ha vinto il suo ultimo titolo mondiale a 46 anni",
+          "Ha una delle percentuali di vittorie più alte nella storia della F1",
+          "Fu rapito a Cuba nel 1958 e rilasciato illeso",
+          "Era famoso per capire i problemi della vettura senza strumenti",
+          "Ha vinto titoli con quattro scuderie diverse"
+        ],
+        "en": [
+          "Won his last world title at 46 years old",
+          "Has one of the highest win percentages in F1 history",
+          "Was kidnapped in Cuba in 1958 and released unharmed",
+          "Was famous for understanding car problems without tools",
+          "Won titles with four different teams"
+        ],
+        "es": [
+          "Ganó su último título mundial a los 46 años",
+          "Tiene una de las porcentajes de victorias más altas en la historia de la F1",
+          "Fue secuestrado en Cuba en 1958 y liberado sin daño",
+          "Era famoso por entender los problemas del coche sin instrumentos",
+          "Ganó títulos con cuatro escuderías diferentes"
+        ],
+        "fr": [
+          "A remporté son dernier titre mondial à l'âge de 46 ans",
+          "Possède l'un des pourcentages de victoires les plus élevés dans l'histoire de la F1",
+          "A été enlevé à Cuba en 1958 et libéré sain et sauf",
+          "Était célèbre pour comprendre les problèmes de la voiture sans outils",
+          "A remporté des titres avec quatre équipes différentes"
+        ],
+        "de": [
+          "Gewann seinen letzten Weltmeistertitel im Alter von 46 Jahren",
+          "Hat eine der höchsten Siegprozente in der F1-Geschichte",
+          "Wurde 1958 in Kuba entführt und unverletzt freigelassen",
+          "War bekannt dafür, Auto-Probleme ohne Werkzeuge zu verstehen",
+          "Gewann Titel mit vier verschiedenen Teams"
+        ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Fangio rappresenta il primo vero pilota moderno: veloce, intelligente e strategico. La sua capacità di adattarsi a ogni situazione e di mantenere il controllo lo ha reso un punto di riferimento assoluto nella storia della Formula 1.",
+        "en": "Fangio represents the first true modern driver: fast, intelligent, and strategic. His ability to adapt to every situation and maintain control has made him an absolute reference point in the history of Formula 1.",
+        "es": "Fangio representa el primer verdadero piloto moderno: rápido, inteligente y estratégico. Su capacidad para adaptarse a cada situación y mantener el control lo ha convertido en un punto de referencia absoluto en la historia de la Fórmula 1.",
+        "fr": "Fangio représente le premier véritable pilote moderne : rapide, intelligent et stratégique. Sa capacité à s'adapter à chaque situation et à maintenir le contrôle en a fait un point de référence absolu dans l'histoire de la Formule 1.",
+        "de": "Fangio repräsentiert den ersten echten modernen Fahrer: schnell, intelligent und strategisch. Seine Fähigkeit, sich an jede Situation anzupassen und die Kontrolle zu behalten, hat ihn zu einem absol uten Bezugspunkt in der Geschichte der Formel 1 gemacht." 
+      }
+    }
+  ]
+}

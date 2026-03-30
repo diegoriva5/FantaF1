@@ -1,49 +1,114 @@
 
-import React from "react";
+
+
+
+
+import React, { useEffect, useState } from "react";
 import { HISTORIC_ERAS } from "../data/historicEras";
 import LanguageSwitcher from "./LanguageSwitcher";
-import "../styles/DriverModal.css";
+import { useI18n } from "../i18n";
+import "../styles/DriverHistoricPage.css";
 
-function unslugify(slug) {
-  return slug.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase());
-}
+function DriverHistoricPage({ eraSlug, driverSlug, navigate }) {
+  const { t, language } = useI18n();
+  const [driver, setDriver] = useState(null);
+  const [sections, setSections] = useState([]);
+  const [activeSection, setActiveSection] = useState(0);
+  const [era, setEra] = useState(null);
 
-const DriverHistoricPage = ({ eraSlug, driverSlug, navigate }) => {
-  const era = HISTORIC_ERAS.find(e => e.key === eraSlug);
-  if (!era) return <div>Era non trovata.</div>;
-  const driver = era.drivers.find(d => d.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") === driverSlug);
-  if (!driver) return <div>Pilota non trovato.</div>;
+  function getTranslated(val) {
+    if (!val) return '';
+    if (typeof val === 'string') return val;
+    return val[language] || val.it || Object.values(val)[0];
+  }
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const foundEra = HISTORIC_ERAS.find(e => e.slug === eraSlug);
+        setEra(foundEra || null);
+        const mod = await import(`../i18n/Historic-Drivers/driver_${driverSlug}.json`);
+        setDriver(mod.default || mod);
+        setSections((mod.default || mod).sections || []);
+        setActiveSection(0);
+      } catch (e) {
+        setDriver(null);
+        setSections([]);
+      }
+    }
+    loadData();
+  }, [eraSlug, driverSlug, language]);
+
+  if (!driver) {
+    return <div className="driver-historic-root">Loading...</div>;
+  }
 
   return (
-    <main className="generation-timeline-page">
+    <main>
       <header className="topbar">
         <button
           type="button"
           className="backButton"
-          onClick={() => navigate(`/historic-drivers/${eraSlug}`)}
+          onClick={() => navigate ? navigate(`/historic-drivers/${eraSlug}`) : window.history.back()}
         >
-          ← Torna all'era
+          ← {t ? t("common.back") : "Indietro"}
         </button>
-        <span className="topbarTitle">{driver.name}</span>
+        <span className="topbarTitle">{t ? t("historicDrivers.title") : "Formula 1 Historic Drivers"}</span>
         <LanguageSwitcher />
       </header>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', minHeight: '60vh', paddingTop: 32 }}>
-        <div className="driver-modal" style={{ maxWidth: 420, background: '#1a1a1a', borderRadius: 16, padding: 32, position: 'relative', width: '100%' }}>
-          <div className="modal-image" style={{ textAlign: 'center', marginBottom: 18 }}>
-            <img src={driver.image ? `/drivers_pictures/${driver.image}` : "/src/assets/driver-placeholder.png"} alt={driver.name} style={{ width: 160, borderRadius: 12 }} />
+      <div className="driver-historic-rows-layout">
+        {/* Prima riga: foto+nome (sx) | coppe (dx) */}
+        <div className="driver-historic-row driver-historic-row-top" style={{ alignItems: 'center', marginBottom: 32 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', minWidth: 320 }}>
+            <img
+              className="driver-historic-photo driver-historic-photo-large"
+              src={driver?.image}
+              alt={typeof driver?.name === 'object' ? `${driver?.name.first} ${driver?.name.last}` : driver?.name}
+              style={{ marginTop: 40 }}
+            />
+            <div className="driver-historic-name-small" style={{ marginTop: 18, fontSize: '1.25rem', fontWeight: 900, color: '#ffd447', letterSpacing: 1.1, textTransform: 'uppercase' }}>
+              {typeof driver?.name === 'object'
+                ? `${driver?.name.first} ${driver?.name.last}`
+                : driver?.name}
+            </div>
           </div>
-          <h2 style={{ textAlign: 'center', color: '#ffd447', fontSize: '2.1rem', marginBottom: 8 }}>{driver.name}</h2>
-          <p className="modal-nationality" style={{ textAlign: 'center', color: '#fff4ef', fontWeight: 600 }}>{driver.nationality}</p>
-          <p className="modal-titles" style={{ textAlign: 'center', color: '#ffd447', fontWeight: 700, fontSize: '1.2rem' }}>🏆 {driver.titles} World Titles</p>
-          <p className="modal-debut" style={{ textAlign: 'center', color: '#ffe9a7', fontWeight: 600 }}><strong>Debut:</strong> {driver.debutYear}</p>
-          {driver.titlesYears && driver.titlesYears.length > 0 && (
-            <p style={{ textAlign: 'center', color: '#ffd447', fontWeight: 600, marginTop: 8 }}>Titoli: {driver.titlesYears.join(' - ')}</p>
-          )}
-          {/* Qui puoi aggiungere bio o highlights se disponibili */}
+          <div className="driver-historic-titles driver-historic-titles-side driver-historic-titles-centered-vertical" style={{ justifyContent: 'flex-start', alignItems: 'flex-end', marginLeft: 48 }}>
+            {(driver.titles_years || []).map((year, idx) => (
+              <div className="driver-historic-trophy" key={year}>
+                <span className="trophy-emoji" role="img" aria-label="Trophy">🏆</span>
+                <span className="trophy-year">{year}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* Seconda riga: bottoni tabs (sx, colonna) | contenuto (dx) */}
+        <div className="driver-historic-row driver-historic-row-bottom" style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', width: '100%', maxWidth: '100vw', gap: 0 }}>
+          <div className="driver-historic-tabs" style={{ minWidth: 270, maxWidth: 340, width: 320, flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'stretch', marginRight: 0 }}>
+            {sections.map((section, idx) => (
+              <button
+                key={section.type + idx}
+                onClick={() => setActiveSection(idx)}
+                className={
+                  'driver-historic-tab' + (activeSection === idx ? ' active' : '')
+                }
+                aria-selected={activeSection === idx}
+              >
+                {getTranslated(section.title)}
+              </button>
+            ))}
+          </div>
+          <div className="driver-historic-content driver-historic-content-below-tabs" style={{ flex: 1, marginLeft: 32, minWidth: 0 }}>
+            {sections[activeSection] && (
+              <section key={sections[activeSection].type + activeSection} style={{ marginTop: 0 }}>
+                <p style={{ color: '#fff4ef', whiteSpace: 'pre-line' }}>{getTranslated(sections[activeSection].content)}</p>
+              </section>
+            )}
+          </div>
         </div>
       </div>
     </main>
   );
-};
+}
 
 export default DriverHistoricPage;
+

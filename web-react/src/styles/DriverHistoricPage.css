@@ -1,0 +1,462 @@
+/* Layout a due righe orizzontali: sopra foto+nome e coppe, sotto tabs e contenuto */
+.driver-historic-rows-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 500px;
+  background:
+    radial-gradient(circle at 14% 10%, rgba(255, 212, 71, 0.18) 0%, rgba(255, 212, 71, 0) 36%),
+    radial-gradient(circle at 82% 0%, rgba(220, 0, 0, 0.35) 0%, rgba(220, 0, 0, 0) 50%),
+    linear-gradient(165deg, #2b0608 0%, #120406 45%, #050203 100%);
+  box-shadow: 0 4px 32px 0 #0006;
+  animation: fadeIn 0.7s;
+.driver-historic-root {
+  width: 100%;
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 0;
+  background:
+    radial-gradient(circle at 14% 10%, rgba(255, 212, 71, 0.18) 0%, rgba(255, 212, 71, 0) 36%),
+    radial-gradient(circle at 82% 0%, rgba(220, 0, 0, 0.35) 0%, rgba(220, 0, 0, 0) 50%),
+    linear-gradient(165deg, #2b0608 0%, #120406 45%, #050203 100%);
+  box-shadow: 0 4px 32px 0 #0006;
+  display: flex;
+  flex-direction: column; /* Changed from row to column */
+  gap: 0;
+  overflow: hidden;
+  animation: fadeIn 0.7s;
+  max-width: 1400px;
+}
+}
+
+.driver-historic-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: stretch;
+}
+.driver-historic-row-top {
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 36px 40px 0 40px;
+}
+.driver-historic-row-bottom {
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 40px 36px 40px;
+  gap: 32px;
+}
+.driver-historic-photo-name-col {
+  min-width: 320px;
+  max-width: 400px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.driver-historic-titles-centered-vertical {
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+  gap: 32px;
+}
+.driver-historic-tabs {
+  min-width: 240px;
+  max-width: 320px;
+  margin-top: 0;
+  gap: 0;
+}
+.driver-historic-content-below-tabs {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  vertical-align: top;
+}
+.driver-historic-content {
+  margin-top: 0;
+  padding-top: 0;
+}
+.driver-historic-photo-name-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.driver-historic-titles-centered-vertical {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 18px auto 18px auto;
+  gap: 24px;
+  max-width: 700px;
+  padding-left: 60px;
+}
+.driver-historic-spacer-tab {
+  width: 100%;
+  height: 70px;
+  pointer-events: none;
+  user-select: none;
+}
+.driver-historic-content-below-tabs {
+  margin-top: 0;
+  padding-top: 500px;
+}
+.driver-historic-titles-centered {
+  display: flex;
+  flex-direction: row;
+  justify-content: center !important;
+  align-items: center;
+  margin: 18px auto 18px auto;
+  gap: 24px;
+  width: 100%;
+  padding-left: 60px;
+}
+.driver-historic-titles-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin: 18px auto 18px auto;
+  padding: 0;
+  width: 100%;
+  padding-left: 60px;
+}
+.driver-historic-trophy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+.trophy-emoji {
+  font-size: 3.2rem;
+  filter: drop-shadow(0 2px 8px #000a);
+}
+.trophy-year {
+  font-size: 1.35rem;
+  color: #ffd447;
+  font-weight: 900;
+  margin-top: 6px;
+  letter-spacing: 0.7px;
+  text-shadow: 0 2px 8px #000a;
+}
+.driver-historic-photo-titles-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 24px;
+}
+.driver-historic-titles-side {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 18px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-size: 1.18rem;
+}
+/* Titoli mondiali in alto a destra */
+.driver-historic-titles {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffd447;
+  letter-spacing: 0.5px;
+}
+.driver-historic-titles-label {
+  font-size: 1.1rem;
+  color: #ffd447;
+  font-weight: 600;
+}
+.driver-historic-titles-count {
+  font-size: 1.7rem;
+  color: #fff4ef;
+  font-weight: 900;
+  margin-left: 6px;
+  text-shadow: 0 2px 8px #000a;
+}
+
+/* Allinea la sezione di testo sotto i titoli */
+.driver-historic-content-below-titles {
+  /* Allinea la parte scritta a destra con la base della foto+nome a sinistra */
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.driver-historic-spacer {
+  width: 100%;
+  height: 328px;
+  pointer-events: none;
+  user-select: none;
+}
+.driver-historic-name-small {
+  margin-top: 10px;
+  margin-bottom: 18px;
+  font-size: 1.15rem;
+  color: #ffd447;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  text-align: center;
+  text-shadow: 0 1px 6px #000, 0 0 2px #ffd447;
+  width: 100%;
+  text-transform: uppercase;
+}
+/* Rendi ampia e centrata anche la pagina timeline */
+.generation-timeline-page {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.driver-historic-root {
+  width: 100%;
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 0;
+  background:
+    radial-gradient(circle at 14% 10%, rgba(255, 212, 71, 0.18) 0%, rgba(255, 212, 71, 0) 36%),
+    radial-gradient(circle at 82% 0%, rgba(220, 0, 0, 0.35) 0%, rgba(220, 0, 0, 0) 50%),
+    linear-gradient(165deg, #2b0608 0%, #120406 45%, #050203 100%);
+  box-shadow: 0 4px 32px 0 #0006;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  overflow: hidden;
+  animation: fadeIn 0.7s;
+  max-width: 1400px;
+}
+
+.driver-historic-left {
+  flex: 0 0 320px;
+  min-width: 220px;
+  max-width: 400px;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 18px 24px 18px;
+  box-sizing: border-box;
+  gap: 18px;
+  position: relative;
+}
+
+.driver-historic-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#fff 60%,#ffd44733 100%);
+  margin-bottom: 10px;
+  box-shadow: 0 2px 16px 0 #0008;
+  display: block;
+  position: relative;
+}
+
+.driver-historic-photo-large {
+  width: 280px;
+  height: 280px;
+  max-width: 90vw;
+  max-height: 90vw;
+}
+.driver-historic-photo:empty, .driver-historic-photo[src=""], .driver-historic-photo:not([src]) {
+  background: repeating-linear-gradient(135deg,#ffd447 0 10px,#fff 10px 20px);
+}
+
+.driver-historic-tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  margin-top: 8px;
+}
+
+.driver-historic-tab {
+  background: linear-gradient(90deg,#18131a 60%,#2b0608 100%);
+  color: #ffd447;
+  font-weight: 700;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 12px;
+  border-radius: 0;
+  margin-bottom: 8px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  box-shadow: none;
+  border-left: none;
+  border-right: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+.driver-historic-tab.active {
+  background: linear-gradient(90deg,#ffd447 60%,#ff2a2a 100%);
+  color: #18131a;
+  font-weight: 900;
+  box-shadow: 0 2px 12px 0 #ffd44799, 0 0 0 2px #ff2a2a44;
+}
+.driver-historic-tab:hover:not(.active) {
+  background: inherit;
+  color: #ffd447;
+  outline: 2px solid #ffd447;
+  outline-offset: -2px;
+  box-shadow: 0 0 0 2px #ffd44755;
+  z-index: 2;
+}
+
+.driver-historic-right {
+  flex: 1;
+  min-width: 0;
+  padding: 36px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  overflow-x: auto;
+  background: none;
+}
+
+.driver-historic-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.driver-historic-name {
+  font-size: 44px;
+  font-weight: 900;
+  margin: 0 0 8px 0;
+  color: #ffd447;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 8px #000;
+  text-align: center;
+  width: 100%;
+}
+
+.driver-historic-era {
+  color: #ff2a2a;
+  font-weight: 800;
+  font-size: 22px;
+  margin-left: 18px;
+}
+
+.driver-historic-country {
+  margin-left: 18px;
+  font-size: 20px;
+}
+
+.driver-historic-content {
+  background: none;
+  border-radius: 0;
+  padding: 32px 36px;
+  min-height: 220px;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 500;
+  box-shadow: none;
+  animation: fadeIn 0.7s;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+  .driver-historic-titles-centered-vertical,
+  .driver-historic-titles-side,
+  .driver-historic-titles-centered {
+    padding-left: 0;
+  }
+  .driver-historic-titles-centered-vertical,
+  .driver-historic-titles-side,
+  .driver-historic-titles-centered {
+    flex-direction: row;
+    gap: 12px;
+    margin: 12px auto 12px auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .driver-historic-trophy {
+    font-size: 1.1rem;
+  }
+  .trophy-emoji {
+    font-size: 2.1rem;
+  }
+  .trophy-year {
+    font-size: 1.05rem;
+  }
+  .driver-historic-root {
+    flex-direction: column;
+    border-radius: 0;
+  }
+  .driver-historic-left {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 0;
+    max-width: 100vw;
+    border-right: none;
+    border-bottom: 2px solid #ffd447;
+    justify-content: flex-start;
+    padding: 24px 8px 12px 8px;
+    gap: 12px;
+  }
+  .driver-historic-photo {
+    margin-bottom: 0;
+    margin-right: 18px;
+  }
+  .driver-historic-tabs {
+    flex-direction: row;
+    margin-top: 0;
+    gap: 6px;
+  }
+  .driver-historic-tab {
+    margin-bottom: 0;
+    margin-right: 6px;
+    border-radius: 8px;
+    border-left: 6px solid transparent;
+    border-bottom: 2px solid #ffd447;
+    border-right: none;
+    text-align: center;
+  }
+  .driver-historic-tab.active {
+    border-left: 6px solid #ff2a2a;
+    border-bottom: 2px solid #ff2a2a;
+  }
+  .driver-historic-right {
+    padding: 18px 8px;
+  }
+  .driver-historic-content {
+    padding: 18px 8px;
+    font-size: 18px;
+  }
+  .driver-historic-name {
+    font-size: 30px;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: none; }
+}
