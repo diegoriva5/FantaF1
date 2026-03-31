@@ -72,7 +72,7 @@ const GenerationTimeline = ({ eraSlug, navigate }) => {
                   <div className="timeline-driver-details-large">
                     <span className="timeline-driver-nat-large">{driver.nationality}</span>
                     <div className="timeline-driver-meta-row">
-                      <span className="timeline-driver-debut-large">Debut <strong>{driver.debutYear}</strong></span>
+                      <span className="timeline-driver-debut-large">Debut in <strong>{driver.debutYear}</strong></span>
                     </div>
                     <div className="timeline-driver-titles-block">
                       <span className="timeline-driver-titles-large">
