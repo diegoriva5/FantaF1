@@ -99,7 +99,7 @@ const TRANSLATIONS = {
       fantaDescription: "Crea la tua squadra, scegli piloti e scuderie e partecipa al campionato fantasy di Formula 1.",
       fantaAction: "Apri FantaF1",
       circuitsBadge: "Storia e Leggende",
-      circuitsTitle: "",
+      circuitsTitle: "Circuiti",
       circuitsDescription: "La storia dei circuiti che hanno costruito la leggenda della Formula 1.",
       circuitsAction: "Esplora circuiti",
       historicBadge: "Storia e Leggende",

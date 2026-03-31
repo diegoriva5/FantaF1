@@ -206,3 +206,94 @@ Note compatibilita:
 - Possibilità di zoommare l'immagine della pista cliccando sulla mappa.
 - Collegamenti rapidi tra circuiti, gare e piloti associati.
 - Dati e immagini aggiornati per la stagione 2026.
+
+# Git
+In caso di git corrotto:
+# 🛠️ Git Repository Recovery Guide
+
+## 🚨 Problema
+
+Errore Git del tipo:
+
+```
+object file ... is empty
+fatal: could not parse HEAD
+```
+
+👉 Indica una **corruzione della repository Git** (cartella `.git` danneggiata).
+
+---
+
+## 🎯 Obiettivo
+
+Recuperare il codice senza perdere file e ripristinare una repo funzionante.
+
+---
+
+## ✅ Soluzione (Step-by-step)
+
+### 1. Vai nella home
+
+```bash
+cd ~
+```
+
+---
+
+### 2. Crea un backup della cartella
+
+```bash
+cp -r FantaF1 FantaF1_backup
+```
+
+---
+
+### 3. Elimina la repo corrotta
+
+```bash
+rm -rf FantaF1
+```
+
+---
+
+### 4. Clona di nuovo il repository da GitHub
+
+```bash
+git clone https://github.com/diegoriva5/FantaF1.git
+```
+
+---
+
+### 5. Copia i file dal backup
+
+```bash
+cp -r FantaF1_backup/* FantaF1/
+```
+
+⚠️ Non copiare la cartella `.git`
+
+---
+
+### 6. Entra nella repo
+
+```bash
+cd FantaF1
+```
+
+---
+
+### 7. Aggiungi e committa i file
+
+```bash
+git add .
+git commit -m "Ripristino dopo corruzione repository"
+```
+
+---
+
+### 8. Push su GitHub
+
+```bash
+git push origin main
+```
+
