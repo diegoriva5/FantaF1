@@ -163,13 +163,10 @@
   gap: 12px;
   margin-top: 18px;
   margin-bottom: 0;
-  /* Rimuovo eventuale margin-left */
-  margin-left: 0 !important;
   font-size: 1.25rem;
   font-weight: 700;
   color: #ffd447;
   letter-spacing: 0.5px;
-  padding-left: 0 !important;
 }
 .driver-historic-titles-label {
   font-size: 1.1rem;

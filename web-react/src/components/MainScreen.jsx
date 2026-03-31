@@ -418,19 +418,29 @@ export default function MainScreen({
               const isNext = nextRace && race.round === nextRace.round;
               const podium = podiumByRound[Number(race.round)] || null;
               const hasCompletePodium = Boolean(podium?.[1] && podium?.[2] && podium?.[3]);
+              // Logica per gara rinviata
+              const postponedKeywords = ["rinviata", "RINVIATA", "TBD", "posticipata", "postponed", "da destinarsi"];
+              const isPostponed = typeof race.date === "string" && postponedKeywords.some((kw) => race.date.toLowerCase().includes(kw));
               return (
                 <button
                   key={`${race.round}-${race.name}`}
-                  className={`raceCard ${isNext ? "raceCardNext" : ""} ${isPast ? "raceCardPast" : ""}`}
-                  onClick={() => onNavigate(`${raceBasePath}/${slug}`)}
+                  className={`raceCard ${isNext ? "raceCardNext" : ""} ${isPast ? "raceCardPast" : ""} ${isPostponed ? "raceCardPostponed" : ""}`}
+                  onClick={() => !isPostponed && onNavigate(`${raceBasePath}/${slug}`)}
                   aria-label={t("main.openRaceAria", { raceName: race.name })}
+                  disabled={isPostponed}
+                  style={isPostponed ? { opacity: 0.6, cursor: "not-allowed" } : {}}
                 >
                   <div className="raceTop">
                     <span>{countryFlag(race.country_code)}</span>
                     <span>{`${t("common.round")} ${race.round}`}</span>
                   </div>
                   <strong>{race.name}</strong>
-                  <div className="muted">{formatDate(race.date, dateLocale)}</div>
+                  <div className="muted">
+                    {isPostponed ? t("main.postponedLabel", { defaultValue: "Gara rinviata a data da destinarsi" }) : formatDate(race.date, dateLocale)}
+                  </div>
+                  {isPostponed && (
+                    <div className="racePostponedLabel">{t("main.postponedBadge", { defaultValue: "RINVIATA" })}</div>
+                  )}
                   {isNext && <div className="raceNextLabel">{t("main.nextBadge")}</div>}
                   {isPast && hasCompletePodium && (
                     <div className="racePodium" aria-label={t("main.podiumAria", { raceName: race.name })}>

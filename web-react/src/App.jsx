@@ -543,7 +543,7 @@ function App() {
           summary={summary}
           driverNames={driverNames}
           teamNames={teamNames}
-          onNavigateBack={() => navigate(HOME_PATH)}
+          onNavigateBack={() => window.location.assign('/FantaF1')}
           onOpenDriver={openDriverPage}
           onOpenConstructor={openConstructorPage}
         />

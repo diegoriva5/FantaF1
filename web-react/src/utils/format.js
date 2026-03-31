@@ -21,6 +21,10 @@ export function countryFlag(countryCode) {
 
 export function formatDate(dateString, locale = "it-IT") {
   const date = new Date(dateString);
+  if (isNaN(date.getTime())) {
+    // Se la data non è valida (es. 'TBD'), restituisci la stringa originale
+    return dateString;
+  }
   return new Intl.DateTimeFormat(locale, {
     day: "2-digit",
     month: "short",

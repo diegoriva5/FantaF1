@@ -18,15 +18,13 @@ export default function HomeHubPage({ onOpenFanta, onOpenCircuits, onOpenHistori
         </section>
 
         <section className="homeHubGrid portalLayout" aria-label={t("homeHub.ariaLabel")}> 
-          <article className="card homeHubCard homeHubCardFanta">
+          <article className="card homeHubCard homeHubCardHistoricDrivers">
             <div className="homeHubCardTop">
-              <span className="homeHubBadge">{t("homeHub.fantaBadge")}</span>
+              <span className="homeHubBadge">{t("homeHub.historicBadge")}</span>
             </div>
-            <h2>{t("homeHub.fantaTitle")}</h2>
-            <p className="muted">{t("homeHub.fantaDescription")}</p>
-            <button type="button" className="homeHubActionButton" onClick={onOpenFanta}>
-              {t("homeHub.fantaAction")}
-            </button>
+            <h2>{t("homeHub.historicTitle")}</h2>
+            <p className="muted">{t("homeHub.historicDescription")}</p>
+            <button type="button" className="homeHubActionButton" onClick={onOpenHistoricDrivers}>{t("homeHub.historicAction")}</button>
           </article>
 
           <article className="card homeHubCard homeHubCardCircuits">
@@ -40,13 +38,15 @@ export default function HomeHubPage({ onOpenFanta, onOpenCircuits, onOpenHistori
             </button>
           </article>
 
-          <article className="card homeHubCard homeHubCardHistoricDrivers">
+          <article className="card homeHubCard homeHubCardFanta">
             <div className="homeHubCardTop">
-              <span className="homeHubBadge">{t("homeHub.historicBadge")}</span>
+              <span className="homeHubBadge">{t("homeHub.fantaBadge")}</span>
             </div>
-            <h2>{t("homeHub.historicTitle")}</h2>
-            <p className="muted">{t("homeHub.historicDescription")}</p>
-            <button type="button" className="homeHubActionButton" onClick={onOpenHistoricDrivers}>{t("homeHub.historicAction")}</button>
+            <h2>{t("homeHub.fantaTitle")}</h2>
+            <p className="muted">{t("homeHub.fantaDescription")}</p>
+            <button type="button" className="homeHubActionButton" onClick={onOpenFanta}>
+              {t("homeHub.fantaAction")}
+            </button>
           </article>
         </section>
       </main>
