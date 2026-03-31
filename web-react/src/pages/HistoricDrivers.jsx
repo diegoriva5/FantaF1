@@ -26,8 +26,7 @@ const HistoricDrivers = ({ navigate }) => {
         <span className="topbarTitle">{t ? t("historicDrivers.title") : "Formula 1 Historic Drivers"}</span>
         <LanguageSwitcher />
       </header>
-      <section style={{ paddingTop: "1.5rem" }}>
-        <h1>{t("historicDrivers.title")}</h1>
+      <section style={{ paddingTop: "2.5rem" }}>
         <p className="intro">{t("historicDrivers.intro")}</p>
       </section>
       <div className="generations-list">

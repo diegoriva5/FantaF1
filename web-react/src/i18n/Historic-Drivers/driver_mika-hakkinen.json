@@ -1,0 +1,115 @@
+{
+  "id": "mika-hakkinen",
+  "name": { "first": "Mika", "last": "Häkkinen" },
+  "nationality": "Finland",
+  "titles": 2,
+  "titles_years": [1998, 1999],
+  "years": "1991–2001",
+  "image": "/drivers_pictures/mika_hakkinen.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Mika Häkkinen è stato un pilota finlandese famoso per la velocità pura e la concentrazione mentale in gara. Il suo duello con Michael Schumacher è leggendario.",
+        "en": "Mika Häkkinen was a Finnish driver known for pure speed and mental focus. His rivalry with Michael Schumacher is legendary."
+          ,
+          "es": "Mika Häkkinen fue un piloto finlandés famoso por su velocidad pura y concentración mental en carrera. Su duelo con Michael Schumacher es legendario.",
+          "fr": "Mika Häkkinen était un pilote finlandais célèbre pour sa vitesse pure et sa concentration mentale en course. Sa rivalité avec Michael Schumacher est légendaire.",
+          "de": "Mika Häkkinen war ein finnischer Fahrer, bekannt für reine Schnelligkeit und mentale Konzentration im Rennen. Sein Duell mit Michael Schumacher ist legendär."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Häkkinen inizia dal karting in Finlandia, avanzando rapidamente fino alla Formula 3 e alla Formula 3000, prima di debuttare in F1 con Lotus nel 1991.",
+        "en": "Häkkinen started in karting in Finland, quickly moving up to Formula 3 and Formula 3000 before debuting in F1 with Lotus in 1991."
+          ,
+          "es": "Häkkinen comenzó en el karting en Finlandia, ascendiendo rápidamente a la Fórmula 3 y la Fórmula 3000 antes de debutar en F1 con Lotus en 1991.",
+          "fr": "Häkkinen a commencé le karting en Finlande, progressant rapidement vers la Formule 3 et la Formule 3000 avant de débuter en F1 avec Lotus en 1991.",
+          "de": "Häkkinen begann mit Kartfahren in Finnland, stieg schnell in die Formel 3 und Formel 3000 auf, bevor er 1991 mit Lotus in der F1 debütierte."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Häkkinen combinava velocità estrema a grande precisione. Era noto per le partenze fulminee e per gestire al meglio le situazioni di pressione, soprattutto nei duelli ravvicinati.",
+        "en": "Häkkinen combined extreme speed with great precision. He was known for lightning starts and managing pressure situations well, especially in close battles."
+          ,
+          "es": "Häkkinen combinaba velocidad extrema con gran precisión. Era conocido por sus salidas relámpago y por gestionar bien las situaciones de presión, especialmente en duelos cerrados.",
+          "fr": "Häkkinen alliait une vitesse extrême à une grande précision. Il était connu pour ses départs fulgurants et sa gestion des situations de pression, surtout dans les duels rapprochés.",
+          "de": "Häkkinen kombinierte extreme Schnelligkeit mit großer Präzision. Er war bekannt für Blitzstarts und das gute Management von Drucksituationen, besonders in engen Duellen."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Dopo Lotus, approda alla McLaren dove, tra il 1998 e il 1999, vince due titoli mondiali. La sua rivalità con Schumacher definì la Formula 1 di fine anni ’90.",
+        "en": "After Lotus, he joined McLaren where, between 1998 and 1999, he won two world titles. His rivalry with Schumacher defined late-90s Formula 1."
+          ,
+          "es": "Tras Lotus, llegó a McLaren donde, entre 1998 y 1999, ganó dos títulos mundiales. Su rivalidad con Schumacher definió la F1 de finales de los 90.",
+          "fr": "Après Lotus, il a rejoint McLaren où, entre 1998 et 1999, il a remporté deux titres mondiaux. Sa rivalité avec Schumacher a marqué la F1 de la fin des années 90.",
+          "de": "Nach Lotus wechselte er zu McLaren, wo er zwischen 1998 und 1999 zwei Weltmeistertitel gewann. Seine Rivalität mit Schumacher prägte die Formel 1 der späten 90er Jahre."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "Il GP del Belgio 1998, con sorpassi incredibili sotto la pioggia, e il titolo 1999 vinto all’ultima gara sono tra i momenti più iconici della sua carriera.",
+        "en": "The 1998 Belgian GP, with incredible wet-weather overtakes, and the 1999 title clinched at the final race are among the most iconic moments of his career."
+          ,
+          "es": "El GP de Bélgica 1998, con adelantamientos increíbles bajo la lluvia, y el título de 1999 ganado en la última carrera son de los momentos más icónicos de su carrera.",
+          "fr": "Le GP de Belgique 1998, avec des dépassements incroyables sous la pluie, et le titre 1999 remporté lors de la dernière course comptent parmi les moments les plus emblématiques de sa carrière.",
+          "de": "Der Belgien-GP 1998 mit unglaublichen Überholmanövern im Regen und der Titel 1999, der im letzten Rennen gewonnen wurde, gehören zu den ikonischsten Momenten seiner Karriere."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Due volte campione del mondo",
+          "Famoso per le partenze rapide e nervose",
+          "Ritirato nel 2001, rimane ambasciatore McLaren"
+        ],
+        "en": [
+          "Two-time world champion",
+          "Famous for quick and precise starts",
+          "Retired in 2001, remains a McLaren ambassador"
+        ]
+          ,
+          "es": [
+            "Dos veces campeón del mundo",
+            "Famoso por sus salidas rápidas y precisas",
+            "Retirado en 2001, sigue siendo embajador de McLaren"
+          ],
+          "fr": [
+            "Double champion du monde",
+            "Célèbre pour ses départs rapides et précis",
+            "Retraité en 2001, il reste ambassadeur McLaren"
+          ],
+          "de": [
+            "Zweifacher Weltmeister",
+            "Berühmt für schnelle und präzise Starts",
+            "2001 zurückgetreten, bleibt McLaren-Botschafter"
+          ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Häkkinen ha mostrato come velocità, concentrazione e calma siano essenziali per vincere in F1. La sua era con McLaren rimane un punto di riferimento.",
+        "en": "Häkkinen showed how speed, focus, and calmness are essential to winning in F1. His era with McLaren remains a benchmark."
+          ,
+          "es": "Häkkinen demostró cómo la velocidad, la concentración y la calma son esenciales para ganar en la F1. Su era con McLaren sigue siendo un referente.",
+          "fr": "Häkkinen a montré que la vitesse, la concentration et le calme sont essentiels pour gagner en F1. Son époque chez McLaren reste une référence.",
+          "de": "Häkkinen zeigte, wie wichtig Schnelligkeit, Konzentration und Ruhe für den Erfolg in der F1 sind. Seine McLaren-Ära bleibt ein Maßstab."
+      }
+    }
+  ]
+}

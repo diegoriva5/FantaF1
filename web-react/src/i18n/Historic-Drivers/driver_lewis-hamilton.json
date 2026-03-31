@@ -1,0 +1,116 @@
+{
+  "id": "lewis-hamilton",
+  "name": {
+    "first": "Lewis",
+    "last": "Hamilton"
+  },
+  "nationality": "United Kingdom",
+  "titles": 7,
+  "titles_years": [2008, 2014, 2015, 2017, 2018, 2019, 2020],
+  "years": "2007–present",
+  "image": "/drivers_pictures/lewis_hamilton.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Lewis Hamilton è uno dei piloti più vincenti e influenti nella storia della Formula 1. La sua carriera unisce talento puro, velocità e un impatto globale che va oltre lo sport.",
+        "en": "Lewis Hamilton is one of the most successful and influential drivers in Formula 1 history. His career combines raw talent, speed, and a global impact that goes beyond sport.",
+          "es": "Lewis Hamilton es uno de los pilotos más exitosos e influyentes en la historia de la Fórmula 1. Su carrera combina talento puro, velocidad y un impacto global que va más allá del deporte.",
+          "fr": "Lewis Hamilton est l'un des pilotes les plus titrés et influents de l'histoire de la Formule 1. Sa carrière allie talent pur, vitesse et un impact mondial qui va au-delà du sport.",
+          "de": "Lewis Hamilton ist einer der erfolgreichsten und einflussreichsten Fahrer der Formel-1-Geschichte. Seine Karriere vereint pures Talent, Schnelligkeit und eine globale Wirkung, die über den Sport hinausgeht."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Nato nel Regno Unito, Hamilton si mise in luce fin da giovane nel karting. Dopo una rapida crescita nelle categorie minori, debuttò in Formula 1 nel 2007 con McLaren, sfiorando subito il titolo mondiale.",
+        "en": "Born in the United Kingdom, Hamilton stood out early in karting. After rapid progress through junior categories, he debuted in Formula 1 in 2007 with McLaren, nearly winning the title in his rookie season.",
+          "es": "Nacido en el Reino Unido, Hamilton destacó desde joven en el karting. Tras un rápido ascenso en las categorías inferiores, debutó en la Fórmula 1 en 2007 con McLaren, quedando cerca de ganar el título en su temporada de debut.",
+          "fr": "Né au Royaume-Uni, Hamilton s'est distingué très jeune en karting. Après une progression rapide dans les catégories juniors, il a débuté en Formule 1 en 2007 avec McLaren, frôlant le titre dès sa première saison.",
+          "de": "Geboren im Vereinigten Königreich, fiel Hamilton schon früh im Kartsport auf. Nach schnellem Aufstieg in den Nachwuchsklassen debütierte er 2007 mit McLaren in der Formel 1 und verpasste den Titel in seiner ersten Saison nur knapp."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Hamilton è noto per il suo stile fluido e preciso. È particolarmente forte sul giro secco e nelle condizioni difficili, dove riesce a esprimere al massimo la sua sensibilità.",
+        "en": "Hamilton is known for his smooth and precise driving style. He excels in qualifying and in difficult conditions, where he maximizes his sensitivity.",
+          "es": "Hamilton es conocido por su estilo de conducción fluido y preciso. Destaca especialmente en clasificación y en condiciones difíciles, donde maximiza su sensibilidad.",
+          "fr": "Hamilton est connu pour son style de pilotage fluide et précis. Il excelle en qualifications et dans des conditions difficiles, où il exploite au maximum sa sensibilité.",
+          "de": "Hamilton ist bekannt für seinen flüssigen und präzisen Fahrstil. Besonders stark ist er im Qualifying und bei schwierigen Bedingungen, wo er seine Sensibilität voll ausspielt."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Dopo il primo titolo con McLaren nel 2008, Hamilton passò alla Mercedes nel 2013. Con questo team costruì un’era di dominio assoluto, vincendo sei titoli tra il 2014 e il 2020.",
+        "en": "After winning his first title with McLaren in 2008, Hamilton moved to Mercedes in 2013. With the team, he built a dominant era, winning six titles between 2014 and 2020.",
+          "es": "Tras ganar su primer título con McLaren en 2008, Hamilton pasó a Mercedes en 2013. Con este equipo construyó una era de dominio absoluto, ganando seis títulos entre 2014 y 2020.",
+          "fr": "Après avoir remporté son premier titre avec McLaren en 2008, Hamilton a rejoint Mercedes en 2013. Avec cette équipe, il a construit une ère de domination totale, remportant six titres entre 2014 et 2020.",
+          "de": "Nach seinem ersten Titel mit McLaren 2008 wechselte Hamilton 2013 zu Mercedes. Mit diesem Team begründete er eine Ära absoluter Dominanz und gewann zwischen 2014 und 2020 sechs Titel."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "Il titolo del 2008, conquistato all’ultima curva dell’ultima gara, è uno dei più drammatici della storia. Il dominio con Mercedes negli anni successivi ha ridefinito gli standard della Formula 1 moderna.",
+        "en": "The 2008 title, secured at the final corner of the final race, is one of the most dramatic in history. His dominance with Mercedes redefined modern Formula 1 standards.",
+          "es": "El título de 2008, conseguido en la última curva de la última carrera, es uno de los más dramáticos de la historia. Su dominio con Mercedes redefinió los estándares de la Fórmula 1 moderna.",
+          "fr": "Le titre de 2008, remporté au dernier virage de la dernière course, est l'un des plus dramatiques de l'histoire. Sa domination avec Mercedes a redéfini les standards de la Formule 1 moderne.",
+          "de": "Der Titel 2008, der in der letzten Kurve des letzten Rennens gesichert wurde, ist einer der dramatischsten der Geschichte. Seine Dominanz mit Mercedes hat die Maßstäbe der modernen Formel 1 neu definiert."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Ha eguagliato il record di 7 titoli mondiali",
+          "È uno dei piloti con più vittorie nella storia",
+          "È attivo anche fuori dalla F1 in ambito sociale e culturale",
+          "Ha iniziato la carriera sostenuto da McLaren"
+        ],
+        "en": [
+          "Has matched the record of 7 world titles",
+          "One of the most successful drivers ever",
+          "Active outside F1 in social and cultural fields",
+          "Started his career supported by McLaren"
+        ],
+        "es": [
+          "Ha igualado el récord de 7 títulos mundiales",
+          "Es uno de los pilotos con más victorias de la historia",
+          "Activo también fuera de la F1 en ámbitos sociales y culturales",
+          "Comenzó su carrera apoyado por McLaren"
+        ],
+        "fr": [
+          "A égalé le record de 7 titres mondiaux",
+          "L'un des pilotes les plus victorieux de l'histoire",
+          "Actif en dehors de la F1 dans les domaines sociaux et culturels",
+          "A débuté sa carrière soutenu par McLaren"
+        ],
+        "de": [
+          "Hat den Rekord von 7 WM-Titeln eingestellt",
+          "Einer der siegreichsten Fahrer der Geschichte",
+          "Auch außerhalb der F1 sozial und kulturell engagiert",
+          "Begann seine Karriere mit Unterstützung von McLaren"
+        ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Hamilton ha ridefinito il ruolo del pilota moderno, unendo successo sportivo e impatto globale. È una delle figure più importanti nella storia della Formula 1.",
+        "en": "Hamilton redefined the modern driver, combining sporting success with global influence. He is one of the most important figures in Formula 1 history.",
+          "es": "Hamilton ha redefinido el papel del piloto moderno, uniendo éxito deportivo e impacto global. Es una de las figuras más importantes en la historia de la Fórmula 1.",
+          "fr": "Hamilton a redéfini le rôle du pilote moderne, alliant succès sportif et influence mondiale. Il est l'une des figures les plus importantes de l'histoire de la Formule 1.",
+          "de": "Hamilton hat die Rolle des modernen Fahrers neu definiert, indem er sportlichen Erfolg mit globalem Einfluss verband. Er ist eine der wichtigsten Persönlichkeiten der Formel-1-Geschichte."
+      }
+    }
+  ]
+}

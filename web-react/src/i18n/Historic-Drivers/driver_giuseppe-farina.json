@@ -1,0 +1,115 @@
+{
+  "id": "giuseppe-farina",
+  "name": { "first": "Giuseppe", "last": "Farina" },
+  "nationality": "Italy",
+  "titles": 1,
+  "titles_years": [1950],
+  "years": "1950–1955",
+  "image": "/drivers_pictures/giuseppe_farina.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Giuseppe Farina è stato il primo campione del mondo della Formula 1, noto per la velocità pura e il coraggio in pista.",
+        "en": "Giuseppe Farina was the first Formula 1 world champion, known for pure speed and courage on track."
+          ,
+          "es": "Giuseppe Farina fue el primer campeón del mundo de Fórmula 1, conocido por su velocidad pura y coraje en pista.",
+          "fr": "Giuseppe Farina a été le premier champion du monde de Formule 1, connu pour sa vitesse pure et son courage en piste.",
+          "de": "Giuseppe Farina war der erste Formel-1-Weltmeister, bekannt für reine Schnelligkeit und Mut auf der Strecke."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Inizia a correre in monoposto in Italia, distinguendosi per talento e aggressività, fino al debutto in F1 nel 1950 con Alfa Romeo.",
+        "en": "He started racing single-seaters in Italy, standing out for talent and aggressiveness, debuting in F1 in 1950 with Alfa Romeo."
+          ,
+          "es": "Comenzó a correr en monoplazas en Italia, destacando por su talento y agresividad, hasta debutar en F1 en 1950 con Alfa Romeo.",
+          "fr": "Il a commencé à courir en monoplaces en Italie, se distinguant par son talent et son agressivité, jusqu'à ses débuts en F1 en 1950 avec Alfa Romeo.",
+          "de": "Er begann in Italien mit Monoposto-Rennen, zeichnete sich durch Talent und Aggressivität aus und debütierte 1950 mit Alfa Romeo in der F1."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Farina era aggressivo, rapido e audace, capace di prendere rischi calcolati per ottenere vantaggi in pista.",
+        "en": "Farina was aggressive, fast, and bold, capable of taking calculated risks to gain advantage on track."
+          ,
+          "es": "Farina era agresivo, rápido y audaz, capaz de asumir riesgos calculados para obtener ventajas en pista.",
+          "fr": "Farina était agressif, rapide et audacieux, capable de prendre des risques calculés pour gagner des avantages en piste.",
+          "de": "Farina war aggressiv, schnell und mutig, in der Lage, kalkulierte Risiken einzugehen, um Vorteile auf der Strecke zu erzielen."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Ha corso con Alfa Romeo, Ferrari e Maserati, vincendo il primo titolo mondiale nel 1950 con Alfa Romeo e segnando la storia della F1.",
+        "en": "He raced with Alfa Romeo, Ferrari, and Maserati, winning the first world title in 1950 with Alfa Romeo and making F1 history."
+          ,
+          "es": "Corrió con Alfa Romeo, Ferrari y Maserati, ganando el primer título mundial en 1950 con Alfa Romeo y haciendo historia en la F1.",
+          "fr": "Il a couru avec Alfa Romeo, Ferrari et Maserati, remportant le premier titre mondial en 1950 avec Alfa Romeo et marquant l'histoire de la F1.",
+          "de": "Er fuhr für Alfa Romeo, Ferrari und Maserati, gewann 1950 den ersten Weltmeistertitel mit Alfa Romeo und schrieb F1-Geschichte."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "Vincere il mondiale inaugurale 1950, affrontando leggende come Fangio e Ascari, è un momento storico senza pari.",
+        "en": "Winning the inaugural 1950 world championship, competing against legends like Fangio and Ascari, is an unmatched historic moment."
+          ,
+          "es": "Ganar el mundial inaugural de 1950, enfrentándose a leyendas como Fangio y Ascari, es un momento histórico sin igual.",
+          "fr": "Remporter le championnat du monde inaugural de 1950, face à des légendes comme Fangio et Ascari, est un moment historique inégalé.",
+          "de": "Den ersten Weltmeistertitel 1950 zu gewinnen und gegen Legenden wie Fangio und Ascari anzutreten, ist ein unvergleichlicher historischer Moment."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Primo campione del mondo di F1",
+          "Spesso duellava con Fangio e Ascari",
+          "Conosciuto per stile aggressivo e coraggio"
+        ],
+        "en": [
+          "First F1 world champion",
+          "Often dueled with Fangio and Ascari",
+          "Known for aggressive style and courage"
+        ]
+          ,
+          "es": [
+            "Primer campeón del mundo de F1",
+            "A menudo se batía con Fangio y Ascari",
+            "Conocido por su estilo agresivo y coraje"
+          ],
+          "fr": [
+            "Premier champion du monde de F1",
+            "Souvent en duel avec Fangio et Ascari",
+            "Connu pour son style agressif et son courage"
+          ],
+          "de": [
+            "Erster F1-Weltmeister",
+            "Häufige Duelle mit Fangio und Ascari",
+            "Bekannt für aggressiven Stil und Mut"
+          ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Farina è l’icona del pilota audace degli albori della F1, simbolo di coraggio e velocità pura.",
+        "en": "Farina is an icon of the bold driver from the early days of F1, symbol of courage and pure speed."
+          ,
+          "es": "Farina es el icono del piloto audaz de los inicios de la F1, símbolo de coraje y velocidad pura.",
+          "fr": "Farina est l'icône du pilote audacieux des débuts de la F1, symbole de courage et de vitesse pure.",
+          "de": "Farina ist das Sinnbild des kühnen Fahrers der frühen F1-Tage, Symbol für Mut und reine Schnelligkeit."
+      }
+    }
+  ]
+}

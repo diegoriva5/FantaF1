@@ -53,7 +53,7 @@ function DriverHistoricPage({ eraSlug, driverSlug, navigate }) {
         >
           ← {t ? t("common.back") : "Indietro"}
         </button>
-        <span className="topbarTitle">{t ? t("historicDrivers.title") : "Formula 1 Historic Drivers"}</span>
+        <span className="topbarTitle">La Storia</span>
         <LanguageSwitcher />
       </header>
       <div className="driver-historic-rows-layout">
@@ -72,13 +72,15 @@ function DriverHistoricPage({ eraSlug, driverSlug, navigate }) {
                 : driver?.name}
             </div>
           </div>
-          <div className="driver-historic-titles driver-historic-titles-side driver-historic-titles-centered-vertical" style={{ justifyContent: 'flex-start', alignItems: 'flex-end', marginLeft: 48 }}>
-            {(driver.titles_years || []).map((year, idx) => (
-              <div className="driver-historic-trophy" key={year}>
-                <span className="trophy-emoji" role="img" aria-label="Trophy">🏆</span>
-                <span className="trophy-year">{year}</span>
-              </div>
-            ))}
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', maxWidth: 900 }}>
+            <div className="driver-historic-titles driver-historic-titles-side driver-historic-titles-centered-vertical" style={{ justifyContent: 'center', alignItems: 'center', maxWidth: 900, width: '100%' }}>
+              {(driver.titles_years || []).map((year, idx) => (
+                <div className="driver-historic-trophy" key={year}>
+                  <span className="trophy-emoji" role="img" aria-label="Trophy">🏆</span>
+                  <span className="trophy-year">{year}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         {/* Seconda riga: bottoni tabs (sx, colonna) | contenuto (dx) */}
@@ -97,10 +99,18 @@ function DriverHistoricPage({ eraSlug, driverSlug, navigate }) {
               </button>
             ))}
           </div>
-          <div className="driver-historic-content driver-historic-content-below-tabs" style={{ flex: 1, marginLeft: 32, minWidth: 0 }}>
+          <div className="driver-historic-content driver-historic-content-below-tabs" style={{ flex: 1, marginLeft: 32, minWidth: 0, maxWidth: 900, width: '100%' }}>
             {sections[activeSection] && (
               <section key={sections[activeSection].type + activeSection} style={{ marginTop: 0 }}>
-                <p style={{ color: '#fff4ef', whiteSpace: 'pre-line' }}>{getTranslated(sections[activeSection].content)}</p>
+                {Array.isArray(sections[activeSection].content?.[language] || sections[activeSection].content?.it) ? (
+                  <ul style={{ color: '#fff4ef', paddingLeft: 24 }}>
+                    {(sections[activeSection].content?.[language] || sections[activeSection].content?.it).map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p style={{ color: '#fff4ef', whiteSpace: 'pre-line', textAlign: 'justify' }}>{getTranslated(sections[activeSection].content)}</p>
+                )}
               </section>
             )}
           </div>

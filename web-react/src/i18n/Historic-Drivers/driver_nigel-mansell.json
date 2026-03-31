@@ -1,0 +1,115 @@
+{
+  "id": "nigel-mansell",
+  "name": { "first": "Nigel", "last": "Mansell" },
+  "nationality": "United Kingdom",
+  "titles": 1,
+  "titles_years": [1992],
+  "years": "1980–1995",
+  "image": "/drivers_pictures/nigel_mansell.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Nigel Mansell è un pilota britannico celebre per il suo stile aggressivo e il carisma. Il titolo mondiale del 1992 segnò l’apice di una carriera lunga e combattiva.",
+        "en": "Nigel Mansell is a British driver famous for his aggressive style and charisma. The 1992 world title marked the peak of a long and combative career."
+          ,
+          "es": "Nigel Mansell es un piloto británico célebre por su estilo agresivo y carisma. El título mundial de 1992 marcó el punto culminante de una carrera larga y luchadora.",
+          "fr": "Nigel Mansell est un pilote britannique célèbre pour son style agressif et son charisme. Le titre mondial de 1992 a marqué l'apogée d'une longue carrière combative.",
+          "de": "Nigel Mansell ist ein britischer Fahrer, der für seinen aggressiven Stil und sein Charisma berühmt ist. Der Weltmeistertitel 1992 war der Höhepunkt einer langen und kämpferischen Karriere."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Mansell comincia a correre in kart e formule minori in Inghilterra. Debutta in F1 nel 1980 con la Lotus, mostrando subito determinazione e velocità.",
+        "en": "Mansell began racing in karting and junior formulas in England. He debuted in F1 in 1980 with Lotus, immediately showing determination and speed."
+          ,
+          "es": "Mansell comenzó a correr en karting y fórmulas menores en Inglaterra. Debutó en F1 en 1980 con Lotus, mostrando de inmediato determinación y velocidad.",
+          "fr": "Mansell a commencé à courir en karting et en formules juniors en Angleterre. Il a débuté en F1 en 1980 avec Lotus, montrant immédiatement détermination et rapidité.",
+          "de": "Mansell begann in England mit Kart- und Nachwuchsserien zu fahren. 1980 debütierte er in der F1 mit Lotus und zeigte sofort Entschlossenheit und Schnelligkeit."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Il suo stile era aggressivo, con sorpassi al limite e grande controllo del mezzo, capace di tirare al massimo anche in condizioni difficili.",
+        "en": "His style was aggressive, with daring overtakes and excellent car control, able to push to the limit even in difficult conditions."
+          ,
+          "es": "Su estilo era agresivo, con adelantamientos al límite y gran control del coche, capaz de exprimirlo al máximo incluso en condiciones difíciles.",
+          "fr": "Son style était agressif, avec des dépassements audacieux et un excellent contrôle de la voiture, capable de pousser à la limite même dans des conditions difficiles.",
+          "de": "Sein Stil war aggressiv, mit waghalsigen Überholmanövern und hervorragender Fahrzeugkontrolle, immer am Limit, auch unter schwierigen Bedingungen."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Ha corso con Lotus, Williams e Ferrari. Il suo titolo 1992 con Williams rimane uno dei più dominanti della storia della F1.",
+        "en": "He raced with Lotus, Williams, and Ferrari. His 1992 title with Williams remains one of the most dominant in F1 history."
+          ,
+          "es": "Corrió con Lotus, Williams y Ferrari. Su título de 1992 con Williams sigue siendo uno de los más dominantes de la historia de la F1.",
+          "fr": "Il a couru avec Lotus, Williams et Ferrari. Son titre de 1992 avec Williams reste l'un des plus dominants de l'histoire de la F1.",
+          "de": "Er fuhr für Lotus, Williams und Ferrari. Sein Titel 1992 mit Williams bleibt einer der dominantesten der F1-Geschichte."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "La stagione 1992, con vittorie consecutive e gestione impeccabile del campionato, e i duelli con Piquet e Senna sono leggendarie.",
+        "en": "The 1992 season, with consecutive wins and impeccable championship management, and his battles with Piquet and Senna are legendary."
+          ,
+          "es": "La temporada 1992, con victorias consecutivas y una gestión impecable del campeonato, y sus duelos con Piquet y Senna son legendarios.",
+          "fr": "La saison 1992, avec des victoires consécutives et une gestion impeccable du championnat, ainsi que ses duels avec Piquet et Senna, sont légendaires.",
+          "de": "Die Saison 1992 mit aufeinanderfolgenden Siegen und perfektem Meisterschaftsmanagement sowie seine Duelle mit Piquet und Senna sind legendär."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Conosciuto come “Il Leone” per il carattere combattivo",
+          "Ha corso anche in IndyCar vincendo il titolo nel 1993",
+          "Simbolo della generazione di piloti aggressivi anni ’80 e ’90"
+        ],
+        "en": [
+          "Known as “The Lion” for his fighting spirit",
+          "Also raced in IndyCar, winning the 1993 title",
+          "Symbol of aggressive drivers of the 1980s and 1990s"
+        ]
+          ,
+          "es": [
+            "Conocido como 'El León' por su espíritu combativo",
+            "Corrió también en IndyCar, ganando el título en 1993",
+            "Símbolo de la generación de pilotos agresivos de los años 80 y 90"
+          ],
+          "fr": [
+            "Surnommé 'Le Lion' pour son esprit combatif",
+            "A également couru en IndyCar, remportant le titre en 1993",
+            "Symbole de la génération de pilotes agressifs des années 80 et 90"
+          ],
+          "de": [
+            "Bekannt als 'Der Löwe' wegen seines kämpferischen Charakters",
+            "Fuhr auch in der IndyCar und gewann 1993 den Titel",
+            "Symbol der aggressiven Fahrergeneration der 80er und 90er Jahre"
+          ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Mansell rimane un riferimento per coraggio e determinazione, un esempio di pilota che ha sempre puntato al massimo in pista.",
+        "en": "Mansell remains a reference for courage and determination, an example of a driver who always aimed for maximum performance on track."
+          ,
+          "es": "Mansell sigue siendo un referente de coraje y determinación, un ejemplo de piloto que siempre buscó el máximo en pista.",
+          "fr": "Mansell reste une référence de courage et de détermination, un exemple de pilote qui a toujours visé l'excellence en piste.",
+          "de": "Mansell bleibt ein Vorbild für Mut und Entschlossenheit, ein Fahrer, der auf der Strecke immer das Maximum angestrebt hat."
+      }
+    }
+  ]
+}

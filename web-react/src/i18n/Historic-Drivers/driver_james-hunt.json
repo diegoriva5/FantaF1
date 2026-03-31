@@ -1,0 +1,115 @@
+{
+  "id": "james-hunt",
+  "name": { "first": "James", "last": "Hunt" },
+  "nationality": "United Kingdom",
+  "titles": 1,
+  "titles_years": [1976],
+  "years": "1973–1979",
+  "image": "/drivers_pictures/james_hunt.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "James Hunt era famoso per il suo carisma, stile di vita rock’n’roll e guida spettacolare, culminata nel titolo mondiale 1976.",
+        "en": "James Hunt was famous for his charisma, rock’n’roll lifestyle, and spectacular driving, culminating in the 1976 world title."
+          ,
+          "es": "James Hunt fue famoso por su carisma, estilo de vida rock’n’roll y conducción espectacular, culminando con el título mundial de 1976.",
+          "fr": "James Hunt était célèbre pour son charisme, son style de vie rock’n’roll et sa conduite spectaculaire, couronnée par le titre mondial 1976.",
+          "de": "James Hunt war berühmt für sein Charisma, seinen Rock’n’Roll-Lebensstil und seine spektakuläre Fahrweise, die 1976 im Weltmeistertitel gipfelte."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Inizia a correre in kart e monoposto in Inghilterra, facendo il suo debutto in F1 con la Hesketh nel 1973.",
+        "en": "He started racing in karts and single-seaters in England, debuting in F1 with Hesketh in 1973."
+          ,
+          "es": "Comenzó a correr en karts y monoplazas en Inglaterra, debutando en F1 con Hesketh en 1973.",
+          "fr": "Il a commencé à courir en karting et en monoplaces en Angleterre, débutant en F1 avec Hesketh en 1973.",
+          "de": "Er begann mit Kart- und Monoposto-Rennen in England und debütierte 1973 mit Hesketh in der F1."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Stile aggressivo e spettacolare, spesso al limite, capace di sorpassi mozzafiato e gare emozionanti.",
+        "en": "Aggressive and spectacular style, often on the limit, capable of breathtaking overtakes and thrilling races."
+          ,
+          "es": "Estilo agresivo y espectacular, a menudo al límite, capaz de adelantamientos impresionantes y carreras emocionantes.",
+          "fr": "Style agressif et spectaculaire, souvent à la limite, capable de dépassements époustouflants et de courses palpitantes.",
+          "de": "Aggressiver und spektakulärer Stil, oft am Limit, fähig zu atemberaubenden Überholmanövern und spannenden Rennen."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Ha corso con Hesketh e McLaren, vincendo il titolo 1976 grazie a duelli leggendari con Niki Lauda.",
+        "en": "He raced with Hesketh and McLaren, winning the 1976 title thanks to legendary battles with Niki Lauda."
+          ,
+          "es": "Corrió con Hesketh y McLaren, ganando el título de 1976 gracias a duelos legendarios con Niki Lauda.",
+          "fr": "Il a couru avec Hesketh et McLaren, remportant le titre 1976 grâce à des duels légendaires avec Niki Lauda.",
+          "de": "Er fuhr für Hesketh und McLaren und gewann den Titel 1976 dank legendärer Duelle mit Niki Lauda."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "Il mondiale 1976, caratterizzato dal ritorno di Lauda dopo l’incidente, e la rivalità McLaren-Lauda sono storici.",
+        "en": "The 1976 championship, marked by Lauda’s return after the accident, and the McLaren-Lauda rivalry are historic."
+          ,
+          "es": "El mundial de 1976, marcado por el regreso de Lauda tras el accidente, y la rivalidad McLaren-Lauda son históricos.",
+          "fr": "Le championnat 1976, marqué par le retour de Lauda après son accident, et la rivalité McLaren-Lauda sont historiques.",
+          "de": "Die WM 1976, geprägt von Laudas Rückkehr nach dem Unfall, und die McLaren-Lauda-Rivalität sind historisch."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Conosciuto per il carisma fuori pista",
+          "Ha ispirato il film 'Rush'",
+          "Era famoso per la vita mondana e le feste"
+        ],
+        "en": [
+          "Known for charisma off-track",
+          "Inspired the movie 'Rush'",
+          "Famous for nightlife and parties"
+        ]
+          ,
+          "es": [
+            "Conocido por su carisma fuera de pista",
+            "Inspiró la película 'Rush'",
+            "Famoso por la vida nocturna y las fiestas"
+          ],
+          "fr": [
+            "Connu pour son charisme en dehors de la piste",
+            "A inspiré le film 'Rush'",
+            "Célèbre pour sa vie nocturne et ses fêtes"
+          ],
+          "de": [
+            "Bekannt für Charisma abseits der Strecke",
+            "Inspiration für den Film 'Rush'",
+            "Berühmt für Nachtleben und Partys"
+          ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Hunt rimane simbolo di stile e spettacolo, dimostrando che in F1 la personalità può diventare leggenda.",
+        "en": "Hunt remains a symbol of style and spectacle, showing that in F1 personality can become legend."
+          ,
+          "es": "Hunt sigue siendo un símbolo de estilo y espectáculo, demostrando que en la F1 la personalidad puede convertirse en leyenda.",
+          "fr": "Hunt reste un symbole de style et de spectacle, montrant qu'en F1 la personnalité peut devenir légende.",
+          "de": "Hunt bleibt ein Symbol für Stil und Spektakel und zeigt, dass in der F1 Persönlichkeit zur Legende werden kann."
+      }
+    }
+  ]
+}

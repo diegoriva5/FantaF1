@@ -1,0 +1,115 @@
+{
+  "id": "nico-rosberg",
+  "name": { "first": "Nico", "last": "Rosberg" },
+  "nationality": "Germany",
+  "titles": 1,
+  "titles_years": [2016],
+  "years": "2006–2016",
+  "image": "/drivers_pictures/nico_rosberg.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Nico Rosberg è un pilota tedesco noto per la sua intelligenza strategica e precisione in pista. Il suo unico titolo mondiale nel 2016 è il culmine di una carriera costellata di sfide con il compagno di squadra Lewis Hamilton.",
+        "en": "Nico Rosberg is a German driver known for his strategic intelligence and precision on track. His only world title in 2016 was the pinnacle of a career marked by fierce battles with teammate Lewis Hamilton."
+          ,
+          "es": "Nico Rosberg es un piloto alemán conocido por su inteligencia estratégica y precisión en pista. Su único título mundial en 2016 fue el punto culminante de una carrera marcada por intensos duelos con su compañero Lewis Hamilton.",
+          "fr": "Nico Rosberg est un pilote allemand connu pour son intelligence stratégique et sa précision en piste. Son unique titre mondial en 2016 est l'apogée d'une carrière marquée par des duels acharnés avec son coéquipier Lewis Hamilton.",
+          "de": "Nico Rosberg ist ein deutscher Fahrer, bekannt für seine strategische Intelligenz und Präzision auf der Strecke. Sein einziger Weltmeistertitel 2016 war der Höhepunkt einer Karriere voller Duelle mit Teamkollege Lewis Hamilton."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Figlio di Keke Rosberg, campione del mondo 1982, Nico cresce tra motorsport e impegno tecnico. Dopo il karting e le formule minori, approda in Formula 1 nel 2006 con Williams.",
+        "en": "Son of 1982 world champion Keke Rosberg, Nico grew up surrounded by motorsport and technical knowledge. After karting and junior formulas, he debuted in Formula 1 in 2006 with Williams."
+          ,
+          "es": "Hijo de Keke Rosberg, campeón del mundo en 1982, Nico creció rodeado de automovilismo y conocimientos técnicos. Tras el karting y las fórmulas menores, debutó en la Fórmula 1 en 2006 con Williams.",
+          "fr": "Fils de Keke Rosberg, champion du monde 1982, Nico a grandi dans le sport automobile et la technique. Après le karting et les formules juniors, il débute en Formule 1 en 2006 avec Williams.",
+          "de": "Sohn des Weltmeisters von 1982, Keke Rosberg, wuchs Nico im Motorsport und mit technischem Know-how auf. Nach Kart und Nachwuchsserien debütierte er 2006 in der Formel 1 mit Williams."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Rosberg era metodico e attento ai dettagli. Particolarmente efficace sul giro secco e nella gestione delle gomme, riusciva a ottimizzare il passo gara senza rischi eccessivi.",
+        "en": "Rosberg was methodical and detail-oriented. Especially strong in qualifying and tyre management, he could optimise race pace without taking excessive risks."
+          ,
+          "es": "Rosberg era metódico y atento a los detalles. Especialmente eficaz en clasificación y gestión de neumáticos, lograba optimizar el ritmo de carrera sin asumir riesgos excesivos.",
+          "fr": "Rosberg était méthodique et attentif aux détails. Particulièrement efficace en qualifications et dans la gestion des pneus, il savait optimiser le rythme de course sans prendre de risques excessifs.",
+          "de": "Rosberg war methodisch und detailorientiert. Besonders stark im Qualifying und Reifenmanagement, konnte er das Renntempo ohne übermäßige Risiken optimieren."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Dopo anni con Williams, Rosberg passa alla Mercedes nel 2010. Con il team tedesco forma una rivalità intensa con Hamilton, culminata nel titolo 2016.",
+        "en": "After several years with Williams, Rosberg moved to Mercedes in 2010. With the team, he formed an intense rivalry with Hamilton, culminating in the 2016 championship."
+          ,
+          "es": "Tras varios años con Williams, Rosberg pasó a Mercedes en 2010. Con el equipo alemán formó una intensa rivalidad con Hamilton, que culminó en el título de 2016.",
+          "fr": "Après plusieurs années chez Williams, Rosberg rejoint Mercedes en 2010. Avec l'équipe allemande, il forme une rivalité intense avec Hamilton, culminant avec le titre 2016.",
+          "de": "Nach mehreren Jahren bei Williams wechselte Rosberg 2010 zu Mercedes. Mit dem deutschen Team entwickelte er eine intensive Rivalität mit Hamilton, die 2016 im Titel gipfelte."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "La stagione 2016, in cui vinse il titolo con calma strategica e precisione nelle gare decisive, rimane il momento più iconico della sua carriera.",
+        "en": "The 2016 season, where he won the title with strategic calm and precision in decisive races, remains the most iconic moment of his career."
+          ,
+          "es": "La temporada 2016, en la que ganó el título con calma estratégica y precisión en las carreras decisivas, sigue siendo el momento más icónico de su carrera.",
+          "fr": "La saison 2016, où il a remporté le titre avec calme stratégique et précision dans les courses décisives, reste le moment le plus emblématique de sa carrière.",
+          "de": "Die Saison 2016, in der er den Titel mit strategischer Ruhe und Präzision in entscheidenden Rennen gewann, bleibt der ikonischste Moment seiner Karriere."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Figlio di Keke Rosberg, campione del mondo 1982",
+          "Dopo il ritiro ha intrapreso la carriera imprenditoriale",
+          "È noto per l’approccio molto analitico alla gara"
+        ],
+        "en": [
+          "Son of 1982 world champion Keke Rosberg",
+          "Started a business career after retirement",
+          "Known for a very analytical approach to racing"
+        ]
+          ,
+          "es": [
+            "Hijo de Keke Rosberg, campeón del mundo 1982",
+            "Tras retirarse inició una carrera empresarial",
+            "Es conocido por su enfoque muy analítico en las carreras"
+          ],
+          "fr": [
+            "Fils de Keke Rosberg, champion du monde 1982",
+            "Après sa retraite, il a entamé une carrière d'entrepreneur",
+            "Connu pour son approche très analytique de la course"
+          ],
+          "de": [
+            "Sohn von Keke Rosberg, Weltmeister 1982",
+            "Nach dem Rücktritt begann er eine Unternehmerkarriere",
+            "Bekannt für seinen sehr analytischen Ansatz im Rennsport"
+          ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Rosberg ha dimostrato come l’intelligenza strategica possa essere decisiva nel moderno campionato di Formula 1. Il suo titolo 2016 rimane uno dei più studiati per la gestione della pressione.",
+        "en": "Rosberg showed how strategic intelligence can be decisive in modern Formula 1. His 2016 title remains a case study in pressure management."
+          ,
+          "es": "Rosberg demostró cómo la inteligencia estratégica puede ser decisiva en la Fórmula 1 moderna. Su título de 2016 sigue siendo un caso de estudio en la gestión de la presión.",
+          "fr": "Rosberg a démontré comment l'intelligence stratégique peut être décisive dans le championnat moderne de Formule 1. Son titre 2016 reste l'un des plus étudiés pour la gestion de la pression.",
+          "de": "Rosberg hat gezeigt, wie strategische Intelligenz in der modernen Formel 1 entscheidend sein kann. Sein Titel 2016 bleibt ein Paradebeispiel für Druckbewältigung."
+      }
+    }
+  ]
+}

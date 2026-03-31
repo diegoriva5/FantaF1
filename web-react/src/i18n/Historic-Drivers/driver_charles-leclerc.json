@@ -1,0 +1,115 @@
+{
+  "id": "charles-leclerc",
+  "name": { "first": "Charles", "last": "Leclerc" },
+  "nationality": "Monaco",
+  "titles": 0,
+  "titles_years": [],
+  "years": "2018–present",
+  "image": "/drivers_pictures/charles_leclerc.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Charles Leclerc è una delle giovani promesse della Formula 1 moderna. Con Ferrari rappresenta il futuro della scuderia e ha già dimostrato grande talento e maturità in pista.",
+        "en": "Charles Leclerc is one of the young talents of modern Formula 1. With Ferrari, he represents the team's future and has already shown remarkable talent and maturity on track."
+          ,
+          "es": "Charles Leclerc es una de las jóvenes promesas de la Fórmula 1 moderna. Con Ferrari representa el futuro del equipo y ya ha demostrado gran talento y madurez en pista.",
+          "fr": "Charles Leclerc est l'un des jeunes talents de la Formule 1 moderne. Avec Ferrari, il représente l'avenir de l'écurie et a déjà montré un grand talent et une grande maturité en piste.",
+          "de": "Charles Leclerc ist eines der jungen Talente der modernen Formel 1. Mit Ferrari repräsentiert er die Zukunft des Teams und hat bereits großes Talent und Reife auf der Strecke gezeigt."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Leclerc cresce nel karting e nelle formule minori, vincendo titoli in GP3 e Formula 2. Debutta in Formula 1 nel 2018 con Sauber, impressionando subito per velocità e consistenza.",
+        "en": "Leclerc grew up in karting and junior formulas, winning titles in GP3 and Formula 2. He debuted in Formula 1 in 2018 with Sauber, immediately impressing with speed and consistency."
+          ,
+          "es": "Leclerc creció en el karting y en las fórmulas menores, ganando títulos en GP3 y Fórmula 2. Debutó en la Fórmula 1 en 2018 con Sauber, impresionando de inmediato por su velocidad y consistencia.",
+          "fr": "Leclerc a grandi dans le karting et les formules juniors, remportant des titres en GP3 et en Formule 2. Il a débuté en Formule 1 en 2018 avec Sauber, impressionnant immédiatement par sa vitesse et sa régularité.",
+          "de": "Leclerc wuchs im Kartsport und in den Nachwuchsserien auf, gewann Titel in der GP3 und Formel 2. 2018 debütierte er mit Sauber in der Formel 1 und beeindruckte sofort durch Schnelligkeit und Konstanz."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Leclerc è noto per aggressività controllata e capacità di sfruttare al massimo la monoposto. In qualifica eccelle per la concentrazione e precisione nei giri veloci.",
+        "en": "Leclerc is known for controlled aggressiveness and ability to maximize the car. He excels in qualifying for concentration and precision in fast laps."
+          ,
+          "es": "Leclerc es conocido por su agresividad controlada y su capacidad para exprimir al máximo el monoplaza. En clasificación destaca por su concentración y precisión en las vueltas rápidas.",
+          "fr": "Leclerc est connu pour son agressivité contrôlée et sa capacité à maximiser la monoplace. En qualifications, il excelle par sa concentration et sa précision dans les tours rapides.",
+          "de": "Leclerc ist bekannt für kontrollierte Aggressivität und die Fähigkeit, das Maximum aus dem Auto herauszuholen. Im Qualifying glänzt er durch Konzentration und Präzision bei schnellen Runden."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Dopo la stagione di debutto con Sauber, nel 2019 passa a Ferrari. Da allora è diventato il leader della squadra, sfidando i migliori piloti del mondiale e ottenendo vittorie importanti.",
+        "en": "After his debut season with Sauber, he moved to Ferrari in 2019. Since then, he became the team leader, challenging the top drivers in the championship and achieving significant victories."
+          ,
+          "es": "Tras su temporada de debut con Sauber, en 2019 pasó a Ferrari. Desde entonces se ha convertido en el líder del equipo, desafiando a los mejores pilotos del campeonato y logrando victorias importantes.",
+          "fr": "Après sa saison de début avec Sauber, il rejoint Ferrari en 2019. Depuis, il est devenu le leader de l'équipe, affrontant les meilleurs pilotes du championnat et obtenant des victoires importantes.",
+          "de": "Nach seiner Debütsaison mit Sauber wechselte er 2019 zu Ferrari. Seitdem ist er zum Teamleader geworden, fordert die besten Fahrer der Weltmeisterschaft heraus und erzielt bedeutende Siege."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "Vittorie a Spa e Monza, corse sotto la pioggia e rimontate spettacolari hanno consolidato il suo status di giovane talento emergente.",
+        "en": "Wins at Spa and Monza, wet races and spectacular comebacks have consolidated his status as an emerging young talent."
+          ,
+          "es": "Las victorias en Spa y Monza, las carreras bajo la lluvia y las remontadas espectaculares han consolidado su estatus de joven talento emergente.",
+          "fr": "Les victoires à Spa et Monza, les courses sous la pluie et les remontées spectaculaires ont consolidé son statut de jeune talent émergent.",
+          "de": "Siege in Spa und Monza, Regenrennen und spektakuläre Aufholjagden haben seinen Status als aufstrebendes junges Talent gefestigt."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "È il primo monegasco a vincere un GP in Formula 1",
+          "Ha corso con la Ferrari già da giovane età",
+          "È considerato un leader naturale in squadra"
+        ],
+        "en": [
+          "First Monegasque to win a Formula 1 GP",
+          "Joined Ferrari at a young age",
+          "Considered a natural team leader"
+        ]
+          ,
+          "es": [
+            "Es el primer monegasco en ganar un GP de Fórmula 1",
+            "Corrió con Ferrari desde muy joven",
+            "Es considerado un líder natural en el equipo"
+          ],
+          "fr": [
+            "Premier Monégasque à remporter un GP de Formule 1",
+            "A couru avec Ferrari dès son plus jeune âge",
+            "Considéré comme un leader naturel dans l'équipe"
+          ],
+          "de": [
+            "Er ist der erste Monegasse, der einen Formel-1-GP gewonnen hat",
+            "Fuhr schon in jungen Jahren für Ferrari",
+            "Gilt als natürlicher Teamleader"
+          ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Leclerc rappresenta il futuro della Ferrari e della F1 moderna: talento, determinazione e capacità di leadership in pista.",
+        "en": "Leclerc represents the future of Ferrari and modern F1: talent, determination, and leadership on track."
+          ,
+          "es": "Leclerc representa el futuro de Ferrari y de la F1 moderna: talento, determinación y capacidad de liderazgo en pista.",
+          "fr": "Leclerc représente l'avenir de Ferrari et de la F1 moderne : talent, détermination et capacité de leadership en piste.",
+          "de": "Leclerc steht für die Zukunft von Ferrari und der modernen Formel 1: Talent, Entschlossenheit und Führungsstärke auf der Strecke."
+      }
+    }
+  ]
+}

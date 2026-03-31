@@ -1,0 +1,115 @@
+{
+  "id": "jackie-stewart",
+  "name": { "first": "Jackie", "last": "Stewart" },
+  "nationality": "United Kingdom",
+  "titles": 3,
+  "titles_years": [1969, 1971, 1973],
+  "years": "1965–1973",
+  "image": "/drivers_pictures/jackie_stewart.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Jackie Stewart è un pilota scozzese noto per la sua precisione, intelligenza e attenzione alla sicurezza in pista. Tre volte campione del mondo, ha contribuito a modernizzare la Formula 1.",
+        "en": "Jackie Stewart is a Scottish driver known for his precision, intelligence, and focus on safety. Three-time world champion, he helped modernize Formula 1."
+          ,
+          "es": "Jackie Stewart es un piloto escocés conocido por su precisión, inteligencia y atención a la seguridad en pista. Tres veces campeón del mundo, contribuyó a modernizar la Fórmula 1.",
+          "fr": "Jackie Stewart est un pilote écossais connu pour sa précision, son intelligence et son attention à la sécurité en piste. Triple champion du monde, il a contribué à moderniser la Formule 1.",
+          "de": "Jackie Stewart ist ein schottischer Fahrer, bekannt für seine Präzision, Intelligenz und seinen Fokus auf Sicherheit. Dreifacher Weltmeister, er half, die Formel 1 zu modernisieren."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Cresce nel Regno Unito correndo in kart e formule minori, facendo il suo debutto in F1 con la BRM nel 1965.",
+        "en": "He grew up in the UK racing in karting and junior formulas, debuting in F1 with BRM in 1965."
+          ,
+          "es": "Creció en el Reino Unido compitiendo en karting y fórmulas menores, debutando en F1 con BRM en 1965.",
+          "fr": "Il a grandi au Royaume-Uni en courant en karting et en formules juniors, débutant en F1 avec BRM en 1965.",
+          "de": "Er wuchs im Vereinigten Königreich auf, fuhr Kart und Nachwuchsserien und debütierte 1965 mit BRM in der F1."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Stewart era noto per guida pulita e intelligente, con grande sensibilità meccanica e gestione perfetta del ritmo gara.",
+        "en": "Stewart was known for clean and intelligent driving, with great mechanical sensitivity and perfect race pace management."
+          ,
+          "es": "Stewart era conocido por su conducción limpia e inteligente, con gran sensibilidad mecánica y perfecta gestión del ritmo de carrera.",
+          "fr": "Stewart était connu pour sa conduite propre et intelligente, avec une grande sensibilité mécanique et une gestion parfaite du rythme de course.",
+          "de": "Stewart war bekannt für sauberes und intelligentes Fahren, große mechanische Sensibilität und perfektes Rennmanagement."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Ha corso con BRM e Matra, vincendo titoli mondiali e portando attenzione alla sicurezza con innovazioni come le cinture di sicurezza e caschi più sicuri.",
+        "en": "He raced with BRM and Matra, winning world titles and promoting safety innovations like seat belts and safer helmets."
+          ,
+          "es": "Corrió con BRM y Matra, ganando títulos mundiales y promoviendo innovaciones de seguridad como cinturones de seguridad y cascos más seguros.",
+          "fr": "Il a couru avec BRM et Matra, remportant des titres mondiaux et promouvant des innovations en matière de sécurité comme les ceintures de sécurité et des casques plus sûrs.",
+          "de": "Er fuhr für BRM und Matra, gewann Weltmeistertitel und förderte Sicherheitsinnovationen wie Sicherheitsgurte und sicherere Helme."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "Le vittorie del mondiale 1969, 1971 e 1973 e i duelli strategici con Lauda e Hunt sono rimasti leggendarie.",
+        "en": "The world titles of 1969, 1971, and 1973 and strategic battles with Lauda and Hunt remain legendary."
+          ,
+          "es": "Las victorias en los mundiales de 1969, 1971 y 1973 y las batallas estratégicas con Lauda y Hunt siguen siendo legendarias.",
+          "fr": "Les titres mondiaux de 1969, 1971 et 1973 et les duels stratégiques avec Lauda et Hunt restent légendaires.",
+          "de": "Die Weltmeistertitel 1969, 1971 und 1973 sowie strategische Duelle mit Lauda und Hunt sind legendär."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Soprannominato 'The Flying Scot'",
+          "Ha contribuito a migliorare la sicurezza in F1",
+          "Appassionato di ingegneria e analisi tecnica"
+        ],
+        "en": [
+          "Nicknamed 'The Flying Scot'",
+          "Helped improve safety in F1",
+          "Passionate about engineering and technical analysis"
+        ]
+          ,
+          "es": [
+            "Apodado 'The Flying Scot'",
+            "Ayudó a mejorar la seguridad en la F1",
+            "Apasionado de la ingeniería y el análisis técnico"
+          ],
+          "fr": [
+            "Surnommé 'The Flying Scot'",
+            "A contribué à améliorer la sécurité en F1",
+            "Passionné d'ingénierie et d'analyse technique"
+          ],
+          "de": [
+            "Spitzname 'The Flying Scot'",
+            "Half, die Sicherheit in der F1 zu verbessern",
+            "Leidenschaft für Technik und technische Analyse"
+          ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Stewart ha lasciato un’eredità enorme nella sicurezza e nella professionalità dei piloti, diventando un punto di riferimento per tutte le generazioni successive.",
+        "en": "Stewart left a huge legacy in safety and driver professionalism, becoming a reference point for all subsequent generations."
+          ,
+          "es": "Stewart dejó un enorme legado en seguridad y profesionalidad de los pilotos, convirtiéndose en un referente para todas las generaciones posteriores.",
+          "fr": "Stewart a laissé un immense héritage en matière de sécurité et de professionnalisme des pilotes, devenant un point de référence pour toutes les générations suivantes.",
+          "de": "Stewart hat ein großes Erbe in Sachen Sicherheit und Professionalität der Fahrer hinterlassen und wurde zum Vorbild für alle nachfolgenden Generationen."
+      }
+    }
+  ]
+}

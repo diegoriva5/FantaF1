@@ -1,0 +1,115 @@
+{
+  "id": "alberto-ascari",
+  "name": { "first": "Alberto", "last": "Ascari" },
+  "nationality": "Italy",
+  "titles": 2,
+  "titles_years": [1952, 1953],
+  "years": "1950–1955",
+  "image": "/drivers_pictures/alberto_ascari.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Alberto Ascari è stato il primo grande campione italiano di Formula 1, noto per precisione, calma e concentrazione assoluta in gara.",
+        "en": "Alberto Ascari was the first great Italian F1 champion, known for precision, calm, and absolute focus in races."
+          ,
+          "es": "Alberto Ascari fue el primer gran campeón italiano de la Fórmula 1, conocido por su precisión, calma y concentración absoluta en carrera.",
+          "fr": "Alberto Ascari a été le premier grand champion italien de Formule 1, connu pour sa précision, son calme et sa concentration absolue en course.",
+          "de": "Alberto Ascari war der erste große italienische F1-Champion, bekannt für Präzision, Ruhe und absolute Konzentration im Rennen."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Figlio d’arte, comincia a correre in monoposto in Italia e in Europa, facendo il suo debutto in F1 con Ferrari nel 1950.",
+        "en": "Son of a racing driver, he started in single-seaters in Italy and Europe, debuting in F1 with Ferrari in 1950."
+          ,
+          "es": "Hijo de piloto, comenzó a correr en monoplazas en Italia y Europa, debutando en F1 con Ferrari en 1950.",
+          "fr": "Fils de pilote, il a commencé en monoplaces en Italie et en Europe, débutant en F1 avec Ferrari en 1950.",
+          "de": "Als Sohn eines Rennfahrers begann er mit Monoposto-Rennen in Italien und Europa und debütierte 1950 mit Ferrari in der F1."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Ascari guidava con eleganza e precisione, sempre calcolando traiettorie e gestione della vettura, riducendo al minimo gli errori.",
+        "en": "Ascari drove with elegance and precision, always calculating lines and car management, minimizing mistakes."
+          ,
+          "es": "Ascari conducía con elegancia y precisión, calculando siempre las trayectorias y la gestión del coche, minimizando los errores.",
+          "fr": "Ascari pilotait avec élégance et précision, calculant toujours ses trajectoires et la gestion de la voiture, minimisant les erreurs.",
+          "de": "Ascari fuhr mit Eleganz und Präzision, berechnete stets die Linien und das Fahrzeugmanagement und minimierte Fehler."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Ha corso principalmente con Ferrari, conquistando due titoli mondiali consecutivi e stabilendo record di continuità e vittorie.",
+        "en": "He mainly raced with Ferrari, winning two consecutive world titles and setting records for consistency and victories."
+          ,
+          "es": "Corrió principalmente con Ferrari, logrando dos títulos mundiales consecutivos y estableciendo récords de regularidad y victorias.",
+          "fr": "Il a principalement couru avec Ferrari, remportant deux titres mondiaux consécutifs et établissant des records de régularité et de victoires.",
+          "de": "Er fuhr hauptsächlich für Ferrari, gewann zwei Weltmeistertitel in Folge und stellte Beständigkeit- und Siegesrekorde auf."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "La conquista dei titoli 1952 e 1953, con corse dominate e un distacco impressionante sugli avversari, rimane storica.",
+        "en": "Winning the 1952 and 1953 titles, with dominant races and impressive margins over rivals, remains historic."
+          ,
+          "es": "La conquista de los títulos de 1952 y 1953, con carreras dominadas y una ventaja impresionante sobre los rivales, sigue siendo histórica.",
+          "fr": "La conquête des titres 1952 et 1953, avec des courses dominées et une avance impressionnante sur les adversaires, reste historique.",
+          "de": "Der Gewinn der Titel 1952 und 1953 mit dominanten Rennen und beeindruckendem Vorsprung auf die Rivalen bleibt historisch."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Primo italiano campione del mondo di F1",
+          "Conosciuto per calma e concentrazione in gara",
+          "Padre di Alberto Ascari Jr., anch’egli pilota"
+        ],
+        "en": [
+          "First Italian F1 world champion",
+          "Known for calm and focus in races",
+          "Father of Alberto Ascari Jr., also a driver"
+        ]
+          ,
+          "es": [
+            "Primer italiano campeón del mundo de F1",
+            "Conocido por su calma y concentración en carrera",
+            "Padre de Alberto Ascari Jr., también piloto"
+          ],
+          "fr": [
+            "Premier Italien champion du monde de F1",
+            "Connu pour son calme et sa concentration en course",
+            "Père d'Alberto Ascari Jr., également pilote"
+          ],
+          "de": [
+            "Erster italienischer F1-Weltmeister",
+            "Bekannt für Ruhe und Konzentration im Rennen",
+            "Vater von Alberto Ascari Jr., ebenfalls Fahrer"
+          ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Ascari è simbolo del rigore e della tecnica italiana in pista, diventando riferimento per i piloti di Ferrari e per tutto il motorsport italiano.",
+        "en": "Ascari is a symbol of Italian rigor and technique on track, becoming a reference for Ferrari drivers and Italian motorsport."
+          ,
+          "es": "Ascari es símbolo del rigor y la técnica italiana en pista, convirtiéndose en referente para los pilotos de Ferrari y para todo el automovilismo italiano.",
+          "fr": "Ascari est le symbole de la rigueur et de la technique italiennes en piste, devenant une référence pour les pilotes Ferrari et le sport automobile italien.",
+          "de": "Ascari ist das Symbol für italienische Strenge und Technik auf der Strecke und wurde zum Vorbild für Ferrari-Fahrer und den gesamten italienischen Motorsport."
+      }
+    }
+  ]
+}

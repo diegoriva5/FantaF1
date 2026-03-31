@@ -1,0 +1,115 @@
+{
+  "id": "emerson-fittipaldi",
+  "name": { "first": "Emerson", "last": "Fittipaldi" },
+  "nationality": "Brazil",
+  "titles": 2,
+  "titles_years": [1972, 1974],
+  "years": "1970–1980",
+  "image": "/drivers_pictures/emerson_fittipaldi.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Emerson Fittipaldi è stato un pioniere brasiliano della Formula 1, noto per la velocità naturale e l’intelligenza tattica in pista.",
+        "en": "Emerson Fittipaldi was a Brazilian F1 pioneer, known for natural speed and tactical intelligence on track."
+          ,
+          "es": "Emerson Fittipaldi fue un pionero brasileño de la Fórmula 1, conocido por su velocidad natural e inteligencia táctica en pista.",
+          "fr": "Emerson Fittipaldi était un pionnier brésilien de la Formule 1, connu pour sa vitesse naturelle et son intelligence tactique en piste.",
+          "de": "Emerson Fittipaldi war ein brasilianischer F1-Pionier, bekannt für seine natürliche Schnelligkeit und taktische Intelligenz auf der Strecke."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Comincia a correre in kart e monoposto in Brasile prima di trasferirsi in Europa, dove debutta in F1 con Lotus nel 1970.",
+        "en": "He started in karting and single-seaters in Brazil before moving to Europe, debuting in F1 with Lotus in 1970."
+          ,
+          "es": "Comenzó a correr en karting y monoplazas en Brasil antes de trasladarse a Europa, donde debutó en F1 con Lotus en 1970.",
+          "fr": "Il a commencé en karting et en monoplaces au Brésil avant de partir en Europe, débutant en F1 avec Lotus en 1970.",
+          "de": "Er begann mit Kart und Monoposto in Brasilien, bevor er nach Europa wechselte und 1970 mit Lotus in der F1 debütierte."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Fittipaldi aveva uno stile elegante, preciso e fluido, capace di sfruttare al meglio ogni curva senza forzare il mezzo.",
+        "en": "Fittipaldi had an elegant, precise, and smooth style, able to maximize every corner without pushing the car unnecessarily."
+          ,
+          "es": "Fittipaldi tenía un estilo elegante, preciso y fluido, capaz de aprovechar cada curva al máximo sin forzar el coche.",
+          "fr": "Fittipaldi avait un style élégant, précis et fluide, capable de tirer le meilleur parti de chaque virage sans forcer la voiture.",
+          "de": "Fittipaldi hatte einen eleganten, präzisen und flüssigen Stil und konnte jede Kurve optimal nutzen, ohne das Auto zu überfordern."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Vince titoli con Lotus e McLaren, diventando il più giovane campione del mondo dell’epoca nel 1972 e dimostrando adattabilità e talento puro.",
+        "en": "He won titles with Lotus and McLaren, becoming the youngest world champion at the time in 1972, demonstrating adaptability and pure talent."
+          ,
+          "es": "Ganó títulos con Lotus y McLaren, convirtiéndose en el campeón mundial más joven de la época en 1972 y demostrando adaptabilidad y talento puro.",
+          "fr": "Il a remporté des titres avec Lotus et McLaren, devenant le plus jeune champion du monde de l'époque en 1972 et démontrant une grande adaptabilité et un talent pur.",
+          "de": "Er gewann Titel mit Lotus und McLaren, wurde 1972 der damals jüngste Weltmeister und zeigte Anpassungsfähigkeit und pures Talent."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "La vittoria del mondiale 1972, la strategia perfetta con Lotus nel 1974 e i duelli con Lauda e Hunt sono leggendarie.",
+        "en": "The 1972 world title, perfect strategy with Lotus in 1974, and duels with Lauda and Hunt are legendary."
+          ,
+          "es": "La victoria en el mundial de 1972, la estrategia perfecta con Lotus en 1974 y los duelos con Lauda y Hunt son legendarios.",
+          "fr": "La victoire au championnat du monde 1972, la stratégie parfaite avec Lotus en 1974 et les duels avec Lauda et Hunt sont légendaires.",
+          "de": "Der Weltmeistertitel 1972, die perfekte Strategie mit Lotus 1974 und die Duelle mit Lauda und Hunt sind legendär."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Il più giovane campione mondiale dell’epoca",
+          "Era noto per il talento naturale e l’eleganza in pista",
+          "Dopo la F1 ha corso in IndyCar vincendo titoli"
+        ],
+        "en": [
+          "Youngest world champion of the time",
+          "Known for natural talent and elegance on track",
+          "After F1, raced in IndyCar winning titles"
+        ]
+          ,
+          "es": [
+            "El campeón mundial más joven de la época",
+            "Conocido por su talento natural y elegancia en pista",
+            "Tras la F1, corrió en IndyCar ganando títulos"
+          ],
+          "fr": [
+            "Le plus jeune champion du monde de l'époque",
+            "Connu pour son talent naturel et son élégance en piste",
+            "Après la F1, il a couru en IndyCar et remporté des titres"
+          ],
+          "de": [
+            "Jüngster Weltmeister seiner Zeit",
+            "Bekannt für natürliches Talent und Eleganz auf der Strecke",
+            "Nach der F1 fuhr er in der IndyCar und gewann Titel"
+          ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Fittipaldi è stato un simbolo del talento brasiliano e della tecnica elegante, aprendo la strada a generazioni di piloti sudamericani.",
+        "en": "Fittipaldi symbolized Brazilian talent and elegant technique, paving the way for generations of South American drivers."
+          ,
+          "es": "Fittipaldi fue un símbolo del talento brasileño y de la técnica elegante, abriendo el camino a generaciones de pilotos sudamericanos.",
+          "fr": "Fittipaldi a été un symbole du talent brésilien et de la technique élégante, ouvrant la voie à des générations de pilotes sud-américains.",
+          "de": "Fittipaldi war ein Symbol für brasilianisches Talent und elegante Technik und ebnete den Weg für Generationen südamerikanischer Fahrer."
+      }
+    }
+  ]
+}

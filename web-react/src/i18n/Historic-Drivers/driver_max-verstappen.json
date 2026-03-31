@@ -1,0 +1,116 @@
+{
+  "id": "max-verstappen",
+  "name": {
+    "first": "Max",
+    "last": "Verstappen"
+  },
+  "nationality": "Netherlands",
+  "titles": 3,
+  "titles_years": [2021, 2022, 2023],
+  "years": "2015–present",
+  "image": "/drivers_pictures/max_verstappen.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Max Verstappen è uno dei talenti più straordinari della Formula 1 moderna. La sua aggressività e velocità lo hanno reso uno dei piloti più dominanti della sua generazione.",
+        "en": "Max Verstappen is one of the most extraordinary talents in modern Formula 1. His aggression and speed have made him one of the most dominant drivers of his generation.",
+          "es": "Max Verstappen es uno de los talentos más extraordinarios de la Fórmula 1 moderna. Su agresividad y velocidad lo han convertido en uno de los pilotos más dominantes de su generación.",
+          "fr": "Max Verstappen est l'un des talents les plus extraordinaires de la Formule 1 moderne. Son agressivité et sa vitesse en ont fait l'un des pilotes les plus dominants de sa génération.",
+          "de": "Max Verstappen ist eines der außergewöhnlichsten Talente der modernen Formel 1. Seine Aggressivität und Schnelligkeit haben ihn zu einem der dominierendsten Fahrer seiner Generation gemacht."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Figlio d’arte, Verstappen entrò in Formula 1 giovanissimo nel 2015. Fin da subito mostrò una velocità naturale e una capacità di sorpasso fuori dal comune.",
+        "en": "Coming from a racing family, Verstappen entered Formula 1 at a very young age in 2015. He immediately showed natural speed and exceptional overtaking ability.",
+          "es": "Hijo de piloto, Verstappen entró en la Fórmula 1 muy joven en 2015. Desde el principio mostró una velocidad natural y una capacidad de adelantamiento excepcional.",
+          "fr": "Issu d'une famille de pilotes, Verstappen est entré en Formule 1 très jeune en 2015. Il a immédiatement montré une vitesse naturelle et une capacité de dépassement exceptionnelle.",
+          "de": "Als Sohn eines Rennfahrers kam Verstappen 2015 sehr jung in die Formel 1. Von Anfang an zeigte er natürliche Schnelligkeit und außergewöhnliche Überholfähigkeiten."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Verstappen è noto per il suo stile aggressivo e diretto. È particolarmente abile nei duelli ruota a ruota e nella gestione delle gare ad alta pressione.",
+        "en": "Verstappen is known for his aggressive and direct driving style. He excels in wheel-to-wheel battles and high-pressure race situations.",
+          "es": "Verstappen es conocido por su estilo de conducción agresivo y directo. Destaca en los duelos rueda a rueda y en las carreras de alta presión.",
+          "fr": "Verstappen est connu pour son style de pilotage agressif et direct. Il excelle dans les duels roue contre roue et la gestion des courses sous haute pression.",
+          "de": "Verstappen ist bekannt für seinen aggressiven und direkten Fahrstil. Besonders stark ist er in Rad-an-Rad-Duellen und bei Rennen unter hohem Druck."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Dopo l’esordio con Toro Rosso, Verstappen passò rapidamente a Red Bull, vincendo subito al debutto con il team. Negli anni successivi ha costruito un’era di dominio con più titoli mondiali.",
+        "en": "After debuting with Toro Rosso, Verstappen quickly moved to Red Bull, winning on his debut with the team. In the following years, he built a dominant era with multiple world titles.",
+          "es": "Tras debutar con Toro Rosso, Verstappen pasó rápidamente a Red Bull, ganando en su debut con el equipo. En los años siguientes construyó una era de dominio con varios títulos mundiales.",
+          "fr": "Après ses débuts avec Toro Rosso, Verstappen a rapidement rejoint Red Bull, remportant la victoire dès sa première course avec l'équipe. Les années suivantes, il a construit une ère de domination avec plusieurs titres mondiaux.",
+          "de": "Nach seinem Debüt bei Toro Rosso wechselte Verstappen schnell zu Red Bull und gewann gleich bei seinem ersten Rennen für das Team. In den folgenden Jahren baute er eine Dominanz mit mehreren WM-Titeln auf."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "Il titolo del 2021, deciso all’ultima gara, è uno dei più emozionanti della storia recente. La stagione 2023 rappresenta uno dei domini più schiaccianti mai visti.",
+        "en": "The 2021 title, decided in the final race, is one of the most dramatic in recent history. The 2023 season represents one of the most dominant performances ever seen.",
+          "es": "El título de 2021, decidido en la última carrera, es uno de los más emocionantes de la historia reciente. La temporada 2023 representa uno de los dominios más aplastantes jamás vistos.",
+          "fr": "Le titre 2021, décidé lors de la dernière course, est l'un des plus passionnants de l'histoire récente. La saison 2023 représente l'une des dominations les plus écrasantes jamais vues.",
+          "de": "Der Titel 2021, der im letzten Rennen entschieden wurde, ist einer der spannendsten der jüngeren Geschichte. Die Saison 2023 steht für eine der beeindruckendsten Dominanzen aller Zeiten."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "È il più giovane vincitore di un GP di F1",
+          "Ha vinto al debutto con Red Bull",
+          "È noto per la sua aggressività in pista",
+          "È diventato campione del mondo molto giovane"
+        ],
+        "en": [
+          "Youngest F1 race winner ever",
+          "Won on his Red Bull debut",
+          "Known for his aggressive driving",
+          "Became world champion at a young age"
+        ],
+        "es": [
+          "Es el ganador de GP más joven de la F1",
+          "Ganó en su debut con Red Bull",
+          "Conocido por su agresividad en pista",
+          "Se convirtió en campeón del mundo muy joven"
+        ],
+        "fr": [
+          "Plus jeune vainqueur de Grand Prix de F1",
+          "A gagné dès ses débuts avec Red Bull",
+          "Connu pour son agressivité en piste",
+          "Devenu champion du monde très jeune"
+        ],
+        "de": [
+          "Jüngster GP-Sieger der F1-Geschichte",
+          "Gewann bei seinem Red-Bull-Debüt",
+          "Bekannt für seine Aggressivität auf der Strecke",
+          "Wurde sehr jung Weltmeister"
+        ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Verstappen rappresenta la nuova generazione della Formula 1: veloce, aggressivo e mentalmente fortissimo. È già una delle figure più influenti dell’era moderna.",
+        "en": "Verstappen represents the new generation of Formula 1: fast, aggressive, and mentally strong. He is already one of the most influential figures of the modern era.",
+          "es": "Verstappen representa la nueva generación de la Fórmula 1: rápido, agresivo y muy fuerte mentalmente. Ya es una de las figuras más influyentes de la era moderna.",
+          "fr": "Verstappen représente la nouvelle génération de la Formule 1 : rapide, agressif et mentalement très fort. Il est déjà l'une des figures les plus influentes de l'ère moderne.",
+          "de": "Verstappen steht für die neue Generation der Formel 1: schnell, aggressiv und mental sehr stark. Er ist schon jetzt eine der einflussreichsten Persönlichkeiten der modernen Ära."
+      }
+    }
+  ]
+}

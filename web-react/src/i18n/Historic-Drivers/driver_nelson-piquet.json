@@ -1,0 +1,108 @@
+{
+  "id": "nelson-piquet",
+  "name": { "first": "Nelson", "last": "Piquet" },
+  "nationality": "Brazil",
+  "titles": 3,
+  "titles_years": [1981, 1983, 1987],
+  "years": "1978–1991",
+  "image": "/drivers_pictures/nelson_piquet.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Nelson Piquet è stato un pilota brasiliano noto per intelligenza tattica e versatilità. Tre volte campione del mondo, seppe adattarsi a diverse vetture e regolamenti.",
+        "en": "Nelson Piquet was a Brazilian driver known for tactical intelligence and versatility. Three-time world champion, he adapted well to different cars and regulations.",
+        "es": "Nelson Piquet fue un piloto brasileño conocido por su inteligencia táctica y versatilidad. Tres veces campeón del mundo, supo adaptarse a diferentes coches y reglamentos.",
+        "fr": "Nelson Piquet était un pilote brésilien connu pour son intelligence tactique et sa polyvalence. Triple champion du monde, il a su s'adapter à différentes voitures et réglementations.",
+        "de": "Nelson Piquet war ein brasilianischer Fahrer, bekannt für taktische Intelligenz und Vielseitigkeit. Dreifacher Weltmeister, der sich gut an verschiedene Autos und Reglements anpasste."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Cresce in Brasile con il karting e le formule minori, vincendo campionati nazionali prima di approdare in F1 nel 1978 con la Ensign e poi Brabham.",
+        "en": "He grew up in Brazil in karting and junior formulas, winning national championships before debuting in F1 in 1978 with Ensign and later Brabham.",
+        "es": "Creció en Brasil con el karting y las fórmulas menores, ganando campeonatos nacionales antes de debutar en F1 en 1978 con Ensign y luego Brabham.",
+        "fr": "Il a grandi au Brésil en karting et en formules juniors, remportant des championnats nationaux avant de débuter en F1 en 1978 avec Ensign puis Brabham.",
+        "de": "Er wuchs in Brasilien mit Kartsport und Nachwuchsserien auf, gewann nationale Meisterschaften und debütierte 1978 in der F1 mit Ensign und später Brabham."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Piquet era calcolatore, tecnico e intelligente in pista, abile nella gestione delle gomme e nelle strategie di gara.",
+        "en": "Piquet was calculating, technical, and intelligent on track, skilled in tyre management and race strategy.",
+        "es": "Piquet era calculador, técnico e inteligente en pista, hábil en la gestión de neumáticos y en las estrategias de carrera.",
+        "fr": "Piquet était calculateur, technique et intelligent en piste, habile dans la gestion des pneus et les stratégies de course.",
+        "de": "Piquet war berechnend, technisch und intelligent auf der Strecke, geschickt im Reifenmanagement und in der Rennstrategie."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Vince titoli con Brabham e Benetton, dimostrando grande adattabilità. La sua carriera spazia da monoposto classiche a vetture turbo evolute.",
+        "en": "He won titles with Brabham and Benetton, showing great adaptability. His career spanned classic cars to evolved turbo machines.",
+        "es": "Ganó títulos con Brabham y Benetton, demostrando gran adaptabilidad. Su carrera abarcó desde monoplazas clásicos hasta coches turbo evolucionados.",
+        "fr": "Il a remporté des titres avec Brabham et Benetton, faisant preuve d'une grande adaptabilité. Sa carrière s'étend des monoplaces classiques aux machines turbo évoluées.",
+        "de": "Er gewann Titel mit Brabham und Benetton und zeigte große Anpassungsfähigkeit. Seine Karriere reichte von klassischen Monopostos bis zu weiterentwickelten Turbowagen."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "La vittoria del mondiale 1983 con Brabham, e la battaglia strategica con Prost e Senna, rimangono momenti leggendari della F1 anni ’80.",
+        "en": "Winning the 1983 world title with Brabham, and his strategic battles with Prost and Senna, remain legendary moments in 1980s F1.",
+        "es": "La victoria en el mundial de 1983 con Brabham y sus batallas estratégicas con Prost y Senna siguen siendo momentos legendarios de la F1 de los años 80.",
+        "fr": "La victoire au championnat du monde 1983 avec Brabham et ses batailles stratégiques avec Prost et Senna restent des moments légendaires de la F1 des années 80.",
+        "de": "Der Gewinn des WM-Titels 1983 mit Brabham und seine strategischen Kämpfe mit Prost und Senna bleiben legendäre Momente der F1 der 80er Jahre."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Tre volte campione del mondo",
+          "Conosciuto per la preparazione tecnica e strategica",
+          "Ha corso con diverse scuderie vincenti negli anni ’80"
+        ],
+        "en": [
+          "Three-time world champion",
+          "Known for technical and strategic preparation",
+          "Raced with several winning teams in the 1980s"
+        ],
+        "es": [
+          "Tres veces campeón del mundo",
+          "Conocido por su preparación técnica y estratégica",
+          "Corrió con varios equipos ganadores en los años 80"
+        ],
+        "fr": [
+          "Triple champion du monde",
+          "Connu pour sa préparation technique et stratégique",
+          "A couru avec plusieurs équipes gagnantes dans les années 80"
+        ],
+        "de": [
+          "Dreifacher Weltmeister",
+          "Bekannt für technische und strategische Vorbereitung",
+          "Fuhr in den 80er Jahren für mehrere siegreiche Teams"
+        ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Piquet è un modello di intelligenza tattica e versatilità, capace di vincere in epoche e vetture diverse, simbolo della F1 anni ’80.",
+        "en": "Piquet is a model of tactical intelligence and versatility, capable of winning across eras and cars, symbolizing 1980s F1.",
+        "es": "Piquet es un modelo de inteligencia táctica y versatilidad, capaz de ganar en diferentes épocas y coches, símbolo de la F1 de los años 80.",
+        "fr": "Piquet est un modèle d'intelligence tactique et de polyvalence, capable de gagner à travers les époques et les voitures, symbole de la F1 des années 80.",
+        "de": "Piquet ist ein Vorbild für taktische Intelligenz und Vielseitigkeit, der in verschiedenen Epochen und Autos gewinnen konnte und das Symbol der F1 der 80er Jahre ist."
+      }
+    }
+  ]
+}

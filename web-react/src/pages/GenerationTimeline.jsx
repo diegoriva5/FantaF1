@@ -35,7 +35,7 @@ const GenerationTimeline = ({ eraSlug, navigate }) => {
         >
           ← {t ? t("common.back") : "Torna alle ere"}
         </button>
-        <span className="topbarTitle">{t ? t(eraData.titleKey) : eraData.titleKey}</span>
+        <span className="topbarTitle">{t ? t("generationTimeline.topbar") : "Le innovazioni e i campioni"}</span>
         <LanguageSwitcher />
       </header>
       <section style={{ paddingTop: "1.5rem" }}>

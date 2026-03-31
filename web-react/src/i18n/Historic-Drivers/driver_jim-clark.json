@@ -1,0 +1,115 @@
+{
+  "id": "jim-clark",
+  "name": { "first": "Jim", "last": "Clark" },
+  "nationality": "United Kingdom",
+  "titles": 2,
+  "titles_years": [1963, 1965],
+  "years": "1960–1968",
+  "image": "/drivers_pictures/jim_clark.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Jim Clark è considerato uno dei piloti più talentuosi e naturali di sempre, capace di guidare qualsiasi monoposto con maestria e precisione.",
+        "en": "Jim Clark is considered one of the most talented and natural drivers ever, able to drive any car with mastery and precision."
+          ,
+          "es": "Jim Clark es considerado uno de los pilotos más talentosos y naturales de la historia, capaz de conducir cualquier monoplaza con maestría y precisión.",
+          "fr": "Jim Clark est considéré comme l'un des pilotes les plus talentueux et naturels de tous les temps, capable de piloter n'importe quelle monoplace avec maîtrise et précision.",
+          "de": "Jim Clark gilt als einer der talentiertesten und natürlichsten Fahrer aller Zeiten, der jedes Auto mit Meisterschaft und Präzision fahren konnte."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Cresce in Scozia correndo in monoposto locali e in formule minori, fino al debutto in F1 con Lotus nel 1960.",
+        "en": "He grew up in Scotland racing in local single-seaters and junior formulas, debuting in F1 with Lotus in 1960."
+          ,
+          "es": "Creció en Escocia compitiendo en monoplazas locales y fórmulas menores, hasta debutar en F1 con Lotus en 1960.",
+          "fr": "Il a grandi en Écosse en courant en monoplaces locales et en formules juniors, débutant en F1 avec Lotus en 1960.",
+          "de": "Er wuchs in Schottland auf, fuhr lokale Monoposto und Nachwuchsserien, und debütierte 1960 mit Lotus in der F1."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Clark guidava con naturalezza, precisione e grande fluidità, adattandosi rapidamente a qualsiasi condizione di pista.",
+        "en": "Clark drove with naturalness, precision, and great fluidity, adapting quickly to any track condition."
+          ,
+          "es": "Clark conducía con naturalidad, precisión y gran fluidez, adaptándose rápidamente a cualquier condición de pista.",
+          "fr": "Clark pilotait avec naturel, précision et grande fluidité, s'adaptant rapidement à toutes les conditions de piste.",
+          "de": "Clark fuhr mit Natürlichkeit, Präzision und großer Leichtigkeit und passte sich schnell an jede Streckenbedingung an."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Ha corso principalmente con Lotus, vincendo due titoli mondiali e dominando gare con tecnica superiore e grande costanza.",
+        "en": "He mainly raced with Lotus, winning two world titles and dominating races with superior technique and great consistency."
+          ,
+          "es": "Corrió principalmente con Lotus, ganando dos títulos mundiales y dominando carreras con técnica superior y gran constancia.",
+          "fr": "Il a principalement couru avec Lotus, remportant deux titres mondiaux et dominant des courses avec une technique supérieure et une grande constance.",
+          "de": "Er fuhr hauptsächlich für Lotus, gewann zwei Weltmeistertitel und dominierte Rennen mit überlegener Technik und großer Konstanz."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "La vittoria del mondiale 1963 e 1965, oltre alle gare leggendari sul circuito di Spa e Monza, mostrano la sua grandezza.",
+        "en": "Winning the 1963 and 1965 world titles, along with legendary races at Spa and Monza, showcase his greatness."
+          ,
+          "es": "Las victorias en los mundiales de 1963 y 1965, junto a carreras legendarias en Spa y Monza, demuestran su grandeza.",
+          "fr": "Les victoires aux championnats du monde 1963 et 1965, ainsi que les courses légendaires à Spa et Monza, témoignent de sa grandeur.",
+          "de": "Die Weltmeistertitel 1963 und 1965 sowie legendäre Rennen in Spa und Monza zeigen seine Größe."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Soprannominato 'The Flying Scot'",
+          "Eccelleva in qualsiasi condizione di pista",
+          "Era famoso per guida pulita e intelligenza tattica"
+        ],
+        "en": [
+          "Nicknamed 'The Flying Scot'",
+          "Excelled in any track condition",
+          "Famous for clean driving and tactical intelligence"
+        ]
+          ,
+          "es": [
+            "Apodado 'The Flying Scot'",
+            "Destacaba en cualquier condición de pista",
+            "Famoso por su conducción limpia e inteligencia táctica"
+          ],
+          "fr": [
+            "Surnommé 'The Flying Scot'",
+            "Excellait dans toutes les conditions de piste",
+            "Célèbre pour sa conduite propre et son intelligence tactique"
+          ],
+          "de": [
+            "Spitzname 'The Flying Scot'",
+            "Hervorragend unter allen Streckenbedingungen",
+            "Berühmt für sauberes Fahren und taktische Intelligenz"
+          ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Clark rimane un simbolo di talento naturale e perfezione tecnica, un riferimento per tutte le generazioni successive.",
+        "en": "Clark remains a symbol of natural talent and technical perfection, a reference for all subsequent generations."
+          ,
+          "es": "Clark sigue siendo un símbolo de talento natural y perfección técnica, un referente para todas las generaciones posteriores.",
+          "fr": "Clark reste un symbole de talent naturel et de perfection technique, une référence pour toutes les générations suivantes.",
+          "de": "Clark bleibt ein Symbol für natürliches Talent und technische Perfektion, ein Vorbild für alle nachfolgenden Generationen."
+      }
+    }
+  ]
+}

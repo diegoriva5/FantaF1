@@ -1,0 +1,116 @@
+{
+  "id": "michael-schumacher",
+  "name": {
+    "first": "Michael",
+    "last": "Schumacher"
+  },
+  "nationality": "Germany",
+  "titles": 7,
+  "titles_years": [1994, 1995, 2000, 2001, 2002, 2003, 2004],
+  "years": "1991–2006, 2010–2012",
+  "image": "/drivers_pictures/michael_schumacher.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Michael Schumacher è uno dei piloti più dominanti nella storia della Formula 1. La sua carriera è stata caratterizzata da una combinazione unica di talento, disciplina e capacità di costruire attorno a sé un team vincente.",
+        "en": "Michael Schumacher is one of the most dominant drivers in Formula 1 history. His career was defined by a unique combination of talent, discipline, and the ability to build a winning team around him.",
+          "es": "Michael Schumacher es uno de los pilotos más dominantes en la historia de la Fórmula 1. Su carrera se caracterizó por una combinación única de talento, disciplina y la capacidad de construir un equipo ganador a su alrededor.",
+          "fr": "Michael Schumacher est l'un des pilotes les plus dominants de l'histoire de la Formule 1. Sa carrière a été marquée par une combinaison unique de talent, de discipline et de capacité à bâtir une équipe gagnante autour de lui.",
+          "de": "Michael Schumacher ist einer der dominantesten Fahrer in der Geschichte der Formel 1. Seine Karriere war geprägt von einer einzigartigen Kombination aus Talent, Disziplin und der Fähigkeit, ein Siegerteam um sich herum aufzubauen."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Nato in Germania, Schumacher iniziò nel karting grazie al supporto del padre. Dopo aver impressionato nelle categorie minori, debuttò in Formula 1 nel 1991 con Jordan, attirando subito l’attenzione per la sua velocità.",
+        "en": "Born in Germany, Schumacher began karting with his father's support. After impressing in junior categories, he debuted in Formula 1 in 1991 with Jordan, immediately catching attention for his speed.",
+          "es": "Nacido en Alemania, Schumacher comenzó en el karting gracias al apoyo de su padre. Tras impresionar en las categorías inferiores, debutó en la Fórmula 1 en 1991 con Jordan, llamando la atención de inmediato por su velocidad.",
+          "fr": "Né en Allemagne, Schumacher a commencé le karting avec le soutien de son père. Après avoir impressionné dans les catégories juniors, il a débuté en Formule 1 en 1991 avec Jordan, attirant immédiatement l'attention par sa vitesse.",
+          "de": "Geboren in Deutschland begann Schumacher mit Unterstützung seines Vaters im Kartsport. Nach Erfolgen in den Nachwuchsklassen debütierte er 1991 mit Jordan in der Formel 1 und fiel sofort durch seine Schnelligkeit auf."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Schumacher era noto per la sua precisione estrema e per la capacità di spingere al limite per tutta la gara. Era particolarmente forte nella gestione delle gomme e nella costanza sul giro.",
+        "en": "Schumacher was known for his extreme precision and ability to push at the limit throughout the race. He was especially strong in tire management and lap consistency.",
+          "es": "Schumacher era conocido por su extrema precisión y por la capacidad de ir al límite durante toda la carrera. Era especialmente fuerte en la gestión de neumáticos y en la constancia de sus vueltas.",
+          "fr": "Schumacher était connu pour sa précision extrême et sa capacité à pousser à la limite pendant toute la course. Il était particulièrement fort dans la gestion des pneus et la régularité au tour.",
+          "de": "Schumacher war bekannt für seine extreme Präzision und die Fähigkeit, das ganze Rennen am Limit zu fahren. Besonders stark war er im Reifenmanagement und in der Rundenkonstanz."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Dopo gli inizi con Jordan e Benetton, con cui vinse i suoi primi due titoli, Schumacher passò alla Ferrari. Qui costruì un’era di dominio assoluto, vincendo cinque titoli consecutivi tra il 2000 e il 2004.",
+        "en": "After starting with Jordan and Benetton, where he won his first two titles, Schumacher moved to Ferrari. There, he built an era of total dominance, winning five consecutive titles from 2000 to 2004.",
+          "es": "Tras sus inicios con Jordan y Benetton, con quienes ganó sus dos primeros títulos, Schumacher pasó a Ferrari. Allí construyó una era de dominio total, ganando cinco títulos consecutivos entre 2000 y 2004.",
+          "fr": "Après ses débuts avec Jordan et Benetton, où il a remporté ses deux premiers titres, Schumacher a rejoint Ferrari. Là, il a construit une ère de domination totale, remportant cinq titres consécutifs de 2000 à 2004.",
+          "de": "Nach den Anfängen bei Jordan und Benetton, mit denen er seine ersten beiden Titel gewann, wechselte Schumacher zu Ferrari. Dort begründete er eine Ära absoluter Dominanz und gewann fünf Titel in Folge von 2000 bis 2004."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "Il titolo del 2000 con Ferrari pose fine a un digiuno di oltre vent’anni per la Scuderia. Le stagioni 2002 e 2004 rappresentano uno dei picchi di dominio più impressionanti nella storia della Formula 1.",
+        "en": "The 2000 title with Ferrari ended a drought of over twenty years for the team. The 2002 and 2004 seasons represent one of the most dominant peaks in Formula 1 history.",
+          "es": "El título de 2000 con Ferrari puso fin a una sequía de más de veinte años para la Scuderia. Las temporadas 2002 y 2004 representan uno de los picos de dominio más impresionantes en la historia de la Fórmula 1.",
+          "fr": "Le titre de 2000 avec Ferrari a mis fin à une disette de plus de vingt ans pour l'équipe. Les saisons 2002 et 2004 représentent l'un des sommets de domination les plus impressionnants de l'histoire de la Formule 1.",
+          "de": "Der Titel 2000 mit Ferrari beendete eine über zwanzigjährige Durststrecke für das Team. Die Saisons 2002 und 2004 zählen zu den beeindruckendsten Dominanzphasen der Formel-1-Geschichte."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Detiene il record di 7 titoli mondiali (condiviso)",
+          "Ha dominato la F1 nei primi anni 2000",
+          "Era famoso per la sua etica del lavoro",
+          "Ha contribuito allo sviluppo tecnico della Ferrari"
+        ],
+        "en": [
+          "Holds the record of 7 world titles (shared)",
+          "Dominated F1 in the early 2000s",
+          "Known for his work ethic",
+          "Played a key role in Ferrari’s technical development"
+        ],
+        "es": [
+          "Comparte el récord de 7 títulos mundiales",
+          "Dominó la F1 a principios de los 2000",
+          "Famoso por su ética de trabajo",
+          "Contribuyó al desarrollo técnico de Ferrari"
+        ],
+        "fr": [
+          "Détient le record de 7 titres mondiaux (partagé)",
+          "A dominé la F1 au début des années 2000",
+          "Connu pour son éthique de travail",
+          "A contribué au développement technique de Ferrari"
+        ],
+        "de": [
+          "Hält den Rekord von 7 Weltmeistertiteln (geteilt)",
+          "Dominierte die F1 Anfang der 2000er Jahre",
+          "Bekannt für seine Arbeitsmoral",
+          "Trug maßgeblich zur technischen Entwicklung von Ferrari bei"
+        ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Schumacher ha ridefinito il concetto di pilota moderno, combinando talento, preparazione fisica e lavoro di squadra. Il suo dominio resta uno dei più impressionanti nella storia dello sport.",
+        "en": "Schumacher redefined the modern driver, combining talent, physical preparation, and teamwork. His dominance remains one of the most impressive in sports history.",
+          "es": "Schumacher redefinió el concepto de piloto moderno, combinando talento, preparación física y trabajo en equipo. Su dominio sigue siendo uno de los más impresionantes en la historia del deporte.",
+          "fr": "Schumacher a redéfini le concept de pilote moderne, combinant talent, préparation physique et travail d'équipe. Sa domination reste l'une des plus impressionnantes de l'histoire du sport.",
+          "de": "Schumacher hat das Bild des modernen Fahrers neu definiert, indem er Talent, körperliche Vorbereitung und Teamarbeit vereinte. Seine Dominanz bleibt eine der beeindruckendsten der Sportgeschichte."
+      }
+    }
+  ]
+}

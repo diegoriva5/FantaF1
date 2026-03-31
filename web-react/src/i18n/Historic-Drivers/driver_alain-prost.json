@@ -1,0 +1,116 @@
+{
+  "id": "alain-prost",
+  "name": {
+    "first": "Alain",
+    "last": "Prost"
+  },
+  "nationality": "France",
+  "titles": 4,
+  "titles_years": [1985, 1986, 1989, 1993],
+  "years": "1980–1993",
+  "image": "/drivers_pictures/alain_prost.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Alain Prost è stato uno dei piloti più intelligenti e strategici della storia della Formula 1. Soprannominato \"Il Professore\", era famoso per la sua capacità di controllare le gare con precisione e freddezza.",
+        "en": "Alain Prost was one of the most intelligent and strategic drivers in Formula 1 history. Nicknamed \"The Professor\", he was known for his ability to control races with precision and calmness.",
+          "es": "Alain Prost fue uno de los pilotos más inteligentes y estratégicos en la historia de la Fórmula 1. Apodado 'El Profesor', era famoso por su capacidad para controlar las carreras con precisión y frialdad.",
+          "fr": "Alain Prost a été l'un des pilotes les plus intelligents et stratégiques de l'histoire de la Formule 1. Surnommé 'Le Professeur', il était célèbre pour sa capacité à contrôler les courses avec précision et sang-froid.",
+          "de": "Alain Prost war einer der intelligentesten und strategischsten Fahrer der Formel-1-Geschichte. Spitzname 'Der Professor', bekannt für seine Fähigkeit, Rennen mit Präzision und Ruhe zu kontrollieren."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Nato in Francia, Prost iniziò nel karting relativamente tardi, ma recuperò rapidamente grazie al suo talento. Dopo aver dominato le categorie minori, arrivò in Formula 1 nel 1980.",
+        "en": "Born in France, Prost started karting relatively late but quickly made up for it thanks to his talent. After dominating junior categories, he reached Formula 1 in 1980.",
+          "es": "Nacido en Francia, Prost comenzó en el karting relativamente tarde, pero lo compensó rápidamente gracias a su talento. Tras dominar las categorías inferiores, llegó a la Fórmula 1 en 1980.",
+          "fr": "Né en France, Prost a commencé le karting relativement tard mais a rapidement rattrapé son retard grâce à son talent. Après avoir dominé les catégories juniors, il est arrivé en Formule 1 en 1980.",
+          "de": "Geboren in Frankreich begann Prost relativ spät mit dem Kartsport, holte dies aber dank seines Talents schnell auf. Nach Erfolgen in den Nachwuchsklassen kam er 1980 in die Formel 1."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Prost basava la sua guida sulla gestione e sull’intelligenza. Evitava rischi inutili, gestiva gomme e carburante e costruiva le vittorie con strategia più che con aggressività.",
+        "en": "Prost based his driving on management and intelligence. He avoided unnecessary risks, managed tires and fuel, and built victories through strategy rather than aggression.",
+          "es": "Prost basaba su pilotaje en la gestión y la inteligencia. Evitaba riesgos innecesarios, gestionaba neumáticos y combustible y construía las victorias con estrategia más que con agresividad.",
+          "fr": "Prost fondait sa conduite sur la gestion et l'intelligence. Il évitait les risques inutiles, gérait les pneus et le carburant et construisait ses victoires par la stratégie plutôt que par l'agressivité.",
+          "de": "Prost baute sein Fahren auf Management und Intelligenz auf. Er vermied unnötige Risiken, managte Reifen und Benzin und errang Siege mehr durch Strategie als durch Aggressivität."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Prost raggiunse il successo con McLaren, vincendo tre titoli negli anni ’80. Dopo esperienze con Ferrari e Williams, conquistò il suo quarto titolo nel 1993 prima di ritirarsi.",
+        "en": "Prost achieved success with McLaren, winning three titles in the 1980s. After stints with Ferrari and Williams, he secured his fourth title in 1993 before retiring.",
+          "es": "Prost alcanzó el éxito con McLaren, ganando tres títulos en los años 80. Tras pasar por Ferrari y Williams, logró su cuarto título en 1993 antes de retirarse.",
+          "fr": "Prost a connu le succès avec McLaren, remportant trois titres dans les années 1980. Après des passages chez Ferrari et Williams, il a décroché son quatrième titre en 1993 avant de prendre sa retraite.",
+          "de": "Prost feierte mit McLaren Erfolge und gewann in den 1980er Jahren drei Titel. Nach Stationen bei Ferrari und Williams holte er 1993 seinen vierten Titel, bevor er sich zurückzog."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "La rivalità con Senna è una delle più intense della storia della Formula 1. Il titolo del 1986, conquistato all’ultima gara, rappresenta uno dei suoi successi più memorabili.",
+        "en": "His rivalry with Senna is one of the most intense in Formula 1 history. The 1986 title, secured in the final race, remains one of his most memorable achievements.",
+          "es": "Su rivalidad con Senna es una de las más intensas de la historia de la Fórmula 1. El título de 1986, conseguido en la última carrera, es uno de sus logros más memorables.",
+          "fr": "Sa rivalité avec Senna est l'une des plus intenses de l'histoire de la Formule 1. Le titre de 1986, remporté lors de la dernière course, reste l'un de ses succès les plus mémorables.",
+          "de": "Seine Rivalität mit Senna ist eine der intensivsten der Formel-1-Geschichte. Der Titel 1986, den er im letzten Rennen gewann, bleibt einer seiner denkwürdigsten Erfolge."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Era soprannominato \"Il Professore\"",
+          "Era noto per il suo approccio strategico",
+          "Ha avuto una rivalità storica con Senna",
+          "Ha vinto titoli con più team"
+        ],
+        "en": [
+          "Nicknamed \"The Professor\"",
+          "Known for his strategic approach",
+          "Had a historic rivalry with Senna",
+          "Won titles with multiple teams"
+        ],
+        "es": [
+          "Apodado 'El Profesor'",
+          "Conocido por su enfoque estratégico",
+          "Tuvo una rivalidad histórica con Senna",
+          "Ganó títulos con varios equipos"
+        ],
+        "fr": [
+          "Surnommé 'Le Professeur'",
+          "Connu pour son approche stratégique",
+          "A eu une rivalité historique avec Senna",
+          "A remporté des titres avec plusieurs équipes"
+        ],
+        "de": [
+          "Spitzname 'Der Professor'",
+          "Bekannt für seinen strategischen Ansatz",
+          "Hatte eine legendäre Rivalität mit Senna",
+          "Gewann Titel mit mehreren Teams"
+        ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Prost ha dimostrato che l’intelligenza e la strategia possono essere decisive quanto la velocità pura. Il suo approccio ha influenzato generazioni di piloti.",
+        "en": "Prost proved that intelligence and strategy can be as decisive as raw speed. His approach influenced generations of drivers.",
+          "es": "Prost demostró que la inteligencia y la estrategia pueden ser tan decisivas como la velocidad pura. Su enfoque influyó en generaciones de pilotos.",
+          "fr": "Prost a démontré que l'intelligence et la stratégie peuvent être aussi décisives que la vitesse pure. Son approche a influencé des générations de pilotes.",
+          "de": "Prost hat gezeigt, dass Intelligenz und Strategie genauso entscheidend sein können wie reine Geschwindigkeit. Sein Ansatz beeinflusste Generationen von Fahrern."
+      }
+    }
+  ]
+}

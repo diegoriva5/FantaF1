@@ -1,0 +1,116 @@
+{
+  "id": "ayrton-senna",
+  "name": {
+    "first": "Ayrton",
+    "last": "Senna"
+  },
+  "nationality": "Brazil",
+  "titles": 3,
+  "titles_years": [1988, 1990, 1991],
+  "years": "1984–1994",
+  "image": "/drivers_pictures/ayrton_senna.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Ayrton Senna è considerato uno dei piloti più iconici e talentuosi nella storia della Formula 1. Dotato di una sensibilità straordinaria, soprattutto sul bagnato, trasformava ogni giro in una dimostrazione di controllo assoluto e intensità emotiva.",
+        "en": "Ayrton Senna is considered one of the most iconic and talented drivers in Formula 1 history. Gifted with extraordinary sensitivity, especially in wet conditions, he turned every lap into a display of absolute control and emotional intensity.",
+          "es": "Ayrton Senna es considerado uno de los pilotos más icónicos y talentosos en la historia de la Fórmula 1. Dotado de una sensibilidad extraordinaria, especialmente bajo la lluvia, convertía cada vuelta en una demostración de control absoluto e intensidad emocional.",
+          "fr": "Ayrton Senna est considéré comme l'un des pilotes les plus emblématiques et talentueux de l'histoire de la Formule 1. Doté d'une sensibilité extraordinaire, surtout sous la pluie, il transformait chaque tour en une démonstration de contrôle absolu et d'intensité émotionnelle.",
+          "de": "Ayrton Senna gilt als einer der ikonischsten und talentiertesten Fahrer der Formel-1-Geschichte. Mit außergewöhnlicher Sensibilität, besonders bei Regen, verwandelte er jede Runde in eine Demonstration absoluter Kontrolle und emotionaler Intensität."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Nato in Brasile, Senna si mise subito in luce nel karting prima di trasferirsi in Europa. Dopo aver dominato le categorie minori, debuttò in Formula 1 nel 1984, mostrando immediatamente un talento fuori dal comune.",
+        "en": "Born in Brazil, Senna quickly stood out in karting before moving to Europe. After dominating junior categories, he debuted in Formula 1 in 1984, immediately showing extraordinary talent.",
+          "es": "Nacido en Brasil, Senna destacó rápidamente en el karting antes de mudarse a Europa. Tras dominar las categorías inferiores, debutó en la Fórmula 1 en 1984, mostrando de inmediato un talento extraordinario.",
+          "fr": "Né au Brésil, Senna s'est rapidement distingué en karting avant de partir en Europe. Après avoir dominé les catégories juniors, il a débuté en Formule 1 en 1984, montrant immédiatement un talent hors du commun.",
+          "de": "Geboren in Brasilien, fiel Senna schon früh im Kartsport auf, bevor er nach Europa wechselte. Nach Erfolgen in den Nachwuchsklassen debütierte er 1984 in der Formel 1 und zeigte sofort außergewöhnliches Talent."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Senna era noto per il suo stile aggressivo ma estremamente preciso. Sul bagnato raggiungeva livelli quasi irreali, riuscendo a trovare aderenza dove gli altri non riuscivano. La sua guida era intensa, al limite tra controllo e istinto.",
+        "en": "Senna was known for his aggressive yet extremely precise driving style. In wet conditions, he reached almost unreal levels, finding grip where others could not. His driving balanced control and instinct.",
+          "es": "Senna era conocido por su estilo de conducción agresivo pero extremadamente preciso. Bajo la lluvia alcanzaba niveles casi irreales, encontrando agarre donde otros no podían. Su pilotaje equilibraba el control y el instinto.",
+          "fr": "Senna était connu pour son style de pilotage agressif mais extrêmement précis. Sous la pluie, il atteignait des niveaux presque irréels, trouvant de l'adhérence là où les autres n'y parvenaient pas. Sa conduite était un équilibre entre contrôle et instinct.",
+          "de": "Senna war bekannt für seinen aggressiven, aber äußerst präzisen Fahrstil. Bei Regen erreichte er fast unwirkliche Leistungen und fand Haftung, wo andere scheiterten. Sein Fahrstil balancierte Kontrolle und Instinkt."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Dopo gli inizi con Toleman e Lotus, Senna raggiunse l’apice della sua carriera con McLaren, dove vinse tre titoli mondiali. Le sue battaglie con Prost segnarono un’epoca. Nel 1994 passò alla Williams, ma la sua carriera si interruppe tragicamente.",
+        "en": "After starting with Toleman and Lotus, Senna reached the peak of his career with McLaren, winning three world titles. His battles with Prost defined an era. In 1994, he joined Williams, but his career ended tragically.",
+          "es": "Tras sus inicios con Toleman y Lotus, Senna alcanzó la cima de su carrera con McLaren, donde ganó tres títulos mundiales. Sus duelos con Prost marcaron una época. En 1994 pasó a Williams, pero su carrera terminó trágicamente.",
+          "fr": "Après ses débuts avec Toleman et Lotus, Senna a atteint le sommet de sa carrière avec McLaren, remportant trois titres mondiaux. Ses duels avec Prost ont marqué une époque. En 1994, il a rejoint Williams, mais sa carrière s'est tragiquement interrompue.",
+          "de": "Nach den Anfängen bei Toleman und Lotus erreichte Senna mit McLaren den Höhepunkt seiner Karriere und gewann drei Weltmeistertitel. Seine Duelle mit Prost prägten eine Ära. 1994 wechselte er zu Williams, doch seine Karriere endete tragisch."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "Il Gran Premio di Monaco 1984, dove sotto la pioggia recuperò posizioni su posizioni, lo fece conoscere al mondo. La vittoria a Donington 1993, con un primo giro leggendario, resta una delle sue imprese più straordinarie.",
+        "en": "The 1984 Monaco Grand Prix, where he climbed the field in the rain, introduced him to the world. His 1993 Donington victory, with a legendary opening lap, remains one of his greatest achievements.",
+          "es": "El Gran Premio de Mónaco de 1984, donde bajo la lluvia remontó muchas posiciones, lo dio a conocer al mundo. La victoria en Donington 1993, con una primera vuelta legendaria, sigue siendo una de sus mayores gestas.",
+          "fr": "Le Grand Prix de Monaco 1984, où il a remonté de nombreuses positions sous la pluie, l'a fait connaître au monde. Sa victoire à Donington en 1993, avec un premier tour légendaire, reste l'un de ses exploits les plus extraordinaires.",
+          "de": "Der Große Preis von Monaco 1984, bei dem er im Regen viele Plätze gutmachte, machte ihn weltbekannt. Der Sieg in Donington 1993 mit einer legendären ersten Runde bleibt eine seiner größten Leistungen."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Era considerato il miglior pilota sul bagnato della storia",
+          "Aveva una forte spiritualità che influenzava il suo approccio alla gara",
+          "Il suo duello con Prost è uno dei più famosi della F1",
+          "È diventato un simbolo nazionale in Brasile"
+        ],
+        "en": [
+          "Widely considered the greatest wet-weather driver ever",
+          "Had strong spirituality influencing his racing approach",
+          "His rivalry with Prost is one of the most famous in F1",
+          "Became a national icon in Brazil"
+        ],
+        "es": [
+          "Fue considerado el mejor piloto bajo la lluvia de la historia",
+          "Tenía una fuerte espiritualidad que influía en su enfoque de las carreras",
+          "Su duelo con Prost es uno de los más famosos de la F1",
+          "Se convirtió en un símbolo nacional en Brasil"
+        ],
+        "fr": [
+          "Il était considéré comme le meilleur pilote sous la pluie de l'histoire",
+          "Il avait une forte spiritualité qui influençait son approche de la course",
+          "Son duel avec Prost est l'un des plus célèbres de la F1",
+          "Il est devenu un symbole national au Brésil"
+        ],
+        "de": [
+          "Er galt als bester Regenfahrer der Geschichte",
+          "Er hatte eine starke Spiritualität, die seinen Rennansatz beeinflusste",
+          "Sein Duell mit Prost ist eines der berühmtesten der F1",
+          "Er wurde zu einer nationalen Ikone in Brasilien"
+        ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Senna ha lasciato un’eredità che va oltre lo sport. Il suo talento, la sua intensità e il suo carisma lo hanno reso una leggenda immortale della Formula 1.",
+        "en": "Senna left a legacy that goes beyond sport. His talent, intensity, and charisma made him an immortal legend of Formula 1.",
+          "es": "Senna dejó un legado que va más allá del deporte. Su talento, intensidad y carisma lo convirtieron en una leyenda inmortal de la Fórmula 1.",
+          "fr": "Senna a laissé un héritage qui va au-delà du sport. Son talent, son intensité et son charisme ont fait de lui une légende immortelle de la Formule 1.",
+          "de": "Senna hinterließ ein Vermächtnis, das über den Sport hinausgeht. Sein Talent, seine Intensität und sein Charisma machten ihn zu einer unsterblichen Legende der Formel 1."
+      }
+    }
+  ]
+}

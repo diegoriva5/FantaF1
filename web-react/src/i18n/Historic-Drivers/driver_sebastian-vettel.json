@@ -1,0 +1,116 @@
+{
+  "id": "sebastian-vettel",
+  "name": {
+    "first": "Sebastian",
+    "last": "Vettel"
+  },
+  "nationality": "Germany",
+  "titles": 4,
+  "titles_years": [2010, 2011, 2012, 2013],
+  "years": "2007–2022",
+  "image": "/drivers_pictures/sebastian_vettel.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Sebastian Vettel è stato uno dei piloti più dominanti della sua generazione. Con Red Bull ha costruito un’era di successi grazie a velocità e precisione.",
+        "en": "Sebastian Vettel was one of the most dominant drivers of his generation. With Red Bull, he built an era of success through speed and precision.",
+          "es": "Sebastian Vettel fue uno de los pilotos más dominantes de su generación. Con Red Bull construyó una era de éxitos gracias a su velocidad y precisión.",
+          "fr": "Sebastian Vettel a été l'un des pilotes les plus dominants de sa génération. Avec Red Bull, il a construit une ère de succès grâce à sa vitesse et sa précision.",
+          "de": "Sebastian Vettel war einer der dominantesten Fahrer seiner Generation. Mit Red Bull baute er eine Ära des Erfolgs durch Schnelligkeit und Präzision auf."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Vettel debuttò giovanissimo in Formula 1 e si fece subito notare vincendo con Toro Rosso nel 2008, diventando il più giovane vincitore di un GP all’epoca.",
+        "en": "Vettel debuted very young in Formula 1 and quickly gained attention by winning with Toro Rosso in 2008, becoming the youngest race winner at the time.",
+          "es": "Vettel debutó muy joven en la Fórmula 1 y rápidamente llamó la atención al ganar con Toro Rosso en 2008, convirtiéndose en el ganador de GP más joven en ese momento.",
+          "fr": "Vettel a débuté très jeune en Formule 1 et s'est rapidement fait remarquer en gagnant avec Toro Rosso en 2008, devenant alors le plus jeune vainqueur de Grand Prix.",
+          "de": "Vettel debütierte sehr jung in der Formel 1 und sorgte schnell für Aufsehen, als er 2008 mit Toro Rosso gewann und damals der jüngste GP-Sieger war."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Vettel era particolarmente forte sul giro secco e nella gestione del ritmo quando in testa alla gara. La sua precisione lo rendeva molto difficile da battere in condizioni di dominio.",
+        "en": "Vettel excelled in qualifying and controlling race pace from the front. His precision made him very hard to beat when leading.",
+          "es": "Vettel destacaba en clasificación y en el control del ritmo de carrera cuando lideraba. Su precisión lo hacía muy difícil de batir cuando iba en cabeza.",
+          "fr": "Vettel excellait en qualifications et dans la gestion du rythme de course en tête. Sa précision le rendait très difficile à battre lorsqu'il menait.",
+          "de": "Vettel glänzte im Qualifying und in der Kontrolle des Renntempos an der Spitze. Seine Präzision machte ihn kaum zu schlagen, wenn er führte."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Con Red Bull vinse quattro titoli consecutivi tra il 2010 e il 2013. Successivamente passò alla Ferrari, sfiorando il titolo, prima di concludere la carriera con Aston Martin.",
+        "en": "With Red Bull, he won four consecutive titles from 2010 to 2013. He later moved to Ferrari, coming close to another title, before finishing his career with Aston Martin.",
+          "es": "Con Red Bull ganó cuatro títulos consecutivos entre 2010 y 2013. Luego pasó a Ferrari, quedándose cerca de otro título, antes de terminar su carrera con Aston Martin.",
+          "fr": "Avec Red Bull, il a remporté quatre titres consécutifs entre 2010 et 2013. Il a ensuite rejoint Ferrari, frôlant un autre titre, avant de terminer sa carrière chez Aston Martin.",
+          "de": "Mit Red Bull gewann er von 2010 bis 2013 vier Titel in Folge. Danach wechselte er zu Ferrari, verpasste knapp einen weiteren Titel und beendete seine Karriere bei Aston Martin."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "Il dominio con Red Bull tra il 2010 e il 2013 è uno dei più impressionanti della storia recente. Il titolo del 2012, conquistato all’ultima gara, è tra i più combattuti.",
+        "en": "His dominance with Red Bull from 2010 to 2013 is one of the most impressive in recent history. The 2012 title, secured in the final race, is among the closest ever.",
+          "es": "El dominio con Red Bull entre 2010 y 2013 es uno de los más impresionantes de la historia reciente. El título de 2012, conseguido en la última carrera, es de los más disputados.",
+          "fr": "Sa domination avec Red Bull de 2010 à 2013 est l'une des plus impressionnantes de l'histoire récente. Le titre de 2012, remporté lors de la dernière course, est l'un des plus disputés.",
+          "de": "Die Dominanz mit Red Bull von 2010 bis 2013 ist eine der beeindruckendsten der jüngeren Geschichte. Der Titel 2012, der im letzten Rennen gewonnen wurde, zählt zu den knappsten überhaupt."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "È stato il più giovane campione del mondo",
+          "Ha vinto 4 titoli consecutivi",
+          "È noto per dare nomi alle sue monoposto",
+          "È molto attivo su temi ambientali"
+        ],
+        "en": [
+          "Youngest world champion ever",
+          "Won 4 consecutive titles",
+          "Known for naming his cars",
+          "Active on environmental issues"
+        ],
+        "es": [
+          "Fue el campeón del mundo más joven",
+          "Ganó 4 títulos consecutivos",
+          "Es conocido por poner nombres a sus monoplazas",
+          "Muy activo en temas medioambientales"
+        ],
+        "fr": [
+          "Il a été le plus jeune champion du monde",
+          "A remporté 4 titres consécutifs",
+          "Connu pour donner des noms à ses monoplaces",
+          "Très engagé sur les questions environnementales"
+        ],
+        "de": [
+          "Jüngster Weltmeister aller Zeiten",
+          "Gewann 4 Titel in Folge",
+          "Bekannt dafür, seinen Autos Namen zu geben",
+          "Sehr engagiert bei Umweltthemen"
+        ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Vettel ha rappresentato una generazione di piloti tecnici e veloci. Il suo contributo va oltre i risultati, influenzando anche il lato umano e sociale della Formula 1.",
+        "en": "Vettel represented a generation of technical and fast drivers. His contribution goes beyond results, influencing the human and social side of Formula 1.",
+          "es": "Vettel representó a una generación de pilotos técnicos y rápidos. Su contribución va más allá de los resultados, influyendo también en el lado humano y social de la Fórmula 1.",
+          "fr": "Vettel a représenté une génération de pilotes techniques et rapides. Sa contribution va au-delà des résultats, influençant aussi le côté humain et social de la Formule 1.",
+          "de": "Vettel repräsentierte eine Generation technischer und schneller Fahrer. Sein Beitrag geht über die Ergebnisse hinaus und beeinflusst auch die menschliche und soziale Seite der Formel 1."
+      }
+    }
+  ]
+}

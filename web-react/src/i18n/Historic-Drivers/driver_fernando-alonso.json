@@ -1,0 +1,116 @@
+{
+  "id": "fernando-alonso",
+  "name": {
+    "first": "Fernando",
+    "last": "Alonso"
+  },
+  "nationality": "Spain",
+  "titles": 2,
+  "titles_years": [2005, 2006],
+  "years": "2001–2018, 2021–present",
+  "image": "/drivers_pictures/fernando_alonso.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Fernando Alonso è uno dei piloti più completi e talentuosi della Formula 1 moderna. La sua carriera è caratterizzata da velocità, intelligenza e una straordinaria capacità di adattamento.",
+        "en": "Fernando Alonso is one of the most complete and talented drivers in modern Formula 1. His career is defined by speed, intelligence, and remarkable adaptability.",
+          "es": "Fernando Alonso es uno de los pilotos más completos y talentosos de la Fórmula 1 moderna. Su carrera se caracteriza por la velocidad, la inteligencia y una extraordinaria capacidad de adaptación.",
+          "fr": "Fernando Alonso est l'un des pilotes les plus complets et talentueux de la Formule 1 moderne. Sa carrière se caractérise par la vitesse, l'intelligence et une capacité d'adaptation remarquable.",
+          "de": "Fernando Alonso ist einer der komplettesten und talentiertesten Fahrer der modernen Formel 1. Seine Karriere ist geprägt von Schnelligkeit, Intelligenz und außergewöhnlicher Anpassungsfähigkeit."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Nato in Spagna, Alonso si mise in luce fin da giovane nel karting. Dopo l’esperienza con Minardi, trovò la sua occasione con Renault.",
+        "en": "Born in Spain, Alonso stood out early in karting. After his time with Minardi, he found his opportunity with Renault.",
+          "es": "Nacido en España, Alonso destacó desde joven en el karting. Tras su experiencia con Minardi, encontró su oportunidad con Renault.",
+          "fr": "Né en Espagne, Alonso s'est distingué très jeune en karting. Après son expérience chez Minardi, il a trouvé sa chance chez Renault.",
+          "de": "Geboren in Spanien, fiel Alonso schon früh im Kartsport auf. Nach seiner Zeit bei Minardi bekam er seine Chance bei Renault."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Alonso è noto per la sua intelligenza in gara e la capacità di ottenere risultati oltre il potenziale della vettura. È uno dei migliori nella gestione strategica e nei duelli.",
+        "en": "Alonso is known for his race intelligence and ability to achieve results beyond the car’s potential. He is one of the best in strategy and racecraft.",
+          "es": "Alonso es conocido por su inteligencia en carrera y su capacidad para lograr resultados más allá del potencial del coche. Es uno de los mejores en estrategia y lucha en pista.",
+          "fr": "Alonso est connu pour son intelligence en course et sa capacité à obtenir des résultats au-delà du potentiel de la voiture. Il est l'un des meilleurs en stratégie et en duel en piste.",
+          "de": "Alonso ist bekannt für seine Rennintelligenz und die Fähigkeit, Ergebnisse über das Potenzial des Autos hinaus zu erzielen. Er zählt zu den Besten in Strategie und Zweikampf."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Con Renault vinse due titoli mondiali consecutivi nel 2005 e 2006. Ha poi corso per McLaren e Ferrari, sfiorando più volte il titolo, prima di tornare in Formula 1 con Alpine e Aston Martin.",
+        "en": "With Renault, he won two consecutive world titles in 2005 and 2006. He later raced for McLaren and Ferrari, coming close to more titles, before returning with Alpine and Aston Martin.",
+          "es": "Con Renault ganó dos títulos mundiales consecutivos en 2005 y 2006. Luego corrió para McLaren y Ferrari, quedándose cerca de más títulos, antes de regresar con Alpine y Aston Martin.",
+          "fr": "Avec Renault, il a remporté deux titres mondiaux consécutifs en 2005 et 2006. Il a ensuite couru pour McLaren et Ferrari, frôlant d'autres titres, avant de revenir avec Alpine et Aston Martin.",
+          "de": "Mit Renault gewann er 2005 und 2006 zwei Weltmeistertitel in Folge. Danach fuhr er für McLaren und Ferrari, verpasste weitere Titel nur knapp, bevor er mit Alpine und Aston Martin zurückkehrte."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "I titoli del 2005 e 2006 interrompono il dominio di Schumacher. Le sue stagioni con Ferrari, pur senza titolo, sono considerate tra le più impressionanti.",
+        "en": "His 2005 and 2006 titles ended Schumacher’s dominance. His Ferrari seasons, despite no titles, are considered among his most impressive.",
+          "es": "Los títulos de 2005 y 2006 pusieron fin al dominio de Schumacher. Sus temporadas con Ferrari, aunque sin títulos, se consideran de las más impresionantes.",
+          "fr": "Ses titres de 2005 et 2006 ont mis fin à la domination de Schumacher. Ses saisons chez Ferrari, bien que sans titre, sont considérées parmi les plus impressionnantes.",
+          "de": "Die Titel 2005 und 2006 beendeten Schumachers Dominanz. Seine Ferrari-Jahre, auch ohne Titel, gelten als seine beeindruckendsten."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "È uno dei piloti più longevi della F1",
+          "Ha corso anche in altre categorie come Le Mans e IndyCar",
+          "È noto per ottenere risultati oltre il mezzo tecnico",
+          "Ha battuto Schumacher per due titoli consecutivi"
+        ],
+        "en": [
+          "One of the longest-serving F1 drivers",
+          "Raced in Le Mans and IndyCar",
+          "Known for outperforming his car",
+          "Defeated Schumacher for two titles"
+        ],
+        "es": [
+          "Es uno de los pilotos más longevos de la F1",
+          "Ha competido también en Le Mans e IndyCar",
+          "Es conocido por lograr resultados más allá del coche",
+          "Venció a Schumacher por dos títulos consecutivos"
+        ],
+        "fr": [
+          "Il est l'un des pilotes les plus endurants de la F1",
+          "A également couru en Le Mans et IndyCar",
+          "Connu pour obtenir des résultats au-delà de la voiture",
+          "A battu Schumacher pour deux titres consécutifs"
+        ],
+        "de": [
+          "Einer der langlebigsten F1-Fahrer",
+          "Fuhr auch in Le Mans und IndyCar",
+          "Bekannt dafür, mehr aus dem Auto herauszuholen",
+          "Schlug Schumacher in zwei aufeinanderfolgenden Jahren"
+        ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Alonso è considerato uno dei piloti più completi della sua generazione. La sua longevità e competitività lo rendono unico nella storia della Formula 1.",
+        "en": "Alonso is considered one of the most complete drivers of his generation. His longevity and competitiveness make him unique in Formula 1 history.",
+          "es": "Alonso es considerado uno de los pilotos más completos de su generación. Su longevidad y competitividad lo hacen único en la historia de la Fórmula 1.",
+          "fr": "Alonso est considéré comme l'un des pilotes les plus complets de sa génération. Sa longévité et sa compétitivité le rendent unique dans l'histoire de la Formule 1.",
+          "de": "Alonso gilt als einer der komplettesten Fahrer seiner Generation. Seine Langlebigkeit und Wettbewerbsfähigkeit machen ihn einzigartig in der Geschichte der Formel 1."
+      }
+    }
+  ]
+}

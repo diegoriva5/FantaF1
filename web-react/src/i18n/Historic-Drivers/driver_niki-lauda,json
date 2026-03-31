@@ -1,0 +1,116 @@
+{
+  "id": "niki-lauda",
+  "name": {
+    "first": "Niki",
+    "last": "Lauda"
+  },
+  "nationality": "Austria",
+  "titles": 3,
+  "titles_years": [1975, 1977, 1984],
+  "years": "1971–1979, 1982–1985",
+  "image": "/drivers_pictures/niki_lauda.png",
+  "sections": [
+    {
+      "type": "intro",
+      "title": { "it": "Introduzione", "en": "Introduction" },
+      "content": {
+        "it": "Niki Lauda è stato uno dei piloti più intelligenti e determinati nella storia della Formula 1. La sua carriera è segnata da successi straordinari e da una delle storie di resilienza più incredibili dello sport.",
+        "en": "Niki Lauda was one of the most intelligent and determined drivers in Formula 1 history. His career is marked by extraordinary success and one of the most incredible stories of resilience in sport.",
+          "es": "Niki Lauda fue uno de los pilotos más inteligentes y decididos en la historia de la Fórmula 1. Su carrera está marcada por éxitos extraordinarios y una de las historias de resiliencia más increíbles del deporte.",
+          "fr": "Niki Lauda était l'un des pilotes les plus intelligents et déterminés de l'histoire de la Formule 1. Sa carrière est marquée par des succès extraordinaires et l'une des histoires de résilience les plus incroyables du sport.",
+          "de": "Niki Lauda war einer der intelligentesten und entschlossensten Fahrer in der Geschichte der Formel 1. Seine Karriere ist geprägt von außergewöhnlichen Erfolgen und einer der unglaublichsten Geschichten der Widerstandsfähigkeit im Sport."
+      }
+    },
+    {
+      "type": "early",
+      "title": { "it": "Gli inizi", "en": "Early Career" },
+      "content": {
+        "it": "Nato in Austria, Lauda entrò in Formula 1 grazie a prestiti personali, dimostrando fin da subito una forte determinazione. Dopo alcune stagioni difficili, trovò la sua occasione con la Ferrari.",
+        "en": "Born in Austria, Lauda entered Formula 1 through personal loans, showing strong determination from the start. After some difficult seasons, he found his opportunity with Ferrari.",
+          "es": "Nacido en Austria, Lauda entró en la Fórmula 1 gracias a préstamos personales, demostrando una gran determinación desde el principio. Tras algunas temporadas difíciles, encontró su oportunidad con Ferrari.",
+          "fr": "Né en Autriche, Lauda est entré en Formule 1 grâce à des prêts personnels, faisant preuve d'une grande détermination dès le début. Après quelques saisons difficiles, il a trouvé sa chance avec Ferrari.",
+          "de": "Geboren in Österreich, kam Lauda durch persönliche Kredite in die Formel 1 und zeigte von Anfang an große Entschlossenheit. Nach einigen schwierigen Saisons fand er seine Chance bei Ferrari."
+      }
+    },
+    {
+      "type": "driving_style",
+      "title": { "it": "Stile di guida", "en": "Driving Style" },
+      "content": {
+        "it": "Lauda era un pilota estremamente razionale e tecnico. Preferiva la precisione alla spettacolarità, analizzando ogni dettaglio della vettura per ottenere il massimo rendimento.",
+        "en": "Lauda was an extremely rational and technical driver. He preferred precision over spectacle, analyzing every detail of the car to maximize performance.",
+          "es": "Lauda era un piloto extremadamente racional y técnico. Prefería la precisión al espectáculo, analizando cada detalle del coche para obtener el máximo rendimiento.",
+          "fr": "Lauda était un pilote extrêmement rationnel et technique. Il préférait la précision au spectacle, analysant chaque détail de la voiture pour maximiser la performance.",
+          "de": "Lauda war ein äußerst rationaler und technischer Fahrer. Er bevorzugte Präzision vor Show und analysierte jedes Detail des Autos, um die maximale Leistung herauszuholen."
+      }
+    },
+    {
+      "type": "career",
+      "title": { "it": "Carriera e scuderie", "en": "Career and Teams" },
+      "content": {
+        "it": "Con Ferrari vinse due titoli negli anni ’70. Dopo il grave incidente del 1976 al Nürburgring, tornò in pista in tempi incredibili. Negli anni ’80, con McLaren, conquistò il suo terzo titolo nel 1984.",
+        "en": "With Ferrari, he won two titles in the 1970s. After his severe 1976 Nürburgring accident, he returned to racing in an incredibly short time. In the 1980s, with McLaren, he won his third title in 1984.",
+          "es": "Con Ferrari ganó dos títulos en los años 70. Tras el grave accidente de 1976 en Nürburgring, regresó a las pistas en un tiempo increíblemente corto. En los años 80, con McLaren, conquistó su tercer título en 1984.",
+          "fr": "Avec Ferrari, il a remporté deux titres dans les années 1970. Après son grave accident au Nürburgring en 1976, il est revenu à la compétition en un temps record. Dans les années 1980, avec McLaren, il a remporté son troisième titre en 1984.",
+          "de": "Mit Ferrari gewann er in den 1970er Jahren zwei Titel. Nach seinem schweren Unfall 1976 am Nürburgring kehrte er in unglaublich kurzer Zeit zurück. In den 1980er Jahren gewann er mit McLaren seinen dritten Titel 1984."
+      }
+    },
+    {
+      "type": "moments",
+      "title": { "it": "Momenti iconici", "en": "Iconic Moments" },
+      "content": {
+        "it": "L’incidente del Nürburgring 1976 e il suo ritorno dopo poche settimane sono tra gli episodi più incredibili della storia della Formula 1. Il titolo del 1984 vinto per mezzo punto è uno dei più combattuti di sempre.",
+        "en": "The 1976 Nürburgring crash and his return just weeks later are among the most incredible moments in F1 history. The 1984 title, won by half a point, is one of the closest ever.",
+          "es": "El accidente de Nürburgring en 1976 y su regreso solo unas semanas después son de los episodios más increíbles de la historia de la Fórmula 1. El título de 1984, ganado por medio punto, es uno de los más disputados de la historia.",
+          "fr": "L'accident du Nürburgring en 1976 et son retour quelques semaines plus tard comptent parmi les moments les plus incroyables de l'histoire de la F1. Le titre de 1984, remporté pour un demi-point, est l'un des plus disputés de tous les temps.",
+          "de": "Der Unfall am Nürburgring 1976 und seine Rückkehr nur wenige Wochen später gehören zu den unglaublichsten Momenten der Formel-1-Geschichte. Der Titel 1984, den er mit einem halben Punkt Vorsprung gewann, ist einer der knappsten überhaupt."
+      }
+    },
+    {
+      "type": "curiosities",
+      "title": { "it": "Curiosità", "en": "Curiosities" },
+      "content": {
+        "it": [
+          "Sopravvisse a uno degli incidenti più gravi della F1",
+          "Tornò a correre solo 6 settimane dopo",
+          "Era noto per il suo approccio estremamente analitico",
+          "Fondò anche una compagnia aerea"
+        ],
+        "en": [
+          "Survived one of the most serious crashes in F1",
+          "Returned to racing just 6 weeks later",
+          "Known for his highly analytical approach",
+          "Also founded an airline company"
+        ],
+        "es": [
+          "Sobrevivió a uno de los accidentes más graves de la F1",
+          "Volvió a correr solo 6 semanas después",
+          "Era conocido por su enfoque extremadamente analítico",
+          "También fundó una compañía aérea"
+        ],
+        "fr": [
+          "A survécu à l'un des accidents les plus graves de la F1",
+          "Est revenu courir seulement 6 semaines plus tard",
+          "Connu pour son approche extrêmement analytique",
+          "A également fondé une compagnie aérienne"
+        ],
+        "de": [
+          "Überlebte einen der schwersten Unfälle der F1",
+          "Kehrte nur 6 Wochen später zurück auf die Strecke",
+          "Bekannt für seinen äußerst analytischen Ansatz",
+          "Gründete auch eine Fluggesellschaft"
+        ]
+      }
+    },
+    {
+      "type": "legacy",
+      "title": { "it": "Eredità", "en": "Legacy" },
+      "content": {
+        "it": "Lauda rappresenta la resilienza e l’intelligenza nella Formula 1. La sua capacità di tornare dopo l’incidente e vincere ancora lo rende una delle figure più rispettate nella storia dello sport.",
+        "en": "Lauda represents resilience and intelligence in Formula 1. His ability to return after his accident and win again makes him one of the most respected figures in the sport’s history.",
+          "es": "Lauda representa la resiliencia y la inteligencia en la Fórmula 1. Su capacidad para volver después del accidente y ganar de nuevo lo convierte en una de las figuras más respetadas en la historia del deporte.",
+          "fr": "Lauda incarne la résilience et l'intelligence en Formule 1. Sa capacité à revenir après son accident et à gagner à nouveau fait de lui l'une des figures les plus respectées de l'histoire du sport.",
+          "de": "Lauda steht für Resilienz und Intelligenz in der Formel 1. Seine Fähigkeit, nach dem Unfall zurückzukehren und wieder zu gewinnen, macht ihn zu einer der respektiertesten Persönlichkeiten der Sportgeschichte."
+      }
+    }
+  ]
+}

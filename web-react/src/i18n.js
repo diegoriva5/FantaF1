@@ -21,8 +21,11 @@ const DATE_LOCALE_BY_LANGUAGE = {
 
 const TRANSLATIONS = {
   it: {
+    generationTimeline: {
+      topbar: "Le innovazioni e i campioni",
+    },
     historicDrivers: {
-      title: "Piloti storici di Formula 1",
+      title: "I Protagonisti della Storia",
       intro: "La storia della Formula 1 non è fatta di decenni, ma di rivoluzioni.",
       discover: "Scopri i piloti →",
       eras: {
@@ -242,8 +245,11 @@ const TRANSLATIONS = {
     }
   },
   en: {
+    generationTimeline: {
+      topbar: "Innovations and Champions",
+    },
     historicDrivers: {
-      title: "Historic Formula 1 Drivers",
+      title: "The Protagonists of History",
       intro: "Formula 1 history is shaped not by decades, but by revolutions.",
       discover: "Discover the drivers →",
       eras: {
@@ -463,8 +469,11 @@ const TRANSLATIONS = {
     },
   },
   de: {
+    generationTimeline: {
+      topbar: "Innovationen und Champions",
+    },
     historicDrivers: {
-      title: "Historische Formel-1-Fahrer",
+      title: "Die Protagonisten der Geschichte",
       intro: "Die Geschichte der Formel 1 ist nicht durch Jahrzehnte, sondern durch Revolutionen geprägt.",
       discover: "Entdecke die Fahrer →",
       eras: {
@@ -684,8 +693,11 @@ const TRANSLATIONS = {
     },
   },
   fr: {
+    generationTimeline: {
+      topbar: "Innovations et champions",
+    },
     historicDrivers: {
-      title: "Pilotes historiques de la Formule 1",
+      title: "Les Protagonistes de l'Histoire",
       intro: "L'histoire de la F1 n'est pas faite de décennies, mais de révolutions.",
       discover: "Découvrir les pilotes →",
       eras: {
@@ -906,8 +918,11 @@ const TRANSLATIONS = {
     },
   },
   es: {
+    generationTimeline: {
+      topbar: "Innovaciones y campeones",
+    },
     historicDrivers: {
-      title: "Pilotos históricos de la Fórmula 1",
+      title: "Los Protagonistas de la Historia",
       intro: "La historia de la Fórmula 1 no está hecha de décadas, sino de revoluciones.",
       discover: "Descubre los pilotos →",
       eras: {
